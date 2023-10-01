@@ -15,3 +15,11 @@ a {
     cursor: pointer;
     color: #9bcbfb;
 }
+
+hr {
+    border: none;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #444;
+}
+

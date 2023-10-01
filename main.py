@@ -1,3 +1,5 @@
+import json
+
 from flask import Flask, render_template
 
 app = Flask(" -- laurel_updates -- ")
@@ -8,7 +10,10 @@ def main_route():
 
 @app.route("/roms")
 def roms():
-    return render_template("roms.html")
+    with open('roms/a13/lineage.json', 'r') as json_file:
+        data = json.load(json_file)
+
+    return render_template("roms.html", data=data)
 
 @app.route("/kernels")
 def kernels():
