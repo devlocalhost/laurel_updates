@@ -10,3 +10,7 @@ body {
 h1, h2 {
     line-height: 1.2;
 }
+
+a {
+    style: pointer;
+}
