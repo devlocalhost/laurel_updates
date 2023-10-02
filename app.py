@@ -77,7 +77,7 @@ def rom_route(rom_name, version):
 
         return render_template("rom_template.html", data=data)
 
-    return "ROM not found", 404
+    return render_template("404.html")
 
 
 @app.route("/kernels")
@@ -92,9 +92,6 @@ def kernels():
             j_data = json.load(file)
             data["kernels"].append(j_data)
 
-    if len(data["kernels"]) == 0:
-        return make_response("No kernels found", 404)
-
     return make_response(render_template("kernels.html", data=data))
 
 
@@ -105,12 +102,16 @@ def kernel_route(kernel_name):
     kernel_file = os.path.join("kernels", kernel_name + ".json")
 
     if not os.path.exists(kernel_file):
-        return "Kernel not found", 404
+        return render_template("404.html")
 
     with open(kernel_file, encoding="utf-8") as file:
         data = json.load(file)
 
     return render_template("kernel_template.html", data=data)
+
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('404.html')
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
