@@ -112,5 +112,5 @@ def kernel_route(kernel_name):
 
     return render_template("kernel_template.html", data=data)
 
-if __name__ == "__main__":
-    app.run()
+if __name__ == '__main__':
+    app.run(debug=True, use_reloader=True)
