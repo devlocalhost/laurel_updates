@@ -5,7 +5,7 @@ A website where ROMs and kernels developed for this device are posted here.
 
 import os
 import json
-from flask import Flask, render_template, make_response, send_file
+from flask import Flask, render_template, make_response
 
 app = Flask(" -- laurel_updates -- ")
 
@@ -26,7 +26,7 @@ def list_json_files(directory):
 def main():
     """main"""
 
-    return send_file("index.html") # return render_template("index.html")
+    return render_template("index.html")
 
 
 @app.route("/roms")
@@ -112,6 +112,5 @@ def kernel_route(kernel_name):
 
     return render_template("kernel_template.html", data=data)
 
-
-for rule in app.url_map.iter_rules():
-    print(rule)
+if __name__ == "__main__":
+    app.run()
