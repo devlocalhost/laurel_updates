@@ -1,0 +1,17 @@
+{
+    "name": "LineageOS",
+    "version": "20",
+    "maintainer": "Skyblueborb",
+    "date_release": "05/05/2023",
+    "changelog": "Updated to May ASB, Introduced network traffic indicator, Improved system smoothness on default kernel, Improved UDFPS latency",
+    "status": "Unofficial",
+    "support": "https://t.me/lineageos_laurel",
+    "downloads":
+    {
+        "editions":
+        {
+            "vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-20.0-20230505-UNOFFICIAL-laurel_sprout-vanilla.zip",
+            "gapps": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-20.0-20230505-UNOFFICIAL-laurel_sprout-gms.zip"
+        }
+    }
+}

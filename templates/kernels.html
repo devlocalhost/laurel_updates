@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <title>laurel_updates - kernelss</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/static/style.css" />
+    </head>
+    <body>
+        <a href="/"><h4 class="colored">← laurel_updates</h4></a>
+        <h1 class="colored">Kernels</h1>
+
+        <ul>
+            {% for kernel in data["kernels"] %}
+            <li>
+                <a href="kernels/{{ kernel['name'].lower() }}"
+                    >{{ kernel["name"] }}</a
+                >
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

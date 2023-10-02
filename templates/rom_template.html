@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <title>laurel_updates - {{ data["name"] }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/static/style.css" />
+        <style>
+            #additional_info {
+                display: none;
+            }
+
+            #additional_info:target {
+                display: block;
+            }
+
+            #additional_info:click {
+            }
+        </style>
+    </head>
+    <body>
+        <a href="/roms"><h4 class="colored">← ROMs</h4></a>
+        <h1 class="colored">{{ data["name"] }} ({{ data["status"] }})</h1>
+        <p>Release date: {{ data["date_release"] }}</p>
+        <p>Version: {{ data["version"] }}</p>
+
+        <a href="#additional_info">Additional information</a>
+        <div id="additional_info">
+            <p>Maintainer: {{ data["maintainer"] }}</p>
+            <p>Changelog: {{ data["changelog"] }}</p>
+            <a href="{{ data['support'] }}">Support forum</a>
+            <p>
+                Make sure you read the instructions in the support forum before
+                flashing!!!
+            </p>
+        </div>
+
+        <hr />
+
+        <h2 class="colored">Downloads</h2>
+        <ul>
+            {% for edition, link in data["downloads"]["editions"].items() %} {%
+            if link %}
+            <li><a href="{{ link }}">{{ edition.title() }}</a></li>
+            {% endif %} {% endfor %}
+        </ul>
+    </body>
+</html>

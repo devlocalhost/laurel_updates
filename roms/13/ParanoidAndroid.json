@@ -1,0 +1,17 @@
+{
+    "name": "Paranoid Android (AOSPA)",
+    "version": "Topaz",
+    "maintainer": "Anirudh",
+    "date_release": "27/08/2023",
+    "changelog": "No major changes",
+    "status": "Unofficial",
+    "support": "https://t.me/pa_laurel",
+    "downloads":
+    {
+        "editions":
+        {
+            "vanilla": null,
+            "gapps": "https://drive.google.com/file/d/1WWppDao4Pr58a8zRJcG6NOoIZ64KYFHm/view?usp=drive_link"
+        }
+    }
+}

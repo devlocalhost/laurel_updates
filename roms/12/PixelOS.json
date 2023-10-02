@@ -1,0 +1,15 @@
+{
+    "name": "PixelOS",
+    "version": "12L",
+    "maintainer": "zafeey",
+    "date_release": "01/09/2022",
+    "changelog": "Linux 4.14.291, Fixed low volume for bluetooth device, Added back Moto Dolby, Add support for Hotwords, Drop screen off fod, Improve UX performance, Slightly improve battery backup",
+    "status": "Unofficial",
+    "support": "https://t.me/A3PixelOS",
+    "downloads": {
+        "editions": {
+            "vanilla": null,
+            "gapps": "https://sourceforge.net/projects/zafeey-laurel-sprout/files/PixelOS-Unofficial/PixelOS_laurel_sprout-12.1-20220831-1740.zip/download"
+        }
+    }
+}

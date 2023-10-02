@@ -1,41 +1,117 @@
+"""
+laurel_updates
+A website where ROMs and kernels developed for this device are posted here.
+"""
+
 import os
 import json
-
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, make_response, send_file
 
 app = Flask(" -- laurel_updates -- ")
 
-json_dir = 'roms/a13'
+android_versions = ["roms/13", "roms/12", "roms/11"]
+
 
 def list_json_files(directory):
+    """get json files of dir"""
+
     json_files = []
     for filename in os.listdir(directory):
-        if filename.endswith('.json'):
+        if filename.endswith(".json"):
             json_files.append(filename)
     return json_files
 
-for json_file in list_json_files(json_dir):
-    rom_name = json_file.replace(".json", "")
-
-    def json_route(filename):
-        with open(os.path.join(json_dir, filename)) as file:
-            data = json.load(file)
-
-        return render_template(f"roms/{rom_name}.html", data=data)
-
-    app.add_url_rule(f'/roms/{rom_name}', json_file, json_route, defaults={'filename': json_file})
 
 @app.route("/")
-def main_route():
-    return render_template("index.html")
+def main():
+    """main"""
+
+    return send_file("index.html") # return render_template("index.html")
+
 
 @app.route("/roms")
 def roms():
-    with open('roms/a13/lineage.json', 'r') as json_file:
-        data = json.load(json_file)
+    """roms"""
 
-    return render_template("roms.html", data=data)
+    roms_data = {}
+
+    for version in android_versions:
+        version = version.split("/")[1]
+        roms_directory = f"roms/{version}"
+        roms_list = []
+
+        for _, _, files in os.walk(roms_directory):
+            for file in files:
+                if file.endswith(".json"):
+                    rom_name = file.replace(".json", "")
+                    roms_list.append(rom_name)
+
+                    with open(
+                        os.path.join(roms_directory, file), encoding="utf-8"
+                    ) as json_file:
+                        data = json.loads(json_file.read())
+                        data["route_name"] = (
+                            rom_name.replace(".json", "")
+                            .replace(" ", "_")
+                            .replace("(", "_")
+                            .replace(")", "_")
+                            + f"_{version}"
+                        )
+
+                    if version not in roms_data:
+                        roms_data[version] = []
+                    roms_data[version].append(data)
+
+    return make_response(render_template("roms.html", roms_data=roms_data))
+
+
+@app.route("/roms/<string:rom_name>_<int:version>")
+def rom_route(rom_name, version):
+    """rom name route"""
+
+    json_path = os.path.join("roms", str(version), rom_name + ".json")
+
+    if os.path.exists(json_path):
+        with open(json_path, "r", encoding="utf-8") as json_file:
+            data = json.load(json_file)
+
+        return render_template("rom_template.html", data=data)
+
+    return "ROM not found", 404
+
 
 @app.route("/kernels")
 def kernels():
-    return render_template("kernels.html")
+    """kernels"""
+
+    data = {}
+    data["kernels"] = []
+
+    for kernel_file in list_json_files("kernels"):
+        with open(os.path.join("kernels", kernel_file), encoding="utf-8") as file:
+            j_data = json.load(file)
+            data["kernels"].append(j_data)
+
+    if len(data["kernels"]) == 0:
+        return make_response("No kernels found", 404)
+
+    return make_response(render_template("kernels.html", data=data))
+
+
+@app.route("/kernels/<kernel_name>")
+def kernel_route(kernel_name):
+    """kernels"""
+
+    kernel_file = os.path.join("kernels", kernel_name + ".json")
+
+    if not os.path.exists(kernel_file):
+        return "Kernel not found", 404
+
+    with open(kernel_file, encoding="utf-8") as file:
+        data = json.load(file)
+
+    return render_template("kernel_template.html", data=data)
+
+
+for rule in app.url_map.iter_rules():
+    print(rule)

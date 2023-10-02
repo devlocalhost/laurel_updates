@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <title>laurel_updates - {{ data["name"] }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/static/style.css" />
+        <style>
+            #additional_info {
+                display: none;
+            }
+
+            #additional_info:target {
+                display: block;
+            }
+
+            #additional_info:click {
+            }
+        </style>
+    </head>
+    <body>
+        <a href="/kernels"><h4 class="colored">← Kernels</h4></a>
+        <h1 class="colored">{{ data["name"] }}</h1>
+        <p>Release date: {{ data["date_release"] }}</p>
+        <p>Version: {{ data["version"] }}</p>
+
+        <a href="#additional_info">Additional information</a>
+        <div id="additional_info">
+            <p>Maintainer: {{ data["maintainer"] }}</p>
+            {% if data["changelog"].startswith('http') or
+            data["changelog"].startswith('https') %}
+            <p>
+                Changelog: <a href="{{ data['changelog'] }}">Changelog Link</a>
+            </p>
+            {% else %}
+            <p>Changelog: {{ data['changelog'] }}</p>
+            {% endif %}
+            <a href="{{ data['support'] }}">Support forum</a>
+            <p>
+                Make sure you read the instructions in the support forum before
+                flashing!!!
+            </p>
+        </div>
+
+        <hr />
+
+        <h2 class="colored">Downloads</h2>
+        <ul>
+            <li><a href="{{ data['download'] }}">Link</a></li>
+        </ul>
+    </body>
+</html>

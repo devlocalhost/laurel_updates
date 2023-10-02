@@ -1,0 +1,17 @@
+{
+    "name": "LineageOS",
+    "version": "18.1",
+    "maintainer": "Skyblueborb",
+    "date_release": "20/06/2023",
+    "changelog": "Updated to July ASB, Improved system smoothness, Reduce the amount of logging and tracing, Incall vibration options, User build",
+    "status": "Unofficial",
+    "support": "https://t.me/lineageos_laurel",
+    "downloads":
+    {
+        "editions":
+        {
+            "vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-20230620-UNOFFICIAL-laurel_sprout-vanilla.zip",
+            "gapps": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-20230620-UNOFFICIAL-laurel_sprout-gms.zip"
+        }
+    }
+}
