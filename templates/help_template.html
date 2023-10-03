@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>laurel_updates - {{ data["title"] }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/static/style.css" />
+        <style>
+            .adrod::first-letter {
+                color: #3DDC84;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="/"><h4 class="colored">← laurel_updates</h4></a>
+        <h1 class="colored">{{ data["title"] }}</h1>
+        <p>{{ data["text"] }}</p>
+    </body>
+</html>

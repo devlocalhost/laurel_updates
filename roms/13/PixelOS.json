@@ -6,6 +6,7 @@
     "changelog": "November Security Patch, Linux 4.14.299, Fixed 48MP Mode in MiuiCamera, Fixed memory management issue, Added NoCutOutOverlay, Misc. Fixes & Improvement",
     "status": "Unofficial",
     "support": "https://t.me/A3PixelOS",
+    "rdp": "No",
     "downloads": {
         "editions": {
             "vanilla": null,

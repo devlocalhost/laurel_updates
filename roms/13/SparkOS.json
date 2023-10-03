@@ -6,6 +6,7 @@
     "changelog": "Merged September security patches, Redesigned Package Installer, Added optional double tap to doze, Added screenshot sound toggle, Improved Launcher, Added desktop mode, Improved toast notifications, Improved blur, Enabled split shade on landscape qs, Reworked lock screen ripple",
     "status": "Unofficial",
     "support": "https://t.me/SparkOS_group_laurel",
+    "rdp": "No",
     "downloads": {
         "editions": {
             "vanilla": null,

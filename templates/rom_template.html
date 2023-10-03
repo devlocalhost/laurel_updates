@@ -23,13 +23,10 @@
 
         <a href="#additional_info">Additional information</a>
         <div id="additional_info">
+            <p>RDP ROM? {{ data["rdp"] }}</p>
             <p>Maintainer: {{ data["maintainer"] }}</p>
             <p>Changelog: {{ data["changelog"] }}</p>
-            <a href="{{ data['support'] }}">Support forum</a>
-            <p>
-                Make sure you read the instructions in the support forum before
-                flashing!!!
-            </p>
+            <p>Make sure you read the instructions in the <a href="{{ data['support'] }}">Support forum</a> before flashing!!!</p>
         </div>
 
         <hr />

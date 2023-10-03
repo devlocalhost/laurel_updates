@@ -6,6 +6,7 @@
     "changelog": "Updated to May ASB, Introduced network traffic indicator, Improved system smoothness on default kernel, Improved UDFPS latency",
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
+    "rdp": "No",
     "downloads":
     {
         "editions":
