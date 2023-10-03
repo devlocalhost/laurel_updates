@@ -5,5 +5,10 @@
     "date_release": "25/09/2023",
     "changelog": "Fixed drivers errors and warnings, Undervolted GPU, DDR, BUS, CPU and some other sources, Disabled more debugging and logging, Updated KSU to 1045, Fixed potential memory leaks",
     "support": "https://t.me/syberia_laurel_sprout/",
-    "download": "https://t.me/syberia_laurel_sprout/69689/88689"
+    "downloads": {
+        "editions": {
+            "non-rdp": "https://t.me/syberia_laurel_sprout/69689/88691",
+            "rdp": "https://t.me/syberia_laurel_sprout/69689/88689"
+        }
+    }
 }
