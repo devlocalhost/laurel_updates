@@ -99,7 +99,11 @@ def kernels():
 def kernel_route(kernel_name):
     """kernels"""
 
+    print(kernel_name)
+
     kernel_file = os.path.join("kernels", kernel_name + ".json")
+
+    print(kernel_file)
 
     if not os.path.exists(kernel_file):
         return render_template("404.html")

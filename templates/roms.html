@@ -5,6 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
         <link rel="stylesheet" href="/static/style.css" />
+        <style>
+            .adrod::first-letter {
+                color: #3DDC84;
+            }
+        </style>
     </head>
     <body>
         <a href="/"><h4 class="colored">← laurel_updates</h4></a>
@@ -12,7 +17,7 @@
 
         <h2>Android Versions</h2>
         <p>
-            Recommended versions are android 11 and 13, because these are the
+        Recommended versions are <strong>android 11 and 13</strong>, because these are the
             ones usually getting updates. Android 10 and 9 are not included
             because no one is interested, plus most laurel users are using
             "android 11 fw", which enables anti-rollback, preventing flashing
@@ -25,7 +30,7 @@
         </p>
 
         {% for version, roms in roms_data.items() %}
-        <h2>Android {{ version }} ROMs:</h2>
+        <h2 class="adrod">Android {{ version }} ROMs:</h2>
         <ul>
             {% for rom in roms %}
             <li>

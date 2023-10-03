@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <title>laurel_updates - kernels</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,7 +17,7 @@
         <ul>
             {% for kernel in data["kernels"] %}
             <li>
-                <a href="kernels/{{ kernel['name'].lower() }}"
+                <a href="kernels/{{ kernel['route_name'] }}"
                     >{{ kernel["name"] }}</a
                 >
             </li>
