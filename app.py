@@ -28,6 +28,27 @@ def main():
 
     return render_template("index.html")
 
+@app.route("/help")
+def help_route():
+    """help"""
+
+    return render_template("help.html")
+
+
+@app.route("/help/<article_name>")
+def help_artc(article_name):
+    """help articles"""
+
+    article_file = os.path.join("help", article_name + ".json")
+
+    if not os.path.exists(article_file):
+        return render_template("404.html")
+
+    with open(article_file, encoding="utf-8") as file:
+        data = json.load(file)
+
+    return render_template("help_template.html", data=data)
+
 
 @app.route("/roms")
 def roms():
@@ -99,11 +120,7 @@ def kernels():
 def kernel_route(kernel_name):
     """kernels"""
 
-    print(kernel_name)
-
     kernel_file = os.path.join("kernels", kernel_name + ".json")
-
-    print(kernel_file)
 
     if not os.path.exists(kernel_file):
         return render_template("404.html")
