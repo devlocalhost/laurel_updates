@@ -2,7 +2,7 @@
     "name": "AospExtended",
     "version": "Twelve with GApps",
     "maintainer": "Anirudh",
-    "date_release": "May 14th 2022",
+    "date_release": "14/05/2022",
     "changelog": "fixed wide angle crash, tried to fix voip calling issues, Merge linux 4.14.278, optimization & improvement, haptics, fixed random system ui crash, removed Xiaomi parts",
     "status": "Unofficial",
     "support": "https://t.me/pa_laurel",

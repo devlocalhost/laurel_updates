@@ -2,7 +2,7 @@
     "name": "PixelMagic",
     "version": "Tumbleweed (13.4)",
     "maintainer": "Magicxavi",
-    "date_release": "12-08-2023",
+    "date_release": "12/08/2023",
     "changelog": "Fixed Wallpaper, Picker issue for local gallery images crash, Fixed recents buttons overview stuck after first use",
     "status": "Official",
     "support": "https://t.me/syberia_laurel_sprout",

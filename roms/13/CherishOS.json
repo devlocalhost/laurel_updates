@@ -1,0 +1,15 @@
+{
+    "name": "CherishOS",
+    "version": "4.6",
+    "maintainer": "RAYAN",
+    "date_release": "25/03/2023",
+    "changelog": "Completed rebasing source, Merged March security patch, Fixed some of the problems, Temporarily removed some features, Improved the system, Added some new customizations",
+    "status": "Official",
+    "support": "https://t.me/A12_miA3",
+    "downloads": {
+        "editions": {
+            "vanilla": null,
+            "gapps": "https://www.pling.com/p/1486405/"
+        }
+    }
+}
