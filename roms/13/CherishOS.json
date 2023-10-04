@@ -6,6 +6,7 @@
     "changelog": "Completed rebasing source, Merged March security patch, Fixed some of the problems, Temporarily removed some features, Improved the system, Added some new customizations",
     "status": "Official",
     "support": "https://t.me/A12_miA3",
+    "rdp": "Yes",
     "downloads": {
         "editions": {
             "vanilla": null,
