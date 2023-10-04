@@ -2,14 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-#additional_info {
-    display: none;
-}
-
-#additional_info:target {
-    display: block;
-}
-
 body {
     color: #CACACA;
     background-color: #282828;
@@ -37,6 +29,6 @@ hr {
     border: none;
     height: 4px;
     border-radius: 5px;
-    background-color: #444;
+    background-color: #777;
 }
 
