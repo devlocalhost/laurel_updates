@@ -5,15 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
         <link rel="stylesheet" href="/static/style.css" />
-        <style>
-            .adrod::first-letter {
-                color: #3ddc84;
-            }
-        </style>
     </head>
     <body>
         <a href="/help"><h4 class="colored">← Help</h4></a>
         <h1 class="colored">{{ data["title"] }}</h1>
-        <p>{{ data["text"] }}</p>
+        <p>{{ data["text"] | replace('\n', '<br />' | safe )}}</p>
     </body>
 </html>

@@ -6,7 +6,7 @@
     "date_release": "2023/09/24",
     "changelog": "https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.326",
     "support": "https://t.me/No_912",
-    "notes": "Warning: This kernel REQUIRES magisk installed on your phone!",
+    "notes": "Warning: This kernel <strong>REQUIRES</strong> <a href=\"https://github.com/topjohnwu/Magisk/releases\">magisk</a> installed on your phone!!",
     "downloads": {
         "editions": {
             "non-rdp": "https://t.me/No_912_Updates/291?single",
