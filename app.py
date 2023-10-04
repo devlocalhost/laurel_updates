@@ -28,11 +28,19 @@ def main():
 
     return render_template("index.html")
 
+
 @app.route("/help")
 def help_route():
     """help"""
 
-    return render_template("help.html")
+    articles = {}
+
+    for file in list_json_files("help"):
+        with open(os.path.join("help", file), encoding="utf-8") as artc_file:
+            article_data = json.load(artc_file)
+            articles[article_data["title"]] = file.replace(".json", "")
+
+    return render_template("help.html", articles=articles)
 
 
 @app.route("/help/<article_name>")
@@ -61,27 +69,26 @@ def roms():
         roms_directory = f"roms/{version}"
         roms_list = []
 
-        for _, _, files in os.walk(roms_directory):
-            for file in files:
-                if file.endswith(".json"):
-                    rom_name = file.replace(".json", "")
-                    roms_list.append(rom_name)
+        for file in list_json_files(roms_directory):
+            rom_name = file.replace(".json", "")
+            roms_list.append(rom_name)
 
-                    with open(
-                        os.path.join(roms_directory, file), encoding="utf-8"
-                    ) as json_file:
-                        data = json.loads(json_file.read())
-                        data["route_name"] = (
-                            rom_name.replace(".json", "")
-                            .replace(" ", "_")
-                            .replace("(", "_")
-                            .replace(")", "_")
-                            + f"_{version}"
-                        )
+            with open(
+                os.path.join(roms_directory, file), encoding="utf-8"
+            ) as json_file:
+                data = json.load(json_file)
+                data["route_name"] = (
+                    rom_name.replace(".json", "")
+                    .replace(" ", "_")
+                    .replace("(", "_")
+                    .replace(")", "_")
+                    + f"_{version}"
+                )
 
-                    if version not in roms_data:
-                        roms_data[version] = []
-                    roms_data[version].append(data)
+            if version not in roms_data:
+                roms_data[version] = []
+
+            roms_data[version].append(data)
 
     return make_response(render_template("roms.html", roms_data=roms_data))
 
@@ -130,9 +137,11 @@ def kernel_route(kernel_name):
 
     return render_template("kernel_template.html", data=data)
 
+
 @app.errorhandler(404)
 def page_not_found(error):
-    return render_template('404.html')
+    return render_template("404.html")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     app.run(debug=True, use_reloader=True)

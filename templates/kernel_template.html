@@ -10,15 +10,7 @@
                 display: none;
             }
 
-            #rdp {
-                display: none;
-            }
-
             #additional_info:target {
-                display: block;
-            }
-
-            #rdp:target {
                 display: block;
             }
         </style>
@@ -40,34 +32,24 @@
             {% else %}
             <p>Changelog: {{ data['changelog'] }}</p>
             {% endif %}
-            <p>Make sure you read the instructions in the <a href="{{ data['support'] }}">Support forum</a> before flashing!!!</p>
+            <p>
+                Make sure you read the instructions in the
+                <a href="{{ data['support'] }}">Support forum</a> before
+                flashing!!!
+            </p>
             <p>{{ data["notes"] }}</p>
         </div>
 
         <hr />
+
         <h2 class="colored">Downloads</h2>
+        <a href="/help/what-is-rdp">What is RDP!?</a>
+
         <ul>
             {% for edition, link in data["downloads"]["editions"].items() %} {%
             if link %}
             <li><a href="{{ link }}">{{ edition.title() }}</a></li>
             {% endif %} {% endfor %}
         </ul>
-
-        <hr />
-
-        <h2 class="colored">What is RDP?</h2>
-        <a href="#rdp">Expand</a>
-
-        <div id="rdp">
-            <p>
-                RDP is a way to implement dynamic partitions on old devices. It
-                works by merging normal device partitions into one super
-                partition, and then creating logical partitions on that super
-                partition as needed. This allows developers/maintainers to use
-                unused space in normal ROMs to add extra space to partitions
-                that need it. You cannot use an RDP kernel on a ROM that doesnt
-                use RDP partitions, and a non RDP kernel on a RDP ROM.
-            </p>
-        </div>
     </body>
 </html>
