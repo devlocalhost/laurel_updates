@@ -1,16 +1,17 @@
 {
     "name": "Pixel Experience",
     "version": "13",
-    "maintainer": "Rudra.DNG",
-    "date_release": "16/09/2022",
-    "changelog": "Unknown",
+    "maintainer": "zafeey",
+    "date_release": "07/10/2023",
+    "changelog": "September Security Patch, Linux 4.14.326, Fixes USB OTG (From previous PixelOS build), Misc. Improvements",
     "status": "Unofficial",
-    "support": "https://t.me/PePlus_MiA3",
-    "rdp": "No",
+    "support": "https://t.me/A3PEPlus",
+    "rdp": "yes",
+    "notes": "Custom kernel/recovery are not supported.",
     "downloads": {
         "editions": {
-            "vanilla": null,
-            "gapps": "https://t.me/PePlus_MiA3/37882"
+            "vanilla": "none",
+            "gapps": "https://sourceforge.net/projects/zafeey-laurel-sprout/files/PixelExperience-Plus/7-10-2023/aosp_laurel_sprout-ota-retrofit-eng.zafeey.zip/download"
         }
     }
 }
