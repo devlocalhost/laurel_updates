@@ -4,6 +4,9 @@ import json
 
 from pprint import pprint
 
+if len(sys.argv) != 14:
+    sys.exit(f"Missing argument, got {len(sys.argv)}, need 14")
+
 data = {
     "name": sys.argv[1],
     "version": sys.argv[2],
@@ -28,12 +31,11 @@ json_data = json.dumps(data, indent=4)
 
 confirm = input(json_data + "\n\nOK? y/n\n -> ")
 
-if confirm == "y":
+if confirm in ("y", ""):
     with open(f"roms/{sys.argv[12]}/{sys.argv[13]}.json", "w+") as json_file:
         json_file.write(json_data)
 
-    with open(f"roms/{sys.argv[12]}/{sys.argv[13]}.json") as json_file:
-        sys.exit(json.loads(json_file.read()))
+    sys.exit(f"Data dumped to roms/{sys.argv[12]} as {sys.argv[13]}.json")
 
 else:
     sys.exit(f"Got {confirm}, exit")
