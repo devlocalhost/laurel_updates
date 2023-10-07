@@ -18,6 +18,7 @@
     <body>
         <a href="/roms"><h4 class="colored">← ROMs</h4></a>
         <h1 class="colored">{{ data["name"] }} ({{ data["status"] }})</h1>
+        <p>Maintainer: {{ data["maintainer"] }}</p>
         <p>Release date: {{ data["date_release"] }}</p>
         <p>Version: {{ data["version"] }}</p>
 
@@ -32,7 +33,6 @@
             <p>Notes: {{ data["notes"] | safe }}</p>
             {% endif %}
 
-            <p>Maintainer: {{ data["maintainer"] }}</p>
             <p>Changelog: {{ data["changelog"] }}</p>
             <p>
                 Make sure you read the instructions in the

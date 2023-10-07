@@ -13,12 +13,12 @@ data = {
     "status": sys.argv[6],
     "support": sys.argv[7],
     "rdp": sys.argv[8],
-    "notes": sys.argv[9],
+    "notes": sys.argv[9] if sys.argv[9] != "none" else None,
     "downloads":
     {
         "editions":
         {
-            "vanilla": sys.argv[10] if sys.argv[10] != "null" else None,
+            "vanilla": sys.argv[10] if sys.argv[10] != "none" else None,
             "gapps": sys.argv[11]
         }
     }
