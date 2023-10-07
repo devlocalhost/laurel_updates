@@ -1,0 +1,17 @@
+{
+    "name": "Pixel Experience",
+    "version": "11",
+    "maintainer": "Rudra.DNG",
+    "date_release": "03/03/2021",
+    "changelog": "Unknown",
+    "status": "Unknown Status",
+    "support": "https://t.me/PePlus_MiA3",
+    "rdp": "no",
+    "notes": "Google apps are pre-included, hence it isn't needed to flash them on-top, Custom Recovery not included, OSS vendor based, Android 11 firmware Based. Make sure you read <a href='https://xdaforums.com/t/rom-11-mi-a3-pixelexperience-aosp.4241751/'>the xda post</a> before flashing",
+    "downloads": {
+        "editions": {
+            "normal": "https://sourceforge.net/projects/laurel-sprout/files/PixelExperience/July/PixelExperience_laurel_sprout-11.0-20210721-0531-UNOFFICIAL.zip/download",
+            "plus": "https://sourceforge.net/projects/laurel-sprout/files/PixelExperience/July/PixelExperience_Plus_laurel_sprout-11.0-20210721-0933-UNOFFICIAL.zip/download"
+        }
+    }
+}

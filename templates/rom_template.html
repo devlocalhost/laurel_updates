@@ -27,6 +27,11 @@
                 RDP? {{ data["rdp"] }} (check
                 <a href="/help/what-is-rdp">what is rdp</a> for more)
             </p>
+
+            {% if data["notes"] %}
+            <p>Notes: {{ data["notes"] | safe }}</p>
+            {% endif %}
+
             <p>Maintainer: {{ data["maintainer"] }}</p>
             <p>Changelog: {{ data["changelog"] }}</p>
             <p>
