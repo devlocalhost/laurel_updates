@@ -5,8 +5,9 @@
     "date_release": "23/11/2022",
     "changelog": "November Security Patch, Linux 4.14.299, Fixed 48MP Mode in MiuiCamera, Fixed memory management issue, Added NoCutOutOverlay, Misc. Fixes & Improvement",
     "status": "Unofficial",
-    "support": "https://t.me/A3PixelOS",
+    "support": "https://t.me/A3PEPlus",
     "rdp": "Yes",
+    "notes": "zafeey has dropped PixelOS, and is maintaining <a href='/roms/PixelExperience_13'>Pixel Experience</a> now, in case you want to check it out.",
     "downloads": {
         "editions": {
             "vanilla": null,
