@@ -7,10 +7,8 @@
     "status": "Unofficial",
     "support": "https://t.me/pa_laurel",
     "rdp": "No",
-    "downloads":
-    {
-        "editions":
-        {
+    "downloads": {
+        "editions": {
             "vanilla": null,
             "gapps": "https://drive.google.com/file/d/1WWppDao4Pr58a8zRJcG6NOoIZ64KYFHm/view?usp=drive_link"
         }

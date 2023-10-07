@@ -7,10 +7,8 @@
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
-    "downloads":
-    {
-        "editions":
-        {
+    "downloads": {
+        "editions": {
             "vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-20230620-UNOFFICIAL-laurel_sprout-vanilla.zip",
             "gapps": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-20230620-UNOFFICIAL-laurel_sprout-gms.zip"
         }
