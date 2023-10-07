@@ -6,7 +6,7 @@
     "changelog": "Fixed Wallpaper, Picker issue for local gallery images crash, Fixed recents buttons overview stuck after first use",
     "status": "Official",
     "support": "https://t.me/syberia_laurel_sprout",
-    "rdp": "No",
+    "rdp": "Yes",
     "downloads": {
         "editions": {
             "vanilla": null,
