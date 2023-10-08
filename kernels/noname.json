@@ -6,7 +6,7 @@
     "date_release": "07/09/2023",
     "changelog": "Upstreamed to 4.14.325, Disabled many logging, Merged latest WIFI drivers from CLO tag LA.UM.9.1.r1-13900-SMxxx0.QSSI13.0, Merged latest kernel 4.14 CLO tag LA.UM.9.1.r1-13900-SMxxx0.QSSI13.0, Updated KSU to 1027, Other fixes and optimizations related to sched governor, cpu boosting, audio, codecs, camera, ext4 fs, usb and network.",
     "support": "https://t.me/syberia_laurel_sprout/",
-    "notes": "Note: This kernel has two editions, RDP and Non RDP. Check below for more info. 66Hz is also a safe value for our display.",
+    "notes": "Note: This kernel has kernelSU built in. This kernel also has two editions, RDP and Non RDP. Check below for more info. 66Hz is also a safe value for our display.",
     "downloads": {
         "editions": {
             "non-rdp": "https://t.me/syberia_laurel_sprout/69689/87581?single",
