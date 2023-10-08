@@ -18,12 +18,12 @@
     <body>
         <a href="/kernels"><h4 class="colored">← Kernels</h4></a>
         <h1 class="colored">{{ data["name"] }}</h1>
+        <p>Maintainer: {{ data["maintainer"] }}</p>
         <p>Release date: {{ data["date_release"] }}</p>
         <p>Version: {{ data["version"] }}</p>
 
         <a href="#additional_info">Additional information</a>
         <div id="additional_info">
-            <p>Maintainer: {{ data["maintainer"] }}</p>
             {% if data["changelog"].startswith('http') or
             data["changelog"].startswith('https') %}
             <p>
