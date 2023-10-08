@@ -37,7 +37,9 @@
             <h2>Changelog</h2>
 
             <ul>
-            {{ data["changelog"].replace("$LS", "<li>").replace("$LE", "</li>") | safe }}
+                {{ data["changelog"].replace("$LS", "
+                <li>").replace("$LE", "</li>
+                ") | safe }}
             </ul>
 
             <p>
