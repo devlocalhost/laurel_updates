@@ -1,6 +1,6 @@
 {
     "name": "PixelOS",
-    "version": "13.8",
+    "version": "13",
     "maintainer": "zafeey",
     "date_release": "23/11/2022",
     "changelog": "November Security Patch, Linux 4.14.299, Fixed 48MP Mode in MiuiCamera, Fixed memory management issue, Added NoCutOutOverlay, Misc. Fixes & Improvement",
