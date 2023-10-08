@@ -1,4 +1,0 @@
-{
-    "title": "What is RDP",
-    "text": "RDP - Retrofit Dynamic Partitions, its the same as normal Dynamic Partitions with only one difference, it can be implemented on old devices.\nUse Case of Dynamic Partitions is in space management, normal device partitions are getting merged in one super partition, and while building the rom, logical partitions are being created on that super partition accordingly to the space needed for every partition.\nWhy is this needed? Because we had unused partitions in normal ROMs, and building some ROM with Gapps required more and more space every new android version, so we took that unused space to add it as reserved, so it can be used for any partition which requires extra space."
-}

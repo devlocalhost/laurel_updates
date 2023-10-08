@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>laurel_updates - {{ data["title"] }}</title>
+        <title>laurel_updates - {{ title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
         <link rel="stylesheet" href="/static/style.css" />
     </head>
     <body>
         <a href="/help"><h4 class="colored">← Help</h4></a>
-        <h1 class="colored">{{ data["title"] }}</h1>
-        <p>{{ data["text"] | replace('\n', '<br />' | safe )}}</p>
+        <h1 class="colored">{{ title }}</h1>
+        <p>{{ data | safe }}</p>
     </body>
 </html>

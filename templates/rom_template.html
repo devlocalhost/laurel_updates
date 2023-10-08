@@ -30,10 +30,16 @@
             </p>
 
             {% if data["notes"] %}
-            <p>Notes: {{ data["notes"] | safe }}</p>
+            <h2>Notes</h2>
+            <p>{{ data["notes"] | safe }}</p>
             {% endif %}
 
-            <p>Changelog: {{ data["changelog"] }}</p>
+            <h2>Changelog</h2>
+
+            <ul>
+            {{ data["changelog"].replace("$LS", "<li>").replace("$LE", "</li>") | safe }}
+            </ul>
+
             <p>
                 Make sure you read the instructions in the
                 <a href="{{ data['support'] }}">Support forum</a> before

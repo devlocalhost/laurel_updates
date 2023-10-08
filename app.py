@@ -5,10 +5,15 @@ A website where ROMs and kernels developed for this device are posted here.
 
 import os
 import json
+import time
+import mistune
 from flask import Flask, render_template, make_response
+from flask_compress import Compress
 
 app = Flask(" -- laurel_updates -- ")
+compress = Compress(app)
 
+nl = "\n"
 android_versions = ["roms/13", "roms/12", "roms/11"]
 
 
@@ -23,8 +28,8 @@ def list_json_files(directory):
 
 
 @app.route("/")
-def main():
-    """main"""
+def index():
+    """index"""
 
     return render_template("index.html")
 
@@ -35,27 +40,27 @@ def help_route():
 
     articles = {}
 
-    for file in list_json_files("help"):
-        with open(os.path.join("help", file), encoding="utf-8") as artc_file:
-            article_data = json.load(artc_file)
-            articles[article_data["title"]] = file.replace(".json", "")
+    for file in os.listdir("help"):
+        if file.endswith(".md"):
+            with open(f"help/{file}", encoding="utf-8") as artc_file:
+                articles[artc_file.readline().replace("# ", "").replace(nl, "")] = file.removesuffix(".md")
 
     return render_template("help.html", articles=articles)
-
 
 @app.route("/help/<article_name>")
 def help_artc(article_name):
     """help articles"""
 
-    article_file = os.path.join("help", article_name + ".json")
+    article_file = os.path.join("help", article_name + ".md")
 
     if not os.path.exists(article_file):
         return render_template("404.html")
 
     with open(article_file, encoding="utf-8") as file:
-        data = json.load(file)
+        title = file.readline().removeprefix("# ").removesuffix(nl)
+        data = mistune.html(file.read())
 
-    return render_template("help_template.html", data=data)
+    return render_template("help_template.html", data=data, title=title)
 
 
 @app.route("/roms")
@@ -70,7 +75,7 @@ def roms():
         roms_list = []
 
         for file in list_json_files(roms_directory):
-            rom_name = file.replace(".json", "")
+            rom_name = file.removesuffix(".json")
             roms_list.append(rom_name)
 
             with open(
@@ -78,10 +83,10 @@ def roms():
             ) as json_file:
                 data = json.load(json_file)
                 data["route_name"] = (
-                    rom_name.replace(".json", "")
-                    .replace(" ", "_")
-                    .replace("(", "_")
-                    .replace(")", "_")
+                    rom_name.removesuffix(".json")
+                    .removesuffix(" ")
+                    .removesuffix("(")
+                    .removesuffix(")")
                     + f"_{version}"
                 )
 

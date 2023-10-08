@@ -3,7 +3,7 @@
     "version": "13",
     "maintainer": "zafeey",
     "date_release": "23/11/2022",
-    "changelog": "November Security Patch, Linux 4.14.299, Fixed 48MP Mode in MiuiCamera, Fixed memory management issue, Added NoCutOutOverlay, Misc. Fixes & Improvement",
+    "changelog": "$LSNovember Security Patch$LE$LSLinux 4.14.299$LE$LSFixed 48MP Mode in MiuiCamera$LE$LSFixed memory management issue$LE$LSAdded NoCutOutOverlay$LE$LSMisc. Fixes & Improvement",
     "status": "Unofficial",
     "support": "https://t.me/A3PEPlus",
     "rdp": "Yes",
