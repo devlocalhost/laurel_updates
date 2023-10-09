@@ -2,7 +2,7 @@
 
 ## What is ViPER4AndroidFX?
 
-ViPER4AndroidFX is a powerful EQ app which requires root ([magisk](/help/how-install-magisk), with many options and modifications you can use/do.)
+ViPER4AndroidFX is a powerful EQ app which requires root ([magisk](/help/how-install-magisk)), with many options and modifications you can use/do.
 
 ## How to install <abbr title="ViPER4AndroidFX">V4A</abbr>
 
