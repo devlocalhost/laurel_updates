@@ -50,6 +50,11 @@ def index():
     return generate_html("index.html")
 
 
+@app.route("/c")
+def caching():
+    return str("<h1>" + str(len(os.listdir(".flask_cache"))) + "</h1>")
+
+
 @app.route("/help")
 def help_route():
     """help"""
@@ -165,4 +170,4 @@ def page_not_found(error):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
