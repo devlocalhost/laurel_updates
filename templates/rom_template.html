@@ -24,15 +24,23 @@
 
         <a href="#additional_info">Additional information</a>
         <div id="additional_info">
-            <p>
-                RDP? {{ data["rdp"] }} (check
-                <a href="/help/what-is-rdp">what is rdp</a> for more)
-            </p>
-
-            {% if data["notes"] %}
             <h2>Notes</h2>
-            <p>{{ data["notes"] | safe }}</p>
-            {% endif %}
+            <ul>
+                {% if data["notes"] %}
+                <li>{{ data["notes"] | safe }}</li>
+                {% endif %}
+
+                <li>
+                    RDP? {{ data["rdp"] }} (check
+                    <a href="/help/what-is-rdp">what is rdp</a> for more)
+                </li>
+
+                <li>
+                    Make sure you read the instructions in the
+                    <a href="{{ data['support'] }}">Support forum</a> before
+                    flashing!!!
+                </li>
+            </ul>
 
             <h2>Changelog</h2>
 
@@ -41,12 +49,6 @@
                 <li>").replace("$LE", "</li>
                 ") | safe }}
             </ul>
-
-            <p>
-                Make sure you read the instructions in the
-                <a href="{{ data['support'] }}">Support forum</a> before
-                flashing!!!
-            </p>
         </div>
 
         <hr />
