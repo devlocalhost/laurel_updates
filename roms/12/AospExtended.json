@@ -3,7 +3,7 @@
     "version": "Twelve with GApps",
     "maintainer": "Anirudh",
     "date_release": "14/05/2022",
-    "changelog": "fixed wide angle crash, tried to fix voip calling issues, Merge linux 4.14.278, optimization & improvement, haptics, fixed random system ui crash, removed Xiaomi parts",
+    "changelog": "$LSfixed wide angle crash$LE$LStried to fix voip calling issues$LE$LSMerge linux 4.14.278$LE$LSoptimization & improvement$LE$LShaptics$LE$LSfixed random system ui crash$LE$LSremoved Xiaomi parts",
     "status": "Unofficial",
     "support": "https://t.me/pa_laurel",
     "rdp": "No",

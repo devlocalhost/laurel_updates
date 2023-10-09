@@ -3,7 +3,7 @@
     "version": "12L",
     "maintainer": "zafeey",
     "date_release": "01/09/2022",
-    "changelog": "Linux 4.14.291, Fixed low volume for bluetooth device, Added back Moto Dolby, Add support for Hotwords, Drop screen off fod, Improve UX performance, Slightly improve battery backup",
+    "changelog": "$LSLinux 4.14.291$LE$LSFixed low volume for bluetooth device$LE$LSAdded back Moto Dolby$LE$LSAdd support for Hotwords$LE$LSDrop screen off fod$LE$LSImprove UX performance$LE$LSSlightly improve battery backup",
     "status": "Unofficial",
     "support": "https://t.me/A3PixelOS",
     "rdp": "Yes",

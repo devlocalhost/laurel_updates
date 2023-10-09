@@ -12,7 +12,7 @@ data = {
     "version": sys.argv[2],
     "maintainer": sys.argv[3],
     "date_release": sys.argv[4],
-    "changelog": sys.argv[5],
+    "changelog": "$LS" + sys.argv[5].replace(", ", "$LE$LS"),
     "status": sys.argv[6],
     "support": sys.argv[7],
     "rdp": sys.argv[8],

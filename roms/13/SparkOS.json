@@ -3,7 +3,7 @@
     "version": "13.8",
     "maintainer": "bakka",
     "date_release": "23/09/2023",
-    "changelog": "Merged September security patches, Redesigned Package Installer, Added optional double tap to doze, Added screenshot sound toggle, Improved Launcher, Added desktop mode, Improved toast notifications, Improved blur, Enabled split shade on landscape qs, Reworked lock screen ripple",
+    "changelog": "$LSMerged September security patches$LE$LSRedesigned Package Installer$LE$LSAdded optional double tap to doze$LE$LSAdded screenshot sound toggle$LE$LSImproved Launcher$LE$LSAdded desktop mode$LE$LSImproved toast notifications$LE$LSImproved blur$LE$LSEnabled split shade on landscape qs$LE$LSReworked lock screen ripple",
     "status": "Unofficial",
     "support": "https://t.me/SparkOS_group_laurel",
     "rdp": "No",
