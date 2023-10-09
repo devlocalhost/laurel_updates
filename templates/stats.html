@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>laurel_updates - statistics</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/static/style.css" />
+    </head>
+    <body>
+        <a href="/"><h4 class="colored">← laurel_updates</h4></a>
+        <h1 class="colored">Statistics</h1>
+        <ul>
+            <li>Visitors (since deploy time): {{ data["visitors"] }}</li>
+            <li>Deploy time: {{ data["deployed_time"] }}</li>
+            <li>Cached templates: {{ data["cached_templates"] }} ({{ data["cachedir_len"] }} files in cachedir)</li>
+        </ul>
+    </body>
+</html>
