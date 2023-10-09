@@ -8,11 +8,8 @@ import json
 import time
 import mistune
 from flask import Flask, render_template, make_response
-from flask_compress import Compress
 
 app = Flask(" -- laurel_updates -- ")
-compress = Compress(app)
-
 nl = "\n"
 android_versions = ["roms/13", "roms/12", "roms/11"]
 
