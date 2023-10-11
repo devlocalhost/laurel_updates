@@ -9,8 +9,9 @@
     "notes": "Warning: This kernel <strong>REQUIRES</strong> <a href=\"https://github.com/topjohnwu/Magisk/releases\">magisk</a> installed on your phone!! This kernel does not have kernelSU built in.",
     "downloads": {
         "editions": {
-            "non-rdp": "https://t.me/No_912_Updates/291?single",
+            "non-rdp": "https://t.me/No_912_Updates/314?single",
             "rdp": null
         }
     }
 }
+
