@@ -1,13 +1,14 @@
+#!/usr/bin/env python3
+
 """
 laurel_updates
 A website where ROMs and kernels developed for this device are posted here.
 """
 
-from datetime import datetime
-
 import os
 import json
 import mistune
+import datetime
 
 from flask import Flask, render_template, make_response
 from cachelib.file import FileSystemCache
@@ -24,20 +25,16 @@ class Statistics:
 
     def __init__(self):
         """init"""
-        self.cached_templates = []
+        
         self.visitors = 0
         self.deployed = (
-            str(datetime.utcnow().strftime("%A %d %B %Y, %I:%M:%S %p")) + " (UTC)"
+            str(datetime.datetime.now(datetime.UTC).strftime("%A %d %B %Y, %I:%M:%S %p")) + " (UTC)"
         )
 
-    def update(self, u_type, data=None):
+    def update(self):
         """update data"""
 
-        if u_type == "visitors":
-            self.visitors += 1
-
-        elif u_type == "cache":
-            self.cached_templates.append(data)
+        self.visitors += 1
 
     def get_data(self):
         """get data"""
@@ -47,7 +44,6 @@ class Statistics:
                 {
                     "visitors": self.visitors,
                     "deployed_time": self.deployed,
-                    "cached_templates": self.cached_templates,
                     "cachedir_len": len(os.listdir(".flask_cache")),
                 }
             )
@@ -69,7 +65,6 @@ def generate_html(template_name, **context):
 
     html = render_template(template_name, **context)
     cache.set(cache_key, {"html": html, "mtime": template_mtime})
-    statistics.update("cache", template_name)
 
     return html
 
@@ -90,7 +85,7 @@ def list_json_files(directory):
 def index():
     """index"""
 
-    statistics.update("visitors")
+    statistics.update()
 
     return generate_html("index.html")
 
@@ -99,9 +94,7 @@ def index():
 def stats():
     """stats"""
 
-    statistics.update("visitors")
-
-    print(type(statistics.get_data()))
+    statistics.update()
 
     return render_template("stats.html", data=statistics.get_data())
 
@@ -110,7 +103,7 @@ def stats():
 def help_route():
     """help"""
 
-    statistics.update("visitors")
+    statistics.update()
     articles = {}
 
     for file in os.listdir("help"):
@@ -127,7 +120,7 @@ def help_route():
 def help_artc(article_name):
     """help articles"""
 
-    statistics.update("visitors")
+    statistics.update()
     article_file = os.path.join("help", article_name + ".md")
 
     if not os.path.exists(article_file):
@@ -144,7 +137,7 @@ def help_artc(article_name):
 def roms():
     """roms"""
 
-    statistics.update("visitors")
+    statistics.update()
     roms_data = {}
 
     for version in android_versions:
@@ -180,7 +173,7 @@ def roms():
 def rom_route(rom_name, version):
     """rom name route"""
 
-    statistics.update("visitors")
+    statistics.update()
     json_path = os.path.join("roms", str(version), rom_name + ".json")
 
     if os.path.exists(json_path):
@@ -196,7 +189,7 @@ def rom_route(rom_name, version):
 def kernels():
     """kernels"""
 
-    statistics.update("visitors")
+    statistics.update()
     data = {}
     data["kernels"] = []
 
@@ -212,7 +205,7 @@ def kernels():
 def kernel_route(kernel_name):
     """kernels"""
 
-    statistics.update("visitors")
+    statistics.update()
     kernel_file = os.path.join("kernels", kernel_name + ".json")
 
     if not os.path.exists(kernel_file):
@@ -234,4 +227,4 @@ def page_not_found(e):
 
 
 if __name__ == "__main__":
-    app.run()  # debug=True, use_reloader=True)
+    app.run(debug=True, use_reloader=True)
