@@ -8,6 +8,6 @@ platform_tools are essential drivers used to communicate with your phone, includ
 2. Select the platform that matches your operating system, and download the zip file.
 3. Extract the downloaded zip file to any location on your computer.
 4. To use ADB or Fastboot, follow these steps:
-   - Go to the directory where you extracted the files.
-   - Click on the address bar of Windows File Explorer and type `cmd`, then press Enter.
-   - A command prompt window will appear, allowing you to use ADB or Fastboot commands. Type `adb --help` or `fastboot --help`
+    - Go to the directory where you extracted the files.
+    - Click on the address bar of Windows File Explorer and type `cmd`, then press Enter.
+    - A command prompt window will appear, allowing you to use ADB or Fastboot commands. Type `adb --help` or `fastboot --help`

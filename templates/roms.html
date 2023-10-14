@@ -9,44 +9,60 @@
             .adrod::first-letter {
                 color: #10b981;
             }
+
+            a.nodec {
+                text-decoration: none;
+                color: inherit;
+            }
         </style>
     </head>
     <body>
-        <a href="/"><h4 class="colored">← laurel_updates</h4></a>
-        <h1 class="colored">ROMs</h1>
+        <div id="top">
+            <a href="/"><h4 class="colored">← laurel_updates</h4></a>
+            <h1 class="colored">ROMs</h1>
 
-        <h2 class="adrod">Android Versions</h2>
-        <p>
-            Recommended versions are <strong>android 11 and 13</strong>, because
-            these are the ones usually getting updates. Android 10 and 9 are not
-            included because no one is interested, plus most laurel users are
-            using "android 11 fw", which enables anti-rollback, preventing
-            flashing anything lower than android 11 (will result in a brick).
-        </p>
+            <h2>Android Versions</h2>
+            <p>
+                Recommended versions are <strong>android 11 and 13</strong>,
+                because these are the ones usually getting updates. Android 10
+                and 9 are not included because no one is interested, plus most
+                laurel users are using "android 11 fw", which enables
+                anti-rollback, preventing flashing anything lower than android
+                11 (will result in a brick).
+            </p>
 
-        <p>
-            Note: The ROMs available here are the latest update from the
-            maintainer.
-        </p>
+            <h2 class="colored">Navigate to version</h2>
+            <ul>
+                <li><a href="#a13">🔗 13</a></li>
+                <li><a href="#a12">🔗 12</a></li>
+                <li><a href="#a11">🔗 11</a></li>
+            </ul>
 
-        {% for version, roms in roms_data.items() %}
-        <h2 class="adrod">Android {{ version }} ROMs:</h2>
-        <ul>
-            {% for rom in roms %}
-            <li>
-                <a href="roms/{{ rom['route_name'] }}">{{ rom["name"] }}</a>
-            </li>
+            {% for version, roms in roms_data.items() %}
+            <div id="a{{ version }}">
+                <h2 class="adrod">Android {{ version }} ROMs:</h2>
+            </div>
+            <ul>
+                {% for rom in roms %}
+                <li>
+                    <a href="roms/{{ rom['route_name'] }}">{{ rom["name"] }}</a>
+                </li>
+                {% endfor %}
+            </ul>
             {% endfor %}
-        </ul>
-        {% endfor %}
 
-        <hr />
+            <p style="text-align: center">
+                <a href="#top">↑↑↑</a>
+            </p>
 
-        <h2 class="colored">Missing ROM?</h2>
-        <p>
-            Contact the <a href="https://t.me/dev6400">dev</a> for submission.
-            Please, dont submit outdated/discontinued ROMs. (But there COULD be
-            an exception)
-        </p>
+            <hr />
+
+            <h2 class="colored">Missing ROM?</h2>
+            <p>
+                Contact the <a href="https://t.me/dev6400">dev</a> for
+                submission. Please, dont submit outdated/discontinued ROMs. (But
+                there COULD be an exception)
+            </p>
+        </div>
     </body>
 </html>

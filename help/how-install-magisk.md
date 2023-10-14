@@ -2,9 +2,9 @@
 
 ## Requirements
 
-- An unlocked bootloader
-- platform_tools installed
-- Latest Magisk APK
+-   An unlocked bootloader
+-   [platform_tools](/help/platform-tools) installed
+-   Latest Magisk APK
 
 After meeting these requirements, you can proceed with the installation.
 
@@ -26,3 +26,16 @@ After meeting these requirements, you can proceed with the installation.
 4. Click "install update" or "apply update" then choose "apply from SD card" and select the Magisk zip file. If you see "signature verification failed warning", select "Yes"
 5. Wait for the installation to complete.
 6. After it's done, reboot your phone, and you have successfully flashed Magisk.
+
+## Alternative method
+
+Another method of installing to install magisk, is by patching the boot image of the ROM.
+
+1. Dump/extract the boot image from the rom (if its a fastboot type of ROM, simply click it, and extract the `boot.img` file. If it isnt [you see other files, like payload.bin], you will need to use an [payload_dumper](https://github.com/vm03/payload_dumper))
+2. Copy the extracted `boot.img` to your phone
+3. Install the magisk APK, and launch it
+4. Click on "install, "select and patch a file", and select the `boot.img` file
+5. After a few seconds, a new file in your `Download` (`/sdcard/Download`) folder will appear, looking like this: `magisk_patched-xyzxyz-xyzxyz.img`. Copy/move it to your PC
+6. Reboot your phone into fastboot mode (reboot, and when the screen goes dark, hold the volume down key)
+7. On your PC, go to `platform_tools` ([check the guide](/help/platform-tools)) and launch the termninal, and flash the patched boot image file with fastboot: "`fastboot flash boot `" (dont forget the space), drag and drop the patched image to the cmd window, and press enter. After its done, `fastboot reboot`
+8. Launch magisk, if it asks to reboot, do so (direct install), and thats it. You have flashed magisk.

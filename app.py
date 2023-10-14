@@ -25,10 +25,13 @@ class Statistics:
 
     def __init__(self):
         """init"""
-        
+
         self.visitors = 0
         self.deployed = (
-            str(datetime.datetime.now(datetime.UTC).strftime("%A %d %B %Y, %I:%M:%S %p")) + " (UTC)"
+            str(
+                datetime.datetime.now(datetime.UTC).strftime("%A %d %B %Y, %I:%M:%S %p")
+            )
+            + " (UTC)"
         )
 
     def update(self):
@@ -227,4 +230,4 @@ def page_not_found(e):
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0") # debug=True, use_reloader=True)
+    app.run(host="0.0.0.0", debug=True, use_reloader=True)
