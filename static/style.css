@@ -1,10 +1,16 @@
+:root {
+    --accent-color: #9bcbfb;
+    --background-color: rgb(26, 28, 30);
+    --text-color: #cacaca;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    color: #cacaca; /* rgba(255, 255, 245, .86); */
-    background-color: #1e1e20;
+    color: var(--text-color); /* rgba(255, 255, 245, .86); */
+    background-color: var(--background-color);
     margin: 1em auto;
     max-width: 40em;
     padding: 0 0.92em 3.24em;
@@ -12,7 +18,7 @@ body {
 }
 
 .colored::first-letter {
-    color: #9bcbfb;
+    color: var(--accent-color);
 }
 
 h1,
@@ -22,7 +28,7 @@ h2 {
 
 a {
     cursor: pointer;
-    color: #9bcbfb;
+    color: var(--accent-color);
     text-decoration: none;
 }
 
