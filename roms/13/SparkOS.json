@@ -2,15 +2,16 @@
     "name": "SparkOS",
     "version": "13.8",
     "maintainer": "bakka",
-    "date_release": "23/09/2023",
-    "changelog": "$LSMerged September security patches$LE$LSRedesigned Package Installer$LE$LSAdded optional double tap to doze$LE$LSAdded screenshot sound toggle$LE$LSImproved Launcher$LE$LSAdded desktop mode$LE$LSImproved toast notifications$LE$LSImproved blur$LE$LSEnabled split shade on landscape qs$LE$LSReworked lock screen ripple",
+    "date_release": "18/10/2023",
+    "changelog": "$LSAdded DocumentsUI (so print to pdf and other kind of bugs fixed)$LE$LSAdded Markup thing (so editing after screenshot will work)$LE$LSTried to reduce even more corner's border size (even tho i think nothing changed)$LE$LSAdded status bar padding control$LE$LSAdded possibility to always see media time.",
     "status": "Unofficial",
     "support": "https://t.me/SparkOS_group_laurel",
     "rdp": "No",
+    "notes": "Gapps variant only available",
     "downloads": {
         "editions": {
-            "vanilla": null,
-            "gapps": "https://mega.nz/file/xSl0lYYI#oIts0fnK8yX64AHhDDvML9Cj7CoFhMCuH2gpfWMNLj8"
+            "mediafire-mirror": "https://www.mediafire.com/file/cfaqptvsql3mzzp/Spark-13.8-UNOFFICIAL-laurel_sprout-20231018-gapps.zip/file",
+            "mega-mirror": "https://mega.nz/file/ELsmQZTT#358F4Cy0s_dmSVQXFzIVI5NQgKWBmLdRjql3YmOqsIc"
         }
     }
 }
