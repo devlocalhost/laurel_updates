@@ -17,7 +17,7 @@ app = Flask(" -- laurel_updates -- ")
 cache = FileSystemCache(".flask_cache")
 
 nl = "\n"
-android_versions = ["roms/13", "roms/12", "roms/11"]
+android_versions = ["roms/14", "roms/13", "roms/12", "roms/11"]
 
 
 class Statistics:
