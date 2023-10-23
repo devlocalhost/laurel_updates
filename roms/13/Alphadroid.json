@@ -1,0 +1,17 @@
+{
+    "name": "Alphadroid",
+    "version": "1.10",
+    "maintainer": "RAYAN",
+    "date_release": "23/10/2023",
+    "changelog": "$LSimproved udfps dim framework$LE$LSupstreamed kernel (Mansoon) to latest version$LE$LSimproved sound and fixed mic issue$LE$LSoptimized over all kernel for better performance and battery backup$LE$LSScreen of fod working fine",
+    "status": "Unofficial",
+    "support": "https://t.me/A12_miA3",
+    "rdp": "Yes",
+    "notes": "Gapps only",
+    "downloads": {
+        "editions": {
+            "vanilla": null,
+            "gapps": "https://sourceforge.net/projects/rayanroms/files/xiaomi/AlphaDroid-13.0-20231023-laurel_sprout-gapps-v1.10.zip/download"
+        }
+    }
+}
