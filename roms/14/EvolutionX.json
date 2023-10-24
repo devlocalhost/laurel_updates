@@ -8,6 +8,7 @@
     "support": "https://t.me/EvoX_Mi_A3",
     "rdp": "No",
     "notes": "ALPHA RELEASE!!!!! Bugs: Camera, FOD, Encryption, Selinux permissive, Maybe more",
+    "banner": "/static/img/banner_evox.jpg",
     "downloads": {
         "editions": {
             "vanilla": null,

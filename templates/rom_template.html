@@ -4,7 +4,7 @@
         <title>laurel_updates - {{ data["name"] }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="/static/style.css" />
+        <link rel="stylesheet" href="/static/css/style.css" />
         <style>
             #additional_info {
                 display: none;
@@ -13,11 +13,21 @@
             #additional_info:target {
                 display: block;
             }
+
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 97%;
+                border: 5px solid #9bcbfb;
+                border-radius: 15px;
+            }
         </style>
     </head>
     <body>
         <a href="/roms"><h4 class="colored">← ROMs</h4></a>
         <h1 class="colored">{{ data["name"] }} ({{ data["status"] }})</h1>
+        <img src="{{ data["banner"] }}" alt="{{ data["name"] }} banner" />
+
         <p>Maintainer: {{ data["maintainer"] }}</p>
         <p>Release date: {{ data["date_release"] }}</p>
         <p>Version: {{ data["version"] }}</p>
