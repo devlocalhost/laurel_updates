@@ -7,6 +7,7 @@
     "status": "Official",
     "support": "https://t.me/syberia_laurel_sprout",
     "rdp": "Yes",
+    "banner": "/static/img/banner_pixelmagic.jpg",
     "downloads": {
         "editions": {
             "vanilla": null,

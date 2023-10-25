@@ -7,6 +7,7 @@
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
+    "banner": "/static/img/banner_los18.jpg",
     "downloads": {
         "editions": {
             "vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-20230620-UNOFFICIAL-laurel_sprout-vanilla.zip",

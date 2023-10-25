@@ -8,6 +8,7 @@
     "support": "https://t.me/syberia_laurel_sprout",
     "rdp": "No",
     "notes": "ALPHA RELEASE!!!!! Bugs: Camera, FOD, Encryption, Selinux permissive, Maybe more",
+    "banner": "/static/img/banner_pe_kyryll.jpg",
     "downloads": {
         "editions": {
             "vanilla": null,

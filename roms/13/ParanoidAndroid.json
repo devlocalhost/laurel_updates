@@ -7,6 +7,7 @@
     "status": "Unofficial",
     "support": "https://t.me/pa_laurel",
     "rdp": "No",
+    "banner": "/static/img/banner_pa.jpg",
     "downloads": {
         "editions": {
             "vanilla": null,

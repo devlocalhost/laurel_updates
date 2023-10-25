@@ -8,6 +8,7 @@
     "support": "https://t.me/SparkOS_group_laurel",
     "rdp": "No",
     "notes": "Gapps variant only available",
+    "banner": "/static/img/banner_sparkos.jpg",
     "downloads": {
         "editions": {
             "mediafire-mirror": "https://www.mediafire.com/file/cfaqptvsql3mzzp/Spark-13.8-UNOFFICIAL-laurel_sprout-20231018-gapps.zip/file",

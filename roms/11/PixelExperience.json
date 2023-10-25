@@ -8,6 +8,7 @@
     "support": "https://t.me/PePlus_MiA3",
     "rdp": "no",
     "notes": "Google apps are pre-included, hence it isn't needed to flash them on-top, Custom Recovery not included, OSS vendor based, Android 11 firmware Based. Make sure you read <a href='https://xdaforums.com/t/rom-11-mi-a3-pixelexperience-aosp.4241751/'>the xda post</a> before flashing",
+    "banner": "/static/img/banner_pe_rudra.jpg",
     "downloads": {
         "editions": {
             "normal": "https://sourceforge.net/projects/laurel-sprout/files/PixelExperience/July/PixelExperience_laurel_sprout-11.0-20210721-0531-UNOFFICIAL.zip/download",

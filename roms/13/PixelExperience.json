@@ -8,6 +8,7 @@
     "support": "https://t.me/A3PEPlus",
     "rdp": "Yes",
     "notes": "Custom kernel/recovery are not supported.",
+    "banner": "/static/img/banner_pe_fey.jpg",
     "downloads": {
         "editions": {
             "vanilla": null,
