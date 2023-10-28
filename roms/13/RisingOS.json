@@ -1,0 +1,18 @@
+{
+    "name": "RisingOS",
+    "version": "v1.4 - Elysium-EOL",
+    "maintainer": "RAYAN",
+    "date_release": "25/10/2023",
+    "changelog": "$LSbattery backup improved$LE$LSreverted shit volume high boost$LE$LSfixed messed commits$LE$LSupstreamed Mansoon kernel to latest version",
+    "status": "Unofficial",
+    "support": "https://t.me/riceDroid_laurelSprout",
+    "rdp": "Unknown",
+    "notes": "Clean flash is highly recommended. Report bugs with proper logs and information in support group.",
+    "banner": "/static/img/banner_rising.jpg",
+    "downloads": {
+        "editions": {
+            "vanilla": null,
+            "gapps": "https://sourceforge.net/projects/rayanroms/files/xiaomi/risingOS-v1.4-Elysium-FINAL-202310250740-laurel_sprout-GAPPS-OFFICIAL.zip/download"
+        }
+    }
+}
