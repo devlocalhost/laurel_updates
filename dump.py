@@ -5,7 +5,7 @@ import json
 from pprint import pprint
 
 if len(sys.argv) != 15:
-    sys.exit(f"Incorrect argument count, got {len(sys.argv)}, need 14")
+    sys.exit(f"Incorrect argument count, got {len(sys.argv)}, need 15")
 
 data = {
     "name": sys.argv[1],
