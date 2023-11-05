@@ -13,9 +13,45 @@ body {
     background-color: var(--background-color);
     margin: 1em auto;
     max-width: 40em;
-    padding: 0 0.92em 3.24em;
     font: 1.2em/1.62 sans-serif;
+    /* padding: 0 0.92em 3.24em; */
+    padding: 0 0.92em 3.24em 0.92em;
 }
+
+@media (max-width: 767px) {
+    /* CSS for mobile devices */
+    .navbar {
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) {
+    /* CSS for larger screens (not mobile) */
+    .navbar {
+        display: none;
+    }
+}
+
+.navbar {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #303030;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar a {
+    font-family: monospace;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
 
 .colored::first-letter {
     color: var(--accent-color);

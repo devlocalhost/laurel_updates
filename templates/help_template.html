@@ -8,7 +8,8 @@
 
         <style>
             code {
-                font-size: 1.2em;
+                /* font-size: 1.2em; */
+                background-color: #343434;
             }
         </style>
     </head>
@@ -16,5 +17,13 @@
         <a href="/help"><h4 class="colored">← Help</h4></a>
         <h1 class="colored">{{ title }}</h1>
         <p>{{ data | safe }}</p>
+
+        <div class="navbar">
+            <a href="/" class="nav-item">Home</a>
+            <a href="/roms" class="nav-item">ROMs</a>
+            <a href="/kernels" class="nav-item">Kernels</a>
+            <a href="https://t.me/dev6400" class="nav-item">Contact</a>
+        </div>
+
     </body>
 </html>
