@@ -2,6 +2,7 @@
     --accent-color: #9bcbfb;
     --background-color: rgb(26, 28, 30);
     --text-color: #cacaca;
+    --animation-speed: 0.25s;
 }
 
 html {
@@ -16,6 +17,8 @@ body {
     font: 1.2em/1.62 sans-serif;
     /* padding: 0 0.92em 3.24em; */
     padding: 0 0.92em 3.24em 0.92em;
+    opacity: 0;
+    animation: fadeIn var(--animation-speed) ease forwards;
 }
 
 @media (max-width: 767px) {
@@ -52,7 +55,6 @@ body {
     padding: 13px 0;
 }
 
-
 .colored::first-letter {
     color: var(--accent-color);
 }
@@ -73,4 +75,26 @@ hr {
     height: 4px;
     border-radius: 5px;
     background-color: #777;
+}
+
+.fade-out {
+    animation: fadeOut var(--animation-speed) ease backwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }

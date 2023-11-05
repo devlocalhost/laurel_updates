@@ -22,7 +22,9 @@
         <p>Release date: {{ data["date_release"] }}</p>
         <p>Version: {{ data["version"] }}</p>
 
-        <a href="#additional_info">Additional information</a>
+        <a href="#additional_info" class="no-fade-animation"
+            >Additional information</a
+        >
         <div id="additional_info">
             {% if data["changelog"].startswith('http') or
             data["changelog"].startswith('https') %}
@@ -59,5 +61,7 @@
             <a href="/help" class="nav-item">Help</a>
             <a href="https://t.me/dev6400" class="nav-item">Contact</a>
         </div>
+
+        <script src="/static/js/script.js"></script>
     </body>
 </html>
