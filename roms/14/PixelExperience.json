@@ -2,17 +2,17 @@
     "name": "Pixel Experience",
     "version": "14",
     "maintainer": "Magicxavi",
-    "date_release": "02/11/2023",
-    "changelog": "$LSFixed fod$LE$LSFixed network$LE$LSFixed camera",
+    "date_release": "06/11/2023",
+    "changelog": "$LSFixed encryption$LE$LSFixed Dynamic Partitions",
     "status": "Unofficial",
     "support": "https://t.me/syberia_laurel_sprout",
-    "rdp": "No",
-    "notes": "ALPHA RELEASE!!!!! Bugs: Encryption, Selinux permissive, Maybe more. Fastboot update ROM.",
+    "rdp": "Yes",
+    "notes": "ALPHA RELEASE!!!!! Bugs: Selinux permissive, Maybe more",
     "banner": "/static/img/banner_pe_kyryll.jpg",
     "downloads": {
         "editions": {
             "vanilla": null,
-            "gapps": "https://t.me/syberia_laurel_sprout/69689/90787"
+            "gapps": "https://t.me/syberia_laurel_sprout/69689/91060"
         }
     }
 }

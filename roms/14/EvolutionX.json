@@ -1,9 +1,9 @@
 {
     "name": "EvolutionX",
-    "version": "14",
-    "maintainer": "Magicxavi",
-    "date_release": "22/10/2023",
-    "changelog": "$LSInitial build",
+    "version": "8 (Tapa)",
+    "maintainer": "PowerX-NOT",
+    "date_release": "02/11/2023",
+    "changelog": "$LSInitial build$LE$LSSelinux permissive$LE$LSRest all works fine$LE",
     "status": "Unofficial",
     "support": "https://t.me/EvoX_Mi_A3",
     "rdp": "No",
@@ -12,7 +12,7 @@
     "downloads": {
         "editions": {
             "vanilla": null,
-            "gapps": "https://t.me/EvoX_Mi_A3/19646"
+            "gapps": "https://drive.google.com/file/d/1-VcO-mVEzG1e2AEcNsinwo8w3xBE0Tfj/view?usp=sharing"
         }
     }
 }
