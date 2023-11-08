@@ -149,7 +149,6 @@ def login():
 
 
 @app.route("/logout")
-@login_required
 def logout():
     session["logged_in"] = False
 
