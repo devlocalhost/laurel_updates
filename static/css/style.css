@@ -15,16 +15,15 @@ body {
     margin: 1em auto;
     max-width: 40em;
     font: 1.2em/1.62 sans-serif;
-    /* padding: 0 0.92em 3.24em; */
-    padding: 0 0.92em 3.24em 0.92em;
     opacity: 0;
+    padding: 0 0.92em 3.24em;
     animation: fadeIn var(--animation-speed) ease forwards;
 }
 
 @media (max-width: 767px) {
     /* CSS for mobile devices */
     .navbar {
-        display: flex;
+        display: flex; /* flex */
     }
 }
 

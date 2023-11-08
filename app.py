@@ -7,10 +7,11 @@ A website where ROMs and kernels developed for this device are posted here.
 
 import os
 import json
+import base64
 import mistune
 import datetime
 
-from flask import Flask, render_template, make_response
+from flask import Flask, render_template, make_response, request, url_for, redirect
 from cachelib.file import FileSystemCache
 
 app = Flask(" -- laurel_updates -- ")
@@ -92,6 +93,42 @@ def index():
 
     return generate_html("index.html")
 
+@app.route("/edit")
+def edit_route():
+    """rom & kernel files editing"""
+
+    """
+
+    return a list of roms and kernels (filenames), links
+    when clicked, redirect to /man/edit/FILENAME
+
+    """
+
+    return "edit route lol"
+
+@app.route("/edit/<file_name_b64>", methods=["GET", "POST"])
+def edit_file(file_name_b64):
+
+    filename = base64.b64decode(file_name_b64).decode()
+
+    if request.method == "GET":
+        with open(filename, encoding="utf-8") as file:
+            data = json.load(file)
+
+            return render_template("edit_file.html", data=data, filename=filename)
+
+    form_data = request.form.to_dict()
+
+    downloads = {"editions": {"vanilla": form_data["vanilla"], "gapps": form_data["gapps"]}}
+
+    form_data["downloads"] = downloads
+    form_data.pop("vanilla")
+    form_data.pop("gapps")
+
+    with open(filename, "w", encoding="utf-8") as file:
+        file.write(json.dumps(request.form, indent=4))
+
+    return redirect(url_for("edit_route"))
 
 @app.route("/stats")
 def stats():
