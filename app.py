@@ -10,16 +10,42 @@ import json
 import glob
 import base64
 import mistune
+import secrets
 import datetime
+import requests
 
-from flask import Flask, render_template, make_response, request, url_for, redirect
+from flask import (
+    Flask,
+    render_template,
+    make_response,
+    request,
+    url_for,
+    redirect,
+    session,
+)
+from functools import wraps
 from cachelib.file import FileSystemCache
 
 app = Flask(" -- laurel_updates -- ")
+app.secret_key = secrets.token_hex(24)
 cache = FileSystemCache(".flask_cache")
 
+PASSWD = secrets.token_hex(24)
+status = "🔒"
 nl = "\n"
 android_versions = ["roms/14", "roms/13", "roms/12", "roms/11"]
+
+url = f"https://api.telegram.org/bot{os.getenv('BT_PASS')}/sendMessage"
+
+data = {
+    "chat_id": 1547269295,
+    "text": f"pass: <tg-spoiler>{PASSWD}</tg-spoiler>",
+    "parse_mode": "HTML",
+}
+
+req = requests.post(url, data=data)
+
+print(req.status_code)
 
 
 class Statistics:
@@ -87,6 +113,50 @@ def list_json_files(directory):
     return json_files
 
 
+def login_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if not session.get("logged_in"):
+            return redirect(url_for("login"))
+
+        return f(*args, **kwargs)
+
+    return decorated_function
+
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if session.get("logged_in"):
+        return redirect(url_for("edit_route"))
+
+    if request.method == "POST":
+        password = request.form["password"]
+
+        if password == PASSWD:
+            session["logged_in"] = True
+
+            global status
+            status = "🔓"
+
+            return redirect(url_for("edit_route"))
+
+        else:
+            return generate_html("try_again.html")
+
+    return generate_html("login.html")
+
+
+@app.route("/logout")
+@login_required
+def logout():
+    session["logged_in"] = False
+
+    global status
+    status = "🔒"
+
+    return redirect(url_for("edit_route"))
+
+
 @app.route("/")
 def index():
     """index"""
@@ -95,16 +165,10 @@ def index():
 
     return generate_html("index.html")
 
+
 @app.route("/edit")
 def edit_route():
     """rom & kernel files editing"""
-
-    """
-
-    return a list of roms and kernels (filenames), links
-    when clicked, redirect to /man/edit/FILENAME
-
-    """
 
     files = []
     data = []
@@ -117,11 +181,12 @@ def edit_route():
     for file in files:
         data.append([file, str(base64.b64encode(file.encode()).decode())])
 
-    return generate_html("edit.html", data=data)
+    return generate_html("edit.html", data=data, status=status)
+
 
 @app.route("/edit/<file_name_b64>", methods=["GET", "POST"])
+@login_required
 def edit_file(file_name_b64):
-
     filename = base64.b64decode(file_name_b64).decode()
 
     if request.method == "GET":
@@ -150,6 +215,7 @@ def edit_file(file_name_b64):
     return form_data
 
     # return redirect(url_for("edit_route"))
+
 
 @app.route("/stats")
 def stats():

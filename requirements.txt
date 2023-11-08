@@ -2,3 +2,4 @@ Flask
 cachelib
 gunicorn
 mistune
+python-dotenv
