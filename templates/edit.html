@@ -6,7 +6,7 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="/static/css/style.css" />
     </head>
-    <body>
+    <body id="top">
         <h4><a href="/">← laurel_updates | {{ status }} # </a><a href="/login">🔓</a> • <a href="/logout">🔒</a> • <a href="/getpw">📩</a> • <a href="/respw">🔄</a></h4>
 
         <h1 class="colored">Edit</h1>
@@ -20,6 +20,11 @@
                 </li>
             {% endfor %}
         </ul>
+
+        <p style="text-align: center">
+            <a href="#top" class="no-fade-animation">↑↑↑</a>
+        </p>
+
 
         <div class="navbar">
             <a href="/roms" class="nav-item">ROMs</a>

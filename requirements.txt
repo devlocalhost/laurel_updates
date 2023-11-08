@@ -3,3 +3,4 @@ cachelib
 gunicorn
 mistune
 python-dotenv
+requests

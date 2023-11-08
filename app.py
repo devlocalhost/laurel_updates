@@ -166,6 +166,15 @@ def getpw():
     return redirect(url_for("edit_route"))
 
 
+@app.route("/respw")
+def respw():
+    global PASSWD
+    PASSWD = secrets.token_hex(48)
+
+    get_pass()
+
+    return redirect(url_for("edit_route"))
+
 @app.route("/")
 def index():
     """index"""
