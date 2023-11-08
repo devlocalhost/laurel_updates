@@ -7,6 +7,7 @@ A website where ROMs and kernels developed for this device are posted here.
 
 import os
 import json
+import glob
 import base64
 import mistune
 import datetime
@@ -64,6 +65,7 @@ def generate_html(template_name, **context):
     cache_key = f"{template_name}:{json.dumps(context, sort_keys=True)}"
 
     cached_html = cache.get(cache_key)
+
     if cached_html is not None and cached_html["mtime"] == template_mtime:
         return cached_html["html"]
 
@@ -104,7 +106,18 @@ def edit_route():
 
     """
 
-    return "edit route lol"
+    files = []
+    data = []
+
+    roms = glob.glob("roms/*/*")
+    kernels = glob.glob("kernels/*")
+
+    files = roms + kernels
+
+    for file in files:
+        data.append([file, str(base64.b64encode(file.encode()).decode())])
+
+    return generate_html("edit.html", data=data)
 
 @app.route("/edit/<file_name_b64>", methods=["GET", "POST"])
 def edit_file(file_name_b64):
@@ -118,8 +131,6 @@ def edit_file(file_name_b64):
             return render_template("edit_file.html", data=data, filename=filename)
 
     form_data = request.form.to_dict()
-
-    # downloads = {"editions": {"vanilla": form_data["vanilla"].replace("None", None), "gapps": form_data["gapps"].replace("None", None)}}
 
     editions = ["vanilla", "gapps"]
     downloads = {
@@ -136,7 +147,9 @@ def edit_file(file_name_b64):
     with open(filename, "w", encoding="utf-8") as file:
         file.write(json.dumps(form_data, indent=4))
 
-    return form_data # redirect(url_for("edit_route"))
+    return form_data
+
+    # return redirect(url_for("edit_route"))
 
 @app.route("/stats")
 def stats():

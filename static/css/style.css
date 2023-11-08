@@ -21,14 +21,12 @@ body {
 }
 
 @media (max-width: 767px) {
-    /* CSS for mobile devices */
     .navbar {
-        display: flex; /* flex */
+        display: flex;
     }
 }
 
 @media (min-width: 768px) {
-    /* CSS for larger screens (not mobile) */
     .navbar {
         display: none;
     }
@@ -39,7 +37,6 @@ body {
     margin: 0 auto;
     background-color: #303030;
     border-radius: 15px 15px 0 0;
-    display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
