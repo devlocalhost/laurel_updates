@@ -119,14 +119,14 @@ def edit_file(file_name_b64):
 
     form_data = request.form.to_dict()
 
-    downloads = {"editions": {"vanilla": form_data["vanilla"], "gapps": form_data["gapps"]}}
+    downloads = {"editions": {"vanilla": form_data["vanilla"].strip('"'), "gapps": form_data["gapps"].strip('"')}}
 
     form_data["downloads"] = downloads
     form_data.pop("vanilla")
     form_data.pop("gapps")
 
     with open(filename, "w", encoding="utf-8") as file:
-        file.write(json.dumps(request.form, indent=4))
+        file.write(json.dumps(form_data, indent=4))
 
     return redirect(url_for("edit_route"))
 
