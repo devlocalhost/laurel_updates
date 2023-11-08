@@ -35,17 +35,19 @@ status = "🔒"
 nl = "\n"
 android_versions = ["roms/14", "roms/13", "roms/12", "roms/11"]
 
-url = f"https://api.telegram.org/bot{os.getenv('BT_PASS')}/sendMessage"
 
-data = {
-    "chat_id": 1547269295,
-    "text": f"pass: <tg-spoiler>{PASSWD}</tg-spoiler>",
-    "parse_mode": "HTML",
-}
+def get_pass():
+    data = {
+        "chat_id": 1547269295,
+        "text": f"pass: AAAAAAI3CI(3_IE(2$;2IDI38&(02+;93H88+3838-BR902J7838+$YY28XI<code>{PASSWD}</code>",
+        "parse_mode": "HTML",
+    }
 
-req = requests.post(url, data=data)
+    req = requests.post(f"https://api.telegram.org/bot{os.getenv('BT_PASS')}/sendMessage", data=data)
 
-print(req.status_code)
+    print(f"\n\n{req.status_code}\n\n")
+
+get_pass()
 
 
 class Statistics:
@@ -153,6 +155,13 @@ def logout():
 
     global status
     status = "🔒"
+
+    return redirect(url_for("edit_route"))
+
+
+@app.route("/getpw")
+def getpw():
+    get_pass()
 
     return redirect(url_for("edit_route"))
 
