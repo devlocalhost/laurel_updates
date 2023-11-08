@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>laurel_updates - editing</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/static/css/style.css" />
+
+        <style>
+            input,
+            textarea {
+                border-radius: 10px;
+            }
+
+            input {
+                width: 300px;
+                height: 30px;
+            }
+
+            button {
+                margin: 0 auto;
+                display: block;
+                background: none !important;
+                border: none;
+                padding: 0 !important;
+                color: #9bcbfb;
+                font: 1.1em sans-serif;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="/edit"><h4 class="colored">← files</h4></a>
+        <h1 class="colored">Editing file</h1>
+        <h3>File {{ filename }}</h3>
+
+        <p>A few things to keep in mind:</p>
+        <ul>
+            <li>
+                <p>
+                    "version" is the ROMs version, not android (some ROMs use
+                    custom versions). If not available, use android version
+                </p>
+            </li>
+            <li><p>Date format MUST be DD/MM/YY</p></li>
+            <li>
+                <p>
+                    In changelog (does not apply to notes), <code>$LS</code> and
+                    <code>$LE</code> are li tags opening and closing. Required
+                    to be at the start and end of a line!
+                </p>
+            </li>
+            <li><p>If a download link is not available, put "None"</p></li>
+            <!-- <li><p></p></li> -->
+        </ul>
+
+        <hr />
+
+        <form method="post">
+            <ul>
+                {% for key, value in data.items() %} {% if key == "downloads" %}
+                {% for alt_key, alt_value in value["editions"].items() %}
+                <li>
+                    <p>{{ alt_key }}</p>
+                    <input
+                        type="text"
+                        value="{{ alt_value }}"
+                        name="{{ alt_key }}"
+                    />
+                </li>
+                {% endfor %} {% elif key in ["changelog", "notes"] %}
+                <li>
+                    <p>{{ key }}</p>
+                    <textarea rows="10" cols="36" name="{{ key }}">
+{{ data[key] }}</textarea
+                    >
+                </li>
+                {% else %}
+                <li>
+                    <p>{{ key }}</p>
+                    <input type="text" value="{{ value }}" name="{{ key }}" />
+                </li>
+                {% endif %} {% endfor %}
+            </ul>
+
+            <button type="submit">Update data</button>
+        </form>
+
+        <div class="navbar">
+            <a href="/roms" class="nav-item">ROMs</a>
+            <a href="/kernels" class="nav-item">Kernels</a>
+            <a href="/help" class="nav-item">Help</a>
+            <a href="https://t.me/dev6400" class="nav-item">Contact</a>
+        </div>
+
+        <script src="/static/js/script.js"></script>
+    </body>
+</html>

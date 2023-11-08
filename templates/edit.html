@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>laurel_updates - edit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/static/css/style.css" />
+    </head>
+    <body>
+        <a href="/"><h4 class="colored">← laurel_updates</h4></a>
+        <h1 class="colored">File updating</h1>
+
+        <p>Select which file to edit</p>
+
+        <ul>
+            {% for file in data %}
+                <li>
+                    <a href="edit/{{ file[1] }}">{{ file[0] }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <div class="navbar">
+            <a href="/roms" class="nav-item">ROMs</a>
+            <a href="/kernels" class="nav-item">Kernels</a>
+            <a href="/help" class="nav-item">Help</a>
+            <a href="https://t.me/dev6400" class="nav-item">Contact</a>
+        </div>
+
+        <script src="/static/js/script.js"></script>
+    </body>
+</html>
