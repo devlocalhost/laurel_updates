@@ -119,7 +119,15 @@ def edit_file(file_name_b64):
 
     form_data = request.form.to_dict()
 
-    downloads = {"editions": {"vanilla": form_data["vanilla"].strip('"'), "gapps": form_data["gapps"].strip('"')}}
+    # downloads = {"editions": {"vanilla": form_data["vanilla"].replace("None", None), "gapps": form_data["gapps"].replace("None", None)}}
+
+    editions = ["vanilla", "gapps"]
+    downloads = {
+        "editions": {
+            edition: None if form_data[edition] == "None" else form_data[edition]
+            for edition in editions
+        }
+    }
 
     form_data["downloads"] = downloads
     form_data.pop("vanilla")
@@ -128,7 +136,7 @@ def edit_file(file_name_b64):
     with open(filename, "w", encoding="utf-8") as file:
         file.write(json.dumps(form_data, indent=4))
 
-    return redirect(url_for("edit_route"))
+    return form_data # redirect(url_for("edit_route"))
 
 @app.route("/stats")
 def stats():
