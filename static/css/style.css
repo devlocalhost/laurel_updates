@@ -9,6 +9,14 @@ html {
     scroll-behavior: smooth;
 }
 
+ul, ol {
+    background: #303030;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 11px;
+    border-radius: 15px;
+}
+
 body {
     color: var(--text-color); /* rgba(255, 255, 245, .86); */
     background-color: var(--background-color);
@@ -35,7 +43,7 @@ body {
 .navbar {
     width: 95%;
     margin: 0 auto;
-    background-color: #303030;
+    background-color: #292929;
     border-radius: 15px 15px 0 0;
     justify-content: space-around;
     align-items: center;
