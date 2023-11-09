@@ -43,9 +43,12 @@ def get_pass():
         "parse_mode": "HTML",
     }
 
-    req = requests.post(f"https://api.telegram.org/bot{os.getenv('BT_PASS')}/sendMessage", data=data)
+    req = requests.post(
+        f"https://api.telegram.org/bot{os.getenv('BT_PASS')}/sendMessage", data=data
+    )
 
     print(f"\n\n{req.status_code}\n\n")
+
 
 get_pass()
 
@@ -174,6 +177,7 @@ def respw():
 
     return redirect(url_for("edit_route"))
 
+
 @app.route("/")
 def index():
     """index"""
@@ -214,13 +218,11 @@ def edit_file(file_name_b64):
 
     form_data = request.form.to_dict()
 
-    editions = ["vanilla", "gapps"]
-    downloads = {
-        "editions": {
-            edition: None if form_data[edition] == "None" else form_data[edition]
-            for edition in editions
-        }
+    editions_data = {
+        edition: None if form_data[edition] == "None" else form_data[edition]
+        for edition in form_data
     }
+    downloads = {"editions": editions_data}
 
     form_data["downloads"] = downloads
     form_data.pop("vanilla")
@@ -371,4 +373,4 @@ def page_not_found(e):
 
 
 if __name__ == "__main__":
-    app.run() # host="0.0.0.0", debug=True, use_reloader=True)
+    app.run()  # host="0.0.0.0", debug=True, use_reloader=True)

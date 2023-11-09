@@ -24,7 +24,7 @@
                 border: none;
                 padding: 0 !important;
                 color: #9bcbfb;
-                font: 1.1em sans-serif;
+                font: 1em sans-serif;
                 text-decoration: underline;
                 cursor: pointer;
             }
@@ -38,20 +38,16 @@
         <p>A few things to keep in mind:</p>
         <ul>
             <li>
-                <p>
-                    "version" is the ROMs version, not android (some ROMs use
-                    custom versions). If not available, use android version
-                </p>
+                "version" is the ROMs version, not android (some ROMs use custom
+                versions). If not available, use android version
             </li>
-            <li><p>Date format MUST be DD/MM/YY</p></li>
+            <li>Date format MUST be DD/MM/YY</li>
             <li>
-                <p>
-                    In changelog (does not apply to notes), <code>$LS</code> and
-                    <code>$LE</code> are li tags opening and closing. Required
-                    to be at the start and end of a line!
-                </p>
+                In changelog (does not apply to notes), <code>$LS</code> and
+                <code>$LE</code> are li tags opening and closing. Required to be
+                at the start and end of a line!
             </li>
-            <li><p>If a download link is not available, put "None"</p></li>
+            <li>If a download link is not available, put "None"</li>
             <!-- <li><p></p></li> -->
         </ul>
 
@@ -62,24 +58,30 @@
                 {% for key, value in data.items() %} {% if key == "downloads" %}
                 {% for alt_key, alt_value in value["editions"].items() %}
                 <li>
-                    <p>{{ alt_key }}</p>
+                    {{ alt_key }}
                     <input
                         type="text"
                         value="{{ alt_value }}"
                         name="{{ alt_key }}"
                     />
+                    <br />
+                    <br />
                 </li>
                 {% endfor %} {% elif key in ["changelog", "notes"] %}
                 <li>
-                    <p>{{ key }}</p>
+                    {{ key }}
                     <textarea rows="10" cols="36" name="{{ key }}">
 {{ data[key] }}</textarea
                     >
+                    <br />
+                    <br />
                 </li>
                 {% else %}
                 <li>
-                    <p>{{ key }}</p>
+                    {{ key }}
                     <input type="text" value="{{ value }}" name="{{ key }}" />
+                    <br />
+                    <br />
                 </li>
                 {% endif %} {% endfor %}
             </ul>
@@ -88,6 +90,7 @@
         </form>
 
         <div class="navbar">
+            <a href="/" class="nav-item">Home</a>
             <a href="/roms" class="nav-item">ROMs</a>
             <a href="/kernels" class="nav-item">Kernels</a>
             <a href="/help" class="nav-item">Help</a>
