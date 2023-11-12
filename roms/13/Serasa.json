@@ -1,0 +1,17 @@
+{
+    "name": "Serasa",
+    "version": "13.1",
+    "maintainer": "RAYAN",
+    "date_release": "12/11/2023",
+    "changelog": "$LSInitial build$LE",
+    "status": "Unknown",
+    "support": "https://t.me/A12_miA3",
+    "rdp": "Yes",
+    "notes": null,
+    "downloads": {
+        "editions": {
+            "vanilla": null,
+            "gapps": "https://sourceforge.net/projects/rayanroms/files/xiaomi/Serasa-13.1-OFFICIAL-laurel_sprout-20231112-gapps.zip/download"
+        }
+    }
+}
