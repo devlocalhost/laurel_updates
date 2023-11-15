@@ -1,18 +1,18 @@
 {
     "name": "EvolutionX",
-    "version": "8 (Tapa)",
+    "version": "8.0.2 (Turon)",
     "maintainer": "PowerX-NOT",
-    "date_release": "02/11/2023",
-    "changelog": "$LSInitial build$LE$LSSelinux permissive$LE$LSRest all works fine$LE",
+    "date_release": "15/11/2023",
+    "changelog": "$LSInitial build$LE",
     "status": "Unofficial",
     "support": "https://t.me/EvoX_Mi_A3",
-    "rdp": "No",
-    "notes": "ALPHA RELEASE!!!!! Bugs: Camera, FOD, Encryption, Selinux permissive, Maybe more",
+    "rdp": "Yes",
+    "notes": "Clean flash is mandatory",
     "banner": "/static/img/banner_evox.jpg",
     "downloads": {
         "editions": {
             "vanilla": null,
-            "gapps": "https://drive.google.com/file/d/1-VcO-mVEzG1e2AEcNsinwo8w3xBE0Tfj/view?usp=sharing"
+            "gapps": "https://drive.google.com/file/d/1mmibVChpyMGMMMIMstcLS2Hm-hGNjDIs/view?usp=sharing"
         }
     }
 }
