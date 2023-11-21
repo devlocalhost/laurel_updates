@@ -1,15 +1,16 @@
 {
     "name": "No.912 (No.33)",
     "route_name": "no912",
-    "version": "4.14.329",
+    "version": "4.14.330",
     "maintainer": "Frank & Beatriz",
-    "date_release": "10/11/2023",
-    "changelog": "https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.329",
+    "date_release": "21/11/2023",
+    "changelog": "https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.330",
     "support": "https://t.me/No_912",
     "notes": "Warning: This kernel <strong>REQUIRES</strong> <a href=\"https://github.com/topjohnwu/Magisk/releases\">magisk</a> installed on your phone!! This kernel does not have kernelSU built in.",
+    "banner": "/static/img/banner_no912.jpg",
     "downloads": {
         "editions": {
-            "non-rdp": "https://t.me/No_912_Updates/389",
+            "non-rdp": "https://t.me/No_912_Updates/406",
             "rdp": null
         }
     }
