@@ -34,6 +34,14 @@
 
         <a href="#additional_info" class="no-fade-animation">Additional information</a>
         <div id="additional_info">
+            <h2>Changelog</h2>
+
+            <ul>
+                {{ data["changelog"].replace("$LS", "
+                <li>").replace("$LE", "</li>
+                ") | safe }}
+            </ul>
+
             <h2>Notes</h2>
             <ul>
                 {% if data["notes"] %}
@@ -50,14 +58,6 @@
                     <a href="{{ data['support'] }}">Support forum</a> before
                     flashing!!!
                 </li>
-            </ul>
-
-            <h2>Changelog</h2>
-
-            <ul>
-                {{ data["changelog"].replace("$LS", "
-                <li>").replace("$LE", "</li>
-                ") | safe }}
             </ul>
         </div>
 
