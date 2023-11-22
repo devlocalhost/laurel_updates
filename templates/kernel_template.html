@@ -31,29 +31,37 @@
         <img src="{{ data["banner"] }}" alt="{{ data["name"] }} banner" />
         {% endif %}
 
-        <p>Maintainer: {{ data["maintainer"] }}</p>
-        <p>Release date: {{ data["date_release"] }}</p>
-        <p>Version: {{ data["version"] }}</p>
+        <p>Maintainer: {{ data["maintainer"] }}<br />Release date: {{ data["date_release"] }}<br />Version: {{ data["version"] }}</p>
 
         <a href="#additional_info" class="no-fade-animation"
             >Additional information</a
         >
         <div id="additional_info">
-            {% if data["changelog"].startswith('http') or
-            data["changelog"].startswith('https') %}
-            <p>
-                Changelog:
-                <a href="{{ data['changelog'] }}">Changelog Link</a>
-            </p>
-            {% else %}
-            <p>Changelog: {{ data['changelog'] }}</p>
-            {% endif %}
-            <p>
-                Make sure you read the instructions in the
-                <a href="{{ data['support'] }}">Support forum</a>
-                before flashing!!!
-            </p>
-            <p>{{ data["notes"] | safe }}</p>
+            <h2>Changelog</h2>
+            <ul>
+                {% if data["changelog"].startswith('http') or
+                data["changelog"].startswith('https') %}
+                <li>
+                    <a href="{{ data['changelog'] }}">Changelog Link</a>
+                </li>
+                {% else %}
+                <li>{{ data['changelog'] }}</li>
+                {% endif %}
+            </ul>
+
+            <h2>Notes</h2>
+            <ul>
+                {% if data["notes"] %}
+                <li>{{ data["notes"] | safe }}</li>
+                {% endif %}
+
+                <li>
+                    Make sure you read the instructions in the
+                    <a href="{{ data['support'] }}">Support forum</a> before
+                    flashing!!!
+                </li>
+            </ul>
+
         </div>
 
         <hr />
