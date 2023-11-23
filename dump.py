@@ -30,7 +30,7 @@ data = {
 
 json_data = json.dumps(data, indent=4)
 
-confirm = input(json_data + "\n\nOK? y/n\n -> ")
+confirm = input(json_data + f"\nDump as roms/{sys.argv[13]}/{sys.argv[14]}.json, OK? y/n\n -> ")
 
 if confirm in ("y", ""):
     with open(f"roms/{sys.argv[13]}/{sys.argv[14]}.json", "w+") as json_file:

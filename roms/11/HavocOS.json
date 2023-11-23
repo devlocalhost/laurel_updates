@@ -1,0 +1,18 @@
+{
+    "name": "HavocOS",
+    "version": "4.24",
+    "maintainer": "RAYAN",
+    "date_release": "22/11/2023",
+    "changelog": "$LSAdded Octavi Dialer$LE$LSLawnchair added u can switch btw lawnchair and Defult launcher$LE$LSMiui camera included",
+    "status": "Unofficial (!?)",
+    "support": "https://t.me/riceDroid_laurelSprout",
+    "rdp": "No",
+    "notes": null,
+    "banner": "/static/img/banner_havoc.jpg",
+    "downloads": {
+        "editions": {
+            "vanilla": null,
+            "gapps": "https://sourceforge.net/projects/rayanroms/files/xiaomi/Havoc-OS-v4.24-20231122-laurel_sprout-Official-GApps.zip/download"
+        }
+    }
+}
