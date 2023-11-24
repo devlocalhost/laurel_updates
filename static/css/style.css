@@ -9,7 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 
-ul, ol {
+ul:not(.navbar_i), ol:not(.navbar_i) {
     background: #303030;
     padding-top: 11px;
     padding-bottom: 11px;
@@ -32,7 +32,9 @@ body {
 @media (min-width: 768px) {
     .navbar {
         inset: 10px 80% 20px 0;
-        width: 10%;
+        width: 8%;
+        top: 220px;
+        bottom: 220px;
     }
 }
 
@@ -40,7 +42,7 @@ body {
     display: flex;
     margin: 0 auto;
     background-color: #292929;
-    border-radius: 0px 15px 15px 0;
+    border-radius: 15px 15px 15px 15px;
     justify-content: space-around;
     align-items: center;
     position: fixed;
