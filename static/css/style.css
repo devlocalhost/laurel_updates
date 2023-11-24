@@ -28,22 +28,29 @@ body {
     animation: fadeIn var(--animation-speed) ease forwards;
 }
 
+@media (max-width: 767px) {
+    .navbar {
+        display: flex;
+    }
+}
 
 @media (min-width: 768px) {
     .navbar {
-        inset: 10px 80% 20px 0;
-        width: 10%;
+        display: none;
     }
 }
 
 .navbar {
-    display: flex;
+    width: 95%;
     margin: 0 auto;
     background-color: #292929;
-    border-radius: 0px 15px 15px 0;
+    border-radius: 15px 15px 0 0;
     justify-content: space-around;
     align-items: center;
     position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .navbar a {
