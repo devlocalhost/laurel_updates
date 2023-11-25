@@ -3,6 +3,9 @@
     --background-color: rgb(26, 28, 30);
     --text-color: #cacaca;
     --animation-speed: 0.25s;
+    --ul-ol-background-color: #303030;
+    --navbar-background-color: #292929;
+    --img-border-color: var(--accent-color);
 }
 
 html {
@@ -10,7 +13,7 @@ html {
 }
 
 ul, ol {
-    background: #303030;
+    background: var(--ul-ol-background-color);
     padding-top: 11px;
     padding-bottom: 11px;
     padding-right: 11px;
@@ -28,6 +31,14 @@ body {
     animation: fadeIn var(--animation-speed) ease forwards;
 }
 
+img {
+    display: block;
+    margin: 0 auto;
+    width: 97%;
+    border: 5px solid var(--img-border-color);
+    border-radius: 15px;
+}
+
 @media (max-width: 767px) {
     .navbar {
         display: flex;
@@ -43,7 +54,7 @@ body {
 .navbar {
     width: 95%;
     margin: 0 auto;
-    background-color: #292929;
+    background-color: var(--navbar-background-color);
     border-radius: 15px 15px 0 0;
     justify-content: space-around;
     align-items: center;
