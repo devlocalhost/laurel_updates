@@ -6,6 +6,7 @@
     --ul-ol-background-color: #303030;
     --navbar-background-color: #292929;
     --img-border-color: var(--accent-color);
+    --hr-color: #777;
 }
 
 html {
@@ -89,7 +90,7 @@ hr {
     border: none;
     height: 4px;
     border-radius: 5px;
-    background-color: #777;
+    background-color: var(--hr-color);
 }
 
 .fade-out {
