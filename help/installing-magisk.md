@@ -37,5 +37,5 @@ Another method of installing to install magisk, is by patching the boot image of
 4. Click on "install, "select and patch a file", and select the `boot.img` file
 5. After a few seconds, a new file in your `Download` (`/sdcard/Download`) folder will appear, looking like this: `magisk_patched-xyzxyz-xyzxyz.img`. Copy/move it to your PC
 6. Reboot your phone into fastboot mode (reboot, and when the screen goes dark, hold the volume down key)
-7. On your PC, go to `platform_tools` ([check the guide](/help/platform-tools)) and launch the termninal, and flash the patched boot image file with fastboot: "`fastboot flash boot `" (dont forget the space), drag and drop the patched image to the cmd window, and press enter. After its done, `fastboot reboot`
+7. On your PC, go to `platform_tools` ([check the guide](/help/platform-tools)) and launch the terminal, and flash the patched boot image file with fastboot: "`fastboot flash boot `" (dont forget the space), drag and drop the patched image to the cmd window, and press enter. After its done, `fastboot reboot`
 8. Launch magisk, if it asks to reboot, do so (direct install), and thats it. You have flashed magisk.

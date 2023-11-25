@@ -42,18 +42,18 @@ img {
 
 @media (max-width: 767px) {
     .navbar {
-        display: flex;
+        width: 95%;
     }
 }
 
 @media (min-width: 768px) {
     .navbar {
-        display: none;
+        width: 50%;
     }
 }
 
 .navbar {
-    width: 95%;
+    display: flex;
     margin: 0 auto;
     background-color: var(--navbar-background-color);
     border-radius: 15px 15px 0 0;
