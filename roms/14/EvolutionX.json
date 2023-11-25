@@ -7,7 +7,7 @@
     "status": "Unofficial",
     "support": "https://t.me/EvoX_Mi_A3",
     "rdp": "Yes",
-    "notes": "Clean flash is mandatory",
+    "notes": "Clean flash is mandatory, Selinux permissive",
     "banner": "/static/img/banner_evox_14.jpg",
     "downloads": {
         "editions": {
