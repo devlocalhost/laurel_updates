@@ -1,18 +1,18 @@
 {
     "name": "SparkOS",
-    "version": "13.8",
+    "version": "13.10",
     "maintainer": "bakka",
-    "date_release": "18/10/2023",
-    "changelog": "$LSAdded DocumentsUI (so print to pdf and other kind of bugs fixed)$LE$LSAdded Markup thing (so editing after screenshot will work)$LE$LSTried to reduce even more corner's border size (even tho i think nothing changed)$LE$LSAdded status bar padding control$LE$LSAdded possibility to always see media time.",
+    "date_release": "27/11/2023",
+    "changelog": "$LShttps://telegra.ph/SparkOS-1310-Source-CL-11-26$LE",
     "status": "Unofficial",
     "support": "https://t.me/SparkOS_group_laurel",
     "rdp": "No",
-    "notes": "Gapps variant only available",
+    "notes": "Flash <a href='/kernels/no912'>No.912</a> cuz it ma    kes all smoother",
     "banner": "/static/img/banner_sparkos.jpg",
     "downloads": {
         "editions": {
-            "mediafire-mirror": "https://www.mediafire.com/file/cfaqptvsql3mzzp/Spark-13.8-UNOFFICIAL-laurel_sprout-20231018-gapps.zip/file",
-            "mega-mirror": "https://mega.nz/file/ELsmQZTT#358F4Cy0s_dmSVQXFzIVI5NQgKWBmLdRjql3YmOqsIc"
+            "mediafire-mirror": "https://www.mediafire.com/file/xggobmcbyl06k1z/Spark-13.10-CUSTOM-laurel_sprout-20231127-gapps.zip/file",
+            "mega-mirror": "https://mega.nz/file/VK9kjL5D#xjzECMOz79ICPL8roU334-uJo-FX3AsSUnzjNWkBks8"
         }
     }
 }
