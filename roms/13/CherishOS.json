@@ -11,8 +11,8 @@
     "banner": "/static/img/banner_cherish.jpg",
     "downloads": {
         "editions": {
-            "vanilla": null,
-            "gapps": "https://sourceforge.net/projects/rayanroms/files/xiaomi/Cherish-OS-v4.12-20231005-1459-laurel_sprout-OFFICIAL-GApps.zip/download"
+            "Vanilla": null,
+            "Gapps": "https://sourceforge.net/projects/rayanroms/files/xiaomi/Cherish-OS-v4.12-20231005-1459-laurel_sprout-OFFICIAL-GApps.zip/download"
         }
     }
 }

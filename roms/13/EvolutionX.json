@@ -7,11 +7,12 @@
     "status": "Unofficial",
     "support": "https://t.me/EvoX_Mi_A3",
     "rdp": "Yes",
+    "notes": "Last android 13 build. Check out PowerX-NOT android 14 build of <a href='/roms/EvolutionX_14'>EvolutionX</a>",
     "banner": "/static/img/banner_evox_13.jpg",
     "downloads": {
         "editions": {
-            "vanilla": null,
-            "gapps": "https://drive.google.com/file/d/1pE_O9SaUKj3YC8v9GlVIJf8K0f86krnN/view?usp=sharing"
+            "Vanilla": null,
+            "Gapps": "https://drive.google.com/file/d/1pE_O9SaUKj3YC8v9GlVIJf8K0f86krnN/view?usp=sharing"
         }
     }
 }

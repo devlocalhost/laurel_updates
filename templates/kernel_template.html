@@ -42,6 +42,8 @@
             </ul>
 
             <h2>Notes</h2>
+            <a href="/help/what-is-rdp">What is RDP?</a>
+
             <ul>
                 {% if data["notes"] %}
                 <li>{{ data["notes"] | safe }}</li>
@@ -59,12 +61,11 @@
         <hr />
 
         <h2 class="colored">Downloads</h2>
-        <a href="/help/what-is-rdp">What is RDP!?</a>
 
         <ul>
             {% for edition, link in data["downloads"]["editions"].items() %} {%
             if link %}
-            <li><a href="{{ link }}">{{ edition.title() }}</a></li>
+            <li><a href="{{ link }}">{{ edition }}</a></li>
             {% endif %} {% endfor %}
         </ul>
 

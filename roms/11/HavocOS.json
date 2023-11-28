@@ -11,8 +11,8 @@
     "banner": "/static/img/banner_havoc.jpg",
     "downloads": {
         "editions": {
-            "vanilla": null,
-            "gapps": "https://sourceforge.net/projects/rayanroms/files/xiaomi/Havoc-OS-v4.24-20231122-laurel_sprout-Official-GApps.zip/download"
+            "Vanilla": null,
+            "Gapps": "https://sourceforge.net/projects/rayanroms/files/xiaomi/Havoc-OS-v4.24-20231122-laurel_sprout-Official-GApps.zip/download"
         }
     }
 }

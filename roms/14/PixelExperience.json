@@ -7,12 +7,12 @@
     "status": "Unofficial",
     "support": "https://t.me/syberia_laurel_sprout",
     "rdp": "Yes",
-    "notes": "ALPHA RELEASE!!!!! Bugs: Selinux permissive, Maybe more",
+    "notes": "$LSThis is an ALPHA RELEASE!!$LE$LSIssues: Selinux is permissive, and maybe more$LE$LSMagicxavi also maintains <a href='/roms/Syberia_13'>Syberia</a> and <a href='/roms/PixelMagic_13'>Pixel Magic</a>$LE",
     "banner": "/static/img/banner_pe_kyryll.jpg",
     "downloads": {
         "editions": {
-            "vanilla": null,
-            "gapps": "https://t.me/syberia_laurel_sprout/69689/91060"
+            "Vanilla": null,
+            "Gapps": "https://t.me/syberia_laurel_sprout/69689/91060"
         }
     }
 }

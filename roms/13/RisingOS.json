@@ -11,8 +11,8 @@
     "banner": "/static/img/banner_rising.jpg",
     "downloads": {
         "editions": {
-            "vanilla": null,
-            "gapps": "https://sourceforge.net/projects/rayanroms/files/xiaomi/risingOS-v1.4-Elysium-FINAL-202310250740-laurel_sprout-GAPPS-OFFICIAL.zip/download"
+            "Vanilla": null,
+            "Gapps": "https://sourceforge.net/projects/rayanroms/files/xiaomi/risingOS-v1.4-Elysium-FINAL-202310250740-laurel_sprout-GAPPS-OFFICIAL.zip/download"
         }
     }
 }

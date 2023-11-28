@@ -11,8 +11,8 @@
     "banner": "/static/img/banner_pixelos.jpg",
     "downloads": {
         "editions": {
-            "vanilla": null,
-            "gapps": "https://sourceforge.net/projects/zafeey-laurel-sprout/files/A13/23-11-2022/aosp_laurel_sprout-ota-retrofit-eng.zafeey.zip/download"
+            "Vanilla": null,
+            "Gapps": "https://sourceforge.net/projects/zafeey-laurel-sprout/files/A13/23-11-2022/aosp_laurel_sprout-ota-retrofit-eng.zafeey.zip/download"
         }
     }
 }

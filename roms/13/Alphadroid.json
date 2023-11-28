@@ -11,8 +11,8 @@
     "banner": "/static/img/banner_alphadroid.png",
     "downloads": {
         "editions": {
-            "vanilla": null,
-            "gapps": "https://sourceforge.net/projects/rayanroms/files/xiaomi/AlphaDroid-13.0-20231023-laurel_sprout-gapps-v1.10.zip/download"
+            "Vanilla": null,
+            "Gapps": "https://sourceforge.net/projects/rayanroms/files/xiaomi/AlphaDroid-13.0-20231023-laurel_sprout-gapps-v1.10.zip/download"
         }
     }
 }

@@ -7,11 +7,12 @@
     "status": "Unofficial",
     "support": "https://t.me/pa_laurel",
     "rdp": "No",
+    "notes": null,
     "banner": "/static/img/banner_pa.jpg",
     "downloads": {
         "editions": {
-            "vanilla": null,
-            "gapps": "https://drive.google.com/file/d/1WWppDao4Pr58a8zRJcG6NOoIZ64KYFHm/view?usp=drive_link"
+            "Vanilla": null,
+            "Gapps": "https://drive.google.com/file/d/1WWppDao4Pr58a8zRJcG6NOoIZ64KYFHm/view?usp=drive_link"
         }
     }
 }

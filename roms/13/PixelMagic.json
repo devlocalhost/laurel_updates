@@ -7,11 +7,12 @@
     "status": "Official",
     "support": "https://t.me/syberia_laurel_sprout",
     "rdp": "Yes",
+    "notes": "Magicxavi also maintains <a href='/roms/Syberia_13'>Syberia</a> and <a href='/roms/PixelExperience_14'>Pixel Experience</a>",
     "banner": "/static/img/banner_pixelmagic.jpg",
     "downloads": {
         "editions": {
-            "vanilla": null,
-            "gapps": "https://sourceforge.net/projects/bliss-rom-kenzo/files/PixelMagic_laurel/PixelMagic_laurel_sprout-13.0-20230812-1416-OFFICIAL.zip/download"
+            "Vanilla": null,
+            "Gapps": "https://sourceforge.net/projects/bliss-rom-kenzo/files/PixelMagic_laurel/PixelMagic_laurel_sprout-13.0-20230812-1416-OFFICIAL.zip/download"
         }
     }
 }

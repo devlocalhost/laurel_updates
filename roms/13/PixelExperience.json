@@ -11,8 +11,8 @@
     "banner": "/static/img/banner_pe_fey.jpg",
     "downloads": {
         "editions": {
-            "vanilla": null,
-            "gapps": "https://sourceforge.net/projects/zafeey-laurel-sprout/files/PixelExperience-Plus/7-10-2023/aosp_laurel_sprout-ota-retrofit-eng.zafeey.zip/download"
+            "Vanilla": null,
+            "Gapps": "https://sourceforge.net/projects/zafeey-laurel-sprout/files/PixelExperience-Plus/7-10-2023/aosp_laurel_sprout-ota-retrofit-eng.zafeey.zip/download"
         }
     }
 }

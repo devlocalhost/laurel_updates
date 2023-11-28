@@ -7,11 +7,12 @@
     "status": "Unofficial",
     "support": "https://t.me/A3PixelOS",
     "rdp": "Yes",
+    "notes": "zafeey has dropped PixelOS, and is now maintaining <a href='/roms/PixelExperience_13'>Pixel Experience</a>",
     "banner": "/static/img/banner_pixelos12.jpg",
     "downloads": {
         "editions": {
-            "vanilla": null,
-            "gapps": "https://sourceforge.net/projects/zafeey-laurel-sprout/files/PixelOS-Unofficial/PixelOS_laurel_sprout-12.1-20220831-1740.zip/download"
+            "Vanilla": null,
+            "Gapps": "https://sourceforge.net/projects/zafeey-laurel-sprout/files/PixelOS-Unofficial/PixelOS_laurel_sprout-12.1-20220831-1740.zip/download"
         }
     }
 }

@@ -10,8 +10,8 @@
     "banner": "/static/img/banner_no912.jpg",
     "downloads": {
         "editions": {
-            "non-rdp": "https://t.me/No_912_Updates/406",
-            "rdp": null
+            "Normal": "https://t.me/No_912_Updates/406",
+            "RDP": null
         }
     }
 }

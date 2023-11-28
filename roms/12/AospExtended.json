@@ -11,8 +11,8 @@
     "banner": "/static/img/banner_aex.png",
     "downloads": {
         "editions": {
-            "vanilla": null,
-            "gapps": "https://drive.google.com/file/d/1-14PHgvLTQJm01PHLWSt5ardZ2f8dwVg/view?usp=drivesdk"
+            "Vanilla": null,
+            "Gapps": "https://drive.google.com/file/d/1-14PHgvLTQJm01PHLWSt5ardZ2f8dwVg/view?usp=drivesdk"
         }
     }
 }

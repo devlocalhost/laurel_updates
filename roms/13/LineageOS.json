@@ -7,12 +7,12 @@
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
-    "notes": null,
+    "notes": "Skyblueborb is also maintaining <a href='/roms/LineageOS_11'>LineageOS 18.1</a>.",
     "banner": "/static/img/banner_los20.jpg",
     "downloads": {
         "editions": {
-            "vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-20.0-20231028-UNOFFICIAL-laurel_sprout-vanilla.zip",
-            "gapps": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-20.0-20231028-UNOFFICIAL-laurel_sprout-gms.zip"
+            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-20.0-20231028-UNOFFICIAL-laurel_sprout-vanilla.zip",
+            "Gapps": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-20.0-20231028-UNOFFICIAL-laurel_sprout-gms.zip"
         }
     }
 }
