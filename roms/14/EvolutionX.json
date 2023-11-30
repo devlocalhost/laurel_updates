@@ -1,6 +1,6 @@
 {
     "name": "EvolutionX",
-    "version": "8.0.3 (Fourteen)",
+    "version": "8.0.3 (Pastillas)",
     "maintainer": "PowerX-NOT",
     "date_release": "30/11/2023",
     "changelog": "$LSMerged latest November source$LE$LSMoved to kernel dimming$LE$LSFixed screen off udfps$LE$LSImproved udfps speed and accuracy$LE$LSImplemented DC Dimming and HBM$LE$LSSet display to 66Hz$LE",
