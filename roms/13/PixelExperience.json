@@ -7,7 +7,7 @@
     "status": "Unofficial",
     "support": "https://t.me/A3PEPlus",
     "rdp": "Yes",
-    "notes": "Custom kernel/recovery are not supported.",
+    "notes": "$LSCustom kernel/recovery are not supported.$LE",
     "banner": "/static/img/banner_pe_fey.jpg",
     "downloads": {
         "editions": {
