@@ -1,18 +1,18 @@
 {
     "name": "EvolutionX",
-    "version": "8.0.2 (Turon)",
+    "version": "8.0.3 (Fourteen)",
     "maintainer": "PowerX-NOT",
-    "date_release": "15/11/2023",
-    "changelog": "$LSInitial build$LE",
+    "date_release": "30/11/2023",
+    "changelog": "$LSMerged latest November source$LE$LSMoved to kernel dimming$LE$LSFixed screen off udfps$LE$LSImproved udfps speed and accuracy$LE$LSImplemented DC Dimming and HBM$LE$LSSet display to 66Hz$LE",
     "status": "Unofficial",
     "support": "https://t.me/EvoX_Mi_A3",
     "rdp": "Yes",
-    "notes": "Clean flash is mandatory, Selinux permissive",
+    "notes": "$LSThanks to ivecera for his contribution and assisting me with kernel_dimming, and kudos to kyryll for his valuable suggestions and ideas related to kernel_dimming",
     "banner": "/static/img/banner_evox_14.jpg",
     "downloads": {
         "editions": {
             "Vanilla": null,
-            "Gapps": "https://drive.google.com/file/d/1mmibVChpyMGMMMIMstcLS2Hm-hGNjDIs/view?usp=sharing"
+            "Gapps": "https://github.com/PowerX-NOT/Evo-X/releases/download/Evo-X_8.0.3/evolution_laurel_sprout-ota-retrofit-eng.powerxnot.zip"
         }
     }
 }
