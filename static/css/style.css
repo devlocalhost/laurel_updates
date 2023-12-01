@@ -42,7 +42,7 @@ img {
 
 @media (max-width: 767px) {
     .navbar {
-        width: 95%;
+        width: 92%;
     }
 }
 
@@ -56,19 +56,21 @@ img {
     display: flex;
     margin: 0 auto;
     background-color: var(--navbar-background-color);
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px;
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    bottom: 0;
+    bottom: 25px;
     left: 0;
     right: 0;
+    transition: bottom var(--animation-speed);
 }
 
 .navbar a {
     font-family: monospace;
     text-decoration: none;
-    padding: 13px 0;
+    padding: 15px;
+    /* padding-bottom: 15px; */
 }
 
 .colored::first-letter {

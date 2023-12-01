@@ -17,3 +17,21 @@ document.querySelectorAll("a").forEach(function (link) {
         });
     }
 });
+
+var prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+    if (window.innerWidth < 767) {
+        var currentScrollPos = window.pageYOffset;
+        var navbar = document.getElementsByClassName("navbar")[0];
+
+        if (prevScrollpos > currentScrollPos) {
+            navbar.style.bottom = "25px";
+        } else {
+            navbar.style.bottom = "-64px";
+        }
+
+        prevScrollpos = currentScrollPos;
+    }
+}
+
