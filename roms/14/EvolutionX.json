@@ -2,8 +2,8 @@
     "name": "EvolutionX",
     "version": "8.0.3 (Pastillas)",
     "maintainer": "PowerX-NOT",
-    "date_release": "30/11/2023",
-    "changelog": "$LSMerged latest November source$LE$LSMoved to kernel dimming$LE$LSFixed screen off udfps$LE$LSImproved udfps speed and accuracy$LE$LSImplemented DC Dimming and HBM$LE$LSSet display to 66Hz$LE",
+    "date_release": "01/12/2023",
+    "changelog": "$LSHot-fix release$LE$LSre-Merged latest November source$LE$LSUDFPS: Addressed a minor flicker issue that occurred when lifting the finger$LE$LSYou can perform a dirty flash if you are coming from the previous build (8.0.3)$LE",
     "status": "Unofficial",
     "support": "https://t.me/EvoX_Mi_A3",
     "rdp": "Yes",
@@ -12,7 +12,7 @@
     "downloads": {
         "editions": {
             "Vanilla": null,
-            "Gapps": "https://github.com/PowerX-NOT/Evo-X/releases/download/Evo-X_8.0.3/evolution_laurel_sprout-ota-retrofit-eng.powerxnot.zip"
+            "Gapps": "https://github.com/PowerX-NOT/Evo-X/releases/download/Evo-X_8.0.3_HOT-FIX/evolution_laurel_sprout-ota-retrofit-eng.powerxnot.zip"
         }
     }
 }
