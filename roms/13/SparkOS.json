@@ -2,8 +2,8 @@
     "name": "SparkOS",
     "version": "13.10",
     "maintainer": "bakka",
-    "date_release": "27/11/2023",
-    "changelog": "$LS<a href='https://telegra.ph/SparkOS-1310-Source-CL-11-26'>Link to telegra.ph</a>$LE",
+    "date_release": "01/12/2023",
+    "changelog": "$LSSwitched back to old switch design$LE$LSEnabled hidden developer option status to application$LE$LSFixed always show time media",
     "status": "Unofficial",
     "support": "https://t.me/SparkOS_group_laurel",
     "rdp": "No",
@@ -11,8 +11,8 @@
     "banner": "/static/img/banner_sparkos.jpg",
     "downloads": {
         "editions": {
-            "Mediafire Mirror": "https://www.mediafire.com/file/xggobmcbyl06k1z/Spark-13.10-CUSTOM-laurel_sprout-20231127-gapps.zip/file",
-            "MEGA Mirror": "https://mega.nz/file/VK9kjL5D#xjzECMOz79ICPL8roU334-uJo-FX3AsSUnzjNWkBks8"
+            "Mediafire Mirror": "https://www.mediafire.com/file/s3o7lvcczvq6sbm/Spark-13.10-CUSTOM-laurel_sprout-20231201-gapps.zip/file",
+            "MEGA Mirror": "https://mega.nz/file/ZG93ECiQ#nQWpO06seq89ITHm9kS7x3nmqVwXw5QqJAunlUlRDEI"
         }
     }
 }
