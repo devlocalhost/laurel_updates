@@ -83,7 +83,20 @@ img {
     font-family: monospace;
     text-decoration: none;
     padding: 15px;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    border-radius: 15px;
     /* padding-bottom: 15px; */
+}
+
+.navbar a.active{
+    background-color: #323232;
+}
+
+.navbar a:hover {
+    background-color: #383838;
+    transition: background-color 0.5s;
 }
 
 .colored::first-letter {
