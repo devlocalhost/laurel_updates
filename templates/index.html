@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
         <meta name="theme-color" content="#9bcbfb" />
-        <link rel="stylesheet" href="/static/css/style.css" />
+        <link rel="stylesheet" href="/static/css/style.css" id="default-stylesheet"/>
+        <link rel="stylesheet" href="/static/css/border-outline.css" id="debug-stylesheet" disabled/>
 
         <style>
             .red:first-letter {
@@ -14,7 +15,7 @@
         </style>
     </head>
     <body>
-        <h1 class="colored">laurel_updates</h1>
+        <h1 class="colored" onclick="toggleStylesheet()">laurel_updates</h1>
         <h2>What is this?</h2>
         <p>
             A w<a href="/edit">e</a>b<a href="/stats">s</a>ite where ROMs,

@@ -5,20 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
         <link rel="stylesheet" href="/static/css/style.css" />
+        <link rel="stylesheet" href="/static/css/border-outline.css" id="debug-stylesheet" disabled/>
 
-        <style>
-            code {
-                background-color: #000; /* #151515; */
-                padding-left: 5px;
-                padding-right: 5px;
-                border-radius: 5px;
-                font-weight: bold;
-            }
-        </style>
     </head>
     <body>
         <a href="/help"><h4 class="colored">← Help</h4></a>
-        <h1 class="colored">{{ title }}</h1>
+        <h1 class="colored" onclick="toggleStylesheet()">{{ title }}</h1>
 
         {{ data | safe }}
 

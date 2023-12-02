@@ -5,10 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
         <link rel="stylesheet" href="/static/css/style.css" />
+        <link rel="stylesheet" href="/static/css/border-outline.css" id="debug-stylesheet" disabled/>
+
     </head>
     <body>
         <a href="/"><h4 class="colored">← laurel_updates</h4></a>
-        <h1 class="colored">Kernels</h1>
+        <h1 class="colored" onclick="toggleStylesheet()">Kernels</h1>
 
         <ul>
             {% for kernel in data["kernels"] %}

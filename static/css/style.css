@@ -13,6 +13,19 @@ html {
     scroll-behavior: smooth;
 }
 
+code {
+    background-color: #000; /* #151515; */
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    white-space: normal;
+    max-width: 100%;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
 ul, ol {
     background: var(--ul-ol-background-color);
     padding-top: 11px;

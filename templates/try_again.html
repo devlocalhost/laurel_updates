@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
         <link rel="stylesheet" href="/static/css/style.css" />
+        <link rel="stylesheet" href="/static/css/border-outline.css" id="debug-stylesheet" disabled/>
 
         <style>
             input {
@@ -31,7 +32,7 @@
     </head>
     <body>
         <a href="/edit"><h4 class="colored">← files</h4></a>
-        <h1 class="colored">Congrats!</h1>
+        <h1 class="colored" onclick="toggleStylesheet()">Congrats!</h1>
 
         <p>Your IP has been logged, get ready to meet FBI in a few mins.</p>
         <p>Dont want to? <a href="/login">Cancel request</a>.</p>

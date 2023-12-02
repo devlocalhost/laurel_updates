@@ -1,0 +1,7 @@
+* {
+    /* border: 2px dashed rgb(112, 125, 139); */
+    outline-color: rgb(112, 125, 139);
+    outline-offset: -3px;
+    outline-style: dashed;
+    outline-width: 2px;
+}

@@ -7,7 +7,7 @@
     "status": "Unofficial",
     "support": "https://t.me/SparkOS_group_laurel",
     "rdp": "No",
-    "notes": "$LSFlash <a href='/kernels/no912'>No.912</a> cuz it makes all smoother$LE",
+    "notes": "$LSFlash <a href='/kernels/no912'>No.912</a> cuz it makes all smoother$LE$LSSHA256: <code>771bd89f13b944bc29de3a074c4d558afc8ce15f599427704b911fc63a5cda21</code>$LE",
     "banner": "/static/img/banner_sparkos.jpg",
     "downloads": {
         "editions": {

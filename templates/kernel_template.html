@@ -17,7 +17,7 @@
     </head>
     <body>
         <a href="/kernels"><h4 class="colored">← Kernels</h4></a>
-        <h1 class="colored">{{ data["name"] }}</h1>
+        <h1 class="colored" onclick="toggleStylesheet()">{{ data["name"] }}</h1>
 
         {% if data["banner"] %}
         <img src="{{ data["banner"] }}" alt="{{ data["name"] }} banner" />

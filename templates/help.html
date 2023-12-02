@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
         <link rel="stylesheet" href="/static/css/style.css" />
+        <link rel="stylesheet" href="/static/css/border-outline.css" id="debug-stylesheet" disabled/>
+
         <style>
             .adrod::first-letter {
                 color: #3ddc84;
@@ -13,7 +15,8 @@
     </head>
     <body>
         <a href="/"><h4 class="colored">← laurel_updates</h4></a>
-        <h1 class="colored">Help</h1>
+        <h1 class="colored" onclick="toggleStylesheet()">Help</h1>
+
         <p>
             This page contains guides for laurel_sprout, like installing magisk,
             platform_tools, and more. Want to add something? Contact the

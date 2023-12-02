@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
         <link rel="stylesheet" href="/static/css/style.css" />
+        <link rel="stylesheet" href="/static/css/border-outline.css" id="debug-stylesheet" disabled/>
 
         <style>
             input,
@@ -32,7 +33,8 @@
     </head>
     <body>
         <a href="/edit"><h4 class="colored">← files</h4></a>
-        <h1 class="colored">Editing file</h1>
+
+        <h1 class="colored" onclick="toggleStylesheet()">Editing file</h1>
         <h3>File {{ filename }}</h3>
 
         <p>A few things to keep in mind:</p>

@@ -4,7 +4,9 @@
         <title>laurel_updates - roms</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="/static/css/style.css" />
+        <link rel="stylesheet" href="/static/css/style.css" id="default-stylesheet"/>
+        <link rel="stylesheet" href="/static/css/border-outline.css" id="debug-stylesheet" disabled/>
+
         <style>
             .adrod::first-letter {
                 color: #10b981;
@@ -14,7 +16,7 @@
     <body>
         <div>
             <a href="/"><h4 class="colored">← laurel_updates</h4></a>
-            <h1 class="colored">ROMs</h1>
+            <h1 class="colored" onclick="toggleStylesheet()">ROMs</h1>
 
             <h2>Android Versions</h2>
             <p>

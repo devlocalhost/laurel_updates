@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
         <link rel="stylesheet" href="/static/css/style.css" />
+        <link rel="stylesheet" href="/static/css/border-outline.css" id="debug-stylesheet" disabled/>
+
         <style>
             #additional_info {
                 display: none;
@@ -17,7 +19,8 @@
     </head>
     <body>
         <a href="/roms"><h4 class="colored">← ROMs</h4></a>
-        <h1 class="colored">{{ data["name"] }} ({{ data["status"] }})</h1>
+        <h1 class="colored" onclick="toggleStylesheet()">{{ data["name"] }} ({{ data["status"] }})</h1>
+
         {% if data["banner"] %}
         <img src="{{ data["banner"] }}" alt="{{ data["name"] }} banner" />
         {% endif %}
