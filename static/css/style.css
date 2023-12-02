@@ -90,7 +90,7 @@ img {
     /* padding-bottom: 15px; */
 }
 
-.navbar a.active{
+.navbar a.nav-active{
     background-color: #323232;
 }
 
