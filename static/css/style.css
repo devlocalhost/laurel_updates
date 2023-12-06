@@ -26,6 +26,18 @@ body {
     animation: fadeIn var(--animation-speed) ease forwards;
 }
 
+.top-bar {
+    background-color: #9bcbfb;
+    box-shadow: 0 0 8px #9bcbfb;
+    height: 3px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin: 0;
+}
+
 h1, h2 {
     line-height: 1.2;
 }
@@ -96,7 +108,7 @@ img {
     /* padding-bottom: 15px; */
 }
 
-.navbar a.nav-active{
+.navbar a.nav-active {
     background-color: #323232;
     box-shadow: 0 0 4px var(--box-border-color);
 }
