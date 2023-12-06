@@ -25,7 +25,11 @@
         <img src="{{ data["banner"] }}" alt="{{ data["name"] }} banner" />
         {% endif %}
 
-        <p>Maintainer: {{ data["maintainer"] }}<br />Release date: {{ data["date_release"] }}<br />Version: {{ data["version"] }}</p>
+        <ul>
+            <li>Maintainer: {{ data["maintainer"] }}</li>
+            <li>Release date: {{ data["date_release"] }}</li>
+            <li>Version: {{ data["version"] }}</li>
+        </ul>
 
         <p style="text-align: center"><a href="#additional_info" class="no-fade-animation">Additional information</a></p>
 
