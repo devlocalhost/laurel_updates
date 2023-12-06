@@ -7,7 +7,7 @@
     --navbar-background-color: #292929;
     --img-border-color: var(--accent-color);
     --box-border-color: #111;
-    --box-border-size: 10px;
+    --box-border-size: 8px;
     --hr-color: #777;
 }
 
@@ -97,7 +97,7 @@ img {
 
 .navbar a.nav-active{
     background-color: #323232;
-    box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
+    /* box-shadow: 0 0 var(--box-border-size) var(--box-border-color); */
 }
 
 .navbar a:hover {
