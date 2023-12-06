@@ -29,8 +29,9 @@ from cachelib.file import FileSystemCache
 
 app = Flask(" -- laurel_updates -- ")
 cache = FileSystemCache(".flask_cache")
-utc_time = datetime.datetime.utcnow().strftime("%A %B %-d, %I:%M:%S %p")
 
+utc_time = datetime.datetime.utcnow().strftime("%A %B %-d, %I:%M:%S %p")
+platform_details = f"{platform.uname()[1]} ({platform.uname()[2]})"
 nl = "\n"
 android_versions = ["roms/14", "roms/13", "roms/12", "roms/11"]
 
@@ -40,7 +41,7 @@ def send_update_message():
 
     data = {
         "chat_id": 1547269295,
-        "text": f"Hello world\nRunning on <code>{platform.uname()[1]} ({platform.uname()[2]})</code>\n{utc_time} (UTC)",
+        "text": f"Hello world\nRunning on <code>{platform_details}</code>\n{utc_time} (UTC)",
         "parse_mode": "HTML"
     }
 
@@ -73,6 +74,7 @@ class Statistics:
                     "visitors": self.visitors,
                     "deployed_time": self.deployed,
                     "cachedir_len": len(os.listdir(".flask_cache")),
+                    "platform": platform_details,
                 }
             )
         )

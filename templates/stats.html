@@ -19,8 +19,9 @@
         <h1 class="colored" onclick="toggleStylesheet()">Statistics</h1>
         <ul>
             <li>Visitors (since deploy time): {{ data["visitors"] }}</li>
-            <li>Deploy time: {{ data["deployed_time"] }}</li>
+            <li>Deploy time: <code>{{ data["deployed_time"] }}</code></li>
             <li>Files in cachedir: {{ data["cachedir_len"] }}</li>
+            <li>Platform: <code>{{ data["platform"] }}</code></li>
         </ul>
 
         <div class="navbar">
