@@ -30,7 +30,7 @@ body {
     background-color: #9bcbfb;
     box-shadow: 0 0 8px #9bcbfb;
     height: 3px;
-    width: 100vw;
+    transition: width 0.1s; /* width: 100vw; */
     position: fixed;
     top: 0;
     left: 0;

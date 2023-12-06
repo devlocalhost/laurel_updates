@@ -73,11 +73,11 @@ window.onload = function () {
 // "debug" stylesheet
 
 function setCount(count) {
-    localStorage.setItem('clickCount', count);
+    localStorage.setItem("clickCount", count);
 }
 
 function getCount() {
-    return parseInt(localStorage.getItem('clickCount')) || 0;
+    return parseInt(localStorage.getItem("clickCount")) || 0;
 }
 
 let isDebugStylesheetVisible = false;
@@ -89,9 +89,24 @@ function toggleStylesheet() {
     if (clickCount % 3 === 0) {
         isDebugStylesheetVisible = !isDebugStylesheetVisible;
 
-        const debugStylesheet = document.getElementById('debug-stylesheet');
+        const debugStylesheet = document.getElementById("debug-stylesheet");
         debugStylesheet.disabled = !isDebugStylesheetVisible;
     }
 }
 
 // "debug" stylesheet
+
+// pill width
+
+window.addEventListener("scroll", function () {
+    var scrollPercentage =
+        (document.documentElement.scrollTop + document.body.scrollTop) /
+        (document.documentElement.scrollHeight -
+            document.documentElement.clientHeight);
+    var barWidth = Math.min(scrollPercentage * 100, 100);
+    // var barWidth = scrollPercentage * 105; // ...? lol
+
+    document.getElementById("scrollBar").style.width = barWidth + "vw";
+});
+
+// pill width
