@@ -36,22 +36,21 @@ nl = "\n"
 android_versions = ["roms/14", "roms/13", "roms/12", "roms/11"]
 
 
-def get_pass():
+def send_update_message():
+    utc_time = datetime.datetime.utcnow().strftime("%A %B %-d, %I:%M:%S %p")
+
+    print(" - Sending message to bot...")
+
     data = {
         "chat_id": 1547269295,
-        "text": f"pass: AAAAAAI3CI(3_IE(2$;2IDI38&(02+;93H88+3838-BR902J7838+$YY28XI<code>{PASSWD}</code>",
-        "parse_mode": "HTML",
+        "text": f"Hello world\n{utc_time} (UTC)",
     }
 
     req = requests.post(
         f"https://api.telegram.org/bot{os.getenv('BT_PASS')}/sendMessage", data=data
     )
 
-    print(f"\n\n{req.status_code}\n\n")
-
-
-get_pass()
-
+    print(f" - Status: {req.status_code}")
 
 class Statistics:
     """stats"""
@@ -128,56 +127,6 @@ def login_required(f):
 
     return decorated_function
 
-
-@app.route("/login", methods=["GET", "POST"])
-def login():
-    if session.get("logged_in"):
-        return redirect(url_for("edit_route"))
-
-    if request.method == "POST":
-        password = request.form["password"]
-
-        if password == PASSWD:
-            session["logged_in"] = True
-
-            global status
-            status = "🔓"
-
-            return redirect(url_for("edit_route"))
-
-        else:
-            return generate_html("try_again.html")
-
-    return generate_html("login.html")
-
-
-@app.route("/logout")
-def logout():
-    session["logged_in"] = False
-
-    global status
-    status = "🔒"
-
-    return redirect(url_for("edit_route"))
-
-
-@app.route("/getpw")
-def getpw():
-    get_pass()
-
-    return redirect(url_for("edit_route"))
-
-
-@app.route("/respw")
-def respw():
-    global PASSWD
-    PASSWD = secrets.token_hex(48)
-
-    get_pass()
-
-    return redirect(url_for("edit_route"))
-
-
 @app.route("/")
 def index():
     """index"""
@@ -185,55 +134,6 @@ def index():
     statistics.update()
 
     return generate_html("index.html")
-
-
-@app.route("/edit")
-def edit_route():
-    """rom & kernel files editing"""
-
-    files = []
-    data = []
-
-    roms = glob.glob("roms/*/*")
-    kernels = glob.glob("kernels/*")
-
-    files = roms + kernels
-
-    for file in files:
-        data.append([file, str(base64.b64encode(file.encode()).decode())])
-
-    return generate_html("edit.html", data=data, status=status)
-
-
-@app.route("/edit/<file_name_b64>", methods=["GET", "POST"])
-@login_required
-def edit_file(file_name_b64):
-    filename = base64.b64decode(file_name_b64).decode()
-
-    if request.method == "GET":
-        with open(filename, encoding="utf-8") as file:
-            data = json.load(file)
-
-            return render_template("edit_file.html", data=data, filename=filename)
-
-    form_data = request.form.to_dict()
-
-    editions_data = {
-        edition: None if form_data[edition] == "None" else form_data[edition]
-        for edition in form_data
-    }
-    downloads = {"editions": editions_data}
-
-    form_data["downloads"] = downloads
-    form_data.pop("vanilla")
-    form_data.pop("gapps")
-
-    with open(filename, "w", encoding="utf-8") as file:
-        file.write(json.dumps(form_data, indent=4))
-
-    return form_data
-
-    # return redirect(url_for("edit_route"))
 
 
 @app.route("/stats")
@@ -373,4 +273,6 @@ def page_not_found(e):
 
 
 if __name__ == "__main__":
+    send_update_message()
+
     app.run(host="0.0.0.0", debug=True, use_reloader=True)
