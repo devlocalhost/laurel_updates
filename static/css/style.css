@@ -7,34 +7,12 @@
     --navbar-background-color: #292929;
     --img-border-color: var(--accent-color);
     --box-border-color: #111;
-    --box-border-size: 8px;
+    --box-border-size: 10px;
     --hr-color: #777;
 }
 
 html {
     scroll-behavior: smooth;
-}
-
-code {
-    background-color: #000; /* #151515; */
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 5px;
-    font-weight: bold;
-    display: inline-block;
-    white-space: normal;
-    max-width: 100%;
-    word-break: break-all;
-    word-wrap: break-word;
-}
-
-ul, ol {
-    background: var(--ul-ol-background-color);
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-right: 11px;
-    border-radius: 15px;
-    box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
 }
 
 body {
@@ -48,6 +26,41 @@ body {
     animation: fadeIn var(--animation-speed) ease forwards;
 }
 
+h1, h2 {
+    line-height: 1.2;
+}
+
+a {
+    cursor: pointer;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    height: 4px;
+    border-radius: 5px;
+    background-color: var(--hr-color);
+}
+
+ul, ol {
+    background: var(--ul-ol-background-color);
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 11px;
+    border-radius: 15px;
+    box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
+}
+
+ul {
+    list-style-type: disc; /* the default, "circle" is uglier than me. */
+}
+
+ol ol, ol ul {
+    background: rgb(32, 34, 36);
+    box-shadow: none;
+}
+
 img {
     display: block;
     margin: 0 auto;
@@ -55,18 +68,6 @@ img {
     border: 5px solid var(--img-border-color);
     border-radius: 15px;
     box-shadow: 0 0 var(--box-border-size) var(--accent-color);
-}
-
-@media (max-width: 767px) {
-    .navbar {
-        width: 92%;
-    }
-}
-
-@media (min-width: 768px) {
-    .navbar {
-        width: 50%;
-    }
 }
 
 .navbar {
@@ -97,7 +98,7 @@ img {
 
 .navbar a.nav-active{
     background-color: #323232;
-    /* box-shadow: 0 0 var(--box-border-size) var(--box-border-color); */
+    box-shadow: 0 0 4px var(--box-border-color);
 }
 
 .navbar a:hover {
@@ -105,30 +106,37 @@ img {
     transition: background-color 0.5s;
 }
 
+code {
+    background-color: #000; /* #151515; */
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    white-space: normal;
+    max-width: 100%;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
 .colored::first-letter {
     color: var(--accent-color);
 }
 
-h1,
-h2 {
-    line-height: 1.2;
-}
-
-a {
-    cursor: pointer;
-    color: var(--accent-color);
-    text-decoration: none;
-}
-
-hr {
-    border: none;
-    height: 4px;
-    border-radius: 5px;
-    background-color: var(--hr-color);
-}
-
 .fade-out {
     animation: fadeOut var(--animation-speed) ease backwards;
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        width: 92%;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        width: 50%;
+    }
 }
 
 @keyframes fadeIn {
