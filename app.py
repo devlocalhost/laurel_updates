@@ -11,6 +11,7 @@ import glob
 import base64
 import mistune
 import secrets
+import platform
 import datetime
 import requests
 
@@ -27,23 +28,20 @@ from functools import wraps
 from cachelib.file import FileSystemCache
 
 app = Flask(" -- laurel_updates -- ")
-app.secret_key = secrets.token_hex(24)
 cache = FileSystemCache(".flask_cache")
+utc_time = datetime.datetime.utcnow().strftime("%A %B %-d, %I:%M:%S %p")
 
-PASSWD = secrets.token_hex(24)
-status = "🔒"
 nl = "\n"
 android_versions = ["roms/14", "roms/13", "roms/12", "roms/11"]
 
 
 def send_update_message():
-    utc_time = datetime.datetime.utcnow().strftime("%A %B %-d, %I:%M:%S %p")
-
     print(" - Sending message to bot...")
 
     data = {
         "chat_id": 1547269295,
-        "text": f"Hello world\n{utc_time} (UTC)",
+        "text": f"Hello world\nRunning on <code>{platform.uname()[1]} ({platform.uname()[2]})</code>\n{utc_time} (UTC)",
+        "parse_mode": "HTML"
     }
 
     req = requests.post(
@@ -59,12 +57,7 @@ class Statistics:
         """init"""
 
         self.visitors = 0
-        self.deployed = (
-            str(
-                datetime.datetime.now(datetime.UTC).strftime("%A %d %B %Y, %I:%M:%S %p")
-            )
-            + " (UTC)"
-        )
+        self.deployed = f"{utc_time} (UTC)"
 
     def update(self):
         """update data"""
@@ -274,5 +267,4 @@ def page_not_found(e):
 
 if __name__ == "__main__":
     send_update_message()
-
     app.run(host="0.0.0.0", debug=True, use_reloader=True)
