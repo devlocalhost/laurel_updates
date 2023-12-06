@@ -6,6 +6,8 @@
     --ul-ol-background-color: #303030;
     --navbar-background-color: #292929;
     --img-border-color: var(--accent-color);
+    --box-border-color: #111;
+    --box-border-size: 10px;
     --hr-color: #777;
 }
 
@@ -32,6 +34,7 @@ ul, ol {
     padding-bottom: 11px;
     padding-right: 11px;
     border-radius: 15px;
+    box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
 }
 
 body {
@@ -51,6 +54,7 @@ img {
     width: 97%;
     border: 5px solid var(--img-border-color);
     border-radius: 15px;
+    box-shadow: 0 0 var(--box-border-size) var(--accent-color);
 }
 
 @media (max-width: 767px) {
@@ -77,6 +81,7 @@ img {
     left: 0;
     right: 0;
     transition: bottom var(--animation-speed);
+    box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
 }
 
 .navbar a {
@@ -92,6 +97,7 @@ img {
 
 .navbar a.nav-active{
     background-color: #323232;
+    box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
 }
 
 .navbar a:hover {
