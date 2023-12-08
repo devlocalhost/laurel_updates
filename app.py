@@ -63,7 +63,7 @@ def send_status():
 
     data = {
         "chat_id": 1547269295,
-        "text": f"Hello world\n{utc_time} (UTC)",
+        "text": f"Hello world\nRunning on {platform_details}\n{utc_time} (UTC)",
         "parse_mode": "HTML"
     }
 
@@ -276,11 +276,9 @@ def kernel_route(kernel_name):
 def page_not_found(e):
     """404 page"""
 
-    statistics.update("visitors")
+    statistics.update()
 
     return generate_html("404.html")
 
 
-if __name__ == "__main__":
-    send_status()
-    app.run()  # host="0.0.0.0", debug=True, use_reloader=True)
+send_status()

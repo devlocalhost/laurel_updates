@@ -4,4 +4,3 @@ gunicorn
 mistune
 python-dotenv
 requests
-pyTelegramBotAPI
