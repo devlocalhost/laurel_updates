@@ -14,7 +14,9 @@ import secrets
 import platform
 import datetime
 import requests
+import threading
 
+import telebot
 from flask import (
     Flask,
     render_template,
@@ -28,28 +30,27 @@ from functools import wraps
 from cachelib.file import FileSystemCache
 
 app = Flask(" -- laurel_updates -- ")
+
+if platform.uname()[1] == "dev64-void-ac":
+    print(" - Templates will reload")
+    app.config["TEMPLATES_AUTO_RELOAD"] = True
+
 cache = FileSystemCache(".flask_cache")
 
-utc_time = datetime.datetime.utcnow().strftime("%A %B %-d, %I:%M:%S %p")
+bot = telebot.TeleBot(os.getenv("BT_PASS"))
+utc_time = datetime.datetime.now(datetime.UTC).strftime("%A %B %-d, %I:%M:%S %p")
 platform_details = f"{platform.uname()[1]} ({platform.uname()[2]})"
 nl = "\n"
 android_versions = ["roms/14", "roms/13", "roms/12", "roms/11"]
 
 
 def send_update_message():
-    print(" - Sending message to bot...")
+    return f"Hello world\nRunning on {platform_details}\n{utc_time} (UTC)"
 
-    data = {
-        "chat_id": 1547269295,
-        "text": f"Hello world\nRunning on <code>{platform_details}</code>\n{utc_time} (UTC)",
-        "parse_mode": "HTML",
-    }
 
-    req = requests.post(
-        f"https://api.telegram.org/bot{os.getenv('BT_PASS')}/sendMessage", data=data
-    )
+def start_bot():
+    bot.send_message(1547269295, send_update_message())
 
-    print(f" - Status: {req.status_code}")
 
 
 class Statistics:
@@ -111,6 +112,11 @@ def list_json_files(directory):
             json_files.append(filename)
 
     return json_files
+
+
+@bot.message_handler(commands=["status"])
+def handle_status_command(message):
+    bot.send_message(message.chat.id, send_update_message())
 
 
 @app.route("/")
@@ -259,5 +265,9 @@ def page_not_found(e):
 
 
 if __name__ == "__main__":
-    send_update_message()
+    start_bot()
+
+    thread = threading.Thread(target=bot.polling)
+    thread.start()
+
     app.run()  # host="0.0.0.0", debug=True, use_reloader=True)
