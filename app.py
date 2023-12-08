@@ -63,7 +63,7 @@ def send_status():
 
     data = {
         "chat_id": 1547269295,
-        "text": f"Hello world\nRunning on {platform_details}\n{utc_time} (UTC)",
+        "text": f"Hello world\nRunning on <code>{platform_details}</code>\n{utc_time} (UTC)",
         "parse_mode": "HTML"
     }
 
