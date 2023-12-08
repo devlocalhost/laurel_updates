@@ -42,7 +42,7 @@ def send_update_message():
     data = {
         "chat_id": 1547269295,
         "text": f"Hello world\nRunning on <code>{platform_details}</code>\n{utc_time} (UTC)",
-        "parse_mode": "HTML"
+        "parse_mode": "HTML",
     }
 
     req = requests.post(
@@ -50,6 +50,7 @@ def send_update_message():
     )
 
     print(f" - Status: {req.status_code}")
+
 
 class Statistics:
     """stats"""
@@ -111,16 +112,6 @@ def list_json_files(directory):
 
     return json_files
 
-
-def login_required(f):
-    @wraps(f)
-    def decorated_function(*args, **kwargs):
-        if not session.get("logged_in"):
-            return redirect(url_for("login"))
-
-        return f(*args, **kwargs)
-
-    return decorated_function
 
 @app.route("/")
 def index():
@@ -269,4 +260,4 @@ def page_not_found(e):
 
 if __name__ == "__main__":
     send_update_message()
-    app.run(host="0.0.0.0", debug=True, use_reloader=True)
+    app.run()  # host="0.0.0.0", debug=True, use_reloader=True)
