@@ -30,11 +30,6 @@ from functools import wraps
 from cachelib.file import FileSystemCache
 
 app = Flask(" -- laurel_updates -- ")
-
-if platform.uname()[1] == "dev64-void-ac":
-    print(" - Templates will reload")
-    app.config["TEMPLATES_AUTO_RELOAD"] = True
-
 cache = FileSystemCache(".flask_cache")
 
 bot = telebot.TeleBot(os.getenv("BT_PASS"))
