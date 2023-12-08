@@ -2,8 +2,8 @@
     "name": "SparkOS",
     "version": "13.10",
     "maintainer": "bakka",
-    "date_release": "01/12/2023",
-    "changelog": "$LSSwitched back to old switch design$LE$LSEnabled hidden developer option status to application$LE$LSFixed always show time media",
+    "date_release": "08/12/2023",
+    "changelog": "$LSjust a hotfix including androidauto$LE",
     "status": "Unofficial",
     "support": "https://t.me/SparkOS_group_laurel",
     "rdp": "No",
@@ -11,8 +11,7 @@
     "banner": "/static/img/banner_sparkos.jpg",
     "downloads": {
         "editions": {
-            "Mediafire Mirror": "https://www.mediafire.com/file/s3o7lvcczvq6sbm/Spark-13.10-CUSTOM-laurel_sprout-20231201-gapps.zip/file",
-            "MEGA Mirror": "https://mega.nz/file/ZG93ECiQ#nQWpO06seq89ITHm9kS7x3nmqVwXw5QqJAunlUlRDEI"
+            "Telegram": "https://t.me/SparkOS_group_laurel/5941"
         }
     }
 }
