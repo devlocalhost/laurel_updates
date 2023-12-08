@@ -68,7 +68,7 @@ def send_status():
     }
 
     req = requests.post(
-        f"https://api.telegram.org/bot{os.getenv('BT_PASS')}/sendMessage", data=data
+        f"https://api.telegram.org/bot{os.getenv('TKN')}/sendMessage", data=data
     )
 
     print(f" - Status: {req.status_code}")
