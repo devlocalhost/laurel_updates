@@ -131,6 +131,10 @@ code {
     word-wrap: break-word;
 }
 
+code:hover {
+    box-shadow: 0 0 14px var(--accent-color);
+}
+
 .colored::first-letter {
     color: var(--accent-color);
 }
