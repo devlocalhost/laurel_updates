@@ -8,6 +8,7 @@ A website where ROMs and kernels developed for this device are posted here.
 import os
 import json
 import glob
+import atexit
 import base64
 import mistune
 import secrets
@@ -58,12 +59,12 @@ def get_uptime():
     return ", ".join(components)
 
 
-def send_status():
+def send_message(message):
     print(" - Sending message to bot...")
 
     data = {
         "chat_id": 1547269295,
-        "text": f"Hello world\nRunning on <code>{platform_details}</code>\n{utc_time} (UTC)",
+        "text": message,
         "parse_mode": "HTML"
     }
 
@@ -72,6 +73,14 @@ def send_status():
     )
 
     print(f" - Status: {req.status_code}")
+
+
+def starting():
+    send_message(f"Hello world\nRunning on <code>{platform_details}</code>\n{utc_time} (UTC)")
+
+
+def going_down():
+    send_message(f"GOODBYECRUELWORLD\nWas up for: {get_uptime()}")
 
 
 class Statistics:
@@ -280,5 +289,5 @@ def page_not_found(e):
 
     return generate_html("404.html")
 
-
-send_status()
+atexit.register(going_down)
+starting()
