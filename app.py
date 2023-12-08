@@ -14,9 +14,7 @@ import secrets
 import platform
 import datetime
 import requests
-import threading
 
-import telebot
 from flask import (
     Flask,
     render_template,
@@ -32,20 +30,48 @@ from cachelib.file import FileSystemCache
 app = Flask(" -- laurel_updates -- ")
 cache = FileSystemCache(".flask_cache")
 
-bot = telebot.TeleBot(os.getenv("BT_PASS"))
 utc_time = datetime.datetime.now(datetime.UTC).strftime("%A %B %-d, %I:%M:%S %p")
+start_time = datetime.datetime.now() # um... ^^^ ??
 platform_details = f"{platform.uname()[1]} ({platform.uname()[2]})"
 nl = "\n"
 android_versions = ["roms/14", "roms/13", "roms/12", "roms/11"]
 
 
-def send_update_message():
-    return f"Hello world\nRunning on {platform_details}\n{utc_time} (UTC)"
+def get_uptime():
+    current_time = datetime.datetime.now()
+    uptime_duration = current_time - start_time
+
+    components = []
+    days, seconds = uptime_duration.days, uptime_duration.seconds
+    hours, remainder = divmod(seconds, 3600)
+    minutes, seconds = divmod(remainder, 60)
+
+    if days > 0:
+        components.append(f"{days} days")
+    if hours > 0:
+        components.append(f"{hours} hours")
+    if minutes > 0:
+        components.append(f"{minutes} minutes")
+    if seconds > 0:
+        components.append(f"{seconds} seconds")
+
+    return ", ".join(components)
 
 
-def start_bot():
-    bot.send_message(1547269295, send_update_message())
+def send_status():
+    print(" - Sending message to bot...")
 
+    data = {
+        "chat_id": 1547269295,
+        "text": f"Hello world\n{utc_time} (UTC)",
+        "parse_mode": "HTML"
+    }
+
+    req = requests.post(
+        f"https://api.telegram.org/bot{os.getenv('BT_PASS')}/sendMessage", data=data
+    )
+
+    print(f" - Status: {req.status_code}")
 
 
 class Statistics:
@@ -72,6 +98,7 @@ class Statistics:
                     "deployed_time": self.deployed,
                     "cachedir_len": len(os.listdir(".flask_cache")),
                     "platform": platform_details,
+                    "uptime": get_uptime(),
                 }
             )
         )
@@ -107,11 +134,6 @@ def list_json_files(directory):
             json_files.append(filename)
 
     return json_files
-
-
-@bot.message_handler(commands=["status"])
-def handle_status_command(message):
-    bot.send_message(message.chat.id, send_update_message())
 
 
 @app.route("/")
@@ -254,15 +276,11 @@ def kernel_route(kernel_name):
 def page_not_found(e):
     """404 page"""
 
-    # statistics.update("visitors")
+    statistics.update("visitors")
 
     return generate_html("404.html")
 
 
 if __name__ == "__main__":
-    start_bot()
-
-    thread = threading.Thread(target=bot.polling)
-    thread.start()
-
+    send_status()
     app.run()  # host="0.0.0.0", debug=True, use_reloader=True)
