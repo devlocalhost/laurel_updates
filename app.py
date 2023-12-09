@@ -82,7 +82,8 @@ def starting():
 
 
 def going_down():
-    send_message("[Going down]", f"GOODBYECRUELWORLD - {platform_details}\nWas up for: {get_uptime()}")
+    send_message("[Going down]", f"GOODBYECRUELWORLD - <code>{platform_details}</code>\nCommit: <code>{commit}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit}</code>)\n{utc_time} (UTC)")
+    # send_message("[Going down]", f"GOODBYECRUELWORLD - <code>{platform_details}</code>\nWas up for: {get_uptime()}")
 
 
 class Statistics:
