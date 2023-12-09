@@ -32,9 +32,11 @@ from cachelib.file import FileSystemCache
 app = Flask(" -- laurel_updates -- ")
 cache = FileSystemCache(".flask_cache")
 
-commit = subprocess.check_output('git log -1 --pretty=format:"%h"', shell=True, text=True)
+commit = subprocess.check_output(
+    'git log -1 --pretty=format:"%h"', shell=True, text=True
+)
 utc_time = datetime.datetime.now(datetime.UTC).strftime("%A %B %-d, %I:%M:%S %p")
-start_time = datetime.datetime.now() # um... ^^^ ??
+start_time = datetime.datetime.now()  # um... ^^^ ??
 platform_details = f"{platform.uname()[1]} ({platform.uname()[2]})"
 nl = "\n"
 android_versions = ["roms/14", "roms/13", "roms/12", "roms/11"]
@@ -64,11 +66,7 @@ def get_uptime():
 def send_message(func, message):
     print(f"{func} - Sending message to bot...")
 
-    data = {
-        "chat_id": 1547269295,
-        "text": message,
-        "parse_mode": "HTML"
-    }
+    data = {"chat_id": 1547269295, "text": message, "parse_mode": "HTML"}
 
     req = requests.post(
         f"https://api.telegram.org/bot{os.getenv('TKN')}/sendMessage", data=data
@@ -78,11 +76,17 @@ def send_message(func, message):
 
 
 def starting():
-    send_message("[Starting]", f"Hello world\nRunning on <code>{platform_details}</code>\nCommit: <code>{commit}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit}</code>)\n{utc_time} (UTC)")
+    send_message(
+        "[Starting]",
+        f"Hello world\nRunning on <code>{platform_details}</code>\nCommit: <code>{commit}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit}</code>)\n{utc_time} (UTC)",
+    )
 
 
 def going_down():
-    send_message("[Going down]", f"GOODBYECRUELWORLD - <code>{platform_details}</code>\nCommit: <code>{commit}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit}</code>)")
+    send_message(
+        "[Going down]",
+        f"GOODBYECRUELWORLD - <code>{platform_details}</code>\nCommit: <code>{commit}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit}</code>)",
+    )
     # send_message("[Going down]", f"GOODBYECRUELWORLD - <code>{platform_details}</code>\nWas up for: {get_uptime()}")
 
 
@@ -292,6 +296,7 @@ def page_not_found(e):
     statistics.update()
 
     return generate_html("404.html")
+
 
 atexit.register(going_down)
 starting()
