@@ -15,6 +15,7 @@ import secrets
 import platform
 import datetime
 import requests
+import subprocess
 
 from flask import (
     Flask,
@@ -31,6 +32,7 @@ from cachelib.file import FileSystemCache
 app = Flask(" -- laurel_updates -- ")
 cache = FileSystemCache(".flask_cache")
 
+commit = subprocess.check_output('git log -1 --pretty=format:"%h"', shell=True, text=True)
 utc_time = datetime.datetime.now(datetime.UTC).strftime("%A %B %-d, %I:%M:%S %p")
 start_time = datetime.datetime.now() # um... ^^^ ??
 platform_details = f"{platform.uname()[1]} ({platform.uname()[2]})"
@@ -59,8 +61,8 @@ def get_uptime():
     return ", ".join(components)
 
 
-def send_message(message):
-    print(" - Sending message to bot...")
+def send_message(func, message):
+    print(f"{func} - Sending message to bot...")
 
     data = {
         "chat_id": 1547269295,
@@ -72,15 +74,15 @@ def send_message(message):
         f"https://api.telegram.org/bot{os.getenv('TKN')}/sendMessage", data=data
     )
 
-    print(f" - Status: {req.status_code}")
+    print(f"{func} - Status: {req.status_code}")
 
 
 def starting():
-    send_message(f"Hello world\nRunning on <code>{platform_details}</code>\n{utc_time} (UTC)")
+    send_message("[Starting]", f"Hello world\nRunning on <code>{platform_details}</code>\nCommit: <code>{commit}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit}</code>)\n{utc_time} (UTC)")
 
 
 def going_down():
-    send_message(f"GOODBYECRUELWORLD\nWas up for: {get_uptime()}")
+    send_message("[Going down]", f"GOODBYECRUELWORLD - {platform_details}\nWas up for: {get_uptime()}")
 
 
 class Statistics:
@@ -108,6 +110,7 @@ class Statistics:
                     "cachedir_len": len(os.listdir(".flask_cache")),
                     "platform": platform_details,
                     "uptime": get_uptime(),
+                    "commit": commit,
                 }
             )
         )
