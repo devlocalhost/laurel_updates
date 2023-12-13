@@ -88,7 +88,7 @@ img {
     margin: 0 auto;
     background-color: var(--navbar-background-color);
     border-radius: 15px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     position: fixed;
     bottom: 25px;
