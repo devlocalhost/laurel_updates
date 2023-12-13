@@ -95,18 +95,3 @@ function toggleStylesheet() {
 }
 
 // "debug" stylesheet
-
-// pill width
-
-window.addEventListener("scroll", function () {
-    var scrollPercentage =
-        (document.documentElement.scrollTop + document.body.scrollTop) /
-        (document.documentElement.scrollHeight -
-            document.documentElement.clientHeight);
-    var barWidth = Math.min(scrollPercentage * 100, 100);
-    // var barWidth = scrollPercentage * 105; // ...? lol
-
-    document.getElementById("scrollBar").style.width = barWidth + "vw";
-});
-
-// pill width

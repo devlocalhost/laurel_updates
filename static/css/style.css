@@ -27,15 +27,16 @@ body {
 }
 
 .top-bar {
+    width: 100%;
+    transform-origin: 0 50%;
+    animation: scaleProgress auto linear;
+    animation-timeline: scroll(root);
     background-color: #9bcbfb;
     box-shadow: 0 0 8px #9bcbfb;
     height: 3px;
-    transition: width 0.1s; /* width: 100vw; */
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
-    margin: 0;
 }
 
 h1, h2 {
@@ -152,6 +153,15 @@ code:hover {
 @media (min-width: 768px) {
     .navbar {
         width: 50%;
+    }
+}
+
+@keyframes scaleProgress {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
     }
 }
 
