@@ -60,7 +60,7 @@ def get_uptime():
     if seconds > 0:
         components.append(f"{seconds} seconds")
 
-    return ", ".join(components)
+    return str(", ".join(components)).strip()
 
 
 def send_message(func, message):
@@ -85,7 +85,7 @@ def starting():
 def going_down():
     send_message(
         "[Going down]",
-        f"GOODBYECRUELWORLD - <code>{platform_details}</code>\nCommit: <code>{commit}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit}</code>)",
+        f"GOODBYECRUELWORLD - <code>{platform_details}</code>\nWas up for: <code>{get_uptime()}</code>\nCommit: <code>{commit}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit}</code>)",
     )
     # send_message("[Going down]", f"GOODBYECRUELWORLD - <code>{platform_details}</code>\nWas up for: {get_uptime()}")
 
