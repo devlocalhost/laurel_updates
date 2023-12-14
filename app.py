@@ -68,11 +68,15 @@ def send_message(func, message):
 
     data = {"chat_id": 1547269295, "text": message, "parse_mode": "HTML"}
 
-    req = requests.post(
-        f"https://api.telegram.org/bot{os.getenv('TKN')}/sendMessage", data=data
-    )
+    try:
+        req = requests.post(
+            f"https://api.telegram.org/bot{os.getenv('TKN')}/sendMessage", data=data
+        )
 
-    print(f"{func} - Status: {req.status_code}")
+        print(f"{func} - Status: {req.status_code}")
+
+    except Exception as exc:
+        print(f"{func} - ERR: {type(exc).__name__}")
 
 
 def starting():
