@@ -56,13 +56,17 @@ hr {
     background-color: var(--hr-color);
 }
 
-ul, ol {
+ul, ol, p {
     background: var(--ul-ol-background-color);
     padding-top: 11px;
     padding-bottom: 11px;
     padding-right: 11px;
     border-radius: 15px;
     box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
+}
+
+p {
+    padding-left: 15px;
 }
 
 ul {
