@@ -2,7 +2,7 @@
     "name": "EvolutionX",
     "version": "8.1 (Fourteen)",
     "maintainer": "PowerX-NOT",
-    "date_release": "01/12/2023",
+    "date_release": "14/12/2023",
     "changelog": "$LSMerged the latest December source.$LE$LSSwitched to FBEv2 encryption.$LE$LSEROFS build.$LE$LSFixed the FOD issue on payment apps and Applock.$LE$LSUpdated KernelSu to v0.7.1.$LE$LSAdded the MIUI camera (Note: Portrait mode broken).$LE$LSFixed the screen-off FOD by switching to AOD mode instead of waking the screen.$LE$LSPlay Protect certified by default$LE",
     "status": "Unofficial",
     "support": "https://t.me/EvoX_Mi_A3",
