@@ -1,18 +1,17 @@
 {
     "name": "EvolutionX",
-    "version": "8.0.3 (Pastillas)",
+    "version": "8.1 (Fourteen)",
     "maintainer": "PowerX-NOT",
     "date_release": "01/12/2023",
-    "changelog": "$LSHot-fix release$LE$LSre-Merged latest November source$LE$LSUDFPS: Addressed a minor flicker issue that occurred when lifting the finger$LE$LSYou can perform a dirty flash if you are coming from the previous build (8.0.3)$LE",
+    "changelog": "$LSMerged the latest December source.$LE$LSSwitched to FBEv2 encryption.$LE$LSEROFS build.$LE$LSFixed the FOD issue on payment apps and Applock.$LE$LSUpdated KernelSu to v0.7.1.$LE$LSAdded the MIUI camera (Note: Portrait mode broken).$LE$LSFixed the screen-off FOD by switching to AOD mode instead of waking the screen.$LE$LSPlay Protect certified by default$LE",
     "status": "Unofficial",
     "support": "https://t.me/EvoX_Mi_A3",
     "rdp": "Yes",
-    "notes": "$LS<b>Clean Flash is Mandatory</b>$LE$LSThanks to ivecera for his contribution and assisting me with kernel_dimming, and kudos to kyryll for his valuable suggestions and ideas related to kernel_dimming",
+    "notes": "$LS<b><u>Clean Flash is Mandatory</u></b>$LE$LSEROFS build$LE$LSThanks to ivecera for his contribution and assisting me with kernel_dimming, and kudos to kyryll for his valuable suggestions and ideas related to kernel_dimming",
     "banner": "/static/img/banner_evox_14.jpg",
     "downloads": {
         "editions": {
-            "Vanilla": null,
-            "Gapps": "https://github.com/PowerX-NOT/Evo-X/releases/download/Evo-X_8.0.3_HOT-FIX/evolution_laurel_sprout-ota-retrofit-eng.powerxnot.zip"
+            "Gapps": "https://drive.google.com/file/d/1kpj1bbAgfA2lET6jhj-EVvu6LimzhrC4/view?usp=sharing"
         }
     }
 }
