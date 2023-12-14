@@ -4,5 +4,6 @@ Enhanced Read-Only FileSystem (EROFS) is a FS made by Huawei which has been main
 
 # ROMs using EROFS
 
-1. [PixelExperience](/roms/PixelExperience_13)
-2. [EvolutionX](/roms/EvolutionX_14)
+1. [EvolutionX](/roms/EvolutionX_14)
+2. [PixelExperience](/roms/PixelExperience_13)
+3. [PixelOS](/roms/PixelOS_13)
