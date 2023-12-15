@@ -32,6 +32,10 @@ from cachelib.file import FileSystemCache
 app = Flask(" -- laurel_updates -- ")
 cache = FileSystemCache(".flask_cache")
 
+if os.getenv("LAUREL_MODE"):
+    print("[DEBUG] Templates will (hopefully) auto reload")
+    app.config["TEMPLATES_AUTO_RELOAD"] = True
+
 commit = subprocess.check_output(
     'git log -1 --pretty=format:"%h"', shell=True, text=True
 )
