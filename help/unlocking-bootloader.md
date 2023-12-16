@@ -2,18 +2,18 @@
 
 NOTE: Your data WILL BE ERASED. TAKE A BACKUP. No, there is NOT any method without erasing. Also, a PC is needed.
 
-# Installing platform_tools
+## Installing platform_tools
 Check the tutorial [here](/help/platform-tools)
 
-# Getting the phone ready
+## Getting the phone ready
 We have to enable OEM unlocking on the phone. To do that, we have to enable "developer options". Go to phone settings, about phone, scroll down till you see "build number" and click it 7 times. It will ask for your password, enter it, and thats it. "Youre a developer!!". Go back, go to system, advanced, developer options, scroll a bit down and you should see "enable oem unlocking". Enable it, and we are now one step closer
 
-# Unlocking the bootloader
+## Unlocking the bootloader
 To unlock the bootloader, we have to boot into fastboot mode. To reboot into fastboot mode, reboot your phone, and hold the volume down key. If done correctly, you will see a bunny logo and "fastboot". Connect your phone with your PC using a cable, on your PC, go to the platform_tools you extracted earlier, and open cmd right there (right clicking on a blank space while being in the platform_tools folder should show a "open command prompt here" or something like that). Then, type fastboot flashing unlock. This is the first command. If your phone reboots, reboot back to fastboot. Now, the second command: fastboot flashing unlock_critical. And thats it, you have successfully unlocked the bootloader!
 
 # Any ROM suggestion?
 Sure. [LineageOS (20)](/roms/LineageOS_13), [Paranoid Android](/roms/ParanoidAndroid_13). More ROMs available [here](/roms)
 
-# What about custom kernels?
+## What about custom kernels?
 There are only 2 that are somewhat being actively maintained, [No.912/No.33](/kernels/no912), and [NoName/Xavis](/kernels/noname) kernel
 

@@ -2,12 +2,13 @@
 
 ## Requirements
 
--   An unlocked bootloader
--   [platform_tools](/help/platform-tools) installed
--   Latest Magisk APK
+- An unlocked bootloader
+- [platform_tools](/help/platform-tools) installed
+- Latest Magisk APK
 
 After meeting these requirements, you can proceed with the installation.
 
+# Installation
 ## The PC way
 
 1. Open Windows File Explorer and navigate to the platform_tools directory.
