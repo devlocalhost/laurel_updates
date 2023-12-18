@@ -5,9 +5,11 @@ var clickCount = 0;
 document.body.addEventListener("click", function (event) {
     if (event.target === document.body) {
         clickCount++;
+        navigator.vibrate(10);
 
         if (clickCount === 2) {
             window.scrollTo({ top: 0, behavior: "smooth" });
+            navigator.vibrate(14);
             clickCount = 0;
         }
     }
@@ -76,7 +78,8 @@ window.onload = function () {
                     const textToCopy =
                         codeElement.textContent || codeElement.innerText;
                     event.clipboardData.setData("text/plain", textToCopy);
-                    console.log(event.clipboardData.getData("text"));
+                    navigator.vibrate(10);
+                    // console.log(event.clipboardData.getData("text"));
                 }
             });
         });
@@ -102,11 +105,14 @@ let isDebugStylesheetVisible = false;
 function toggleStylesheet() {
     const clickCount = getCount();
     setCount(clickCount + 1);
+    navigator.vibrate(10);
 
     if (clickCount % 3 === 0) {
         isDebugStylesheetVisible = !isDebugStylesheetVisible;
 
         const debugStylesheet = document.getElementById("debug-stylesheet");
+        navigator.vibrate(14);
+
         debugStylesheet.disabled = !isDebugStylesheetVisible;
     }
 }
