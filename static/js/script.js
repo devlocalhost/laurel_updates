@@ -1,3 +1,20 @@
+// scroll to top
+
+var clickCount = 0;
+
+document.body.addEventListener("click", function (event) {
+    if (event.target === document.body) {
+        clickCount++;
+
+        if (clickCount === 2) {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            clickCount = 0;
+        }
+    }
+});
+
+// scroll to top
+
 // fade in/out
 
 window.addEventListener("beforeunload", function () {
@@ -32,7 +49,7 @@ window.onscroll = function () {
         if (prevScrollpos > currentScrollPos) {
             navbar.style.bottom = "25px";
         } else {
-            navbar.style.bottom = "-144px";
+            navbar.style.bottom = "-60px";
         }
 
         prevScrollpos = currentScrollPos;
