@@ -1,6 +1,6 @@
-# Unbootlooping your phone caused by a magisk module
+# Fix bootloop caused by a magisk module
 
-There are two methods yo save yourself from a bootloop CAUSED BY A MAGISK MODULE:
+There are two methods to save yourself from a bootloop CAUSED BY A MAGISK MODULE:
 
 ## Booting into safe mode
 1. Hold power button so the phone reboots
