@@ -83,8 +83,6 @@ window.onload = function () {
                 }
             });
         });
-    } else {
-        console.error("No code elements found.");
     }
 };
 
