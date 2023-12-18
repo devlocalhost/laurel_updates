@@ -68,7 +68,7 @@ ul, ol, p {
 }
 
 p {
-    padding-left: 15px;
+    padding-left: 17px;
 }
 
 ul {
@@ -128,8 +128,8 @@ img {
 
 code {
     background-color: #000; /* #151515; */
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
     border-radius: 5px;
     font-weight: bold;
     display: inline-block;
