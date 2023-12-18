@@ -53,7 +53,7 @@
 
             <ul>
                 {% if data["notes"] %}
-                <li>{{ data["notes"] | safe }}</li>
+                {{ data["notes"].replace("$LS", "<li>").replace("$LE", "</li>") | safe }}
                 {% endif %}
 
                 <li>

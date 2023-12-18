@@ -6,11 +6,11 @@
     "date_release": "21/11/2023",
     "changelog": "https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.330",
     "support": "https://t.me/No_912",
-    "notes": "Warning: This kernel <strong>REQUIRES</strong> <a href=\"https://github.com/topjohnwu/Magisk/releases\">magisk</a> installed on your phone!! This kernel does not have kernelSU built in.",
+    "notes": "$LSLatest available builds for Laurel Sprout provided above, don't use for daily tasks, the Kernel branch is soon to be deprecated.$LE$LSWarning: This kernel <strong>REQUIRES</strong> <a href=\"https://github.com/topjohnwu/Magisk/releases\">magisk</a> installed on your phone!$LE$LSThis kernel does not have kernelSU built in.$LE",
     "banner": "/static/img/banner_no912.jpg",
     "downloads": {
         "editions": {
-            "Normal": "https://t.me/No_912_Updates/406",
+            "Normal": "https://t.me/No_912_Updates/487",
             "RDP": null
         }
     }
