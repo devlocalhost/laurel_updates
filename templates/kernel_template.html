@@ -51,12 +51,14 @@
             </ul>
 
             <h2>Notes</h2>
-            <a href="/help/what-is-rdp">What is RDP?</a>
-
             <ul>
                 {% if data["notes"] %}
                 {{ data["notes"].replace("$LS", "<li>").replace("$LE", "</li>") | safe }}
                 {% endif %}
+
+                <li>
+                    <a href="/help/what-is-rdp">What is RDP?</a>
+                </li>
 
                 <li>
                     Make sure you read the instructions in the
