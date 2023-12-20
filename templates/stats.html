@@ -13,7 +13,9 @@
         />
     </head>
     <body>
-        <div class="top-bar" id="scrollBar"></div>
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
 
         <a href="/"><h4 class="colored">← laurel_updates</h4></a>
         <h1 class="colored" onclick="toggleStylesheet()">Statistics</h1>
@@ -23,7 +25,12 @@
             <li>Uptime: <code>{{ data["uptime"] }}</code></li>
             <li>Files in cachedir: {{ data["cachedir_len"] }}</li>
             <li>Platform: <code>{{ data["platform"] }}</code></li>
-            <li>Commit: <code>{{ data["commit"] }} </code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{{ data["commit"] }}</code>)</li>
+            <li>
+                Commit: <code>{{ data["commit"] }} </code> (<code
+                    >https://github.com/devlocalhost/laurel_updates/commit/{{
+                    data["commit"] }}</code
+                >)
+            </li>
         </ul>
 
         <div class="navbar">

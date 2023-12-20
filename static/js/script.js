@@ -116,3 +116,26 @@ function toggleStylesheet() {
 }
 
 // "debug" stylesheet
+
+// progress bar
+
+document.addEventListener("DOMContentLoaded", function () {
+    const progressBar = document.getElementById("progress-bar");
+    const progressBarContainer = document.getElementById(
+        "progress-bar-container",
+    );
+
+    window.addEventListener("scroll", function () {
+        const totalHeight = document.body.scrollHeight - window.innerHeight;
+        const progress = (window.scrollY / totalHeight) * 100;
+        progressBar.style.width = `${progress}%`;
+    });
+
+    window.addEventListener("resize", function () {
+        const totalHeight = document.body.scrollHeight - window.innerHeight;
+        const progress = (window.scrollY / totalHeight) * 100;
+        progressBar.style.width = `${progress}%`;
+    });
+});
+
+// progress bar
