@@ -11,7 +11,7 @@
 To make play integrity work, we need to find a fingerprint that passes. For that, you will need [termux](https://f-droid.org/en/packages/com.termux/) installed (click the "download apk" button, not "download fdroid")
 
 1. Open termux
-2. Paste this: `mkdir ~/pif`. THIS IS A ONE-TIME COMMAND!!!! **YOU ONLY RUN THIS ONCE AND NEVER AGAIN!!**
+2. Paste this: `mkdir ~/pif`. Note: **YOU RUN THIS ONLY ONCE AND NEVER AGAIN!!**
 3. Now, paste this: `cd ~/pif`
 4. This script NEEDS ROOT, so, type `su` (approve the root request), then paste this: `/data/data/com.termux/files/usr/bin/curl "https://raw.githubusercontent.com/TheFreeman193/PIFS/main/pickaprint.sh" | sh`
    - It might take some time, be patient.
