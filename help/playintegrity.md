@@ -8,7 +8,7 @@
 3. Reboot device
 
 ## Getting a fingerprint
-To make play integrity work, we need to find a fingerprint that passes. For that, you will need [termux](https://f-droid.org/en/packages/com.termux/) installed (click the "download apk" button, not "download fdroid)
+To make play integrity work, we need to find a fingerprint that passes. For that, you will need [termux](https://f-droid.org/en/packages/com.termux/) installed (click the "download apk" button, not "download fdroid")
 
 1. Open termux
 2. Paste this: `mkdir ~/pif`. THIS IS A ONE-TIME COMMAND!!!! **YOU ONLY RUN THIS ONCE AND NEVER AGAIN!!**
