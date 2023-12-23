@@ -13,7 +13,7 @@ To make play integrity work, we need to find a fingerprint that passes. For that
 1. Open termux
 2. Paste this: `cd && mkdir pif && cd pif`
    - This will create a new directory on temux's home directory.
-3. Paste this: `curl "https://raw.githubusercontent.com/TheFreeman193/PIFS/main/pickaprint.sh" | sh`
+3. Type `su` (approve the root request), then paste this: `curl "https://raw.githubusercontent.com/TheFreeman193/PIFS/main/pickaprint.sh" | sh`
    - It might take some time, be patient.
 4. Once you see "===== Done. Test your Play Integrity now! =====", download [SPIC - Play Integrity Checker](https://play.google.com/store/apps/details?id=com.henrikherzig.playintegritychecker)
 5. Open the app, and click "Make play integrity request"
