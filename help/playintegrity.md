@@ -3,7 +3,7 @@
 ## Installing PlayIntegrityFix
 1. First, make sure you have [magisk](/help/installing-magisk) installed
    - Make sure you enable zygisk in magisk settings!!
-   - Also make sure you add play store to denylist
+   - Also make sure you add play store to denylist, and clear play store data
 2. Install [PlayIntegrityFix module](https://github.com/chiteroman/PlayIntegrityFix/releases/latest)
 3. Reboot device
 
