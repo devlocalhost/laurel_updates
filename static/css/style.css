@@ -79,7 +79,7 @@ ul {
 
 ol ol, ol ul {
     background: rgb(32, 34, 36);
-    box-shadow: none;
+    box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
 }
 
 img {
