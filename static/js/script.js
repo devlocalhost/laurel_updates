@@ -26,13 +26,21 @@ window.addEventListener("beforeunload", function () {
 document.querySelectorAll("a").forEach(function (link) {
     if (!link.classList.contains("no-fade-animation")) {
         link.addEventListener("click", function (event) {
-            event.preventDefault();
+            // Check if the link has the target attribute set to _blank
+            if (link.getAttribute("target") === "_blank") {
+                // Open the link in a new tab
+                window.open(link.href, "_blank");
+                event.preventDefault();
+            } else {
+                // Prevent the default behavior for other links
+                event.preventDefault();
 
-            document.body.classList.add("fade-out");
+                document.body.classList.add("fade-out");
 
-            document.body.addEventListener("animationend", function () {
-                window.location.href = link.href;
-            });
+                document.body.addEventListener("animationend", function () {
+                    window.location.href = link.href;
+                });
+            }
         });
     }
 });

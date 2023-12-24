@@ -20,10 +20,9 @@
         <a href="/"><h4 class="colored">← laurel_updates</h4></a>
         <h1 class="colored" onclick="toggleStylesheet()">Statistics</h1>
         <ul>
-            <li>Visitors (since deploy time): {{ data["visitors"] }}</li>
             <li>Deploy time: <code>{{ data["deployed_time"] }}</code></li>
-            <li>Uptime: <code>{{ data["uptime"] }}</code></li>
-            <li>Files in cachedir: {{ data["cachedir_len"] }}</li>
+            <li>Visitors (since deploy time): {{ data["visitors"] }}</li>
+            <li>Uptime: <code>{{ data["uptime"] }}</code> (or check <a href="https://stats.uptimerobot.com/dUSCpWpOIM" target="_blank">Uptime Robot status page</a>)</li>
             <li>Platform: <code>{{ data["platform"] }}</code></li>
             <li>
                 Commit: <code>{{ data["commit"] }} </code> (<code
@@ -31,6 +30,7 @@
                     data["commit"] }}</code
                 >)
             </li>
+            <li>Files in cachedir: {{ data["cachedir_len"] }}</li>
         </ul>
 
         <div class="navbar">
