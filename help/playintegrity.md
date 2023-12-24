@@ -19,3 +19,6 @@ To make play integrity work, we need to find a "valid", working fingerprint. For
 5. Open the app, and click "Make play integrity request"
    - If you see "MEETS_DEVICE_INTEGRITY", that means play integrity is not failing anymore. Congrats, that's it
    - If you see "MEETS_BASIC_INTEGRITY", do step 4 again (no need to enter su again, just the long command)
+
+## Play Integrity broke again
+This is normal. If you're unlucky, it won't work anymore. So, avoid sharing your fingerprint (or "pif.json" file) with others. Now, to fix that, you will have to repeat step 3 from above
