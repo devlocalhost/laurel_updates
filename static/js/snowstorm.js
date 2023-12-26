@@ -24,7 +24,7 @@ var snowStorm = (function (window, document) {
     this.flakeBottom = null; // Integer for Y axis snow limit, 0 or null for "full-screen" snow effect
     this.followMouse = false; // Snow movement can respond to the user's mouse
     this.snowColor = "#fff"; // Don't eat (or use?) yellow snow.
-    this.snowCharacter = "&bull;"; // &bull; = bullet, &middot; is square on some systems etc.
+    this.snowCharacter = "&ast;"; // &bull; = bullet, &middot; is square on some systems etc.
     this.snowStick = false; // Whether or not snow should "stick" at the bottom. When off, will never collect.
     this.targetElement = null; // element which snow will be appended to (null = document.body) - can be an element ID eg. 'myDiv', or a DOM node reference
     this.useMeltEffect = false; // When recycling fallen snow (or rarely, when falling), have it "melt" and fade out if browser supports it
@@ -38,8 +38,8 @@ var snowStorm = (function (window, document) {
     this.freezeOnBlur = true; // Only snow when the window is in focus (foreground.) Saves CPU.
     this.flakeLeftOffset = 0; // Left margin/gutter space on edge of container (eg. browser window.) Bump up these values if seeing horizontal scrollbars.
     this.flakeRightOffset = 0; // Right margin/gutter space on edge of container
-    this.flakeWidth = 8; // Max pixel width reserved for snow element
-    this.flakeHeight = 8; // Max pixel height reserved for snow element
+    this.flakeWidth = 15; // Max pixel width reserved for snow element
+    this.flakeHeight = 15; // Max pixel height reserved for snow element
     this.vMaxX = 2; // Maximum X velocity (left right) range for snow
     this.vMaxY = 3; // Maximum Y velocity (up down) range for snow
     this.zIndex = 0; // CSS stacking order applied to each snowflake
@@ -370,7 +370,7 @@ var snowStorm = (function (window, document) {
         this.meltFrame = 0;
         this.twinkleFrame = 0;
         this.active = 1;
-        this.fontSize = 10 + (this.type / 5) * 10;
+        this.fontSize = 11 + (this.type / 5) * 11;
         this.o = document.createElement("div");
         this.o.innerHTML = storm.snowCharacter;
         if (storm.className) {
