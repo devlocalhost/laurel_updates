@@ -4,7 +4,7 @@ There are two methods to save yourself from a bootloop CAUSED BY A MAGISK MODULE
 
 ## Booting into safe mode
 1. Hold power button so the phone reboots
-2. When you see the boot animation, hold the volume down button AND KEEP HOLDING till you feel a vibration. If you don't feel a vibration, wait and see if it boots. If it doesn't boot, start from step 1 again
+2. When you see the boot animation, hold the volume down button AND KEEP HOLDING till you feel a vibration. If you don't feel a vibration, wait and see if it boots. If it doesn't boot, start from step 1 again, but this time try holding both volume keys
 
 Then, reboot to get out of safe mode when the phone boots, and you should be able to boot. Note: all of your modules WILL be disabled
 
