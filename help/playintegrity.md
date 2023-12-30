@@ -13,12 +13,12 @@ To make play integrity work, we need to find a "valid", working fingerprint. For
 1. Open termux
 2. Paste this: `mkdir ~/pif`. Note: **YOU RUN THIS ONLY ONCE AND NEVER AGAIN!!**
 3. Now, paste this: `cd ~/pif`
-4. This script NEEDS ROOT, so, type `su` (approve the root request), then paste this: `/data/data/com.termux/files/usr/bin/curl "https://raw.githubusercontent.com/TheFreeman193/PIFS/main/pickaprint.sh" | sh`
+4. This script NEEDS ROOT, so, type `su`, press enter, and a popup to approve the root request will appear. Approve, then paste this: `/data/data/com.termux/files/usr/bin/curl "https://raw.githubusercontent.com/TheFreeman193/PIFS/main/pickaprint.sh" | sh`
    - It might take some time, be patient.
-4. Once you see "===== Done. Test your Play Integrity now! =====", download [SPIC - Play Integrity Checker](https://play.google.com/store/apps/details?id=com.henrikherzig.playintegritychecker)
+4. Once you see "===== Done. Test your Play Integrity now! =====", download [SPIC - Play Integrity Checker](https://play.google.com/store/apps/details?id=com.henrikherzig.playintegritychecker). Note: do NOT close termux yet!!
 5. Open the app, and click "Make play integrity request"
-   - If you see "MEETS_DEVICE_INTEGRITY", that means play integrity is not failing anymore. Congrats, that's it
+   - If you see "MEETS_DEVICE_INTEGRITY", that means play integrity is not failing anymore. Congrats, that's it. You can now close termux
    - If you see "MEETS_BASIC_INTEGRITY", do step 4 again (no need to enter su again, just the long command)
 
 ## Play Integrity not working again?
-This is normal. If you're unlucky, it won't work anymore. So, avoid sharing your fingerprint (or "pif.json" file) with others. Now, to fix that, you will have to repeat step 3 from above
+This is normal. If you're unlucky, it won't work anymore. So, avoid sharing your fingerprint (or "pif.json" file) with others. Now, to fix that, you will have to repeat step 3 from above (if you closed termux, else, continue from step 4)
