@@ -77,7 +77,7 @@ ul {
     /* the default, "circle" is uglier than me. */
 }
 
-ol ol, ol ul {
+ol ol, ol ul, ol p, ul p {
     background: rgb(32, 34, 36);
     box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
 }
