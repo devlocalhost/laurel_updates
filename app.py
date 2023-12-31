@@ -68,7 +68,7 @@ def get_uptime():
 
 
 def send_message(func, message):
-    print(f"{func} - Sending message to bot...")
+    print(f"{func} - Sending message to dev...")
 
     data = {"chat_id": 1547269295, "text": message, "parse_mode": "HTML"}
 
