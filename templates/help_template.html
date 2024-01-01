@@ -1,35 +1,6 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <title>laurel_updates - {{ title }}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="/static/css/style.css" />
-        <link
-            rel="stylesheet"
-            href="/static/css/border-outline.css"
-            id="debug-stylesheet"
-            disabled
-        />
-    </head>
-    <body>
-        <div id="progress-bar-container">
-            <div id="progress-bar"></div>
-        </div>
+{% extends "base.html" %} {% block title %}laurel_updates - {{ title }}{%
+endblock %} {% block content %}
+<a href="/help"><h4 class="colored">← Help</h4></a>
+<h1 class="colored" onclick="toggleStylesheet()">{{ title }}</h1>
 
-        <a href="/help"><h4 class="colored">← Help</h4></a>
-        <h1 class="colored" onclick="toggleStylesheet()">{{ title }}</h1>
-
-        {{ data | safe }}
-
-        <div class="navbar">
-            <a href="/">Home</a>
-            <a href="/roms">ROMs</a>
-            <a href="/kernels">Kernels</a>
-            <a href="/help" class="nav-active">Help</a>
-        </div>
-
-        <script src="/static/js/script.js"></script>
-        <script src="/static/js/snowstorm.js"></script>
-    </body>
-</html>
+{{ data | safe }} {% endblock %}

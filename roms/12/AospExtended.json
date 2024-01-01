@@ -3,11 +3,11 @@
     "version": "Twelve with GApps",
     "maintainer": "Anirudh",
     "date_release": "14/05/2022",
-    "changelog": "$LSfixed wide angle crash$LE$LStried to fix voip calling issues$LE$LSMerge linux 4.14.278$LE$LSoptimization & improvement$LE$LShaptics$LE$LSfixed random system ui crash$LE$LSremoved Xiaomi parts",
+    "changelog": "<li>fixed wide angle crash</li><li>tried to fix voip calling issues</li><li>Merge linux 4.14.278</li><li>optimization & improvement</li><li>haptics</li><li>fixed random system ui crash</li><li>removed Xiaomi parts",
     "status": "Unofficial",
     "support": "https://t.me/pa_laurel",
     "rdp": "No",
-    "notes": "$LSAnirudh has dropped AospExtended, and is maintaining <a href='/roms/ParanoidAndroid_13'>Paranoid Android</a> now.$LE",
+    "notes": "<li>Anirudh has dropped AospExtended, and is maintaining <a href='/roms/ParanoidAndroid_13'>Paranoid Android</a> now.</li>",
     "banner": "/static/img/banner_aex.png",
     "downloads": {
         "editions": {

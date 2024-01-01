@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% block head %}
+        <title>{% block title %}{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <link
+            rel="stylesheet"
+            href="/static/css/style.css"
+            id="default-stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="/static/css/border-outline.css"
+            id="debug-stylesheet"
+            disabled
+        />
+        {% endblock %}
+    </head>
+    <body>
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+
+        {% block navbar %}
+        <div class="navbar">
+            <a href="/" {% if request.endpoint and "home" in request.endpoint %}class="nav-active"{% endif %}>Home</a>
+            <a href="/roms" {% if request.endpoint and "roms" in request.endpoint %}class="nav-active"{% endif %}>ROMs</a>
+            <a href="/kernels" {% if request.endpoint and "kernels" in request.endpoint %}class="nav-active"{% endif %}>Kernels</a>
+            <a href="/help" {% if request.endpoint and "help" in request.endpoint %}class="nav-active"{% endif %}>Help</a>
+        </div>
+        {% endblock %}
+
+        <script src="/static/js/script.js"></script>
+        <script src="/static/js/snowstorm.js"></script>
+    </body>
+</html>

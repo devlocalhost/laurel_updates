@@ -3,11 +3,11 @@
     "version": "20",
     "maintainer": "Skyblueborb",
     "date_release": "28/10/2023",
-    "changelog": "$LSUpdated to October ASB$LE$LSUpdated kernel to NoName V9$LE$LSAdded screen off FOD$LE$LSAdded secure qs tiles$LE$LSAdded annoying notifications toggle$LE$LSEnabled charging control$LE$LSImported more performance patches from ProtonAOSP$LE$LSImported PixelPropUtils for spoofing (for ex. GPhotos)$LE$LSReduced the amount of logging$LE$LSSafetynet passes by default",
+    "changelog": "<li>Updated to October ASB</li><li>Updated kernel to NoName V9</li><li>Added screen off FOD</li><li>Added secure qs tiles</li><li>Added annoying notifications toggle</li><li>Enabled charging control</li><li>Imported more performance patches from ProtonAOSP</li><li>Imported PixelPropUtils for spoofing (for ex. GPhotos)</li><li>Reduced the amount of logging</li><li>Safetynet passes by default",
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
-    "notes": "$LSSkyblueborb is also maintaining <a href='/roms/LineageOS_11'>LineageOS 18.1</a>.$LE",
+    "notes": "<li>Skyblueborb is also maintaining <a href='/roms/LineageOS_11'>LineageOS 18.1</a>.</li>",
     "banner": "/static/img/banner_los20.jpg",
     "downloads": {
         "editions": {

@@ -1,46 +1,23 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <title>laurel_updates - statistics</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="/static/css/style.css" />
-        <link
-            rel="stylesheet"
-            href="/static/css/border-outline.css"
-            id="debug-stylesheet"
-            disabled
-        />
-    </head>
-    <body>
-        <div id="progress-bar-container">
-            <div id="progress-bar"></div>
-        </div>
-
-        <a href="/"><h4 class="colored">← laurel_updates</h4></a>
-        <h1 class="colored" onclick="toggleStylesheet()">Statistics</h1>
-        <ul>
-            <li>Deploy time: <code>{{ data["deployed_time"] }}</code></li>
-            <li>Visitors (since deploy time): {{ data["visitors"] }}</li>
-            <li>Uptime: <code>{{ data["uptime"] }}</code> (or check <a href="https://stats.uptimerobot.com/dUSCpWpOIM" target="_blank">Uptime Robot status page</a>)</li>
-            <li>Platform: <code>{{ data["platform"] }}</code></li>
-            <li>
-                Commit: <code>{{ data["commit"] }} </code> (<code
-                    >https://github.com/devlocalhost/laurel_updates/commit/{{
-                    data["commit"] }}</code
-                >)
-            </li>
-            <li>Files in cachedir: {{ data["cachedir_len"] }}</li>
-        </ul>
-
-        <div class="navbar">
-            <a href="/">Home</a>
-            <a href="/roms">ROMs</a>
-            <a href="/kernels">Kernels</a>
-            <a href="/help">Help</a>
-        </div>
-
-        <script src="/static/js/script.js"></script>
-        <script src="/static/js/snowstorm.js"></script>
-    </body>
-</html>
+{% extends "base.html" %} {% block title %}laurel_updates - statistics{%
+endblock %} {% block head %} {{ super() }} {% endblock %} {% block content %}
+<a href="/"><h4 class="colored">← laurel_updates</h4></a>
+<h1 class="colored" onclick="toggleStylesheet()">Statistics</h1>
+<ul>
+    <li>Deploy time: <code>{{ data["deployed_time"] }}</code></li>
+    <li>Visitors (since deploy time): {{ data["visitors"] }}</li>
+    <li>
+        Uptime: <code>{{ data["uptime"] }}</code> (or check
+        <a href="https://stats.uptimerobot.com/dUSCpWpOIM" target="_blank"
+            >Uptime Robot status page</a
+        >)
+    </li>
+    <li>Platform: <code>{{ data["platform"] }}</code></li>
+    <li>
+        Commit: <code>{{ data["commit"] }} </code> (<code
+            >https://github.com/devlocalhost/laurel_updates/commit/{{
+            data["commit"] }}</code
+        >)
+    </li>
+    <li>Files in cachedir: {{ data["cachedir_len"] }}</li>
+</ul>
+{% block navbar %} {% endblock %} {% endblock %}

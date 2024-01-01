@@ -1,102 +1,66 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <title>laurel_updates - main</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charset="utf-8" />
-        <meta name="theme-color" content="#9bcbfb" />
-        <link
-            rel="stylesheet"
-            href="/static/css/style.css"
-            id="default-stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="/static/css/border-outline.css"
-            id="debug-stylesheet"
-            disabled
-        />
+{% extends "base.html" %} {% block title %}laurel_updates - home{% endblock %}
+{% block head %} {{ super() }}
+<style type="text/css">
+    .red::first-letter {
+        color: #ed4245;
+    }
 
-        <style>
-            .red::first-letter {
-                color: #ed4245;
-            }
+    .green::first-letter {
+        color: #20bf6b;
+    }
+</style>
+{% endblock %} {% block content %}
+<h1 class="colored" onclick="toggleStylesheet()">laurel_updates</h1>
 
-            .green::first-letter {
-                color: #20bf6b;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="progress-bar-container">
-            <div id="progress-bar"></div>
-        </div>
+<h2>What is this?</h2>
+<p>
+    A web<a href="/stats">s</a>ite with content such as ROMs, Kernels and Guides
+    for laurel_sprout. I try to keep the data up to date. Data are usually
+    updated almost instantly (by me, manually). If you find an issue or a
+    mistake, please report. Created by
+    <a href="https://t.me/dev6400" target="_blank">dev6400</a>. Contact the dev
+    for suggestions or adding data.
+</p>
 
-        <h1 class="colored" onclick="toggleStylesheet()">laurel_updates</h1>
+<h2 class="colored">Navigate to...</h2>
+<ul>
+    <li>
+        <a href="/roms">ROMs</a>
+    </li>
+    <li>
+        <a href="/kernels">Kernels</a>
+    </li>
+    <li>
+        <a href="/help">Help (and Guides)</a>
+    </li>
+</ul>
 
-        <h2>What is this?</h2>
-        <p>
-            A web<a href="/stats">s</a>ite with content such as ROMs, Kernels
-            and Guides for laurel_sprout. I try to keep the data up to date.
-            Data are usually updated almost instantly (by me, manually). If you
-            find an issue or a mistake, please report. Created by
-            <a href="https://t.me/dev6400" target="_blank">dev6400</a>. Contact the dev for
-            suggestions or adding data.
-        </p>
+<hr />
 
-        <h2 class="colored">Navigate to...</h2>
-        <ul>
-            <li>
-                <a href="/roms">ROMs</a>
-            </li>
-            <li>
-                <a href="/kernels">Kernels</a>
-            </li>
-            <li>
-                <a href="/help">Help (and Guides)</a>
-            </li>
-        </ul>
+<h1 class="red">A bug with the website.</h1>
+<p>
+    There's a bug with the fade animation which breaks the whole page if you use
+    the browsers back button. I don't know if and how I'm going to fix this. For
+    now, to navigate back, use the top link which i have placed in every page.
+    It always takes you back, or, refresh/reload the website when this happens.
+</p>
 
-        <hr />
+<h1 class="green">Oh and...</h1>
+<p>
+    You can scroll to the top by double clicking a blank area, for example, the
+    bottom, or the edges.
+</p>
+<p>There is also feedback in some places (vibration), which applies to:</p>
 
-        <h1 class="red">A bug with the website.</h1>
-        <p>
-            There's a bug with the fade animation which breaks the whole page if
-            you use the browsers back button. I don't know if and how I'm going
-            to fix this. For now, to navigate back, use the top link which i
-            have placed in every page. It always takes you back, or,
-            refresh/reload the website when this happens.
-        </p>
+<ul>
+    <li>Double clicking blank areas (scrolls to the top)</li>
+    <li>Triple clicking any h1 header (toggles "debug" css)</li>
+    <li>Clicking black boxes (will copy text to clipboard)</li>
+</ul>
 
-        <h1 class="green">Oh and...</h1>
-        <p>
-            You can scroll to the top by double clicking a blank area, for
-            example, the bottom, or the edges.
-        </p>
-        <p>
-            There is also feedback in some places (vibration), which applies to:
-        </p>
-
-        <ul>
-            <li>Double clicking blank areas (scrolls to the top)</li>
-            <li>Triple clicking any h1 header (toggles "debug" css)</li>
-            <li>Clicking black boxes (will copy text to clipboard)</li>
-        </ul>
-
-        <p>
-            Please let me know if vibration is too strong, or doesnt work at
-            all. This has been tested on chrome android,
-            <code>version 120.0.6099.115</code>
-        </p>
-
-        <div class="navbar">
-            <a href="/" class="nav-active">Home</a>
-            <a href="/roms">ROMs</a>
-            <a href="/kernels">Kernels</a>
-            <a href="/help">Help</a>
-        </div>
-
-        <script src="/static/js/script.js"></script>
-        <script src="/static/js/snowstorm.js"></script>
-    </body>
-</html>
+<p>
+    Please let me know if vibration is too strong, or doesnt work at all. This
+    has been tested on chrome android,
+    <code>version 120.0.6099.115</code>
+</p>
+{% endblock %}

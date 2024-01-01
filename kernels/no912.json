@@ -4,9 +4,9 @@
     "version": "4.14.330",
     "maintainer": "Frank & Beatriz",
     "date_release": "21/11/2023",
-    "changelog": "https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.330",
+    "changelog": "<li><a href='https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.330'>Changelog link</a></li>",
     "support": "https://t.me/No_912",
-    "notes": "$LSLatest available builds for Laurel Sprout provided above, don't use for daily tasks, the Kernel branch is soon to be deprecated.$LE$LSWarning: This kernel <strong>REQUIRES</strong> <a href=\"https://github.com/topjohnwu/Magisk/releases\">magisk</a> installed on your phone!$LE$LSThis kernel does not have kernelSU built in.$LE",
+    "notes": "<li>Latest available builds for Laurel Sprout provided above, don't use for daily tasks, the Kernel branch is soon to be deprecated.</li><li>Warning: This kernel <strong>REQUIRES</strong> <a href=\"https://github.com/topjohnwu/Magisk/releases\">magisk</a> installed on your phone!</li><li>This kernel does not have kernelSU built in.</li>",
     "banner": "/static/img/banner_no912.jpg",
     "downloads": {
         "editions": {

@@ -3,7 +3,7 @@
     "version": "1.10",
     "maintainer": "RAYAN",
     "date_release": "23/10/2023",
-    "changelog": "$LSimproved udfps dim framework$LE$LSupstreamed kernel (Mansoon) to latest version$LE$LSimproved sound and fixed mic issue$LE$LSoptimized over all kernel for better performance and battery backup$LE$LSScreen of fod working fine",
+    "changelog": "<li>improved udfps dim framework</li><li>upstreamed kernel (Mansoon) to latest version</li><li>improved sound and fixed mic issue</li><li>optimized over all kernel for better performance and battery backup</li><li>Screen of fod working fine",
     "status": "Unofficial",
     "support": "https://t.me/A12_miA3",
     "rdp": "Yes",

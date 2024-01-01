@@ -3,11 +3,11 @@
     "version": "13",
     "maintainer": "zafeey",
     "date_release": "07/10/2023",
-    "changelog": "$LSSeptember Security Patch$LE$LSLinux 4.14.326$LE$LSFixes USB OTG (From previous PixelOS build)$LE$LSMisc. Improvements",
+    "changelog": "<li>September Security Patch</li><li>Linux 4.14.326</li><li>Fixes USB OTG (From previous PixelOS build)</li><li>Misc. Improvements",
     "status": "Unofficial",
     "support": "https://t.me/A3PEPlus",
     "rdp": "Yes",
-    "notes": "$LSCustom kernel/recovery are not supported.$LE",
+    "notes": "<li>Custom kernel/recovery are not supported.</li>",
     "banner": "/static/img/banner_pe_fey.jpg",
     "downloads": {
         "editions": {

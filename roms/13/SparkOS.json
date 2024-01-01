@@ -3,11 +3,11 @@
     "version": "13.11",
     "maintainer": "bakka",
     "date_release": "15/12/2023",
-    "changelog": "$LSChanged lottie animations in Settings$LE$LSDec patch$LE$LSChanged 128319 certificates to fix play integrity, but they ban all of them already$LE$LSI have no idea what else, but something else for sure$LE",
+    "changelog": "<li>Changed lottie animations in Settings</li><li>Dec patch</li><li>Changed 128319 certificates to fix play integrity, but they ban all of them already</li><li>I have no idea what else, but something else for sure</li>",
     "status": "Unofficial",
     "support": "https://t.me/SparkOS_group_laurel",
     "rdp": "No",
-    "notes": "$LSFlash <a href='/kernels/no912'>No.912</a> cuz it makes all smoother$LE",
+    "notes": "<li>Flash <a href='/kernels/no912'>No.912</a> cuz it makes all smoother</li>",
     "banner": "/static/img/banner_sparkos.jpg",
     "downloads": {
         "editions": {

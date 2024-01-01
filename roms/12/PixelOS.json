@@ -3,11 +3,11 @@
     "version": "12L",
     "maintainer": "zafeey",
     "date_release": "01/09/2022",
-    "changelog": "$LSLinux 4.14.291$LE$LSFixed low volume for bluetooth device$LE$LSAdded back Moto Dolby$LE$LSAdd support for Hotwords$LE$LSDrop screen off fod$LE$LSImprove UX performance$LE$LSSlightly improve battery backup",
+    "changelog": "<li>Linux 4.14.291</li><li>Fixed low volume for bluetooth device</li><li>Added back Moto Dolby</li><li>Add support for Hotwords</li><li>Drop screen off fod</li><li>Improve UX performance</li><li>Slightly improve battery backup",
     "status": "Unofficial",
     "support": "https://t.me/A3PixelOS",
     "rdp": "Yes",
-    "notes": "$LSzafeey <a href='https://t.me/A3PEPlus/22326'>has dropped</a> PixelOS, and is maintaining <a href='/roms/PixelExperience_13'>Pixel Experience</a> now.$LE",
+    "notes": "<li>zafeey <a href='https://t.me/A3PEPlus/22326'>has dropped</a> PixelOS, and is maintaining <a href='/roms/PixelExperience_13'>Pixel Experience</a> now.</li>",
     "banner": "/static/img/banner_pixelos12.jpg",
     "downloads": {
         "editions": {

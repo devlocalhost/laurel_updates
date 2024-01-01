@@ -3,11 +3,11 @@
     "version": "14",
     "maintainer": "Magicxavi",
     "date_release": "06/11/2023",
-    "changelog": "$LSFixed encryption$LE$LSFixed Dynamic Partitions",
+    "changelog": "<li>Fixed encryption</li><li>Fixed Dynamic Partitions",
     "status": "Unofficial",
     "support": "https://t.me/syberia_laurel_sprout",
     "rdp": "Yes",
-    "notes": "$LSThis is an ALPHA RELEASE!!$LE$LSIssues: Selinux is permissive, and maybe more$LE$LSMagicxavi also maintains <a href='/roms/Syberia_13'>Syberia</a> and <a href='/roms/PixelMagic_13'>Pixel Magic</a>$LE",
+    "notes": "<li>This is an ALPHA RELEASE!!</li><li>Issues: Selinux is permissive, and maybe more</li><li>Magicxavi also maintains <a href='/roms/Syberia_13'>Syberia</a> and <a href='/roms/PixelMagic_13'>Pixel Magic</a></li>",
     "banner": "/static/img/banner_pe_kyryll.jpg",
     "downloads": {
         "editions": {

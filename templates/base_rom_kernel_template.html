@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}laurel_updates - {{ data["name"] }}{% endblock %}
+{% block head %}
+{{ super() }}
+<style type="text/css">
+            #additional_info {
+                display: none;
+            }
+
+            #additional_info:target {
+                display: block;
+            }
+        </style>
+    {% endblock %}
+    {% block content %}
+    <a href="{% block routeback %}{% endblock %}"><h4 class="colored">{% block routename %}{% endblock %}</h4></a>
+    <h1 class="colored" onclick="toggleStylesheet()">{% block filename %}{{ data["name"] }} ({{ data["status"] }}){% endblock %}</h1>
+
+        {% if data["banner"] %}
+        <img src="{{ data["banner"] }}" alt="{{ data["name"] }} banner" />
+        {% endif %}
+
+        <ul>
+            <li>Maintainer: {{ data["maintainer"] }}</li>
+            <li>Release date: {{ data["date_release"] }}</li>
+            <li>Version: {{ data["version"] }}</li>
+        </ul>
+
+        <p style="text-align: center"><a href="#additional_info" class="no-fade-animation">Additional information</a></p>
+
+        <div id="additional_info">
+            <h2>Changelog</h2>
+
+            {% block changelog %}
+            <ul>
+                {{ data["changelog"] | safe }}
+            </ul>
+            {% endblock %}
+
+            <h2>Notes</h2>
+            <ul>
+                {% if data["notes"] %}
+                {{ data["notes"].replace("$LS", "<li>").replace("$LE", "</li>") | safe }}
+                {% endif %}
+
+                {% block rdp %}
+                <li>
+                    RDP? {{ data["rdp"] }} (check
+                    <a href="/help/what-is-rdp">what is rdp</a> for more)
+                </li>
+                {% endblock %}
+
+                <li>
+                    Make sure you read the instructions in the
+                    <a href="{{ data['support'] }}">Support forum</a> before
+                    flashing!!!
+                </li>
+            </ul>
+        </div>
+
+        <hr />
+
+        <h1 class="colored">Downloads</h1>
+        <ul>
+            {% for edition, link in data["downloads"]["editions"].items() %} {%
+            if link %}
+            <li><a href="{{ link }}">{{ edition.title() }}</a></li>
+            {% endif %} {% endfor %}
+        </ul>
+        {% endblock %}

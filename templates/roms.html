@@ -1,87 +1,52 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <title>laurel_updates - roms</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charset="utf-8" />
-        <link
-            rel="stylesheet"
-            href="/static/css/style.css"
-            id="default-stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="/static/css/border-outline.css"
-            id="debug-stylesheet"
-            disabled
-        />
+{% extends "base.html" %} {% block title %}laurel_updates - TITLE{% endblock %}
+{% block head %} {{ super() }}
+<style type="text/css">
+    .adrod::first-letter {
+        color: #10b981;
+    }
+</style>
+{% endblock %}{% block content %}
+<a href="/"><h4 class="colored">← laurel_updates</h4></a>
+<h1 class="colored" onclick="toggleStylesheet()">ROMs</h1>
 
-        <style>
-            .adrod::first-letter {
-                color: #10b981;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="progress-bar-container">
-            <div id="progress-bar"></div>
-        </div>
+<h2>Android Versions</h2>
+<p>
+    Recommended versions are
+    <strong>android 11 and 13</strong>, because these are the ones usually
+    getting updates. Android 14 ROMs are not stable yet. Android 10 and 9 are
+    not included because no one is interested, plus most laurel users are using
+    "android 11 firmware", which enables anti-rollback, preventing flashing
+    anything lower than android 11 (will result in a "hard brick").
+</p>
 
-        <div>
-            <a href="/"><h4 class="colored">← laurel_updates</h4></a>
-            <h1 class="colored" onclick="toggleStylesheet()">ROMs</h1>
+<h2 class="colored" id="top">Navigate to version</h2>
+<ul>
+    <li><a href="#a14" class="no-fade-animation">🔗 14</a></li>
+    <li><a href="#a13" class="no-fade-animation">🔗 13</a></li>
+    <li><a href="#a12" class="no-fade-animation">🔗 12</a></li>
+    <li><a href="#a11" class="no-fade-animation">🔗 11</a></li>
+</ul>
 
-            <h2>Android Versions</h2>
-            <p>
-                Recommended versions are
-                <strong>android 11 and 13</strong>, because these are the ones
-                usually getting updates. Android 14 ROMs are not stable yet.
-                Android 10 and 9 are not included because no one is interested,
-                plus most laurel users are using "android 11 firmware", which
-                enables anti-rollback, preventing flashing anything lower than
-                android 11 (will result in a "hard brick").
-            </p>
+{% for version, roms in roms_data.items() %}
+<div id="a{{ version }}">
+    <h2 class="adrod">Android {{ version }} ROMs:</h2>
+</div>
+<ul>
+    {% for rom in roms %}
+    <li>
+        <a href="roms/{{ rom['route_name'] }}">{{ rom["name"] }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endfor %}
 
-            <h2 class="colored" id="top">Navigate to version</h2>
-            <ul>
-                <li><a href="#a14" class="no-fade-animation">🔗 14</a></li>
-                <li><a href="#a13" class="no-fade-animation">🔗 13</a></li>
-                <li><a href="#a12" class="no-fade-animation">🔗 12</a></li>
-                <li><a href="#a11" class="no-fade-animation">🔗 11</a></li>
-            </ul>
+<hr />
 
-            {% for version, roms in roms_data.items() %}
-            <div id="a{{ version }}">
-                <h2 class="adrod">Android {{ version }} ROMs:</h2>
-            </div>
-            <ul>
-                {% for rom in roms %}
-                <li>
-                    <a href="roms/{{ rom['route_name'] }}">{{ rom["name"] }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-            {% endfor %}
-
-            <hr />
-
-            <h2 class="colored">Missing ROM?</h2>
-            <p>
-                Contact the
-                <a href="https://t.me/dev6400" target="_blank">dev</a>
-                for submission. Please, don't submit outdated/discontinued ROMs.
-                (But there COULD be an exception)
-            </p>
-        </div>
-
-        <div class="navbar">
-            <a href="/">Home</a>
-            <a href="/roms" class="nav-active">ROMs</a>
-            <a href="/kernels">Kernels</a>
-            <a href="/help">Help</a>
-        </div>
-
-        <script src="/static/js/script.js"></script>
-        <script src="/static/js/snowstorm.js"></script>
-    </body>
-</html>
+<h2 class="colored">Missing ROM?</h2>
+<p>
+    Contact the
+    <a href="https://t.me/dev6400" target="_blank">dev</a>
+    for submission. Please, don't submit outdated/discontinued ROMs. (But there
+    COULD be an exception)
+</p>
+{% endblock %}

@@ -162,8 +162,8 @@ def list_json_files(directory):
 
 
 @app.route("/")
-def index():
-    """index"""
+def home():
+    """home page"""
 
     statistics.update()
 
@@ -197,7 +197,7 @@ def help_route():
 
 
 @app.route("/help/<article_name>")
-def help_artc(article_name):
+def help_article(article_name):
     """help articles"""
 
     statistics.update()
@@ -250,7 +250,7 @@ def roms():
 
 
 @app.route("/roms/<string:rom_name>_<int:version>")
-def rom_route(rom_name, version):
+def roms_name(rom_name, version):
     """rom name route"""
 
     statistics.update()
@@ -282,7 +282,7 @@ def kernels():
 
 
 @app.route("/kernels/<kernel_name>")
-def kernel_route(kernel_name):
+def kernels_name(kernel_name):
     """kernels"""
 
     statistics.update()

@@ -3,11 +3,11 @@
     "version": "11",
     "maintainer": "Rudra.DNG",
     "date_release": "03/03/2021",
-    "changelog": "$LSUnknown$LE",
+    "changelog": "<li>Unknown</li>",
     "status": "Unknown Status",
     "support": "https://t.me/PePlus_MiA3",
     "rdp": "No",
-    "notes": "$LSGoogle apps are pre-included, hence it isn't needed to flash them on-top$LE$LSCustom Recovery not included$LE$LSOSS vendor based$LE$LSAndroid 11 firmware Based$LSMake sure you read <a href='https://xdaforums.com/t/rom-11-mi-a3-pixelexperience-aosp.4241751/'>the xda post</a> before flashing$LE",
+    "notes": "<li>Google apps are pre-included, hence it isn't needed to flash them on-top</li><li>Custom Recovery not included</li><li>OSS vendor based</li><li>Android 11 firmware Based<li>Make sure you read <a href='https://xdaforums.com/t/rom-11-mi-a3-pixelexperience-aosp.4241751/'>the xda post</a> before flashing</li>",
     "banner": "/static/img/banner_pe_rudra.jpg",
     "downloads": {
         "editions": {

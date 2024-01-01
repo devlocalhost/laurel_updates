@@ -3,11 +3,11 @@
     "version": "18.1",
     "maintainer": "Skyblueborb",
     "date_release": "16/12/2023",
-    "changelog": "$LSUpdated to December ASB$LE$LSImported more performance patches from ProtonAOSP$LE$LSReduced unnecessary logging$LE$LSReplaced stock camera with GrapheneOS camera$LE$LSImplemented Pixel XL spoof for Google Photos$LE$LSUpdated to NoName V9 (4.14.325) kernel",
+    "changelog": "<li>Updated to December ASB</li><li>Imported more performance patches from ProtonAOSP</li><li>Reduced unnecessary logging</li><li>Replaced stock camera with GrapheneOS camera</li><li>Implemented Pixel XL spoof for Google Photos</li><li>Updated to NoName V9 (4.14.325) kernel",
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
-    "notes": "$LSRemoval of the stock camera may be temporary; it could be reintroduced in the future.$LE$LSSkyblueborb is also maintaining <a href='/roms/LineageOS_13'>LineageOS 20</a>.$LE",
+    "notes": "<li>Removal of the stock camera may be temporary; it could be reintroduced in the future.</li><li>Skyblueborb is also maintaining <a href='/roms/LineageOS_13'>LineageOS 20</a>.</li>",
     "banner": "/static/img/banner_los18.jpg",
     "downloads": {
         "editions": {
