@@ -1,16 +1,16 @@
 {
-    "name": "No.912 (No.33)",
+    "name": "No.912",
     "route_name": "no912",
-    "version": "4.14.330",
+    "version": "4.14.336 [EOL]",
     "maintainer": "Frank & Beatriz",
-    "date_release": "21/11/2023",
-    "changelog": "<li><a href='https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.14.330'>Changelog link</a></li>",
+    "date_release": "11/01/2024",
+    "changelog": "<li>Synced everything available to the latest version and added patches of critical components that we fixed on Bengal board.</li>",
     "support": "https://t.me/No_912",
-    "notes": "<li>Latest available builds for Laurel Sprout provided above, don't use for daily tasks, the Kernel branch is soon to be deprecated.</li><li>Warning: This kernel <strong>REQUIRES</strong> <a href=\"https://github.com/topjohnwu/Magisk/releases\">magisk</a> installed on your phone!</li><li>This kernel does not have kernelSU built in.</li>",
+    "notes": "<li>GCC 13.2, ARM prebuilt.</li><li><b>After 4 years of support, this is the final release for Laurel Sprout (4.14.x kernel branch got discontinued by linux).</b></li><li>Warning: This kernel <strong>REQUIRES</strong> <a href=\"https://github.com/topjohnwu/Magisk/releases\">magisk</a> installed on your phone!</li><li>This kernel does not have kernelSU built in.</li>",
     "banner": "/static/img/banner_no912.jpg",
     "downloads": {
         "editions": {
-            "Normal": "https://t.me/No_912_Updates/485?single",
+            "Normal": "https://t.me/No_912_Updates/512",
             "RDP": null
         }
     }
