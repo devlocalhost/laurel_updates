@@ -114,7 +114,6 @@ class Statistics:
                 {
                     "visitors": self.visitors,
                     "deployed_time": self.deployed,
-                    "cachedir_len": len(os.listdir(".flask_cache")),
                     "platform": platform_details,
                     "uptime": get_uptime(),
                     "commit": commit,

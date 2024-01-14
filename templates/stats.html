@@ -3,14 +3,14 @@ endblock %} {% block head %} {{ super() }} {% endblock %} {% block content %}
 <a href="/"><h4 class="colored">← laurel_updates</h4></a>
 <h1 class="colored" onclick="toggleStylesheet()">Statistics</h1>
 <ul>
-    <li>Deploy time: <code>{{ data["deployed_time"] }}</code></li>
-    <li>Visitors (since deploy time): {{ data["visitors"] }}</li>
     <li>
         Uptime: <code>{{ data["uptime"] }}</code> (or check
         <a href="https://stats.uptimerobot.com/dUSCpWpOIM" target="_blank"
             >Uptime Robot status page</a
         >)
     </li>
+    <li>Deploy time: <code>{{ data["deployed_time"] }}</code></li>
+    <li>Visitors (since deploy time): {{ data["visitors"] }}</li>
     <li>Platform: <code>{{ data["platform"] }}</code></li>
     <li>
         Commit: <code>{{ data["commit"] }} </code> (<code
@@ -18,6 +18,5 @@ endblock %} {% block head %} {{ super() }} {% endblock %} {% block content %}
             data["commit"] }}</code
         >)
     </li>
-    <li>Files in cachedir: {{ data["cachedir_len"] }}</li>
 </ul>
 {% block navbar %} {% endblock %} {% endblock %}
