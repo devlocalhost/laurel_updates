@@ -7,13 +7,12 @@ A website where ROMs and kernels developed for this device are posted here.
 
 import os
 import json
-import glob
 import atexit
-import base64
-import mistune
-import secrets
-import platform
 import datetime
+import subprocess
+
+import mistune
+import platform
 import requests
 import subprocess
 
@@ -21,19 +20,12 @@ from flask import (
     Flask,
     render_template,
     make_response,
-    request,
-    url_for,
-    redirect,
-    session,
 )
-from functools import wraps
-from cachelib.file import FileSystemCache
 
 app = Flask(" -- laurel_updates -- ")
-cache = FileSystemCache(".flask_cache")
 
-if os.getenv("LAUREL_MODE"):
-    print("[DEBUG] Templates will (hopefully) auto reload")
+if os.getenv("LU_DEBUG_MODE"):
+    print("[DEBUG] Templates will auto reload")
     app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 commit = subprocess.check_output(
@@ -74,7 +66,9 @@ def send_message(func, message):
 
     try:
         req = requests.post(
-            f"https://api.telegram.org/bot{os.getenv('TKN')}/sendMessage", data=data
+            f"https://api.telegram.org/bot{os.getenv('TKN')}/sendMessage",
+            data=data,
+            timeout=10,
         )
 
         print(f"{func} - Status: {req.status_code}")
@@ -132,23 +126,6 @@ class Statistics:
 statistics = Statistics()
 
 
-def generate_html(template_name, **context):
-    template_path = os.path.join(app.template_folder, template_name)
-    template_mtime = os.path.getmtime(template_path)
-
-    cache_key = f"{template_name}:{json.dumps(context, sort_keys=True)}"
-
-    cached_html = cache.get(cache_key)
-
-    if cached_html is not None and cached_html["mtime"] == template_mtime:
-        return cached_html["html"]
-
-    html = render_template(template_name, **context)
-    cache.set(cache_key, {"html": html, "mtime": template_mtime})
-
-    return html
-
-
 def list_json_files(directory):
     """get json files of dir"""
 
@@ -167,7 +144,7 @@ def home():
 
     statistics.update()
 
-    return generate_html("index.html")
+    return render_template("index.html")
 
 
 @app.route("/stats")
@@ -193,7 +170,7 @@ def help_route():
                     artc_file.readline().replace("# ", "").replace(nl, "")
                 ] = file.removesuffix(".md")
 
-    return generate_html("help.html", articles=articles)
+    return render_template("help.html", articles=articles)
 
 
 @app.route("/help/<article_name>")
@@ -246,7 +223,7 @@ def roms():
 
             roms_data[version].append(data)
 
-    return make_response(generate_html("roms.html", roms_data=roms_data))
+    return make_response(render_template("roms.html", roms_data=roms_data))
 
 
 @app.route("/roms/<string:rom_name>_<int:version>")
@@ -262,7 +239,7 @@ def roms_name(rom_name, version):
 
         return render_template("rom_template.html", data=data)
 
-    return generate_html("404.html")
+    return render_template("404.html")
 
 
 @app.route("/kernels")
@@ -278,7 +255,7 @@ def kernels():
             j_data = json.load(file)
             data["kernels"].append(j_data)
 
-    return make_response(generate_html("kernels.html", data=data))
+    return make_response(render_template("kernels.html", data=data))
 
 
 @app.route("/kernels/<kernel_name>")
@@ -289,7 +266,7 @@ def kernels_name(kernel_name):
     kernel_file = os.path.join("kernels", kernel_name + ".json")
 
     if not os.path.exists(kernel_file):
-        return generate_html("404.html")
+        return render_template("404.html")
 
     with open(kernel_file, encoding="utf-8") as file:
         data = json.load(file)
@@ -303,7 +280,7 @@ def page_not_found(e):
 
     statistics.update()
 
-    return generate_html("404.html")
+    return render_template("404.html")
 
 
 atexit.register(going_down)
