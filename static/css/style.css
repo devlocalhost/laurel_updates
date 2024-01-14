@@ -1,10 +1,10 @@
 :root {
-    --accent-color: #9bcbfb;
-    --background-color: rgb(26, 28, 30);
-    --text-color: #cacaca;
+    --accent-color: #93CDF6;
+    --background-color: #161C21;
+    --text-color: #D2E5F5;
     --animation-speed: 0.25s;
-    --ul-ol-background-color: #303030;
-    --navbar-background-color: #292929;
+    --ul-ol-background-color: #2D3135;
+    --navbar-background-color: #2D3135;
     --img-border-color: var(--accent-color);
     --box-border-color: #111;
     --box-border-size: 10px;
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    color: var(--text-color); /* rgba(255, 255, 245, .86); */
+    color: var(--text-color);
     background-color: var(--background-color);
     margin: 1em auto;
     max-width: 40em;
@@ -78,7 +78,7 @@ ul {
 }
 
 ol ol, ol ul, ol p, ul p {
-    background: rgb(32, 34, 36);
+    background: #41484D;
     box-shadow: 0 0 5px var(--box-border-color);
 }
 
@@ -118,17 +118,17 @@ img {
 }
 
 .navbar a.nav-active {
-    background-color: #323232;
+    background-color: #41484D;
     box-shadow: 0 0 4px var(--box-border-color);
 }
 
 .navbar a:hover {
-    background-color: #383838;
+    background-color: #677886;
     transition: background-color 0.5s;
 }
 
 code {
-    background-color: #000; /* #151515; */
+    background-color: #101010;
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 5px;
