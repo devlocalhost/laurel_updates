@@ -1,0 +1,17 @@
+{
+    "name": "AICP",
+    "version": "18",
+    "maintainer": "lzyfrank",
+    "date_release": "17/01/2024",
+    "changelog": "<li>Initial build</li>",
+    "status": "Unofficial",
+    "support": "https://t.me/+lP6Q0mllxaA3YzI9",
+    "rdp": "No",
+    "notes": "",
+    "banner": "/static/img/banner_aicp.jpg",
+    "downloads": {
+        "editions": {
+            "Vanilla": "https://sourceforge.net/projects/roms-mi-a3/files/aicp-18/"
+        }
+    }
+}
