@@ -3,7 +3,7 @@
     "version": "20",
     "maintainer": "Skyblueborb",
     "date_release": "28/10/2023",
-    "changelog": "<li>Updated to October ASB</li><li>Updated kernel to NoName V9</li><li>Added screen off FOD</li><li>Added secure qs tiles</li><li>Added annoying notifications toggle</li><li>Enabled charging control</li><li>Imported more performance patches from ProtonAOSP</li><li>Imported PixelPropUtils for spoofing (for ex. GPhotos)</li><li>Reduced the amount of logging</li><li>Safetynet passes by default",
+    "changelog": "<li>Updated to October ASB</li><li>Updated kernel to NoName V9</li><li>Added screen off FOD</li><li>Added secure qs tiles</li><li>Added annoying notifications toggle</li><li>Enabled charging control</li><li>Imported more performance patches from ProtonAOSP</li><li>Imported PixelPropUtils for spoofing (for ex. GPhotos)</li><li>Reduced the amount of logging</li><li>Safetynet passes by default</li>",
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
