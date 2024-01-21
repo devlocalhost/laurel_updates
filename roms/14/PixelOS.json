@@ -1,0 +1,18 @@
+{
+    "name": "PixelOS",
+    "version": "14",
+    "maintainer": "Magicxavi",
+    "date_release": "21/01/2024",
+    "changelog": "<li>Selinux Enforcing</li><li>Erofs partitions</li><li>Compressed partitions</li><li>Added MIUI camera</li><li>Fine tuned device scripts (governor, zram, lmk), also cleanup</li><li>Downgraded kernel Techpack (possible audio changes)</li><li>Kernel side UDFPS</li>",
+    "status": "Unofficial",
+    "support": "https://t.me/syberia_laurel_sprout",
+    "rdp": "Yes",
+    "notes": "<li>This is RDP build.</li><li>This build can be flashed in recovery.</li><li>Thanks to all my contributors :)</li><li>Portrait and night mode in miui camera not working</li><li>Maybe more</li>",
+    "banner": "/static/img/banner_pixelos_kyryll.jpg",
+    "downloads": {
+        "editions": {
+            "Vanilla": null,
+            "Gapps": "https://t.me/syberia_laurel_sprout/69689/94179"
+        }
+    }
+}
