@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block title %}laurel_updates - help{% endblock %}
+{% block head %} {{ super() }}
+<style type="text/css">
+    .adrod::first-letter {
+        color: #3ddc84;
+    }
+</style>
+{% endblock %} {% block content %}
+<a href="/"><h4 class="colored">← laurel_updates</h4></a>
+<h1 class="colored" onclick="toggleStylesheet()">Blog</h1>
+
+<p>
+    This page contains guides for laurel_sprout, like installing magisk,
+    platform_tools, and more (some can be used on other devices aswell i guess).
+    Want to add something? Contact the
+    <a href="https://t.me/dev6400" target="_blank">dev</a>.
+</p>
+
+<h2 class="colored">Articles</h2>
+<ul>
+    {% for article in articles.items() %}
+    <li><a href="/help/{{ article[1] }}">{{ article[0] }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
