@@ -24,7 +24,7 @@ from flask import (
 
 app = Flask(" -- laurel_updates -- ")
 
-if os.getenv("LU_DEBUG_MODE"):
+if os.getenv("LAUREL_MODE"):
     print("[DEBUG] Templates will auto reload")
     app.config["TEMPLATES_AUTO_RELOAD"] = True
 
@@ -155,29 +155,31 @@ def stats():
     return render_template("stats.html", data=statistics.get_data())
 
 
+@app.route("/blog")
 @app.route("/help")
-def help_route():
-    """help"""
+def blogs():
+    """blogs"""
 
     statistics.update()
     articles = {}
 
-    for file in os.listdir("help"):
+    for file in os.listdir("blogs"):
         if file.endswith(".md"):
-            with open(f"help/{file}", encoding="utf-8") as artc_file:
+            with open(f"blogs/{file}", encoding="utf-8") as artc_file:
                 articles[
                     artc_file.readline().replace("# ", "").replace(nl, "")
                 ] = file.removesuffix(".md")
 
-    return render_template("help.html", articles=articles)
+    return render_template("blog.html", articles=articles)
 
 
 @app.route("/help/<article_name>")
-def help_article(article_name):
+@app.route("/blog/<article_name>")
+def get_blog(article_name):
     """help articles"""
 
     statistics.update()
-    article_file = os.path.join("help", article_name + ".md")
+    article_file = os.path.join("blogs", article_name + ".md")
 
     if not os.path.exists(article_file):
         return render_template("404.html")
@@ -186,7 +188,7 @@ def help_article(article_name):
         title = file.readline().removeprefix("# ").removesuffix(nl)
         data = mistune.html(file.read())
 
-    return render_template("help_template.html", data=data, title=title)
+    return render_template("blog_template.html", data=data, title=title)
 
 
 @app.route("/roms")
