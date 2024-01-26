@@ -1,11 +1,5 @@
-{% extends "base.html" %} {% block title %}laurel_updates - help{% endblock %}
-{% block head %} {{ super() }}
-<style type="text/css">
-    .adrod::first-letter {
-        color: #3ddc84;
-    }
-</style>
-{% endblock %} {% block content %}
+{% extends "base.html" %} {% block title %}laurel_updates - blog{% endblock %}
+{% block content %}
 <a href="/"><h4 class="colored">← laurel_updates</h4></a>
 <h1 class="colored" onclick="toggleStylesheet()">Blog</h1>
 
@@ -19,7 +13,7 @@
 <h2 class="colored">Articles</h2>
 <ul>
     {% for article in articles.items() %}
-    <li><a href="/help/{{ article[1] }}">{{ article[0] }}</a></li>
+    <li><a href="/blog/{{ article[1] }}">{{ article[0] }}</a></li>
     {% endfor %}
 </ul>
 {% endblock %}
