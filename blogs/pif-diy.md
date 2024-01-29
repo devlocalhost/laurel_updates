@@ -57,15 +57,15 @@ Heres an example of how it should look like:
 If you're using the device you're getting the props from, run this command: `uname --kernel-release`. Thats what goes in that field. If youre not using the device, then:
 
 1. Navigate to the dump of the device
-2. Go to the "bootimg" dirrectory, and download "kernel" file (not anything else!!).
+2. Go to the "bootimg" directory, and download the "kernel" file (not anything else!!).
 
 Now heres the hard and important part:
 
 - If its a gzip file (check using `file kernel`, for example `kernel: gzip compressed data, max compression, from Unix, original size modulo 2^32 35164672` means its a gzip file)
-   1. rename to kernel.gz, run `gzip --decompress kernel.gz`
+   1. rename to it to kernel.gz, and run `gzip --decompress kernel.gz`
    2. run `strings kernel | grep "Linux version"`, and you should see something like this: `Linux version 4.14.180-perf-g1dd7e92 (builder@c5-miui-ota-bd30.bj) (clang version 10.0.7 for Android NDK, GNU ld (binutils-2.27-bd24d23f) 2.27.0.20170315) #1 SMP PREEMPT Tue Jun 15 19:57:12 CST 2021`. `4.14.180-perf-g1dd7e92` is the important part. thats what goes into the kernel field.
 
-- If its not a gzip file, for example `kernel_zeroflte: Linux kernel ARM64 boot executable Image, little-endian`
+- If its not a gzip file, for example, `file kernel` returns something like `kernel_zeroflte: Linux kernel ARM64 boot executable Image, little-endian`
    - Follow step 2, from above.
 
 Note (from Play Integrity Fix telegram group) for the KERNEL string field: "Just put a funny name instead of all that. You don't need to change your kernel string to another one to "spoof it". Google just has a blacklist with some kernel names. A kernel name change will do". [Source1](https://t.me/playintegrityfix/148653/170298), [Source2](https://t.me/playintegrityfix/148653/170302)
