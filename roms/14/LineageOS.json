@@ -1,0 +1,17 @@
+{
+    "name": "LineageOS",
+    "version": "21",
+    "maintainer": "Skyblueborb",
+    "date_release": "01/02/2024",
+    "changelog": "<li>Initial build.</li><li>SELinux status: Enforcing.</li><li>Encryption works.</li><li>FOD works.</li><li>NoName V9 (4.14.325) included</li><li>Screen off FOD, 3 finger swipe screenshot and incall vibration options available</li><li>Vanilla only, you need to flash your own gapps</li>",
+    "status": "Unofficial",
+    "support": "https://t.me/lineageos_laurel",
+    "rdp": "No",
+    "notes": "<li>Skyblueborb is also maintaining <a href='/roms/LineageOS_11'>LineageOS 18.1</a> and <a href='/roms/LineageOS_20'>LineageOS 20</a>.</li>",
+    "banner": "/static/img/banner_los21.jpg",
+    "downloads": {
+        "editions": {
+            "Vanilla": "link"
+        }
+    }
+}
