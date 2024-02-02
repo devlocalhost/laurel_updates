@@ -3,7 +3,7 @@
     "version": "21",
     "maintainer": "Skyblueborb",
     "date_release": "01/02/2024",
-    "changelog": "<li>Initial build.</li><li>SELinux status: Enforcing.</li><li>Encryption works.</li><li>FOD works.</li><li>NoName V9 (4.14.325) included</li><li>Screen off FOD, 3 finger swipe screenshot and incall vibration options available</li><li>Vanilla only, you need to flash your own gapps</li>",
+    "changelog": "<li>Initial build.</li><li>SELinux status: Enforcing.</li><li>Encryption works.</li><li>FOD works.</li><li>NoName V9 (4.14.325) included</li><li>Screen off FOD, 3 finger swipe screenshot and incall vibration options available</li><li>Vanilla only, you need to flash gapps</li>",
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
