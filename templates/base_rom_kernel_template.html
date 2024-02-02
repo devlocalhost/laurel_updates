@@ -3,12 +3,41 @@
 {% block head %}
 {{ super() }}
 <style type="text/css">
-            #additional_info {
+            #changelog {
                 display: none;
             }
 
-            #additional_info:target {
+            #changelog:target {
                 display: block;
+            }
+
+            #changelog-close:target {
+                display: none;
+            }
+
+            #notes {
+                display: none;
+            }
+
+            #notes:target {
+                display: block;
+            }
+
+            #notes-close:target {
+                display: none;
+            }
+
+            .tabs {
+                display: flex;
+                border-radius: 15px;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .tabs p, .close-tab {
+                font-family: monospace;
+                padding: 15px;
+                /* padding-bottom: 15px; */
             }
         </style>
     {% endblock %}
@@ -26,9 +55,12 @@
             <li>Version: {{ data["version"] }}</li>
         </ul>
 
-        <p style="text-align: center"><a href="#additional_info" class="no-fade-animation">Additional information</a></p>
+        <div class="tabs">
+            <p style="text-align: center"><a href="#changelog" class="no-fade-animation">Show changelog</a></p>
+            <p style="text-align: center"><a href="#notes" class="no-fade-animation">Show notes</a></p>
+        </div>
 
-        <div id="additional_info">
+        <div id="changelog">
             <h2>Changelog</h2>
 
             {% block changelog %}
@@ -36,7 +68,11 @@
                 {{ data["changelog"] | safe }}
             </ul>
             {% endblock %}
+            
+            <p style="text-align: center"><a href="#changelog-close" class="no-fade-animation close-tab">Close</a></p>
+        </div>
 
+        <div id="notes">
             <h2>Notes</h2>
             <ul>
                 {% if data["notes"] %}
@@ -56,6 +92,8 @@
                     flashing!!!
                 </li>
             </ul>
+
+            <p style="text-align: center"><a href="#notes-close" class="no-fade-animation close-tab">Close</a></p>
         </div>
 
         <hr />
