@@ -8,6 +8,10 @@
     .green::first-letter {
         color: #20bf6b;
     }
+
+    .news::first-letter {
+        color: #4E6F8D;
+    }
 </style>
 {% endblock %} {% block content %}
 <h1 class="colored" onclick="toggleStylesheet()">laurel_updates</h1>
@@ -21,10 +25,10 @@
     <a href="https://t.me/dev6400" target="_blank">dev6400</a>. Contact the dev
     for suggestions or adding data.
 </p>
-<h2 class="red">Must read!!</h2>
-<p>Some people have been spreading malicious modules. Read about it <a href="/blog/harmful-modules">here</a></p>
+<h1 class="news">News</h1>
+<p>{{ header }}Read about it <a href="/blog/news">here</a></p>
 
-<h2 class="colored">Navigate to...</h2>
+<h1 class="colored">Navigate to...</h1>
 <ul>
     <li>
         <a href="/roms">ROMs</a>
@@ -47,7 +51,7 @@
     It always takes you back, or, refresh/reload the website when this happens.
 </p>
 
-<h1 class="green">Oh and...</h1>
+<h2 class="green">Oh and...</h2>
 <p>
     You can scroll to the top by double clicking a blank area, for example, the
     bottom, or the edges.

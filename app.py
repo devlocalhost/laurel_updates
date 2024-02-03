@@ -143,7 +143,9 @@ def home():
 
     statistics.update()
 
-    return render_template("index.html")
+    header = open("blogs/news.md").readlines()[2].replace("## ", "")
+
+    return render_template("index.html", header=header)
 
 
 @app.route("/stats")
