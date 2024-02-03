@@ -4,18 +4,18 @@
 {{ super() }}
 <style type="text/css">
             .tabs {
-  text-align: center;
+            display: flex;
+            justify-content: space-evenly;
   background-color: var(--navbar-background-color);
-  padding: 10px;
   border-radius: 15px;
+  box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
 }
 
 .tabs a {
-  text-decoration: none;
-  padding: 10px 20px;
-  margin: 0 10px;
-  border-radius: 15px;
-  transition: background-color 0.3s;
+  font-family: monospace;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 15px;
 }
 
 .tabs a:hover {
