@@ -3,52 +3,37 @@
 {% block head %}
 {{ super() }}
 <style type="text/css">
-            #changelog {
-                display: none;
-            }
-
-            #changelog:target {
-                display: block;
-            }
-
-            #changelog-close:target {
-                display: none;
-            }
-
-            #notes {
-                display: none;
-            }
-
-            #notes:target {
-                display: block;
-            }
-
-            #notes-close:target {
-                display: none;
-            }
-
-            #downloads {
-                display: none;
-            }
-
-            #downloads:target {
-                display: block;
-            }
-
-            #downloads-close:target {
-                display: none;
-            }
-
             .tabs {
-                display: flex;
-                justify-content: space-evenly;
-                background-color: var(--navbar-background-color);
-                border-radius: 15px;
-            }
+  text-align: center;
+  background-color: var(--navbar-background-color);
+  padding: 10px;
+  border-radius: 15px;
+}
 
-            .tabs a {
-                padding: 11px;
-            }
+.tabs a {
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+}
+
+.tabs a:hover {
+  background-color: #555;
+  border-radius: 15px;
+}
+
+.cont {
+  display: none;
+}
+
+.cont:target {
+  display: block;
+}
+
+.close-p {
+  text-align: center;
+}
         </style>
     {% endblock %}
     {% block content %}
@@ -71,7 +56,7 @@
             <a href="#notes" class="no-fade-animation">Notes</a>
         </div>
 
-        <div id="changelog">
+        <div id="changelog" class="cont">
             <h2>Changelog</h2>
 
             {% block changelog %}
@@ -81,11 +66,11 @@
             {% endblock %}
             
             <div class="close-p">
-                <p style="text-align: center;"><a href="#notes-close" class="no-fade-animation close-tab">Close</a></p>
+                <p style="text-align: center;"><a href="#" class="no-fade-animation close-tab">Close</a></p>
             </div>
         </div>
 
-        <div id="notes">
+        <div id="notes" class="cont">
             <h2>Notes</h2>
             <ul>
                 {% if data["notes"] %}
@@ -107,11 +92,11 @@
             </ul>
 
             <div class="close-p">
-                <p style="text-align: center;"><a href="#notes-close" class="no-fade-animation close-tab">Close</a></p>
+                <p style="text-align: center;"><a href="#" class="no-fade-animation close-tab">Close</a></p>
             </div>
         </div>
 
-        <div id="downloads">
+        <div id="downloads" class="cont">
             <h1 class="colored">Downloads</h1>
             <ul>
                 {% for edition, link in data["downloads"]["editions"].items() %} {%
@@ -121,7 +106,7 @@
             </ul>
 
             <div class="close-p">
-                <p style="text-align: center;"><a href="#notes-close" class="no-fade-animation close-tab">Close</a></p>
+                <p style="text-align: center;"><a href="#" class="no-fade-animation close-tab">Close</a></p>
             </div>
         </div>
 
