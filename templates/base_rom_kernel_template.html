@@ -32,7 +32,22 @@
 }
 
 .close-p {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--navbar-background-color);
+  border-radius: 15px;
+  box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
+}
+
+.close-p a {
+    font-family: monospace;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 15px;
 }
         </style>
     {% endblock %}
@@ -57,7 +72,7 @@
         </div>
 
         <div id="changelog" class="cont">
-            <h2>Changelog</h2>
+            <h2 class="colored">Changelog</h2>
 
             {% block changelog %}
             <ul>
@@ -66,12 +81,12 @@
             {% endblock %}
             
             <div class="close-p">
-                <p style="text-align: center;"><a href="#" class="no-fade-animation close-tab">Close</a></p>
+                <a href="#" class="no-fade-animation close-tab">Close</a>
             </div>
         </div>
 
         <div id="notes" class="cont">
-            <h2>Notes</h2>
+            <h2 class="colored">Notes</h2>
             <ul>
                 {% if data["notes"] %}
                 {{ data["notes"].replace("$LS", "<li>").replace("$LE", "</li>") | safe }}
@@ -92,12 +107,12 @@
             </ul>
 
             <div class="close-p">
-                <p style="text-align: center;"><a href="#" class="no-fade-animation close-tab">Close</a></p>
+                <a href="#" class="no-fade-animation close-tab">Close</a>
             </div>
         </div>
 
         <div id="downloads" class="cont">
-            <h1 class="colored">Downloads</h1>
+            <h2 class="colored">Downloads</h2>
             <ul>
                 {% for edition, link in data["downloads"]["editions"].items() %} {%
                 if link %}
@@ -106,7 +121,7 @@
             </ul>
 
             <div class="close-p">
-                <p style="text-align: center;"><a href="#" class="no-fade-animation close-tab">Close</a></p>
+                <a href="#" class="no-fade-animation close-tab">Close</a>
             </div>
         </div>
 
