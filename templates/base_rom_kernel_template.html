@@ -27,17 +27,27 @@
                 display: none;
             }
 
-            .tabs {
-                display: flex;
-                border-radius: 15px;
-                justify-content: space-evenly;
-                align-items: center;
+            #downloads {
+                display: none;
             }
 
-            .tabs p, .close-tab {
-                font-family: monospace;
-                padding: 15px;
-                /* padding-bottom: 15px; */
+            #downloads:target {
+                display: block;
+            }
+
+            #downloads-close:target {
+                display: none;
+            }
+
+            .tabs {
+                display: flex;
+                justify-content: space-evenly;
+                background-color: var(--navbar-background-color);
+                border-radius: 15px;
+            }
+
+            .tabs a {
+                padding: 11px;
             }
         </style>
     {% endblock %}
@@ -56,8 +66,9 @@
         </ul>
 
         <div class="tabs">
-            <p style="text-align: center"><a href="#changelog" class="no-fade-animation">Show changelog</a></p>
-            <p style="text-align: center"><a href="#notes" class="no-fade-animation">Show notes</a></p>
+            <a href="#downloads" class="no-fade-animation">Show downloads</a>
+            <a href="#changelog" class="no-fade-animation">Show changelog</a>
+            <a href="#notes" class="no-fade-animation">Show notes</a>
         </div>
 
         <div id="changelog">
@@ -69,7 +80,9 @@
             </ul>
             {% endblock %}
             
-            <p style="text-align: center"><a href="#changelog-close" class="no-fade-animation close-tab">Close</a></p>
+            <div class="close-p">
+                <p style="text-align: center;"><a href="#notes-close" class="no-fade-animation close-tab">Close</a></p>
+            </div>
         </div>
 
         <div id="notes">
@@ -93,16 +106,25 @@
                 </li>
             </ul>
 
-            <p style="text-align: center"><a href="#notes-close" class="no-fade-animation close-tab">Close</a></p>
+            <div class="close-p">
+                <p style="text-align: center;"><a href="#notes-close" class="no-fade-animation close-tab">Close</a></p>
+            </div>
         </div>
 
-        <hr />
+        <div id="downloads">
+            <h1 class="colored">Downloads</h1>
+            <ul>
+                {% for edition, link in data["downloads"]["editions"].items() %} {%
+                if link %}
+                <li><a href="{{ link }}">{{ edition.title() }}</a></li>
+                {% endif %} {% endfor %}
+            </ul>
 
-        <h1 class="colored">Downloads</h1>
-        <ul>
-            {% for edition, link in data["downloads"]["editions"].items() %} {%
-            if link %}
-            <li><a href="{{ link }}">{{ edition.title() }}</a></li>
-            {% endif %} {% endfor %}
-        </ul>
+            <div class="close-p">
+                <p style="text-align: center;"><a href="#notes-close" class="no-fade-animation close-tab">Close</a></p>
+            </div>
+        </div>
+
+        <br>
+        
         {% endblock %}
