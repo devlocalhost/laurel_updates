@@ -17,36 +17,6 @@ document.body.addEventListener("click", function (event) {
 
 // scroll to top
 
-// fade in/out
-
-window.addEventListener("beforeunload", function () {
-    document.body.classList.add("fade-out");
-});
-
-document.querySelectorAll("a").forEach(function (link) {
-    if (!link.classList.contains("no-fade-animation")) {
-        link.addEventListener("click", function (event) {
-            // Check if the link has the target attribute set to _blank
-            if (link.getAttribute("target") === "_blank") {
-                // Open the link in a new tab
-                window.open(link.href, "_blank");
-                event.preventDefault();
-            } else {
-                // Prevent the default behavior for other links
-                event.preventDefault();
-
-                document.body.classList.add("fade-out");
-
-                document.body.addEventListener("animationend", function () {
-                    window.location.href = link.href;
-                });
-            }
-        });
-    }
-});
-
-// fade in/out
-
 // hiding/showing navbar on scroll
 
 var prevScrollpos = window.pageYOffset;
