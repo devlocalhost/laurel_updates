@@ -4,7 +4,7 @@
     "version": "4.14.325 (V9)",
     "maintainer": "Magicxavi",
     "date_release": "22/01/2024",
-    "changelog": "<li>Downgraded techpack audio (?)/li>",
+    "changelog": "<li>Downgraded techpack audio (?)</li>",
     "support": "https://t.me/syberia_laurel_sprout/",
     "notes": "<li>Note: This kernel has kernelSU built in. This kernel also has two editions</li><li>RDP (\"normal\")</li><li>Non RDP (\"OC\" and not \"OC\" editions too. Continue reading). 66Hz \"OC\" (Overclock) is a safe value for our display.</li>",
     "downloads": {
