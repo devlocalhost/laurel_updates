@@ -1,6 +1,9 @@
 {% extends "base.html" %} {% block title %}laurel_updates - statistics{%
 endblock %} {% block head %} {{ super() }} {% endblock %} {% block content %}
-<a href="/"><h4 class="colored">← laurel_updates</h4></a>
+<div class="navigation-top">
+<a href="/"><h4>← laurel_updates</h4></a>
+<h4 class="backbtn" style="color: var(--accent-color);" onclick="history.back()">Go back →</h4>
+</div>
 <h1 class="colored" onclick="toggleStylesheet()">Statistics</h1>
 <ul>
     <li>
@@ -19,4 +22,4 @@ endblock %} {% block head %} {{ super() }} {% endblock %} {% block content %}
         >)
     </li>
 </ul>
-{% block navbar %} {% endblock %} {% endblock %}
+{% endblock %}

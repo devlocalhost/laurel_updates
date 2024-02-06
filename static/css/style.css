@@ -141,6 +141,19 @@ code:hover {
     box-shadow: 0 0 14px var(--accent-color);
 }
 
+.navigation-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-top h4 {
+    margin: 0;
+}
+
+.backbtn:hover {
+    cursor: pointer;
+}
+
 .colored::first-letter {
     color: var(--accent-color);
 }

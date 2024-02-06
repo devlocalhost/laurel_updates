@@ -6,7 +6,11 @@
     }
 </style>
 {% endblock %}{% block content %}
-<a href="/"><h4 class="colored">← laurel_updates</h4></a>
+<div class="navigation-top">
+<a href="/"><h4>← laurel_updates</h4></a>
+<h4 class="backbtn" style="color: var(--accent-color);" onclick="history.back()">Go back →</h4>
+</div>
+
 <h1 class="colored" onclick="toggleStylesheet()">ROMs</h1>
 
 <h2>Android Versions</h2>

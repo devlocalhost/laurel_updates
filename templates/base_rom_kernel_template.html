@@ -52,7 +52,10 @@
         </style>
     {% endblock %}
     {% block content %}
+    <div class="navigation-top">
     <a href="{% block routeback %}{% endblock %}"><h4 class="colored">{% block routename %}{% endblock %}</h4></a>
+    <h4 class="backbtn" style="color: var(--accent-color);" onclick="history.back()">Go back →</h4>
+    </div>
     <h1 class="colored" onclick="toggleStylesheet()">{% block filename %}{{ data["name"] }} ({{ data["status"] }}){% endblock %}</h1>
 
         {% if data["banner"] %}
@@ -79,7 +82,7 @@
                 {{ data["changelog"] | safe }}
             </ul>
             {% endblock %}
-            
+
             <div class="close-p">
                 <a href="#" class="no-fade-animation close-tab">Close</a>
             </div>
@@ -126,5 +129,5 @@
         </div>
 
         <br>
-        
+
         {% endblock %}
