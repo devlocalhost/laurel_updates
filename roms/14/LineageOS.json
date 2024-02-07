@@ -2,8 +2,8 @@
     "name": "LineageOS",
     "version": "21",
     "maintainer": "Skyblueborb",
-    "date_release": "03/02/2024",
-    "changelog": "<li>Initial build.</li><li>January ASB.</li><li>Vanilla only, you need to flash gapps.</li><li>64bit only app support.</li><li>SELinux status: Enforcing.</li><li>Encryption works.</li><li>FOD works.</li><li>NoName V9 (4.14.325) included</li><li>Screen off FOD and 3 finger swipe screenshot are available</li>",
+    "date_release": "07/02/2024",
+    "changelog": "<li>Updated to February ASB.</l><li>Fixed various crashes in logs.</li><li>Resolved some SEPolicy denials.</li><li>Minor performance improvements.</li>",
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
@@ -11,7 +11,7 @@
     "banner": "/static/img/banner_los21.jpg",
     "downloads": {
         "editions": {
-            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-21.0-20240202-UNOFFICIAL-laurel_sprout.zip"
+            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-21.0-20240207-UNOFFICIAL-laurel_sprout.zip"
         }
     }
 }
