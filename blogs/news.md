@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 16-02-2024 - Minor LineageOS 21 update.
+A new, minor update is available for LineageOS 21. For more details, click [here](/roms/LineageOS_14#changelog)
+
 ## 07-02-2024 - LineageOS 21 gets a new update.
 A new update is available for LineageOS 21, with some minor changes and February security patch. Check it out [here](/roms/LineageOS_14)
 

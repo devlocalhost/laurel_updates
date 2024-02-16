@@ -2,8 +2,8 @@
     "name": "LineageOS",
     "version": "21",
     "maintainer": "Skyblueborb",
-    "date_release": "07/02/2024",
-    "changelog": "<li>Updated to February ASB.</l><li>Fixed various crashes in logs.</li><li>Resolved some SEPolicy denials.</li><li>Minor performance improvements.</li>",
+    "date_release": "16/02/2024",
+    "changelog": "<li>Synced with latest LineageOS source.</li><li>Added lockscreen clock customization.</li><li>Added data usage in QS.</li><li>Fixed lag when using Picture-in-Picture mode.</li><li>Enabled OTA for subsequent builds.</li>",
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
@@ -11,7 +11,7 @@
     "banner": "/static/img/banner_los21.jpg",
     "downloads": {
         "editions": {
-            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-21.0-20240207-UNOFFICIAL-laurel_sprout.zip"
+            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-21.0-20240216-UNOFFICIAL-laurel_sprout.zip"
         }
     }
 }
