@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 17-02-2024 - New PixelOS update.
+MagicXavi has released a new update for PixelOS. Check it out [here](/roms/PixelOS_14)
+
 ## 16-02-2024 - Minor LineageOS 21 update.
 A new, minor update is available for LineageOS 21. For more details, click [here](/roms/LineageOS_14#changelog)
 
