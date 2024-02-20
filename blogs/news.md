@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 20-02-2024 - Another minor PixelOS update.
+A new minor update has been pushed which improves USB Tethering. Check it out [here](/roms/PixelOS_14)
+
 ## 17-02-2024 - New PixelOS update.
 MagicXavi has released a new update for PixelOS. Check it out [here](/roms/PixelOS_14)
 
