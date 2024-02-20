@@ -1,7 +1,9 @@
 # News - Updates, releases, and more.
 
-## 20-02-2024 - Another minor PixelOS update.
-A new minor update has been pushed which improves USB Tethering. Check it out [here](/roms/PixelOS_14)
+## 20-02-2024 - New minor PixelOS update, A Hotfix available for EvolutionX.
+A new minor update has been pushed which improves USB Tethering. Check it out [here](/roms/PixelOS_14).
+
+A new hotfix build is available for EvolutionX. Check it out [here](/roms/EvolutionX_14)
 
 ## 17-02-2024 - New PixelOS update.
 MagicXavi has released a new update for PixelOS. Check it out [here](/roms/PixelOS_14)
@@ -20,4 +22,5 @@ PowerX-NOT, the maintainer of EvolutionX for Mi A3 has released version 8.3 for 
 
 ## 03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.
 LineageOS has been finally released, after 3 months. The reason it took this long, was due to a major bug that heavily affected video playback. Enjoy it by clicking [here](/roms/LineageOS_14).
+
 EvolutionX 13 has been discontinued not only from the maintainer, NOT_SURE, but also from EvolutionX, [officially](https://t.me/EvolutionXOfficial/1885): "As of today, Android 13 support has been dropped. We'll continue working on and improving our Android 14 sources. Thanks!". The EvolutionX 13 version has been removed from the website.
