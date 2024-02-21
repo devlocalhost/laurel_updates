@@ -1,7 +1,9 @@
 # News - Updates, releases, and more.
 
-## 21-02-2024 - New Pixel Experience Android 13 release.
+## 21-02-2024 - New Pixel Experience Android 13 release, AICP dropped.
 Pixel Experience 13 Unofficial has just been released by Nekotalia. Check it out [here](/roms/PixelExperience_13).
+
+AICP has also been dropped. The maintainer choose to continue with Pixel Experience.
 
 ## 20-02-2024 - New minor PixelOS update, A Hotfix available for EvolutionX.
 A new minor update has been pushed which improves USB Tethering. Check it out [here](/roms/PixelOS_14).
