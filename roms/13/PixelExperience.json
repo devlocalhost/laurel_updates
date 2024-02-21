@@ -1,18 +1,18 @@
 {
-    "name": "Pixel Experience",
-    "version": "13",
-    "maintainer": "zafeey",
-    "date_release": "07/10/2023",
-    "changelog": "<li>September Security Patch</li><li>Linux 4.14.326</li><li>Fixes USB OTG (From previous PixelOS build)</li><li>Misc. Improvements",
-    "status": "Unofficial",
-    "support": "https://t.me/A3PEPlus",
-    "rdp": "Yes",
-    "notes": "<li>Custom kernel/recovery are not supported.</li>",
-    "banner": "/static/img/banner_pe_fey.jpg",
-    "downloads": {
-        "editions": {
-            "Vanilla": null,
-            "Gapps": "https://sourceforge.net/projects/zafeey-laurel-sprout/files/PixelExperience-Plus/7-10-2023/aosp_laurel_sprout-ota-retrofit-eng.zafeey.zip/download"
-        }
+  "name": "Pixel Experience",
+  "version": "13",
+  "maintainer": "Nekotalia",
+  "date_release": "21/02/2024",
+  "changelog": "<li>Initial User Build</li><li>Upstream kernel to 4.14.336 (EOL)</li>",
+  "status": "Unofficial",
+  "support": "https://t.me/pe_laurel",
+  "rdp": "Yes",
+  "notes": null,
+  "banner": "/static/img/banner_pe_nekotalia.jpg",
+  "downloads": {
+    "editions": {
+      "Vanilla": null,
+      "Gapps": "https://github.com/userariii/android-OTA/releases/download/laurel_sprout-feb-24/aosp_laurel_sprout-ota-retrofit-eng.abhattacharjee717.zip"
     }
+  }
 }
