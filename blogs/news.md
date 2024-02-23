@@ -1,7 +1,9 @@
 # News - Updates, releases, and more.
 
-## 23-02-2024 - LineageOS 18.1 gets an update *after almost a year!*
+## 23-02-2024 - LineageOS 18.1 gets an update, 20 gets discontinued.
 LineageOS 18.1 finally got an update. For more details, check [here](/roms/LineageOS_11#notes).
+
+Meanwhile, LineageOS 20 gets discontinued. The recent 20 build will be kept for a while.
 
 ## 21-02-2024 - New Pixel Experience Android 13 release, AICP dropped.
 Pixel Experience 13 Unofficial has just been released by Nekotalia. Check it out [here](/roms/PixelExperience_13).
