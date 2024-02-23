@@ -2,8 +2,8 @@
     "name": "LineageOS",
     "version": "18.1",
     "maintainer": "Skyblueborb",
-    "date_release": "16/12/2023",
-    "changelog": "<li>Updated to December ASB</li><li>Imported more performance patches from ProtonAOSP</li><li>Reduced unnecessary logging</li><li>Replaced stock camera with GrapheneOS camera</li><li>Implemented Pixel XL spoof for Google Photos</li><li>Updated to NoName V9 (4.14.325) kernel",
+    "date_release": "23/02/2023",
+    "changelog": "<li>Updated to February ASB.</li><li>Added firewall manager.</li><li>Minor optimizations.</li>",
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
@@ -11,8 +11,8 @@
     "banner": "/static/img/banner_los18.jpg",
     "downloads": {
         "editions": {
-            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-20231216-UNOFFICIAL-laurel_sprout-vanilla.zip",
-            "Gapps": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-20231216-UNOFFICIAL-laurel_sprout-gms.zip"
+            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-20240223-UNOFFICIAL-laurel_sprout-vanilla.zip",
+            "Gapps": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-20240223-UNOFFICIAL-laurel_sprout-gms.zip"
         }
     }
 }
