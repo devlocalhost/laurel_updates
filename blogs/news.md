@@ -1,5 +1,10 @@
 # News - Updates, releases, and more.
 
+## 26-02-2024 - New PixelMagic update, and a notice.
+PixelMagic gets an Android 14 update, which you can check by clicking [here](/roms/PixelMagic_14).
+
+Pixel Experience (by Magicxavi) gets discontinued, and maybe [PixelOS](/roms/PixelOS_14), but it can be kept "for some time since it is on fresh source".
+
 ## 23-02-2024 - LineageOS 18.1 gets an update, 20 gets discontinued.
 LineageOS 18.1 finally got an update. For more details, check [here](/roms/LineageOS_11#notes).
 
