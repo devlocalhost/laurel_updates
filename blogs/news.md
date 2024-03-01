@@ -1,5 +1,10 @@
 # News - Updates, releases, and more.
 
+## 01-03-2024 - Google fucks up PlayIntegrity, again.
+Google did it again, and changed shit, which lead to people failing PlayIntegrity. Dumps from android_dump won't work anymore, which means you'll have to find a very very obscure device, and build the pif.json file by yourself. Someone said fingerprints from xiaomi.eu work...?
+
+For more information and updates, I recommend you join the [Play Integrity Fix - Chiteroman](https://t.me/playintegrityfix) telegram group, or check XDA posts like [this](https://xdaforums.com/t/module-play-integrity-fix-safetynet-fix.4607985/).
+
 ## 26-02-2024 - New PixelMagic update, and a notice.
 PixelMagic gets an Android 14 update, which you can check by clicking [here](/roms/PixelMagic_14).
 

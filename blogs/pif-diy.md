@@ -1,11 +1,15 @@
 # Fixing PlayIntegrity - DIY (#3)
-This is a detailed guide on how to fix it, by yourself, by "hunting" for fingerprints. This note assumes you have basic terminal knowledge, this isnt for noobs. See [#2](/help/pif-auto) instead. This is basically [#2](/help/pif-auto), but DIY lol
+This is a detailed guide on how to fix it, by yourself, by "hunting" for fingerprints. This note assumes you have basic terminal knowledge, this isnt for noobs. See [#2](/help/pif-auto) instead. This is basically [#2](/help/pif-auto), but DIY lol.
+
+Help needed! Check the bottom of [#1](/blog/playintegrity).
 
 ## PIF module
 Check [#2](/help/pif-auto) and do the basic setup, and come back here.
 
 ## Hunting for a fingerprint
-Go to [android dumps](https://t.me/android_dumps), and search for: `"Version: INT"`. INT is the android version. Look for versions >= 7, for example, `"Version: 7"`. Pick a random message, and click on the second link of the message (below "commit"). A gitlab repo will be shown. Click the "all_files.txt" file, and search for "build.prop". Search for "build.prop", and look for lines starting with "/system". Thats the path for the build.prop file. Find the build.prop file, and now its time to create the pif.json file
+What we need is a "build.prop" file. You can't use any, so, you'll have to pick an "obscure" (?) device, or a print from xiaomi.eu...? According to a member from laurel_sprout LineageOS group, it works.
+
+Anyway, just find a very obscure device that isn't know, and just find it's dump or build.prop file. The previous link, which was linking to android_dumps telegram channel was removed because google once again changed shit again. Check [The news - 01/03/2024](/blog/news) for more.
 
 ## The pif.json file
 This file should be placed in /data/adb/ as pif.json (`/data/adb/pif.json`). Copy this into a text editor:
