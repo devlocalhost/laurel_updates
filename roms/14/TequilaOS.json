@@ -7,7 +7,7 @@
     "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds",
     "rdp": "No",
-    "notes": "<li>Boot image: <a href='https://mega.nz/file/5PFnibSL#cGWcT9jsf6jkVXyMgVOu6cLLa4mS2MtJM57Avpp-NF0'>link</a></li><li>screen off FOD (for now)</li><li>play integrity not passing.</li><li>it has been a fucking nightmare to make a14 boot, so please enjoy</li>",
+    "notes": "<li>play integrity not passing.</li><li>it has been a fucking nightmare to make a14 boot, so please enjoy</li><li>Flashing another kernel will probably break fod</li><li>root access is currently enabled by default, due to testing resons. it will be removed from next build. BE AWARE</li>",
     "banner": "/static/img/banner_tequila.jpg",
     "downloads": {
         "editions": {
