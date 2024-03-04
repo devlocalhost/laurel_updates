@@ -1,6 +1,6 @@
 # News - Updates, releases, and more.
 
-## 04-01-2024 - New ROM available by bakka: TequilaOS.
+## 04-01-2024 - New ROM available by bakkaq: TequilaOS.
 A new ROM is available, from the maintainer of SparkOS: TequilaOS. A very basic, not gore ROM. Check it out [here](/roms/TequilaOS_14)
 
 ## 01-03-2024 - Google fucks up PlayIntegrity, again.

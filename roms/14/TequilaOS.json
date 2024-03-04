@@ -1,11 +1,11 @@
 {
     "name": "TequilaOS",
     "version": "Uno",
-    "maintainer": "bakka",
+    "maintainer": "bakkaq",
     "date_release": "04/03/2024",
     "changelog": null,
     "status": "Unofficial",
-    "support": "https://t.me/SparkOS_group_laurel",
+    "support": "https://t.me/bakkaqbuilds",
     "rdp": "No",
     "notes": "<li>Boot image: <a href='https://mega.nz/file/5PFnibSL#cGWcT9jsf6jkVXyMgVOu6cLLa4mS2MtJM57Avpp-NF0'>link</a></li><li>screen off FOD (for now)</li><li>play integrity not passing.</li><li>it has been a fucking nightmare to make a14 boot, so please enjoy</li>",
     "banner": "/static/img/banner_tequila.jpg",
