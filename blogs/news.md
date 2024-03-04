@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 04-01-2024 - New ROM available by bakka: TequilaOS.
+A new ROM is available, from the maintainer of SparkOS: TequilaOS. A very basic, not gore ROM. Check it out [here](/roms/TequilaOS_14)
+
 ## 01-03-2024 - Google fucks up PlayIntegrity, again.
 Google did it again, and changed shit, which lead to people failing PlayIntegrity. Dumps from android_dump won't work anymore, which means you'll have to find a very very obscure device, and build the pif.json file by yourself. Someone said fingerprints from xiaomi.eu work...?
 
