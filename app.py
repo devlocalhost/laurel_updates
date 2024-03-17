@@ -137,6 +137,13 @@ def list_json_files(directory):
     return json_files
 
 
+@app.route("/.well-known/discord")
+def verify():
+    """used to verify the domain for discord"""
+
+    return "dh=52e109de13712934d281d22df1856b44290f732c"
+
+
 @app.route("/")
 def home():
     """home page"""
