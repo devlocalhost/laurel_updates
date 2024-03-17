@@ -1,6 +1,9 @@
 # Fixing PlayIntegrity (#2)
+Note: this guide is OUTDATED AND DOES NOT WORK ANYMORE!!! Check [The news - 01/03/2024](/blog/news).
 
-## Installing PlayIntegrityFix - basic setip
+Help needed! Check the bottom of [#1](/blog/playintegrity).
+
+## Installing PlayIntegrityFix - basic setup
 1. First, make sure you have [magisk](/help/installing-magisk) installed
    - Make sure you **enable zygisk in magisk settings**!!
    - Also make sure you **add play store to denylist, and clear play store data**

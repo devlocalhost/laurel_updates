@@ -1,0 +1,17 @@
+{
+    "name": "TequilaOS",
+    "version": "Uno",
+    "maintainer": "bakkaq",
+    "date_release": "04/03/2024",
+    "changelog": null,
+    "status": "Unofficial",
+    "support": "https://t.me/bakkaqbuilds",
+    "rdp": "No",
+    "notes": "<li>play integrity not passing.</li><li>it has been a fucking nightmare to make a14 boot, so please enjoy</li><li>Flashing another kernel will probably break fod</li><li>root access is currently enabled by default, due to testing resons. it will be removed from next build. BE AWARE</li>",
+    "banner": "/static/img/banner_tequila.jpg",
+    "downloads": {
+        "editions": {
+            "MEGA": "https://mega.nz/file/gTlgnJ7A#rOi16OjGSCyzX0RwhBix-adlZXZSXQ2l2HTzIA_XI3o"
+        }
+    }
+}

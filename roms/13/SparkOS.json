@@ -1,11 +1,11 @@
 {
     "name": "SparkOS",
     "version": "13.11",
-    "maintainer": "bakka",
+    "maintainer": "bakkaq",
     "date_release": "15/12/2023",
     "changelog": "<li>Changed lottie animations in Settings</li><li>Dec patch</li><li>Changed 128319 certificates to fix play integrity, but they ban all of them already</li><li>I have no idea what else, but something else for sure</li>",
     "status": "Unofficial",
-    "support": "https://t.me/SparkOS_group_laurel",
+    "support": "https://t.me/bakkaqbuilds",
     "rdp": "No",
     "notes": "<li>Flash <a href='/kernels/no912'>No.912</a> cuz it makes all smoother</li>",
     "banner": "/static/img/banner_sparkos.jpg",
