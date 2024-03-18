@@ -18,10 +18,10 @@ Connect your phone with your PC using a cable, on your PC, go to the platform_to
 Then, type `fastboot flashing unlock`. This is the first command. If your phone reboots, reboot back to fastboot. Now, the second command: `fastboot flashing unlock_critical`. And thats it, you have successfully unlocked the bootloader!
 
 # Any ROM suggestion?
-Sure. [LineageOS (20)](/roms/LineageOS_13), [Paranoid Android](/roms/ParanoidAndroid_13). More ROMs available [here](/roms)
+Sure. [LineageOS (21)](/roms/LineageOS_14). More ROMs available [here](/roms).
+
 ## But how do i install it??
 Click one of the links, or click the "ROMs" tab. Find a ROM. Join the support forum/group. If its a telegram group, there is 100% a installation note. Enter the chat, and either ask or type `/notes`
 
 # Ok, what about custom kernels?
-There are only 2 that are somewhat being actively maintained, [No.912/No.33](/kernels/no912), and [NoName/Xavis](/kernels/noname) kernel
-
+There are only 2: [No.912/No.33](/kernels/no912), and [NoName/Xavis](/kernels/noname) kernel. Note: 4.14 kernel is deprecated, so, dont really expect any linux kernel upgrades.
