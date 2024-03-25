@@ -1,11 +1,7 @@
 # News - Updates, releases, and more.
 
 ## 24-03-2024 - Android 14 QPR2 update, LineageOS 21.
-Skyblueborb has updated LineageOS which brings Android 14 QPR2. For more, read [changelog](/roms/LineageOS_14#changelog) and [notes](/roms/LineageOS_14#notes).
-
-NOTE: "Download link pulled. Hotfix regarding overlay issues will be available today when I get back home. `cmd overlay enable com.android.systemui.Udfps`, `cmd overlay enable com.android.settings.Udfps`. For FOD issues, try and run these commands as root"
-
-The update has been reverted, as a few bugs were found. If you're still using the new build and facing issues with fingerprint, read above. If you want to give feedback, join the [support group](https://t.me/lineageos_laurel).
+Skyblueborb has updated LineageOS which brings Android 14 QPR2. For more, read [changelog](/roms/LineageOS_14#changelog) and [notes](/roms/LineageOS_14#notes)
 
 ## 04-03-2024 - New ROM available by bakkaq: TequilaOS.
 A new ROM is available, from the maintainer of SparkOS: TequilaOS. A very basic, not gore ROM. Check it out [here](/roms/TequilaOS_14).
