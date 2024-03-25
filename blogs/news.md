@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 24-03-2024 - Android 14 QPR2 update, LineageOS 21.
+Skyblueborb has updated LineageOS which brings Android 14 QPR2. For more, read [changelog](/roms/LineageOS_14#changelog) and [notes](/roms/LineageOS_14#notes)
+
 ## 04-03-2024 - New ROM available by bakkaq: TequilaOS.
 A new ROM is available, from the maintainer of SparkOS: TequilaOS. A very basic, not gore ROM. Check it out [here](/roms/TequilaOS_14).
 
