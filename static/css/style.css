@@ -1,14 +1,19 @@
 :root {
-    --accent-color: #93CDF6;
-    --background-color: #161C21;
-    --text-color: #D2E5F5;
+    --accent-color: #4b3e76;
+    --links-color: #b1a2e2;
+    --background-color: #1c1b20;
+    --text-color: #e7def8;
     --animation-speed: 0.25s;
-    --ul-ol-background-color: #2D3135;
-    --navbar-background-color: #2D3135;
+    --ul-ol-background-color: #312f35;
+    --navbar-background-color: #312f35;
     --img-border-color: var(--accent-color);
     --box-border-color: #111;
     --box-border-size: 10px;
-    --hr-color: #8193A1;
+    --hr-color: #797389;
+    --lists-background: #48464c;
+    --navbar-a-active: var(--lists-background);
+    --navbar-a-hover: #605d64;
+    --progress-bar-color: #cdbdff;
 }
 
 html {
@@ -35,7 +40,7 @@ body {
 #progress-bar {
     height: 100%;
     width: 0;
-    background-color: var(--accent-color);
+    background-color: var(--progress-bar-color);
     box-shadow: 0 0 8px var(--accent-color);
     transition: width 0.15s;
 }
@@ -46,7 +51,7 @@ h1, h2 {
 
 a {
     cursor: pointer;
-    color: var(--accent-color);
+    color: var(--links-color);
     text-decoration: none;
 }
 
@@ -76,7 +81,7 @@ ul {
 }
 
 ol ol, ol ul, ol p, ul p {
-    background: #41484D;
+    background: var(--lists-background);
     box-shadow: 0 0 5px var(--box-border-color);
 }
 
@@ -116,12 +121,12 @@ img {
 }
 
 .navbar a.nav-active {
-    background-color: #41484D;
+    background-color: var(--navbar-a-active);
     box-shadow: 0 0 4px var(--box-border-color);
 }
 
 .navbar a:hover {
-    background-color: #677886;
+    background-color: var(--navbar-a-hover);
     transition: background-color 0.5s;
 }
 
