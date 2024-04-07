@@ -14,6 +14,7 @@
     --navbar-a-active: var(--lists-background);
     --navbar-a-hover: #605d64;
     --progress-bar-color: #cdbdff;
+    --back-btn-color: var(--links-color);
 }
 
 html {
