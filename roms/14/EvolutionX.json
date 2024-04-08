@@ -1,17 +1,17 @@
 {
     "name": "EvolutionX",
-    "version": "8.3 (Balut)",
+    "version": "8.5 (Sorbetes)",
     "maintainer": "PowerX-NOT",
-    "date_release": "20/02/2024",
-    "changelog": "<li>re-Merged the latest February source</li><li>NoName Kernel (4.14.336)</li><li>Fix fod-dim-lut & dc-dim-lut (I think it's should be better than our stock FOD calibration.)</li><li>Fixed USB tethering</li><li>dirty flash is Okay if you are coming from the previous build (but I recommend a clean flash)</li>",
+    "date_release": "08/04/2024",
+    "changelog": "<li>Merged the latest April source</li><li>kernelsu: Update to v0.9.2</li>",
     "status": "Unofficial",
     "support": "https://t.me/EvoX_Mi_A3",
     "rdp": "Yes",
-    "notes": "<li>You can perform a dirty flash if you are coming from the previous build (but I recommend a clean flash)</li><li>To make Circle to Search work, go to the Play Store, update the Google app, uninstall the update, and then reinstall the update. Also, update the Gemini AI, then reboot your device</li><li><a href='/help/what-is-erofs'>EROFS build</a></li><li>What is F2FS compression and why do I need to clean flash for it to work?<p>laurel's SoC is not powerful enough, reading and writing to the storage is often the bottleneck. For example the CPU has to wait until a certain file is read. Therefore it makes sense to apply some kind of compression which results in a tiny bit more CPU consumption, but overall a lot faster experience for the user and faster application launch times + better performance. F2FS compression achieves all that by compressing certain files (at the moment apks, some system files and libraries are compressed) on a filesystem level. Existing user data cannot be compressed easily therefore clean flashing with a compatible recovery is necessary for this feature to work. Latest Evolution-x Recovery is recommended if you want to enable F2FS compression. You must format data in Evolution-x recovery for F2FS compression to work</p></li><li>How can I check if F2FS compression is working?<p><code>mount | grep compress</code> in termux. No root is required. If it is working, you should see something like <a href='https://t.me/screenshot_mia3/481'>this</a></p></li>",
+    "notes": "<li><strong>Clean Flash is Mandatory</strong></li><li>THIS IS A FASTBOOT BUILD. Check the group for installation guide</li>",
     "banner": "/static/img/banner_evox_14.jpg",
     "downloads": {
         "editions": {
-            "Gapps": "https://github.com/PowerX-NOT/Evo-X/releases/download/Evolution-X_v8.3_HOTFIX/evolution_laurel_sprout-ota-retrofit-eng.powerxnot.zip"
+            "Gapps": "https://github.com/PowerX-NOT/Evo-X/releases/download/Evolution-X_v8.5/evolution_laurel_sprout-img.zip"
         }
     }
 }

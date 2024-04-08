@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 08-04-2023 - EvolutionX receives a new update, version 8.5.
+PowerX-NOT has updated [EvolutionX](/roms/EvolutionX_14) from 8.3 to 8.5, which brings the April patch security update.
+
 ## 24-03-2024 - Android 14 QPR2 update, LineageOS 21.
 Skyblueborb has updated LineageOS which brings Android 14 QPR2. For more, read [changelog](/roms/LineageOS_14#changelog) and [notes](/roms/LineageOS_14#notes)
 
