@@ -2,8 +2,8 @@
     "name": "LineageOS",
     "version": "18.1",
     "maintainer": "Skyblueborb",
-    "date_release": "23/02/2023",
-    "changelog": "<li>Updated to February ASB.</li><li>Added firewall manager.</li><li>Minor optimizations.</li>",
+    "date_release": "10/04/2023",
+    "changelog": "<li>Updated to April ASB.</li><li>Updated NoName kernel to 4.14.340.</li><li>Added more lockscreen clocks.</li><li>Further improved FOD dimming.</li><li>Minor optimizations.</li>",
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
@@ -11,8 +11,8 @@
     "banner": "/static/img/banner_los18.jpg",
     "downloads": {
         "editions": {
-            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-20240223-UNOFFICIAL-laurel_sprout-vanilla.zip",
-            "Gapps": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-20240223-UNOFFICIAL-laurel_sprout-gms.zip"
+            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-20240410-UNOFFICIAL-laurel_sprout-vanilla.zip",
+            "Gapps": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-20240410-UNOFFICIAL-laurel_sprout-gms.zip"
         }
     }
 }
