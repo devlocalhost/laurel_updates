@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 10-04-2024 - April ASB (security patch) for LineageOS 18.1
+LineageOS [18.1](/roms/LineageOS_11) gets the April security patch update, and other minor changes.
+
 ## 08-04-2023 - EvolutionX receives a new update, version 8.5.
 PowerX-NOT has updated [EvolutionX](/roms/EvolutionX_14) from 8.3 to 8.5, which brings the April patch security update.
 
