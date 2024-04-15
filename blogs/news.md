@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 15-04-2024 - Project Blaze joins the party.
+A new ROM is available for our device, Project Blaze. Its based on Android 14, QPR2. bakkaq is the maintainer. For more details about the ROM, [the website](http://www.projectblaze.in).
+
 ## 11-04-2024 - LineageOS 21 receives April ASB.
 [This update](/roms/LineageOS_14) was planned to be released at the same time with LineageOS, but it was delayed due to some issues, which are solved.
 

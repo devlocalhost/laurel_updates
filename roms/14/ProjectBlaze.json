@@ -1,0 +1,18 @@
+{
+    "name": "Project Blaze",
+    "version": "3.2",
+    "maintainer": "bakkaq",
+    "date_release": "15/04/2024",
+    "changelog": null,
+    "status": "Unofficial",
+    "support": "https://t.me/bakkaqbuilds/8379",
+    "rdp": "No",
+    "notes": "<li>Initial build</li><li>Play integrity not passing by default</li><li>Non RDP, with Gapps</li><li>Kernel embedded is in an early state, if you have better kernels, feel free to flash them (<strong>912 and any other kernel which haven't been updated won't work qpr2+ roms</strong>)</li>",
+    "banner": "/static/img/banner_projectblaze.jpg",
+    "downloads": {
+        "editions": {
+            "MEGA": "https://mega.nz/file/Ueli2JhT#2NUfYOnntV5Pyk1-tauB4M6zcTRi6WG72agBHTDIuoM",
+            "Google drive": "https://drive.google.com/file/d/1RBA7qQQNWwnpzpEO3js68yjOBbYX2UuP/view"
+        }
+    }
+}
