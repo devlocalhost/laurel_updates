@@ -79,7 +79,11 @@
 
             {% block changelog %}
             <ul>
+                {% if data["changelog"] %}
                 {{ data["changelog"] | safe }}
+                {% else %}
+                <li>Empty.</li>
+                {% endif %}
             </ul>
             {% endblock %}
 
@@ -93,6 +97,8 @@
             <ul>
                 {% if data["notes"] %}
                 {{ data["notes"].replace("$LS", "<li>").replace("$LE", "</li>") | safe }}
+                {% else %}
+                <li>Empty.</li>
                 {% endif %}
 
                 {% block rdp %}
