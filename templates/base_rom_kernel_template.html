@@ -53,7 +53,7 @@
     {% endblock %}
     {% block content %}
     <div class="navigation-top">
-    <a href="{% block routeback %}{% endblock %}"><h4 class="colored">{% block routename %}{% endblock %}</h4></a>
+    <a href="{% block routeback %}{% endblock %}"><h4>{% block routename %}{% endblock %}</h4></a>
     <h4 class="backbtn" style="color: var(--back-btn-color);" onclick="history.back()">Go back →</h4>
     </div>
     <h1 class="colored" onclick="toggleStylesheet()">{% block filename %}{{ data["name"] }} ({{ data["status"] }}){% endblock %}</h1>
