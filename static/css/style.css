@@ -8,7 +8,7 @@
     --animation-speed: 0.25s;
     --ul-ol-background-color: var(--bg2);
     --navbar-background-color: var(--bg2);
-    --img-border-color: var(--fg2);
+    --img-border-color: var(--fg);
     --box-border-color: #111;
     --box-border-size: 10px;
     --hr-color: var(--fg4);
@@ -17,6 +17,8 @@
     --navbar-a-hover: var(--bg4);
     --progress-bar-color: var(--aqua1);
     --back-btn-color: var(--links-color);
+    --code-background: var(--bg0);
+    --code-hover: var(--fg1);
 }
 
 html {
@@ -94,7 +96,7 @@ img {
     width: 97%;
     border: 5px solid var(--img-border-color);
     border-radius: 15px;
-    box-shadow: 0 0 var(--box-border-size) var(--accent-color);
+    box-shadow: 0 0 var(--box-border-size) var(--img-border-color);
 }
 
 .navbar {
@@ -134,7 +136,7 @@ img {
 }
 
 code {
-    background-color: #101010;
+    background-color: var(--code-background);
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 5px;
@@ -146,7 +148,7 @@ code {
 }
 
 code:hover {
-    box-shadow: 0 0 14px var(--accent-color);
+    box-shadow: 0 0 14px var(--code-hover);
 }
 
 .navigation-top {
