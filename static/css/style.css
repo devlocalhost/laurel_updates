@@ -8,7 +8,7 @@
     --animation-speed: 0.25s;
     --ul-ol-background-color: var(--bg2);
     --navbar-background-color: var(--bg2);
-    --img-border-color: var(--accent-color);
+    --img-border-color: var(--fg2);
     --box-border-color: #111;
     --box-border-size: 10px;
     --hr-color: var(--fg4);
