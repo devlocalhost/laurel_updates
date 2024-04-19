@@ -6,6 +6,9 @@
 </div>
 <h1 class="colored" onclick="toggleStylesheet()">Kernels</h1>
 
+<h2>IMPORTANT:</h2>
+<p>Kernels that are below version 4.14.336 (in this case, both No.912 and NoName), will NOT WORK on recent ROMs that are QPR2 or higher (have security patch of March and up). They will work on older ones, like QPR1 (or, February patch and below).</p>
+
 <ul>
     {% for kernel in data["kernels"] %}
     <li>
