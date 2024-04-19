@@ -4,6 +4,35 @@
     .adrod::first-letter {
         color: #d3869b;
     }
+
+    .tabs {
+            display: flex;
+            justify-content: space-evenly;
+  background-color: var(--navbar-background-color);
+  border-radius: 15px;
+  box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
+}
+
+.tabs a {
+  font-family: monospace;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.tabs a:hover {
+  background-color: var(--navbar-a-hover);
+  border-radius: 15px;
+}
+
+.cont {
+  display: none;
+}
+
+.cont:target {
+  display: block;
+}
+
 </style>
 {% endblock %}{% block content %}
 <div class="navigation-top">
@@ -25,24 +54,27 @@
 </p>
 
 <h2 class="colored" id="top">Navigate to version</h2>
-<ul>
-    <li><a href="#a14" class="no-fade-animation">14</a></li>
-    <li><a href="#a13" class="no-fade-animation">13</a></li>
-    <li><a href="#a12" class="no-fade-animation">12</a></li>
-    <li><a href="#a11" class="no-fade-animation">11</a></li>
-</ul>
+<div class="tabs">
+            <a href="#14" class="no-fade-animation">14</a>
+            <a href="#13" class="no-fade-animation">13</a>
+            <a href="#12" class="no-fade-animation">12</a>
+            <a href="#11" class="no-fade-animation">11</a>
+        </div>
+
+        <!-- <div id="changelog" class="cont"> -->
+
 
 {% for version, roms in roms_data.items() %}
-<div id="a{{ version }}">
-    <h2 class="adrod">Android {{ version }} ROMs:</h2>
-</div>
-<ul>
+<div id="{{ version }}" class="cont">
+    <h2 class="adrod">Android {{ version }}</h2>
+    <ul>
     {% for rom in roms %}
     <li>
         <a href="roms/{{ rom['route_name'] }}">{{ rom["name"] }}</a>
     </li>
     {% endfor %}
-</ul>
+    </ul>
+</div>
 {% endfor %}
 
 <hr />
