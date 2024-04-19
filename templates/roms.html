@@ -55,16 +55,13 @@
     anything lower than android 11 (will result in a "hard brick").
 </p>
 
-<h2 class="colored" id="top">Navigate to version</h2>
+<h2 class="colored" id="top">Versions</h2>
 <div class="tabs">
-            <a href="#14" class="no-fade-animation">14</a>
-            <a href="#13" class="no-fade-animation">13</a>
-            <a href="#12" class="no-fade-animation">12</a>
-            <a href="#11" class="no-fade-animation">11</a>
-        </div>
-
-        <!-- <div id="changelog" class="cont"> -->
-
+    <a href="#14" class="no-fade-animation">14</a>
+    <a href="#13" class="no-fade-animation">13</a>
+    <a href="#12" class="no-fade-animation">12</a>
+    <a href="#11" class="no-fade-animation">11</a>
+</div>
 
 {% for version, roms in roms_data.items() %}
 <div id="{{ version }}" class="cont">
@@ -81,10 +78,21 @@
 
 <hr />
 
-<h2 class="colored">Missing ROM?</h2>
-<p>
-    Contact the
-    <a href="https://t.me/dev6400" target="_blank">dev</a>
-    for submission. Please, don't submit outdated/discontinued ROMs.
-</p>
+<h2>"FAQ"</h2>
+<ul>
+    <li>Which ROM should i use?</li>
+    <p>It all depends on your needs. Do you want customization? Then pick EvolutionX, for example. Do you want something lightweight, something minimal? Pick LineageOS (I'm currently using LineageOS 21, by the way.)</p>
+
+    <li>How do i flash XYZ ROM?</li>
+    <p>Please check the support group for the flashing instructions. All ROMs have a telegram support group linked. Join, and simply ask for flashing instructions.</p>
+
+    <li>Which ROM/kernel is the best??!!!!?!</li>
+    <p>Stop asking for the best ROMs/Kernels (for battery, for performance or any other criteria), it doesn't exist. If there was one true best ROM/Kernel, do you think there would be other ROMs or Kernels?
+
+    There's only subjectively best and that's different for everyone. Everyone has different usage patterns &amp; preferences, so when asking for the best, you get the best for them, not the best for you. The only way you'll find the best one for you is by trying them yourself. They're all free, anyway.
+
+    BEST IS SUBJECTIVE.
+    </p>
+</ul>
+
 {% endblock %}
