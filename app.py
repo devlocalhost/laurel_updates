@@ -100,11 +100,33 @@ class Statistics:
 
         self.visitors = 0
         self.deployed = f"{utc_time} (UTC)"
+        self.rom_statistics = {
+            "LineageOS_11": {"views": 0},
+            "PixelExperience_11": {"views": 0},
+            "AospExtended_12": {"views": 0},
+            "PixelOS_12": {"views": 0},
+            "LineageOS_13": {"views": 0},
+            "ParanoidAndroid_13": {"views": 0},
+            "PixelExperience_13": {"views": 0},
+            "PixelExperiencePlus_13": {"views": 0},
+            "PixelOS_13": {"views": 0},
+            "SparkOS_13": {"views": 0},
+            "SyberiaOS_13": {"views": 0},
+            "EvolutionX_14": {"views": 0},
+            "LineageOS_14": {"views": 0},
+            "PixelMagic_14": {"views": 0},
+            "PixelOS_14": {"views": 0},
+            "TequilaOS_14": {"views": 0},
+            "ProjectBlaze_14": {"views": 0},
+        }
 
     def update(self):
         """update data"""
 
         self.visitors += 1
+
+    def rom_update(self, name):
+        self.rom_statistics[name]["views"] += 1
 
     def get_data(self):
         """get data"""
@@ -117,6 +139,7 @@ class Statistics:
                     "platform": platform_details,
                     "uptime": get_uptime(),
                     "commit": commit,
+                    "rom_hits": self.rom_statistics,
                 }
             )
         )
@@ -175,9 +198,9 @@ def blogs():
     for file in os.listdir("blogs"):
         if file.endswith(".md"):
             with open(f"blogs/{file}", encoding="utf-8") as artc_file:
-                articles[
-                    artc_file.readline().replace("# ", "").replace(nl, "")
-                ] = file.removesuffix(".md")
+                articles[artc_file.readline().replace("# ", "").replace(nl, "")] = (
+                    file.removesuffix(".md")
+                )
 
     return render_template("blog.html", articles=articles)
 
@@ -246,6 +269,8 @@ def roms_name(rom_name, version):
     if os.path.exists(json_path):
         with open(json_path, "r", encoding="utf-8") as json_file:
             data = json.load(json_file)
+
+        statistics.rom_update(f"{rom_name}_{version}")
 
         return render_template("rom_template.html", data=data)
 

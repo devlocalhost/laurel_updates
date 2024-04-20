@@ -22,4 +22,13 @@ endblock %} {% block head %} {{ super() }} {% endblock %} {% block content %}
         >)
     </li>
 </ul>
+
+
+<h1 class="colored">ROMs hits</h1>
+<p>The number after the "_" indicates the android version.</p>
+    <ul>
+    {% for rom, info in data['rom_hits'].items() %}
+        <li>{{ rom }}: {{ info.views }} hits</li>
+    {% endfor %}
+    </ul>
 {% endblock %}
