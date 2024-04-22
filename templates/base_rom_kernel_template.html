@@ -3,12 +3,11 @@
 {% block head %}
 {{ super() }}
 <style type="text/css">
-            .tabs {
-            display: flex;
-            justify-content: space-evenly;
+.tabs {
+  display: flex;
+  justify-content: space-evenly;
   background-color: var(--navbar-background-color);
   border-radius: 15px;
-  box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
 }
 
 .tabs a {
@@ -23,6 +22,7 @@
 .tabs a:hover {
   background-color: var(--navbar-a-active);
   border-radius: 15px;
+  box-shadow: 0 0 4px var(--box-border-color);
 }
 
 .cont {
