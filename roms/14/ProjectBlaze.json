@@ -2,8 +2,8 @@
     "name": "Project Blaze",
     "version": "3.2",
     "maintainer": "bakkaq",
-    "date_release": "15/04/2024",
-    "changelog": null,
+    "date_release": "22/04/2024",
+    "changelog": "<li>Keyboard binaries included with rom</li><li>Updated kernel, made it bit better</li><li>Some minor source change which i really don't care about</li>",
     "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds/8379",
     "rdp": "No",
@@ -11,8 +11,8 @@
     "banner": "/static/img/banner_projectblaze.jpg",
     "downloads": {
         "editions": {
-            "MEGA": "https://mega.nz/file/Ueli2JhT#2NUfYOnntV5Pyk1-tauB4M6zcTRi6WG72agBHTDIuoM",
-            "Google drive": "https://drive.google.com/file/d/1RBA7qQQNWwnpzpEO3js68yjOBbYX2UuP/view"
+            "MEGA": "https://mega.nz/file/UCURDarB#BrdUc3BxpWsxqpoVZzfT6r-6qDn7ddq--y3mfHuyzyo",
+            "Google drive": "https://drive.google.com/file/d/1hs3pLcjqWLXX_ZNI1Wflon6DnqsrceAD/view?usp=sharing"
         }
     }
 }
