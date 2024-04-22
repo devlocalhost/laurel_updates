@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 22-04-2024 - tequilaOS is now EOL.
+[tequilaOS is dead](https://t.me/tequilaOS/58800) as one of the developers (?) says. This also means bakka, the maintainer for [tequilaOS](/roms/TequilaOS_14) won't provide any updates, [unless it gets revived](https://t.me/bakkaqbuilds/8031/8475)
+
 ## 15-04-2024 - New ROM: Project Blaze.
 A [new ROM](/roms/ProjectBlaze_14) is available for our device, Project Blaze. Its based on Android 14, QPR2. bakkaq is the maintainer. For more details about the ROM, check [the website](http://www.projectblaze.in).
 
