@@ -44,7 +44,7 @@ body {
     height: 100%;
     width: 0;
     background-color: var(--progress-bar-color);
-    box-shadow: 0 0 8px var(--accent-color);
+    box-shadow: 0 0 8px var(--progress-bar-color);
     transition: width 0.15s;
 }
 
