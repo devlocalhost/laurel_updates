@@ -1,24 +1,22 @@
-@import url('gruvbox-dark.css');
-
 :root {
-    --accent-color: var(--aqua);
-    --links-color: var(--purple1);
-    --background-color: var(--bg);
-    --text-color: var(--fg0);
+    --accent-color: #4A90D9;
+    --links-color: #99C1F1;
+    --background-color: #241F31;
+    --text-color: #DEDDDA;
     --animation-speed: 0.25s;
-    --ul-ol-background-color: var(--bg2);
-    --navbar-background-color: var(--bg2);
-    --img-border-color: var(--fg);
+    --ul-ol-background-color: #3D3846;
+    --navbar-background-color: #3D3846;
+    --img-border-color: var(--accent-color);
     --box-border-color: #111;
     --box-border-size: 10px;
-    --hr-color: var(--fg4);
-    --lists-background: var(--bg3);
-    --navbar-a-active: var(--bg3);
-    --navbar-a-hover: var(--bg4);
-    --progress-bar-color: var(--aqua1);
+    --hr-color: #575063;
+    --lists-background: #4B4556;
+    --navbar-a-active: #575064;
+    --navbar-a-hover: #6D647D;
+    --progress-bar-color: #2BB877;
     --back-btn-color: var(--links-color);
-    --code-background: var(--bg0);
-    --code-hover: var(--fg1);
+    --code-background: #000;
+    --code-hover: var(--accent-color);
 }
 
 html {
