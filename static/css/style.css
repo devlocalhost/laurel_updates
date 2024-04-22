@@ -16,7 +16,7 @@
     --progress-bar-color: #2BB877;
     --back-btn-color: var(--links-color);
     --code-background: #000;
-    --code-hover: var(--accent-color);
+    --code-hover: #99C1F1;
 }
 
 html {
