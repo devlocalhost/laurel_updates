@@ -19,7 +19,6 @@ import subprocess
 from flask import (
     Flask,
     render_template,
-    make_response,
 )
 
 app = Flask(" -- laurel_updates -- ")
@@ -256,7 +255,7 @@ def roms():
 
             roms_data[version].append(data)
 
-    return make_response(render_template("roms.html", roms_data=roms_data))
+    return render_template("roms.html", roms_data=roms_data)
 
 
 @app.route("/roms/<string:rom_name>_<int:version>")
@@ -290,7 +289,7 @@ def kernels():
             j_data = json.load(file)
             data["kernels"].append(j_data)
 
-    return make_response(render_template("kernels.html", data=data))
+    return render_template("kernels.html", data=data)
 
 
 @app.route("/kernels/<kernel_name>")
