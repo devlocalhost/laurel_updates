@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 28-04-2024 - PixelMagic gets an update.
+PixelMagic gets an update after two months. Android 14, QPR1. Whats new? Check by clicking [here](/roms/PixelMagic_14#changelog).
+
 ## 22-04-2024 - tequilaOS is now EOL, Project Blaze gets an update.
 [tequilaOS is dead](https://t.me/tequilaOS/58800) as one of the developers (?) says. This also means bakka, the maintainer for [tequilaOS](/roms/TequilaOS_14) won't provide any updates, [unless it gets revived](https://t.me/bakkaqbuilds/8031/8475).
 
