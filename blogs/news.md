@@ -1,7 +1,9 @@
 # News - Updates, releases, and more.
 
-## 28-04-2024 - PixelMagic gets an update.
-PixelMagic gets an update after two months. Android 14, QPR1. Whats new? Check by clicking [here](/roms/PixelMagic_14#changelog).
+## 28-04-2024 - New EvolutionX and PixelMagic versions.
+[EvolutionX](/roms/EvolutionX_14) gets updated to 9.0, and brings a new edition: core Gapps build, which contains only play services, play store and google app.
+
+[PixelMagic](/roms/PixelMagic_14) gets an update after two months. Android 14, QPR1. Whats new? Check by clicking [here](/roms/PixelMagic_14#changelog).
 
 Note: I (dev64) forgot to add the gapps edition download link. I apologize for that, it is there now.
 

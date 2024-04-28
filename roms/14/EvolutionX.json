@@ -1,17 +1,18 @@
 {
     "name": "EvolutionX",
-    "version": "8.5 (Sorbetes)",
+    "version": "9.0",
     "maintainer": "PowerX-NOT",
-    "date_release": "08/04/2024",
-    "changelog": "<li>Merged the latest April source</li><li>kernelsu: Update to v0.9.2</li>",
+    "date_release": "28/04/2024",
+    "changelog": "<li>Merged the latest April source ( LOS RE-BASE)</li><li>kernelsu: Update to v0.9.3</li><li>kernelsu: fixed Zygisk flashing issue</li><li>Fixed GPU frequencies</li><li>MIUI camera module not supported</li><li>CoreGapps is basically a vanilla build, only with Play services</li>",
     "status": "Unofficial",
     "support": "https://t.me/EvoX_Mi_A3",
     "rdp": "Yes",
-    "notes": "<li><strong>Clean Flash is Mandatory</strong></li><li>THIS IS A FASTBOOT BUILD. Check the group for installation guide</li>",
+    "notes": "<li>Initial Build (Minimal customization)</li><li>THIS IS A FASTBOOT BUILD. Check the group for installation guide.</li>",
     "banner": "/static/img/banner_evox_14.jpg",
     "downloads": {
         "editions": {
-            "Gapps": "https://github.com/PowerX-NOT/Evo-X/releases/download/Evolution-X_v8.5/evolution_laurel_sprout-img.zip"
+            "Gapps": "https://github.com/PowerX-NOT/Evo-X/releases/download/Evolution-X_v9.0/lineage_laurel_sprout-imgGapps.zip",
+            "coreGapps": "https://github.com/PowerX-NOT/Evo-X/releases/download/Evolution-X_v9.0/lineage_laurel_sprout-img_coreGapps.zip"
         }
     }
 }
