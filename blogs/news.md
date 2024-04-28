@@ -5,8 +5,6 @@
 
 [PixelMagic](/roms/PixelMagic_14) gets an update after two months. Android 14, QPR1. Whats new? Check by clicking [here](/roms/PixelMagic_14#changelog).
 
-Note: I (dev64) forgot to add the gapps edition download link. I apologize for that, it is there now.
-
 ## 22-04-2024 - tequilaOS is now EOL, Project Blaze gets an update.
 [tequilaOS is dead](https://t.me/tequilaOS/58800) as one of the developers (?) says. This also means bakka, the maintainer for [tequilaOS](/roms/TequilaOS_14) won't provide any updates, [unless it gets revived](https://t.me/bakkaqbuilds/8031/8475).
 
