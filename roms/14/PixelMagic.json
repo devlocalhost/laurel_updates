@@ -2,17 +2,17 @@
     "name": "PixelMagic",
     "version": "14 (r27)",
     "maintainer": "Magicxavi",
-    "date_release": "27/04/2024",
-    "changelog": "<li>Fixed Themes, fonts, icons, themed icons, signal icons, normal and monet colors</li><li>Implemented haptic effects (edge haptic, qs hapic, volume slider haptic, brightness slider haptic)</li><li>Fixed GPU frequencies (sorry for that issue in last build)</li><li>There are another changes you can find by yourself, its either small changes or it doesn't fit in the post.</li>",
+    "date_release": "07/05/2024",
+    "changelog": "<li><h2>Gapps version:</h2><ul><li>Fixed GCam</li></ul><h2>Vanilla version:</h2><ul><li>Fixed GCam</li><li>Added signature spoofing for MicroG</li></ul>",
     "status": "Official",
     "support": "https://t.me/syberia_laurel_sprout",
-    "rdp": "No",
-    "notes": "<li>Magicxavi also maintains <a href='/roms/SyberiaOS_13'>Syberia</a> and maybe <a href='/roms/PixelOS_14A'>PixelOS</a>.</li><li>This is normal build (stock like).</li><li>No KSU, no erofs, no rdp. QPR1.</li><li>Thanks to all my contributors :)</li>",
+    "rdp": "Yes and No",
+    "notes": "<li>Magicxavi also maintains <a href='/roms/SyberiaOS_13'>Syberia</a> and maybe <a href='/roms/PixelOS_14A'>PixelOS</a>.<h2>Gapps version</h2><ul><li>This is RDP build.</li></ul><h2>Vanilla version:</h2><ul><li>This is normal build (stock like).</li><li>No KSU, no erofs, no rdp.</li><li>Thanks to all my contributors</li></ul>",
     "banner": "/static/img/banner_pixelmagic_14.jpg",
     "downloads": {
         "editions": {
-            "Vanilla": "https://drive.google.com/file/d/1VYFkj_xULvWs7l3PalhyKKAzxW8O0nge/view?usp=sharing",
-            "Gapps": "https://drive.google.com/file/d/1l734_pdFw9fOZUYESIThj3ohDK3u4k_C/view?usp=sharing"
+            "Gapps": "https://drive.google.com/file/d/1eBwUE0Wma8WsPhNU17LYEDUF8yPVoXug/view?usp=sharing",
+            "Vanilla": "https://drive.google.com/file/d/1Fk8_ZrQxweHOUOlQdr7g7ayTzGYgwDC4/view?usp=sharing"
         }
     }
 }

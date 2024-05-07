@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 07-05-2024 - New PixelMagic update.
+Magicxavi released an update for [PixelMagic](/roms/PixelMagic_14) a few hours ago. Enjoy.
+
 ## 28-04-2024 - New EvolutionX and PixelMagic versions.
 [EvolutionX](/roms/EvolutionX_14) gets updated to 9.0, and brings a new edition: core Gapps build, which contains only play services, play store and google app.
 
