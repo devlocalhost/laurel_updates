@@ -115,7 +115,6 @@ class Statistics:
             "EvolutionX_14": {"views": 0},
             "LineageOS_14": {"views": 0},
             "PixelMagic_14": {"views": 0},
-            "PixelOS_14": {"views": 0},
             "TequilaOS_14": {"views": 0},
             "ProjectBlaze_14": {"views": 0},
             "RisingOS_14": {"views": 0},
