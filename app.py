@@ -118,6 +118,7 @@ class Statistics:
             "PixelOS_14": {"views": 0},
             "TequilaOS_14": {"views": 0},
             "ProjectBlaze_14": {"views": 0},
+            "RisingOS_14": {"views": 0},
         }
 
     def update(self):

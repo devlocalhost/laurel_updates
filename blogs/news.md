@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 08-05-2024 - RisingOS by Magicxavi.
+Magicxavi decided to release a new ROM for our device: [RisingOS](/roms/RisingOS_14), based on android 14, QPR2. Keep in mind that this is an initial build, you might face bugs.
+
 ## 07-05-2024 - New PixelMagic update.
 Magicxavi released an update for [PixelMagic](/roms/PixelMagic_14) a few hours ago. Enjoy.
 
