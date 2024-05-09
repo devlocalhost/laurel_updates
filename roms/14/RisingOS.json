@@ -1,0 +1,17 @@
+{
+    "name": "RisingOS",
+    "version": "2.2",
+    "maintainer": "Magicxavi",
+    "date_release": "08/05/2024",
+    "changelog": "<li>Initial build</li>",
+    "status": "Unofficial",
+    "support": "https://t.me/syberia_laurel_sprout",
+    "rdp": "Yes",
+    "notes": "<li>Magicxavi also maintains <a href='/roms/PixelMagic_14'>PixelMagic</a>.<li>You need to be on RDP rom to flash this rom, if your previous rom have normal partitions layout, you need to flash RDP rom first, and then flash this build.</li><li>Thanks to all my contributors :)</li><li>Bugs: Portrait and night mode in miui camera not working, Maybe more</li>",
+    "banner": "/static/img/banner_rising.jpg",
+    "downloads": {
+        "editions": {
+            "Gapps": "https://drive.google.com/file/d/1Ys0yCTAat0TTrxZuG2TDgeNPslTpVquC/view?usp=sharing"
+        }
+    }
+}

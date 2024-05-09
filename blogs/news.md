@@ -1,7 +1,9 @@
 # News - Updates, releases, and more.
 
-## 08-05-2024 - Add RisingOS, remove PixelOS and SyberiaOS by Magicxavi.
+## 08-05-2024 - [FIX] Add RisingOS, remove PixelOS and SyberiaOS by Magicxavi.
 Magicxavi decided to release a new ROM for our device: [RisingOS](/roms/RisingOS_14), based on android 14, QPR2. Keep in mind that this is an initial build, you might face bugs.
+
+Update: It seems like i forgot to include the files for the ROM. This has been fixed, and the ROM now appears. I apologize for the mistake.
 
 Magicxavi won't provide any updates for PixelOS 14, so, I decided to remove it. I also decided to remove SyberiaOS, since it's been dead since android 13.
 
