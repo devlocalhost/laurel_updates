@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 12-05-2024 - May security patch update for EvolutionX.
+PowerX-NOT released May security patch [update](/roms/EvolutionX_14) for EvolutionX. Note: this is a recovery type build, check the support group for installation instructions.
+
 ## 08-05-2024 - [FIX] Add RisingOS, remove PixelOS and SyberiaOS by Magicxavi.
 Magicxavi decided to release a new ROM for our device: [RisingOS](/roms/RisingOS_14), based on android 14, QPR2. Keep in mind that this is an initial build, you might face bugs.
 
