@@ -1,6 +1,6 @@
 # News - Updates, releases, and more.
 
-## 10-04-2024 - May ASB (security patch) for LineageOS 18.1.
+## 17-05-2024 - May ASB (security patch) for LineageOS 18.1.
 LineageOS [18.1](/roms/LineageOS_11) gets the May security patch update and new
 features like face unlock.
 
