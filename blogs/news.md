@@ -1,5 +1,9 @@
 # News - Updates, releases, and more.
 
+## 10-04-2024 - May ASB (security patch) for LineageOS 18.1.
+LineageOS [18.1](/roms/LineageOS_11) gets the May security patch update and new
+features like face unlock.
+
 ## 12-05-2024 - May security patch update for EvolutionX.
 PowerX-NOT released May security patch [update](/roms/EvolutionX_14) for EvolutionX. Note: this is a recovery type build, check the support group for installation instructions.
 
