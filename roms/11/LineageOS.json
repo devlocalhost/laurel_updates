@@ -1,18 +1,18 @@
 {
-    "name": "LineageOS",
-    "version": "18.1",
-    "maintainer": "Skyblueborb",
-    "date_release": "10/04/2023",
-    "changelog": "<li>Updated to April ASB.</li><li>Updated NoName kernel to 4.14.340.</li><li>Added more lockscreen clocks.</li><li>Further improved FOD dimming.</li><li>Minor optimizations.</li>",
-    "status": "Unofficial",
-    "support": "https://t.me/lineageos_laurel",
-    "rdp": "No",
-    "notes": "<li>Removal of the stock camera may be temporary; it could be reintroduced in the future.</li><li>Skyblueborb is also maintaining <a href='/roms/LineageOS_14'>LineageOS 21</a></li>",
-    "banner": "/static/img/banner_los18.jpg",
-    "downloads": {
-        "editions": {
-            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-20240410-UNOFFICIAL-laurel_sprout-vanilla.zip",
-            "Gapps": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-20240410-UNOFFICIAL-laurel_sprout-gms.zip"
-        }
+  "name": "LineageOS",
+  "version": "18.1",
+  "maintainer": "Skyblueborb",
+  "date_release": "10/04/2023",
+  "changelog": "<li>Updated to May ASB.</li><li>Updated NoName kernel to 4.14.344.</li><li>Updated system emojis.</li><li>Improved system smoothness.</li><li>Fixed microphone issue for some users.</li><li>Added the ability to show the WiFi standard.</li><li>Added the ability to always show the Bluetooth icon when enabled.</li><li>Added face unlock.</li>",
+  "status": "Unofficial",
+  "support": "https://t.me/lineageos_laurel",
+  "rdp": "No",
+  "notes": "<li>Removal of the stock camera may be temporary; it could be reintroduced in the future.</li><li>Skyblueborb is also maintaining <a href='/roms/LineageOS_14'>LineageOS 21</a></li>",
+  "banner": "/static/img/banner_los18.jpg",
+  "downloads": {
+    "editions": {
+      "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-20240517-UNOFFICIAL-laurel_sprout-vanilla.zip",
+      "Gapps": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-20240517-UNOFFICIAL-laurel_sprout-gms.zip"
     }
+  }
 }
