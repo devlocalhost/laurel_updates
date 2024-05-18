@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 18-05-2024 - New Project Blaze update.
+A new update for Project Blaze has been released, which fixes a few issues. For mode details, check [changelog.](/roms/ProjectBlaze_14#changelog)
+
 ## 17-05-2024 - May ASB (security patch) for LineageOS 18.1.
 LineageOS [18.1](/roms/LineageOS_11) gets the May security patch update and new
 features like face unlock.

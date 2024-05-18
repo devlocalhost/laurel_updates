@@ -1,18 +1,18 @@
 {
     "name": "Project Blaze",
-    "version": "3.2",
+    "version": "3.3",
     "maintainer": "bakkaq",
-    "date_release": "22/04/2024",
-    "changelog": "<li>Keyboard binaries included with rom</li><li>Updated kernel, made it bit better</li><li>Some minor source change which i really don't care about</li>",
+    "date_release": "18/05/2024",
+    "changelog": "<li>Added BT helper for reading</li><li>AirPods stats (like battery)</li><li>Include NoName prebuilt -> Fixed OTG/MTP and made a bit better bb</li><li>Fixed SystemUI tuner option</li><li>Made FOD dimming a bit better</li><li>Added two-tone accent qs style. (when applied, reboot systemui)</li>",
     "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds/8379",
     "rdp": "No",
-    "notes": "<li>Initial build</li><li>Play integrity not passing by default</li><li>Non RDP, with Gapps</li><li>Kernel embedded is in an early state, if you have better kernels, feel free to flash them (<strong>912 and any other kernel which haven't been updated won't work qpr2+ roms</strong>)</li>",
+    "notes": "<li>CLEAN FLASH MANDATORY</li><li>Known issues: Screen off fod, and AOD while not charging device doesn't really work</li><li>Play integrity not passing by default</li><li>Non RDP</li><li>With Gapps</li><li>912 and any other kernel which haven't been updated won't work qpr2+ roms</li>",
     "banner": "/static/img/banner_projectblaze.jpg",
     "downloads": {
         "editions": {
-            "MEGA": "https://mega.nz/file/UCURDarB#BrdUc3BxpWsxqpoVZzfT6r-6qDn7ddq--y3mfHuyzyo",
-            "Google drive": "https://drive.google.com/file/d/1hs3pLcjqWLXX_ZNI1Wflon6DnqsrceAD/view?usp=sharing"
+            "MEGA": "https://mega.nz/file/8aMVlLoY#bCc0Kigtvwxe3XY_t59EyKerGsSoI39YAwLKKFwUL84",
+            "Google Drive": "https://drive.google.com/file/d/1hk4XQx3RmLjbzuNpKufiZzE0dFmHlTo0/view?usp=sharing"
         }
     }
 }
