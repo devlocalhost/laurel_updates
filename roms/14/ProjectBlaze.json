@@ -3,7 +3,7 @@
     "version": "3.3",
     "maintainer": "bakkaq",
     "date_release": "18/05/2024",
-    "changelog": "<li>Added BT helper for reading</li><li>AirPods stats (like battery)</li><li>Include NoName prebuilt -> Fixed OTG/MTP and made a bit better bb</li><li>Fixed SystemUI tuner option</li><li>Made FOD dimming a bit better</li><li>Added two-tone accent qs style. (when applied, reboot systemui)</li>",
+    "changelog": "<li>Added BT helper for reading AirPods stats (like battery)</li><li>Include NoName prebuilt -> Fixed OTG/MTP and made a bit better bb</li><li>Fixed SystemUI tuner option</li><li>Made FOD dimming a bit better</li><li>Added two-tone accent qs style. (when applied, reboot systemui)</li>",
     "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds/8379",
     "rdp": "No",
