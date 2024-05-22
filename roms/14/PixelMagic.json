@@ -1,18 +1,17 @@
 {
     "name": "PixelMagic",
-    "version": "14 (r27)",
+    "version": "14",
     "maintainer": "Magicxavi",
-    "date_release": "07/05/2024",
-    "changelog": "<li><h2>Gapps version:</h2><ul><li>Fixed GCam</li></ul><h2>Vanilla version:</h2><ul><li>Fixed GCam</li><li>Added signature spoofing for MicroG</li></ul>",
+    "date_release": "22/05/2024",
+    "changelog": "<li>Picked everything from QPR1</li><li>Reworked \"recents\" view page</li><li>Added Dolby (this is special version for laurel, its safe to use on loudspeaker and headphones)</li><li>Added \"kill app\" option to \"recent's\" page</li><li>Added themed icon pack support (users can use Lawnicons for example)</li><li>Added prebuilt Gramophone</li>",
     "status": "Official",
     "support": "https://t.me/syberia_laurel_sprout",
-    "rdp": "Yes and No",
-    "notes": "<li>Magicxavi also maintains <a href='/roms/RisingOS_14'>RisingOS</a>.<h2>Gapps version</h2><ul><li>This is RDP build.</li></ul><h2>Vanilla version:</h2><ul><li>This is normal build (stock like).</li><li>No KSU, no erofs, no rdp.</li><li>Thanks to all my contributors</li></ul>",
+    "rdp": "Yes",
+    "notes": "<li>Magicxavi also maintains <a href='/roms/RisingOS_14'>RisingOS</a>.<li>This is RDP build.</li><li>Thanks to all my contributors :)</li><li>Bugs: Portrait and night mode in miui camera not working, Maybe more</li>",
     "banner": "/static/img/banner_pixelmagic_14.jpg",
     "downloads": {
         "editions": {
-            "Gapps": "https://drive.google.com/file/d/1eBwUE0Wma8WsPhNU17LYEDUF8yPVoXug/view?usp=sharing",
-            "Vanilla": "https://drive.google.com/file/d/1Fk8_ZrQxweHOUOlQdr7g7ayTzGYgwDC4/view?usp=sharing"
+            "Gapps": "https://drive.google.com/file/d/1ff8FESpm7luPJMZteJBKqflMnnl8KeYq/view?usp=sharing"
         }
     }
 }

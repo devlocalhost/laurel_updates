@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 22-05-2024 - QPR2 update for PixelMagic.
+For more details, check [the changelog.](/roms/PixelMagic_14#changelog)
+
 ## 18-05-2024 - New Project Blaze update.
 A new update for Project Blaze has been released, which fixes a few issues. For mode details, check [changelog.](/roms/ProjectBlaze_14#changelog)
 
