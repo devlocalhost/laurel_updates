@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 23-05-2024 - Another PixelMagic update.
+This update improves and fixes a few things. For more details, check [the changelog.](/roms/PixelMagic_14#changelog)
+
 ## 22-05-2024 - QPR2 update for PixelMagic.
 For more details, check [the changelog.](/roms/PixelMagic_14#changelog)
 

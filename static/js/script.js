@@ -104,6 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const totalHeight = document.body.scrollHeight - window.innerHeight;
         const progress = (window.scrollY / totalHeight) * 100;
         progressBar.style.width = `${progress}%`;
+        navigator.vibrate(3);
     }
 
     updateProgressBar();
@@ -113,3 +114,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // progress bar
+
+// vibrate when clicking on a tags
+
+document.addEventListener('DOMContentLoaded', function () {
+    var links = document.querySelectorAll('a');
+
+    links.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            navigator.vibrate(14);
+        });
+    });
+});
+
+// vibrate when clicking on a tags
