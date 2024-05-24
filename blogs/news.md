@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 24-05-2024 - Fixed a major bug with the website.
+I FUCKED UP. IM SORRY. I accidentally pushed some changes, which i wasnt supposed to. That change basically adds feedback (vibration) when a user clicks a link, and when scrolling, but its a bit (bit? lmfao that shit kind of broke the entire website retard) broken... That was NOT supposed to be pushed. I dont fucking know how i fucked up this badly but i unfucked it now. Again, i apologize for any frustration caused.
+
 ## 23-05-2024 - Another PixelMagic update.
 This update improves and fixes a few things. For more details, check [the changelog.](/roms/PixelMagic_14#changelog)
 
