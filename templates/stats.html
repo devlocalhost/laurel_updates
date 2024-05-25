@@ -18,8 +18,7 @@ endblock %} {% block head %} {{ super() }} {% endblock %} {% block content %}
         (or check
         <a href="https://stats.uptimerobot.com/dUSCpWpOIM" target="_blank">
             Uptime Robot status page
-        </a>
-        )
+        </a>)
     </li>
     <li>
         Deploy time:
@@ -31,14 +30,7 @@ endblock %} {% block head %} {{ super() }} {% endblock %} {% block content %}
         <code>{{ data["platform"] }}</code>
     </li>
     <li>
-        Commit:
-        <code>{{ data["commit"] }}</code>
-        (
-        <code>
-            https://github.com/devlocalhost/laurel_updates/commit/{{
-            data["commit"] }}
-        </code>
-        )
+        Commit: <code>{{ data["commit"] }}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{{ data["commit"] }}</code>)
     </li>
 </ul>
 
