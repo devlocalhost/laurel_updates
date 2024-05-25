@@ -1,19 +1,30 @@
 {% extends "base.html" %} {% block title %}laurel_updates - kernels{% endblock
 %} {% block head %} {{ super() }} {% endblock %} {% block content %}
 <div class="navigation-top">
-<a href="/"><h4>← laurel_updates</h4></a>
-<h4 class="backbtn" style="color: var(--back-btn-color);" onclick="history.back()">Go back →</h4>
+  <a href="/"><h4>← laurel_updates</h4></a>
+  <h4
+    class="backbtn"
+    style="color: var(--back-btn-color)"
+    onclick="history.back()"
+  >
+    Go back →
+  </h4>
 </div>
 <h1 class="colored" onclick="toggleStylesheet()">Kernels</h1>
 
 <h2>IMPORTANT:</h2>
-<p>Kernels that are below version 4.14.336 (in this case, both No.912 and NoName), will NOT WORK on recent ROMs that are QPR2 or higher (have security patch of March and up). They will work on older ones, like QPR1 (or, February patch and below).</p>
+<p>
+  Kernels that are below version 4.14.336 (in this case, both No.912 and
+  NoName), will NOT WORK on recent ROMs that are QPR2 or higher (have security
+  patch of March and up). They will work on older ones, like QPR1 (or, February
+  patch and below).
+</p>
 
 <ul>
-    {% for kernel in data["kernels"] %}
-    <li>
-        <a href="kernels/{{ kernel['route_name'] }}">{{ kernel["name"] }}</a>
-    </li>
-    {% endfor %}
+  {% for kernel in data["kernels"] %}
+  <li>
+    <a href="kernels/{{ kernel['route_name'] }}">{{ kernel["name"] }}</a>
+  </li>
+  {% endfor %}
 </ul>
 {% endblock %}

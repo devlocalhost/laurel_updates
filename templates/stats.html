@@ -1,34 +1,39 @@
 {% extends "base.html" %} {% block title %}laurel_updates - statistics{%
 endblock %} {% block head %} {{ super() }} {% endblock %} {% block content %}
 <div class="navigation-top">
-<a href="/"><h4>← laurel_updates</h4></a>
-<h4 class="backbtn" style="color: var(--back-btn-color);" onclick="history.back()">Go back →</h4>
+  <a href="/"><h4>← laurel_updates</h4></a>
+  <h4
+    class="backbtn"
+    style="color: var(--back-btn-color)"
+    onclick="history.back()"
+  >
+    Go back →
+  </h4>
 </div>
 <h1 class="colored" onclick="toggleStylesheet()">Statistics</h1>
 <ul>
-    <li>
-        Uptime: <code>{{ data["uptime"] }}</code> (or check
-        <a href="https://stats.uptimerobot.com/dUSCpWpOIM" target="_blank"
-            >Uptime Robot status page</a
-        >)
-    </li>
-    <li>Deploy time: <code>{{ data["deployed_time"] }}</code></li>
-    <li>Visitors (since deploy time): {{ data["visitors"] }}</li>
-    <li>Platform: <code>{{ data["platform"] }}</code></li>
-    <li>
-        Commit: <code>{{ data["commit"] }} </code> (<code
-            >https://github.com/devlocalhost/laurel_updates/commit/{{
-            data["commit"] }}</code
-        >)
-    </li>
+  <li>
+    Uptime: <code>{{ data["uptime"] }}</code> (or check
+    <a href="https://stats.uptimerobot.com/dUSCpWpOIM" target="_blank"
+      >Uptime Robot status page</a
+    >)
+  </li>
+  <li>Deploy time: <code>{{ data["deployed_time"] }}</code></li>
+  <li>Visitors (since deploy time): {{ data["visitors"] }}</li>
+  <li>Platform: <code>{{ data["platform"] }}</code></li>
+  <li>
+    Commit: <code>{{ data["commit"] }} </code> (<code
+      >https://github.com/devlocalhost/laurel_updates/commit/{{ data["commit"]
+      }}</code
+    >)
+  </li>
 </ul>
-
 
 <h1 class="colored">ROMs hits</h1>
 <p>The number after the "_" indicates the android version.</p>
-    <ul>
-    {% for rom, info in data['rom_hits'].items() %}
-        <li>{{ rom }}: {{ info.views }} hits</li>
-    {% endfor %}
-    </ul>
+<ul>
+  {% for rom, info in data['rom_hits'].items() %}
+  <li>{{ rom }}: {{ info.views }} hits</li>
+  {% endfor %}
+</ul>
 {% endblock %}
