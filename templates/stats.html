@@ -24,7 +24,7 @@ endblock %} {% block head %} {{ super() }} {% endblock %} {% block content %}
         Deploy time:
         <code>{{ data["deployed_time"] }}</code>
     </li>
-    <li>Visitors (since deploy time): {{ data["visitors"] }}</li>
+    <li>Visitors (not unique, since deploy time): {{ data["visitors"] }}</li>
     <li>
         Platform:
         <code>{{ data["platform"] }}</code>
@@ -35,10 +35,10 @@ endblock %} {% block head %} {{ super() }} {% endblock %} {% block content %}
 </ul>
 
 <h1 class="colored">ROMs hits</h1>
-<p>The number after the "_" indicates the android version.</p>
+<p>Hit = visit. Visits are not unique.</p>
 <ul>
     {% for rom, info in data['rom_hits'].items() %}
-    <li>{{ rom }}: {{ info.views }} hits</li>
+    <li><a href="/roms/{{ rom }}">{{ rom }}</a>: {{ info.views }} hits</li>
     {% endfor %}
 </ul>
 {% endblock %}
