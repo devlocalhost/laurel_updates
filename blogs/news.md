@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 25-05-2024 - Minor improvements to the website.
+Hello again, I improved a few things here and there. I improved the tabs in the ROM page, and the ROMs ROM page. I also improved some lists looking ugly (having the same color as the background), I cleaned up the HTML and CSS a bit, and yeah... that's it. Enjoy I guess.
+
 ## 24-05-2024 - Fixed a major bug with the website.
 I FUCKED UP. IM SORRY. I accidentally pushed some changes, which i wasnt supposed to. That change basically adds feedback (vibration) when a user clicks a link, and when scrolling, but its a bit (bit? lmfao that shit kind of broke the entire website retard) broken... That was NOT supposed to be pushed. I dont fucking know how i fucked up this badly but i unfucked it now. Again, i apologize for any frustration caused.
 
