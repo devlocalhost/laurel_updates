@@ -22,10 +22,10 @@
     /* padding-bottom: 15px; */
 }
 
-.tabs a.nav-active {
-    background-color: var(--navbar-a-active);
-    box-shadow: 0 0 4px var(--box-border-color);
-}
+/* .tabs a.nav-active { */
+/*     background-color: var(--navbar-a-active); */
+/*     box-shadow: 0 0 4px var(--box-border-color); */
+/* } */
 
 .tabs a:hover {
     background-color: var(--navbar-a-hover);
