@@ -89,7 +89,8 @@ ul {
 ol ol,
 ol ul,
 ol p,
-ul p {
+ul p,
+li ul {
     background: var(--lists-background);
     box-shadow: 0 0 5px var(--box-border-color);
 }

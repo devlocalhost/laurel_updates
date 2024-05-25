@@ -50,9 +50,7 @@ endblock %} {% block head %} {{ super() }}
 <div id="notes" class="cont">
     <h2 class="colored">Notes</h2>
     <ul>
-        {% if data["notes"] %} {{ data["notes"].replace("$LS", "
-        <li>").replace("$LE", "</li>
-        ") | safe }} {% else %}
+        {% if data["notes"] %} {{ data["notes"] | safe }} {% else %}
         <li>Empty.</li>
         {% endif %} {% block rdp %}
         <li>
