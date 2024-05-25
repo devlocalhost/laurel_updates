@@ -1,0 +1,41 @@
+.tabs {
+    display: flex;
+    margin: 0 auto;
+    background-color: var(--navbar-background-color);
+    border-radius: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+    left: 0;
+    right: 0;
+    transition: bottom var(--animation-speed);
+    box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
+}
+
+.tabs a {
+    font-family: monospace;
+    text-decoration: none;
+    padding: 15px;
+    width: 100%;
+    height: inherit;
+    text-align: center;
+    border-radius: 15px;
+    /* padding-bottom: 15px; */
+}
+
+.tabs a.nav-active {
+    background-color: var(--navbar-a-active);
+    box-shadow: 0 0 4px var(--box-border-color);
+}
+
+.tabs a:hover {
+    background-color: var(--navbar-a-hover);
+    transition: background-color 0.5s;
+}
+
+.cont {
+  display: none;
+}
+
+.cont:target {
+  display: block;
+}

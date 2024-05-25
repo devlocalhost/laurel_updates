@@ -2,37 +2,7 @@
 {% block title %}laurel_updates - {{ data["name"] }}{% endblock %}
 {% block head %}
 {{ super() }}
-<style type="text/css">
-.tabs {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: var(--navbar-background-color);
-  border-radius: 15px;
-}
-
-.tabs a {
-  font-family: monospace;
-    text-decoration: none;
-    padding: 15px;
-    border-radius: 15px;
-    text-align: center;
-    width: inherit;
-}
-
-.tabs a:hover {
-  background-color: var(--navbar-a-active);
-  border-radius: 15px;
-  box-shadow: 0 0 4px var(--box-border-color);
-}
-
-.cont {
-  display: none;
-}
-
-.cont:target {
-  display: block;
-}
-        </style>
+<link rel="stylesheet" href="/static/css/tabs.css" />
     {% endblock %}
     {% block content %}
     <div class="navigation-top">
