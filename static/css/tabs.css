@@ -33,9 +33,9 @@
 }
 
 .cont {
-  display: none;
+    display: none;
 }
 
 .cont:target {
-  display: block;
+    display: block;
 }

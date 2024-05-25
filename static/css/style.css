@@ -1,22 +1,22 @@
 :root {
-    --accent-color: #4A90D9;
-    --links-color: #99C1F1;
-    --background-color: #241F31;
-    --text-color: #DEDDDA;
+    --accent-color: #4a90d9;
+    --links-color: #99c1f1;
+    --background-color: #241f31;
+    --text-color: #deddda;
     --animation-speed: 0.25s;
-    --ul-ol-background-color: #3D3846;
-    --navbar-background-color: #3D3846;
+    --ul-ol-background-color: #3d3846;
+    --navbar-background-color: #3d3846;
     --img-border-color: var(--accent-color);
     --box-border-color: #111;
     --box-border-size: 10px;
-    --hr-color: #6D647D;
-    --lists-background: #4B4556;
+    --hr-color: #6d647d;
+    --lists-background: #4b4556;
     --navbar-a-active: #575064;
-    --navbar-a-hover: #6D647D;
-    --progress-bar-color: #2BB877;
+    --navbar-a-hover: #6d647d;
+    --progress-bar-color: #2bb877;
     --back-btn-color: var(--links-color);
     --code-background: #000;
-    --code-hover: #99C1F1;
+    --code-hover: #99c1f1;
 }
 
 html {
@@ -48,7 +48,8 @@ body {
     transition: width 0.15s;
 }
 
-h1, h2 {
+h1,
+h2 {
     line-height: 1.2;
 }
 
@@ -65,7 +66,9 @@ hr {
     background-color: var(--hr-color);
 }
 
-ul, ol, p {
+ul,
+ol,
+p {
     background: var(--ul-ol-background-color);
     padding-top: 11px;
     padding-bottom: 11px;
@@ -83,7 +86,10 @@ ul {
     /* the default, "circle" is uglier than me. */
 }
 
-ol ol, ol ul, ol p, ul p {
+ol ol,
+ol ul,
+ol p,
+ul p {
     background: var(--lists-background);
     box-shadow: 0 0 5px var(--box-border-color);
 }

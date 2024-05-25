@@ -1,129 +1,129 @@
 {% extends "base.html" %} {% block title %}laurel_updates - roms{% endblock %}
 {% block head %} {{ super() }}
 <style type="text/css">
-  .adrod::first-letter {
-    color: #d3869b;
-  }
+    .adrod::first-letter {
+        color: #d3869b;
+    }
 
-  .tabs {
-    display: flex;
-    margin: 0 auto;
-    background-color: var(--navbar-background-color);
-    border-radius: 15px;
-    justify-content: space-evenly;
-    align-items: center;
-    left: 0;
-    right: 0;
-    transition: bottom var(--animation-speed);
-    box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
-  }
+    .tabs {
+        display: flex;
+        margin: 0 auto;
+        background-color: var(--navbar-background-color);
+        border-radius: 15px;
+        justify-content: space-evenly;
+        align-items: center;
+        left: 0;
+        right: 0;
+        transition: bottom var(--animation-speed);
+        box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
+    }
 
-  .tabs a {
-    font-family: monospace;
-    text-decoration: none;
-    padding: 15px;
-    width: 100%;
-    height: inherit;
-    text-align: center;
-    border-radius: 15px;
-    /* padding-bottom: 15px; */
-  }
+    .tabs a {
+        font-family: monospace;
+        text-decoration: none;
+        padding: 15px;
+        width: 100%;
+        height: inherit;
+        text-align: center;
+        border-radius: 15px;
+        /* padding-bottom: 15px; */
+    }
 
-  .tabs a.nav-active {
-    background-color: var(--navbar-a-active);
-    box-shadow: 0 0 4px var(--box-border-color);
-  }
+    .tabs a.nav-active {
+        background-color: var(--navbar-a-active);
+        box-shadow: 0 0 4px var(--box-border-color);
+    }
 
-  .tabs a:hover {
-    background-color: var(--navbar-a-hover);
-    transition: background-color 0.5s;
-  }
+    .tabs a:hover {
+        background-color: var(--navbar-a-hover);
+        transition: background-color 0.5s;
+    }
 
-  .cont {
-    display: none;
-  }
+    .cont {
+        display: none;
+    }
 
-  .cont:target {
-    display: block;
-  }
+    .cont:target {
+        display: block;
+    }
 </style>
 {% endblock %}{% block content %}
 <div class="navigation-top">
-  <a href="/"><h4>← laurel_updates</h4></a>
-  <h4
-    class="backbtn"
-    style="color: var(--back-btn-color)"
-    onclick="history.back()"
-  >
-    Go back →
-  </h4>
+    <a href="/"><h4>← laurel_updates</h4></a>
+    <h4
+        class="backbtn"
+        style="color: var(--back-btn-color)"
+        onclick="history.back()"
+    >
+        Go back →
+    </h4>
 </div>
 
 <h1 class="colored" onclick="toggleStylesheet()">ROMs</h1>
 
 <h2>Android Versions</h2>
 <p>
-  Recommended versions are
-  <strong>Android 11 and 14</strong>, because these are the ones usually getting
-  updates.
+    Recommended versions are
+    <strong>Android 11 and 14</strong>
+    , because these are the ones usually getting updates.
 </p>
 <p>
-  Android 10 and 9 are not included because no one is interested, plus most
-  laurel users are using "android 11 firmware", which enables anti-rollback,
-  preventing flashing anything lower than android 11 (will result in a "hard
-  brick").
+    Android 10 and 9 are not included because no one is interested, plus most
+    laurel users are using "android 11 firmware", which enables anti-rollback,
+    preventing flashing anything lower than android 11 (will result in a "hard
+    brick").
 </p>
 
 <h2 class="colored" id="top">Versions</h2>
 <div class="tabs">
-  <a href="#14" class="no-fade-animation">14</a>
-  <a href="#13" class="no-fade-animation">13</a>
-  <a href="#12" class="no-fade-animation">12</a>
-  <a href="#11" class="no-fade-animation">11</a>
+    <a href="#14" class="no-fade-animation">14</a>
+    <a href="#13" class="no-fade-animation">13</a>
+    <a href="#12" class="no-fade-animation">12</a>
+    <a href="#11" class="no-fade-animation">11</a>
 </div>
 
 {% for version, roms in roms_data.items() %}
 <div id="{{ version }}" class="cont">
-  <h2 class="adrod">Android {{ version }}</h2>
-  <ul>
-    {% for rom in roms %}
-    <li>
-      <a href="roms/{{ rom['route_name'] }}">{{ rom["name"] }}</a>
-    </li>
-    {% endfor %}
-  </ul>
+    <h2 class="adrod">Android {{ version }}</h2>
+    <ul>
+        {% for rom in roms %}
+        <li>
+            <a href="roms/{{ rom['route_name'] }}">{{ rom["name"] }}</a>
+        </li>
+        {% endfor %}
+    </ul>
 </div>
 {% endfor %}
 
-<hr />
+<hr>
 
 <h2>"FAQ"</h2>
 <ul>
-  <li>Which ROM should i use?</li>
-  <p>
-    It all depends on your needs. Do you want customization? Then pick
-    EvolutionX, for example. Do you want something lightweight, something
-    minimal? Pick LineageOS (I'm currently using LineageOS 21, by the way.)
-  </p>
+    <li>Which ROM should i use?</li>
+    <p>
+        It all depends on your needs. Do you want customization? Then pick
+        EvolutionX, for example. Do you want something lightweight, something
+        minimal? Pick LineageOS (I'm currently using LineageOS 21, by the way.)
+    </p>
 
-  <li>How do i flash XYZ ROM?</li>
-  <p>
-    Please check the support group for the flashing instructions. All ROMs have
-    a telegram support group linked. Join, and simply ask for flashing
-    instructions.
-  </p>
+    <li>How do i flash XYZ ROM?</li>
+    <p>
+        Please check the support group for the flashing instructions. All ROMs
+        have a telegram support group linked. Join, and simply ask for flashing
+        instructions.
+    </p>
 
-  <li>Which ROM/kernel is the best??!!!!?!</li>
-  <p>
-    Stop asking for the best ROMs/Kernels (for battery, for performance or any
-    other criteria), it doesn't exist. If there was one true best ROM/Kernel, do
-    you think there would be other ROMs or Kernels? There's only subjectively
-    best and that's different for everyone. Everyone has different usage
-    patterns &amp; preferences, so when asking for the best, you get the best
-    for them, not the best for you. The only way you'll find the best one for
-    you is by trying them yourself. They're all free, anyway. BEST IS
-    SUBJECTIVE.
-  </p>
+    <li>Which ROM/kernel is the best??!!!!?!</li>
+    <p>
+        Stop asking for the best ROMs/Kernels (for battery, for performance or
+        any other criteria), it doesn't exist. If there was one true best
+        ROM/Kernel, do you think there would be other ROMs or Kernels? There's
+        only subjectively best and that's different for everyone. Everyone has
+        different usage patterns &amp; preferences, so when asking for the best,
+        you get the best for them, not the best for you. The only way you'll
+        find the best one for you is by trying them yourself. They're all free,
+        anyway. BEST IS SUBJECTIVE.
+    </p>
 </ul>
 
 {% endblock %}
