@@ -110,7 +110,6 @@ class Statistics:
             "PixelExperiencePlus_13": {"views": 0},
             "PixelOS_13": {"views": 0},
             "SparkOS_13": {"views": 0},
-            "SyberiaOS_13": {"views": 0},
             "EvolutionX_14": {"views": 0},
             "LineageOS_14": {"views": 0},
             "PixelMagic_14": {"views": 0},
@@ -240,7 +239,7 @@ def roms():
                 os.path.join(roms_directory, file), encoding="utf-8"
             ) as json_file:
                 data = json.load(json_file)
-                
+
                 data["route_name"] = (
                     rom_name.removesuffix(".json")
                     .removesuffix(" ")
