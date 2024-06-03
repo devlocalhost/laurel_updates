@@ -253,6 +253,7 @@ def roms():
             if version not in roms_data:
                 roms_data[version] = []
 
+            # if not data["archived"]:
             roms_data[version].append(data)
 
     return make_response(render_template("roms.html", roms_data=roms_data))

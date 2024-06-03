@@ -44,8 +44,9 @@
 <h2 class="red" id="archive">Archived ROM's</h2>
 <p>ROM's under this sections are not maintained at all, but they're still available to download. I do not recommend you to use any of the ROM's below. "Then why are you including them? Why don't you get rid of them?" Well, i think its a good idea to have an archive, so yeah...</p>
 <div class="tabs">
-    <a href="#13" class="no-fade-animation">13</a>
-    <a href="#12" class="no-fade-animation">12</a>
+    <a href="#13a" class="no-fade-animation">13</a>
+    <a href="#12a" class="no-fade-animation">12</a>
+    <a href="#11a" class="no-fade-animation">11</a>
 </div>
 
 {% for version, roms in roms_data.items() %}
@@ -53,9 +54,26 @@
     <h2 class="adrod">Android {{ version }}</h2>
     <ul>
         {% for rom in roms %}
-        <li>
-            <a href="roms/{{ rom['route_name'] }}">{{ rom["name"] }}</a>
-        </li>
+            {% if not rom['archived'] %}
+            <li>
+                <a href="roms/{{ rom['route_name'] }}">{{ rom["name"] }}</a>
+            </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+{% endfor %}
+
+{% for version, roms in roms_data.items() %}
+<div id="{{ version }}a" class="cont">
+    <h2 class="red">Android {{ version }}</h2>
+    <ul>
+        {% for rom in roms %}
+            {% if rom['archived'] %}
+            <li>
+                <a href="roms/{{ rom['route_name'] }}">{{ rom["name"] }}</a>
+            </li>
+            {% endif %}
         {% endfor %}
     </ul>
 </div>
