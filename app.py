@@ -106,7 +106,6 @@ class Statistics:
             "AospExtended_12": {"views": 0},
             "PixelOS_12": {"views": 0},
             "LineageOS_13": {"views": 0},
-            "ParanoidAndroid_13": {"views": 0},
             "PixelExperience_13": {"views": 0},
             "PixelExperiencePlus_13": {"views": 0},
             "PixelOS_13": {"views": 0},
