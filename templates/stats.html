@@ -13,12 +13,7 @@ endblock %} {% block head %} {{ super() }} {% endblock %} {% block content %}
 <h1 class="colored" onclick="toggleStylesheet()">Statistics</h1>
 <ul>
     <li>
-        Uptime:
-        <code>{{ data["uptime"] }}</code>
-        (or check
-        <a href="https://stats.uptimerobot.com/dUSCpWpOIM" target="_blank">
-            Uptime Robot status page
-        </a>)
+        Uptime: <code>{{ data["uptime"] }}</code> (or check<a href="https://stats.uptimerobot.com/dUSCpWpOIM" target="_blank">Uptime Robot status page</a>)
     </li>
     <li>
         Deploy time:
