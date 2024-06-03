@@ -233,22 +233,15 @@ def roms():
     for version in android_versions:
         version = version.split("/")[1]
         roms_directory = f"roms/{version}"
-        roms_list = []
 
         for file in list_json_files(roms_directory):
             rom_name = file.removesuffix(".json")
-
-            with open(os.path.join(roms_directory, file)) as rom_json_file:
-                print("file", file)
-                print(json.load(rom_json_file)["archived"])
-                
-                if not json.load(rom_json_file)["archived"]:
-                    roms_list.append(rom_name)
 
             with open(
                 os.path.join(roms_directory, file), encoding="utf-8"
             ) as json_file:
                 data = json.load(json_file)
+                
                 data["route_name"] = (
                     rom_name.removesuffix(".json")
                     .removesuffix(" ")
