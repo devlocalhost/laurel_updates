@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 03-06-2024 - Say goodbye to a few ROMs [Archive].
+I decided to archive a few ROMs, since they're either unmaintained, or too outdated. I made a new section, [archive](/roms#archive), and moved those ROM's there, instead. I also deleted one ROM, because the link expired: AOSPA/Paranoid Android.
+
 ## 25-05-2024 - Minor improvements to the website.
 Hello again, I improved a few things here and there. I improved the tabs in the ROM page, and the ROMs ROM page. I also improved some lists looking ugly (having the same color as the background), I cleaned up the HTML and CSS a bit, and yeah... that's it. Enjoy I guess.
 
