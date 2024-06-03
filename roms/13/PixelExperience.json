@@ -14,5 +14,6 @@
       "Vanilla": null,
       "Gapps": "https://github.com/userariii/android-OTA/releases/download/laurel_sprout-feb-24/aosp_laurel_sprout-ota-retrofit-eng.abhattacharjee717.zip"
     }
-  }
+  },
+  "archived": true
 }

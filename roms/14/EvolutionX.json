@@ -14,5 +14,6 @@
             "Gapps": "https://github.com/PowerX-NOT/Evo-X/releases/download/Evolution_X-v9.0/EvolutionX-14.0-Gapps-laurel_sprout-v9.0.zip",
             "coreGapps": "https://github.com/PowerX-NOT/Evo-X/releases/download/Evolution_X-v9.0/EvolutionX-14.0-coreGapps-laurel_sprout-v9.0.zip"
         }
-    }
+    },
+    "archived": false
 }
