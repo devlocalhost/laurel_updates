@@ -2,17 +2,17 @@
     "name": "EvolutionX",
     "version": "9.0",
     "maintainer": "PowerX-NOT",
-    "date_release": "12/05/2024",
-    "changelog": "<li>Merged the latest May source (LOS RE-BASE)</li><li>Added screen off fod</li><li>Fixed reported bugs</li><li>Fixed MIUI camera module</li><li>LSPosed module broken (source issue)</li><li>CoreGapps is basically a vanilla build, only with Play services</li>",
+    "date_release": "10/06/2024",
+    "changelog": "<li>re-Merged the latest May source (LOS RE-BASE)</li><li>Added Missing Customization (source)</li><li>Signed with private keys</li><li>Play Integrity is passed by default</li><li>Added Datura firewall</li><li>CoreGapps is basically a vanilla build, only with Play services</li>",
     "status": "Unofficial",
     "support": "https://t.me/EvoX_Mi_A3",
     "rdp": "Yes",
-    "notes": "<li>Initial Build (Minimal customization)</li><li>THIS IS A Recovery BUILD. Check the group for installation guide.</li>",
+    "notes": "<li>Clean Flash is Mandatory. Check the group for installation guide.</li>",
     "banner": "/static/img/banner_evox_14.jpg",
     "downloads": {
         "editions": {
-            "Gapps": "https://github.com/PowerX-NOT/Evo-X/releases/download/Evolution_X-v9.0/EvolutionX-14.0-Gapps-laurel_sprout-v9.0.zip",
-            "coreGapps": "https://github.com/PowerX-NOT/Evo-X/releases/download/Evolution_X-v9.0/EvolutionX-14.0-coreGapps-laurel_sprout-v9.0.zip"
+            "Gapps": "https://github.com/PowerX-NOT/Build-dumps/releases/download/Evolution-X_v9.0_HOTFIX/EvolutionX-14.0-Gapps-laurel_sprout-v9.0-signed-ota_update.zip",
+            "coreGapps": "https://github.com/PowerX-NOT/Build-dumps/releases/download/Evolution-X_v9.0_HOTFIX/EvolutionX-14.0-CoreGapps-laurel_sprout-v9.0-signed-ota_update.zip"
         }
     },
     "archived": false
