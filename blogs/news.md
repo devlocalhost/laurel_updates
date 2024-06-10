@@ -3,7 +3,7 @@
 ## 10-06-2024 - EvolutionX gets a hotfix update.
 For more details, check the [changelog.](/roms/EvolutionX_14#changelog)
 
-## 03-06-2024 - Say goodbye to a few ROMs [Archive].
+## 03-06-2024 - A few ROM's have been archived.
 I decided to archive a few ROMs, since they're either unmaintained, or too outdated. I made a new section, [archive](/roms#archive), and moved those ROM's there, instead. I also deleted one ROM, because the link expired: AOSPA/Paranoid Android.
 
 ## 25-05-2024 - Minor improvements to the website.
