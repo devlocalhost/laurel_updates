@@ -1,7 +1,9 @@
 # News - Updates, releases, and more.
 
-## 20-06-2024 - New PixelMagic update.
+## 20-06-2024 - [FIX] New PixelMagic update.
 A new update for PixelMagic is available. For more details, check [changelogs](/roms/PixelMagic_14#changelog)
+
+21-06-2024 FIX: I AM SO SORRY, I forgot to update the download link. The link was redirecting to the old Pixel Magic build, instead of the new one. I updated the link and now it redirects to the actual latest link. Once again, I apologize for the mistake.
 
 ## 10-06-2024 - EvolutionX gets a hotfix update.
 For more details, check the [changelog.](/roms/EvolutionX_14#changelog)
