@@ -15,5 +15,5 @@
             "coreGapps": "https://github.com/PowerX-NOT/Build-dumps/releases/download/Evolution-X_v9.0_HOTFIX/EvolutionX-14.0-CoreGapps-laurel_sprout-v9.0-signed-ota_update.zip"
         }
     },
-    "archived": false
+    "archived": true
 }

@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 04-07-2024 - EvolutionX dropped and archived.
+PoweX-NOT decided to [drop](https://t.me/EvoX_Mi_A3/43424) [EvolutionX](/roms/EvolutionX_14). Reason? The [drama](https://t.me/EvoX_Mi_A3/43437) that is going on with EvolutionX. Skull emoji.
+
 ## 20-06-2024 - [FIX] New PixelMagic update.
 A new update for PixelMagic is available. For more details, check [changelogs](/roms/PixelMagic_14#changelog)
 
