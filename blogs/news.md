@@ -1,7 +1,10 @@
 # News - Updates, releases, and more.
 
+## 06-07-2024 - New ROM: DerpFest.
+PowerX-NOT released a new ROM for our device: [DerpFest](/roms/DerpFest_14) 14. Join the support group (check [notes section](/roms/DerpFest_14#notes)) if you have any questions or need support.
+
 ## 04-07-2024 - EvolutionX dropped and archived.
-PoweX-NOT decided to [drop](https://t.me/EvoX_Mi_A3/43424) [EvolutionX](/roms/EvolutionX_14). Reason? The [drama](https://t.me/EvoX_Mi_A3/43437) that is going on with EvolutionX. Skull emoji.
+PowerX-NOT decided to [drop](https://t.me/EvoX_Mi_A3/43424) [EvolutionX](/roms/EvolutionX_14). Reason? The [drama](https://t.me/EvoX_Mi_A3/43437) that is going on with EvolutionX. Skull emoji.
 
 ## 20-06-2024 - [FIX] New PixelMagic update.
 A new update for PixelMagic is available. For more details, check [changelogs](/roms/PixelMagic_14#changelog)
