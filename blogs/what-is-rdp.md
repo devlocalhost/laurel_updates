@@ -8,7 +8,9 @@ Why is this needed? Because we had unused partitions in normal ROMs, and buildin
 
 ## ROMs using RDP
 
-1. PixelOS [12](/roms/PixelOS_12), [13](/roms/PixelOS_13) and [14](/roms/PixelOS_14)
+1. PixelOS [12](/roms/PixelOS_12) and [13](/roms/PixelOS_13)
 2. Pixel Experience [Normal](/roms/PixelExperience_13) and [Plus](/roms/PixelExperiencePlus_13) edition
-3. [SyberiaOS](/roms/SyberiaOS_13)
-4. [EvolutionX](/roms/EvolutionX_14)
+3. [EvolutionX](/roms/EvolutionX_14)
+4. [PixelMagic](/roms/PixelMagic_14)
+5. [RisingOS](/roms/RisingOS_14)
+6. [DerpFest](/roms/DerpFest_14)
