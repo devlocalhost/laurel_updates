@@ -1,18 +1,18 @@
 {
     "name": "Project Blaze",
-    "version": "3.3",
+    "version": "3.6",
     "maintainer": "bakkaq",
-    "date_release": "18/05/2024",
-    "changelog": "<li>Added BT helper for reading AirPods stats (like battery)</li><li>Include NoName prebuilt -> Fixed OTG/MTP and made a bit better bb</li><li>Fixed SystemUI tuner option</li><li>Made FOD dimming a bit better</li><li>Added two-tone accent qs style. (when applied, reboot systemui)</li>",
+    "date_release": "14/07/2024",
+    "changelog": "<li>Mostly ROM side changes (?)</li>",
     "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds/8379",
     "rdp": "No",
-    "notes": "<li>CLEAN FLASH MANDATORY</li><li>Known issues: Screen off fod, and AOD while not charging device doesn't really work</li><li>Play integrity not passing by default</li><li>Non RDP</li><li>With Gapps</li><li>912 and any other kernel which haven't been updated won't work qpr2+ roms</li>",
+    "notes": "<li>CLEAN FLASH MANDATORY</li><li>Known issues: Screen off fod, AOD while not charging device doesn't really work, dt2w, led doesn't turn on for notifications</li><li>you need to download a gallery app for depth wallpaper to work. not having this will result in a crash</li><li>Non RDP</li><li>With Gapps</li><li>912 and any other kernel which haven't been updated won't work qpr2+ roms</li>",
     "banner": "/static/img/banner_projectblaze.jpg",
     "downloads": {
         "editions": {
-            "MEGA": "https://mega.nz/file/8aMVlLoY#bCc0Kigtvwxe3XY_t59EyKerGsSoI39YAwLKKFwUL84",
-            "Google Drive": "https://drive.google.com/file/d/1hk4XQx3RmLjbzuNpKufiZzE0dFmHlTo0/view?usp=sharing"
+            "MEGA": "https://mega.nz/file/cCUHDR7R#VDwA7Ru50FY1whpsBB0EbdNmYhhLvXkJTgl2luJpn8A",
+            "Google Drive": "https://drive.google.com/file/d/1sSk7Of77tsI1HE6vTui4UJVX71uIZ5Df/view?usp=sharing"
         }
     },
     "archived": false

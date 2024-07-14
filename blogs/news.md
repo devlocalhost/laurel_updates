@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 14-07-2024 - New ProjectBlaze Update.
+Download it by clicking [here](/roms/ProjectBlaze_14#downloads).
+
 ## 06-07-2024 - New ROM: DerpFest.
 PowerX-NOT released a new ROM for our device: [DerpFest](/roms/DerpFest_14) 14. Join the support group (check [notes section](/roms/DerpFest_14#notes)) if you have any questions or need support.
 
