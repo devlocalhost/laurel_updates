@@ -117,6 +117,7 @@ class Statistics:
             "ProjectBlaze_14": {"views": 0},
             "RisingOS_14": {"views": 0},
             "DerpFest_14": {"views": 0},
+            "crDroid_14": {"views": 0},
         }
 
     def update(self):

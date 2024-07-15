@@ -1,0 +1,18 @@
+{
+    "name": "crDroid",
+    "version": "10.6",
+    "maintainer": "J7ohn",
+    "date_release": "12/07/2024",
+    "changelog": "<li>Initial Build</li><li>With Gapps</li><li>Passing Play Integrity by default</li>",
+    "status": "Unofficial",
+    "support": "https://t.me/crdroid_laurel",
+    "rdp": "Yes",
+    "notes": "<li>If u r facing freezes, please disable shake to clear recents in \"launcher settings -> recents\"</li>",
+    "banner": "/static/img/banner_crdroid.jpg",
+    "downloads": {
+        "editions": {
+            "Gapps": "https://github.com/cookire/builds/releases/download/v1/CrDroid_laurel_sprout_10_6.zip"
+        }
+    },
+    "archived": false
+}
