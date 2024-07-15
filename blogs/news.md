@@ -3,6 +3,9 @@
 ## 15-07-2024 - New ROM: crDroid.
 This ROM was actually released in 12 of July, but no one updated/told me about it, so yeah... It is released by "J7ohn". Check it out [here](/roms/crDroid_14).
 
+## 14-07-2024 - New ProjectBlaze Update.
+Download it by clicking [here](/roms/ProjectBlaze_14#downloads).
+
 ## 06-07-2024 - New ROM: DerpFest.
 PowerX-NOT released a new ROM for our device: [DerpFest](/roms/DerpFest_14) 14. Join the support group (check [notes section](/roms/DerpFest_14#notes)) if you have any questions or need support.
 
