@@ -1,7 +1,7 @@
 # News - Updates, releases, and more.
 
-## 23-07-2024 - ANOTHER New ROM: The Parasite Project, DerpFest dropped.
-PowerX-NOT decided to continue with [The Parasite Project](/roms/TheParasiteProject_14), instead of [DerpFest](/roms/DerpFest_14). DerpFest is still available for download, but you should probably move to The Parasite Project.
+## 23-07-2024 - ANOTHER New ROM: The Parasite Project, DerpFest discontinued.
+PowerX-NOT decided to continue with [The Parasite Project](/roms/TheParasiteProject_14), instead of [DerpFest](/roms/DerpFest_14). DerpFest will not get updates anymore. It is still available to download, but you should probably move to The Parasite Project.
 
 ## 15-07-2024 - New ROM: crDroid.
 This ROM was actually released in 12 of July, but no one updated/told me about it, so yeah... It is released by "J7ohn". Check it out [here](/roms/crDroid_14).
