@@ -1,0 +1,18 @@
+{
+    "name": "The Parasite Project",
+    "version": "14",
+    "maintainer": "PowerX-NOT",
+    "date_release": "23/07/2024",
+    "changelog": "<li>Merged the latest July source</li><li>Signed with private keys</li><li>Play Integrity passes by default</li><li>Dolby Atmos supported</li><li>kernelsu supported</li><li>MIUI camera module not supported</li><li>Switched back to QTI Power Stack</li><li>Bug: UDFPS enroll radius is missing. Yes, fingerprints can be registered, but make sure to be in the default DPI (360)</li>",
+    "status": "Unofficial",
+    "support": "https://t.me/EvoX_Mi_A3",
+    "rdp": "Yes",
+    "notes": "<li>Recovery build.</li><li>Check the group for installation guide.</li>",
+    "banner": "/static/img/banner_parasite.jpg",
+    "downloads": {
+        "editions": {
+            "Gapps": "https://drive.usercontent.google.com/download?id=1Hd553dvSwzkOPleIzBPNwkmZNVsnzhXH&export=download"
+        }
+    },
+    "archived": false
+}
