@@ -8,6 +8,7 @@ A website where ROMs and kernels developed for this device are posted here.
 import os
 import json
 import atexit
+import hashlib
 import datetime
 import subprocess
 
@@ -18,6 +19,7 @@ import subprocess
 
 from flask import (
     Flask,
+    request,
     render_template,
     make_response,
 )
@@ -159,6 +161,14 @@ def list_json_files(directory):
             json_files.append(filename)
 
     return json_files
+
+def return_user_ip_hash():
+    return str(hashlib.sha256(str(request.access_route[0]).encode()).hexdigest())
+
+
+@app.route("/ipsh")
+def get_ip_hash():
+    return return_user_ip_hash()
 
 
 @app.route("/.well-known/discord")
