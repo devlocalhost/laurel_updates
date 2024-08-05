@@ -18,6 +18,8 @@ import subprocess
 
 from flask import (
     Flask,
+    request,
+    jsonify,
     render_template,
     make_response,
 )
@@ -159,6 +161,11 @@ def list_json_files(directory):
             json_files.append(filename)
 
     return json_files
+
+
+@app.route("/ip")
+def get_ip():
+    return jsonify({"remote_addr": request.remote_addr, "access_route": request.access_route[0]})
 
 
 @app.route("/.well-known/discord")
