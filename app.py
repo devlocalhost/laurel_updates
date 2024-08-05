@@ -165,7 +165,7 @@ def list_json_files(directory):
 
 @app.route("/ip")
 def get_ip():
-    return jsonify({"access_route": request.access_route, "real_ip": request.environ.get('HTTP_X_REAL_IP', request.remote_addr)})
+    return jsonify({"access_route": request.access_route})
 
 
 @app.route("/.well-known/discord")
