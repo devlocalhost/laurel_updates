@@ -12,6 +12,7 @@ import hashlib
 import datetime
 import subprocess
 
+import pymongo
 import mistune
 import platform
 import requests
@@ -25,6 +26,7 @@ from flask import (
 )
 
 app = Flask(" -- laurel_updates -- ")
+db_client = pymongo.MongoClient(os.getenv("LAUREL_DATABASE_URI"))
 
 if os.getenv("LAUREL_MODE"):
     print("[DEBUG] Templates will auto reload")
@@ -94,63 +96,6 @@ def going_down():
     # send_message("[Going down]", f"GOODBYECRUELWORLD - <code>{platform_details}</code>\nWas up for: {get_uptime()}")
 
 
-class Statistics:
-    """stats"""
-
-    def __init__(self):
-        """init"""
-
-        self.visitors = 0
-        self.deployed = f"{utc_time} (UTC)"
-        self.rom_statistics = {
-            "LineageOS_11": {"views": 0},
-            "PixelExperience_11": {"views": 0},
-            "AospExtended_12": {"views": 0},
-            "PixelOS_12": {"views": 0},
-            "LineageOS_13": {"views": 0},
-            "PixelExperience_13": {"views": 0},
-            "PixelExperiencePlus_13": {"views": 0},
-            "PixelOS_13": {"views": 0},
-            "SparkOS_13": {"views": 0},
-            "EvolutionX_14": {"views": 0},
-            "LineageOS_14": {"views": 0},
-            "PixelMagic_14": {"views": 0},
-            "TequilaOS_14": {"views": 0},
-            "ProjectBlaze_14": {"views": 0},
-            "RisingOS_14": {"views": 0},
-            "DerpFest_14": {"views": 0},
-            "crDroid_14": {"views": 0},
-            "TheParasiteProject_14": {"views": 0},
-        }
-
-    def update(self):
-        """update data"""
-
-        self.visitors += 1
-
-    def rom_update(self, name):
-        self.rom_statistics[name]["views"] += 1
-
-    def get_data(self):
-        """get data"""
-
-        return json.loads(
-            json.dumps(
-                {
-                    "visitors": self.visitors,
-                    "deployed_time": self.deployed,
-                    "platform": platform_details,
-                    "uptime": get_uptime(),
-                    "commit": commit,
-                    "rom_hits": self.rom_statistics,
-                }
-            )
-        )
-
-
-statistics = Statistics()
-
-
 def list_json_files(directory):
     """get json files of dir"""
 
@@ -161,6 +106,7 @@ def list_json_files(directory):
             json_files.append(filename)
 
     return json_files
+    
 
 def return_user_ip_hash():
     return str(hashlib.sha256(str(request.access_route[0]).encode()).hexdigest())
@@ -182,8 +128,6 @@ def verify():
 def home():
     """home page"""
 
-    statistics.update()
-
     header = open("blogs/news.md").readlines()[2].replace("## ", "")
 
     return render_template("index.html", header=header)
@@ -193,8 +137,6 @@ def home():
 def stats():
     """stats"""
 
-    statistics.update()
-
     return render_template("stats.html", data=statistics.get_data())
 
 
@@ -203,7 +145,6 @@ def stats():
 def blogs():
     """blogs"""
 
-    statistics.update()
     articles = {}
 
     for file in os.listdir("blogs"):
@@ -221,7 +162,6 @@ def blogs():
 def get_blog(article_name):
     """help articles"""
 
-    statistics.update()
     article_file = os.path.join("blogs", article_name + ".md")
 
     if not os.path.exists(article_file):
@@ -238,7 +178,6 @@ def get_blog(article_name):
 def roms():
     """roms"""
 
-    statistics.update()
     roms_data = {}
 
     for version in android_versions:
@@ -274,7 +213,6 @@ def roms():
 def roms_name(rom_name, version):
     """rom name route"""
 
-    statistics.update()
     json_path = os.path.join("roms", str(version), rom_name + ".json")
 
     if os.path.exists(json_path):
@@ -292,7 +230,6 @@ def roms_name(rom_name, version):
 def kernels():
     """kernels"""
 
-    statistics.update()
     data = {}
     data["kernels"] = []
 
@@ -308,7 +245,6 @@ def kernels():
 def kernels_name(kernel_name):
     """kernels"""
 
-    statistics.update()
     kernel_file = os.path.join("kernels", kernel_name + ".json")
 
     if not os.path.exists(kernel_file):
@@ -323,8 +259,6 @@ def kernels_name(kernel_name):
 @app.errorhandler(404)
 def page_not_found(e):
     """404 page"""
-
-    statistics.update()
 
     return render_template("404.html")
 
