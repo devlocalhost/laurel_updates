@@ -137,7 +137,7 @@ def home():
 def stats():
     """stats"""
 
-    return render_template("stats.html", data=statistics.get_data())
+    return render_template("stats.html")
 
 
 @app.route("/blog")

@@ -11,29 +11,5 @@ endblock %} {% block head %} {{ super() }} {% endblock %} {% block content %}
     </h4>
 </div>
 <h1 class="colored" onclick="toggleStylesheet()">Statistics</h1>
-<ul>
-    <li>
-        Uptime: <code>{{ data["uptime"] }}</code> (or check <a href="https://stats.uptimerobot.com/dUSCpWpOIM" target="_blank">Uptime Robot status page</a>)
-    </li>
-    <li>
-        Deploy time:
-        <code>{{ data["deployed_time"] }}</code>
-    </li>
-    <li>Visitors (not unique, since deploy time): {{ data["visitors"] }}</li>
-    <li>
-        Platform:
-        <code>{{ data["platform"] }}</code>
-    </li>
-    <li>
-        Commit: <code>{{ data["commit"] }}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{{ data["commit"] }}</code>)
-    </li>
-</ul>
-
-<h1 class="colored">ROMs hits</h1>
-<p>Hit = visit. Visits are not unique.</p>
-<ul>
-    {% for rom, info in data['rom_hits'].items() %}
-    <li><a href="/roms/{{ rom }}">{{ rom }}</a>: {{ info.views }} hits</li>
-    {% endfor %}
-</ul>
+<p>Soon.</p>
 {% endblock %}
