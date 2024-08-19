@@ -26,7 +26,10 @@ from flask import (
 )
 
 app = Flask(" -- laurel_updates -- ")
-db_client = pymongo.MongoClient(os.getenv("LAUREL_DATABASE_URI"))
+client = pymongo.MongoClient(os.getenv("LAUREL_DATABASE_URI"))
+database = client.LaurelUpdatesDatabase
+
+statistics_db = database["statistics"]
 
 if os.getenv("LAUREL_MODE"):
     print("[DEBUG] Templates will auto reload")
@@ -110,6 +113,37 @@ def list_json_files(directory):
 
 def return_user_ip_hash():
     return str(hashlib.sha256(str(request.access_route[0]).encode()).hexdigest())
+
+
+class UserDB:
+    def __init__(self):
+        pass
+
+    def update_route(self, user_ip_hash, route_name, timestamp):
+        json_dict = {
+        user_ip_hash: {
+            "visits": {
+                "routes": {
+                    route_name: {
+                        "visits": statistics_db.find_one({f"unique.{user_hash}": {"$exists": True}})["unique"][user_hash]["visits"]["routes"][route_name]["visits"] += 1,
+                        "last_visit_timestamp": statistics_db.find_one({f"unique.{user_hash}": {"$exists": True}})["unique"][user_hash]["visits"]["routes"][route_name]["last_visit_timestamp"] = timestamp,
+                    },
+                }
+            }
+        }
+    }
+
+
+class StatisticsDB:
+    def __init__(self):
+        self.user = UserDB()
+
+    def user_update_route_stats(self, user_ip_hash, route_name, timestamp):
+        ...
+
+    def user_update_rom_stats(self, user_ip_hash, route_name, timestamp):
+        ...
+        
 
 
 @app.route("/ipsh")
