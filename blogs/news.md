@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 19-08-2024 - Minor ProjectBlaze patch.
+This update was actually released 4 days ago. The reason i did not update the website is because i am taking a break from telegram. I apologize. Anyway, [enjoy](/roms/ProjectBlaze_14) the new update.
+
 ## 23-07-2024 - ANOTHER New ROM: The Parasite Project, DerpFest discontinued.
 PowerX-NOT decided to continue with [The Parasite Project](/roms/TheParasiteProject_14), instead of [DerpFest](/roms/DerpFest_14). DerpFest will not get updates anymore. It is still available to download, but you should probably move to The Parasite Project.
 
