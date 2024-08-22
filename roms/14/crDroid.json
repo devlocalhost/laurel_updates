@@ -1,17 +1,17 @@
 {
     "name": "crDroid",
-    "version": "10.6",
+    "version": "10.7",
     "maintainer": "J7ohn",
-    "date_release": "12/07/2024",
-    "changelog": "<li>Initial Build</li><li>With Gapps</li><li>Passing Play Integrity by default</li>",
+    "date_release": "14/08/2024",
+    "changelog": "<li><a href='https://crdroid.net/blog/2024-08-11-crDroid-10.7-is-now-ready'>crdroid blog</a></li>",
     "status": "Unofficial",
     "support": "https://t.me/crdroid_laurel",
     "rdp": "Yes",
-    "notes": "<li>If u r facing freezes, please disable shake to clear recents in \"launcher settings -> recents\"</li>",
+    "notes": "<li>With Gapps</li><li>Passing Play Integrity by default</li><li>If your display it's not original u should use #60hz (in /notes)</li><li>If u r facing freezes, please disable shake to clear recents in \"launcher settings -> recents\"</li>",
     "banner": "/static/img/banner_crdroid.jpg",
     "downloads": {
         "editions": {
-            "Gapps": "https://github.com/cookire/builds/releases/download/v1/CrDroid_laurel_sprout_10_6.zip"
+            "Gapps": "https://github.com/cookire/builds/releases/download/v2/crDroid_10_7.zip"
         }
     },
     "archived": false

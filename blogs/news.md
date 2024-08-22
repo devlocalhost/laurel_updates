@@ -1,5 +1,29 @@
 # News - Updates, releases, and more.
 
+## 22-08-2024 - [IMPORTANT] New crDroid update, and a notice to devs.
+Seems like i missed another update... which is now available [here](/roms/crDroid_14). crDroid 10.7. Enjoy.
+
+And, a notice to devs. I've been trying to avoid using telegram. I'm actually barely using telegram, that means, i don't go online that often, and i only check DMs. Because of this, i missed 2 updates, ProjectBlaze, and crDroid, so, to the laurel_sprout devs:
+Could you please send me an email whenever you release an update for your roms at `contact64.qualify966@passinbox.com`? And if possible, use this format:
+
+```
+title: laurel_updates: ROM_NAME update.
+body: Requesting an update for ROM_NAME from version VERSION_CURRENT (RELEASE_DATE_CURRENT) to version VERSION_NEW (RELEASE_DATE_NEW). Post link: TELEGRAM_POST_LINK
+```
+Explaining the fields:
+- ROM_NAME: ROM name, without version
+- VERSION_CURRENT: current available version on laurel_updates
+- RELEASE_DATE_CURRENT: the release date of VERSION_CURRENT
+- VERSION_NEW: new version
+- RELEASE_DATE_NEW: the release date of VERSION_NEW
+- TELEGRAM_POST_LINK: the link of the telegram post you made
+
+Mail example:
+```
+title: laurel_updates: LineageOS update
+body: Requesting an update for LineageOS from version 21.0 (15/06/2024) to version 22.0 (19/09/2024). Post link: TELEGRAM_POST_LINK
+```
+
 ## 19-08-2024 - Minor ProjectBlaze patch.
 This update was actually released 4 days ago. The reason i did not update the website is because i am taking a break from telegram. I apologize. Anyway, [enjoy](/roms/ProjectBlaze_14) the new update.
 
