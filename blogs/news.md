@@ -1,5 +1,10 @@
 # News - Updates, releases, and more.
 
+## 29-08-2024 - [IMPORTANT] New ProjectBlaze update, and another notice.
+[ProjectBlaze](/roms/ProjectBlaze_14) got a new update, with some minor changes/improvements. Updated at 26-08, took some days to update the website due to internet issues.
+
+A notice: These weeks I'm not really "okay" mentally, I've been trying to avoid telegram "for my own good". I'm "fine", but not that fine. Now, will (or how will) this affect laurel_updates? I am not sure. I hope it doesn't. If it does, I'll let someone else handle the website.
+
 ## 22-08-2024 - [IMPORTANT] New crDroid update, and a notice to devs.
 Seems like i missed another update... which is now available [here](/roms/crDroid_14). crDroid 10.7. Enjoy.
 

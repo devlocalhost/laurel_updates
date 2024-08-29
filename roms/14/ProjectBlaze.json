@@ -2,17 +2,17 @@
     "name": "Project Blaze",
     "version": "3.7",
     "maintainer": "bakkaq",
-    "date_release": "15/08/2024",
-    "changelog": "<li>\"patch merge and minor fixes are there\"</li>",
+    "date_release": "26/08/2024",
+    "changelog": "<li>Fixed dt2w</li><li>Fixed notification light</li><li>Fixed Jio SIM call (thanks to @PowerX_NOT)</li>",
     "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds/8379",
     "rdp": "No",
-    "notes": "<li>You can dirty flash if coming from the previous build</li><li>Play integrity passing by default. Gapps included</li>Known issues: Screen off fod, AOD while not charging device doesn't really work, dt2w, led doesn't turn on for notifications</li><li>you need to download a gallery app for depth wallpaper to work. not having this will result in a crash</li>",
+    "notes": "<li>You can dirty flash if coming from the previous build</li><li>Play integrity passing by default. Gapps included</li>Known issues: Screen off fod, AOD while not charging device doesn't really work, dt2w</li><li>you need to download a gallery app for depth wallpaper to work. not having this will result in a crash</li>",
     "banner": "/static/img/banner_projectblaze.jpg",
     "downloads": {
         "editions": {
-            "MEGA": "https://mega.nz/file/wasXQJIB#wcaOIBG6rzGUfmIekzIQbE6RLd6EYTjmP4Wt5Ned2s4",
-            "Google Drive": "https://drive.google.com/file/d/1px9gkosTXqGGBiBavoZN11AiNGDjR5Ui/view?usp=sharing"
+            "MEGA": "https://mega.nz/file/lf9yAbjD#wLchCJOiwkZlTmO0JgVehzKkbJmScHmT4VegMWp8hzM",
+            "Google Drive": "https://drive.google.com/file/d/1lEB_svtXtV7X5Lf92owd3htoZ3uZCfe5/view?usp=sharing"
         }
     },
     "archived": false
