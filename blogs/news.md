@@ -1,5 +1,11 @@
 # News - Updates, releases, and more.
 
+## 30-08-2024 - Important notice about new Project Blaze update.
+From the maintainer of Project Blaze for laurel_sprout:
+"some problem with source i'm not really aware of, in the latest blaze update, causes systemui to infinitely crash and it's fixable only by formatting data. please take backups if you want to still use it, but i strongly suggest you to downgrade or use another rom until fixed."
+
+If you want to downgrade to the [previous 3.7 version](https://t.me/bakkaqbuilds/11003), you can download it here: [MEGA Mirror](https://mega.nz/file/lf9yAbjD#wLchCJOiwkZlTmO0JgVehzKkbJmScHmT4VegMWp8hzM) | [Google Drive Mirror](https://drive.google.com/file/d/1lEB_svtXtV7X5Lf92owd3htoZ3uZCfe5/view?usp=sharing)
+
 ## 29-08-2024 - [IMPORTANT] New ProjectBlaze update, and another notice.
 [ProjectBlaze](/roms/ProjectBlaze_14) got a new update, with some minor changes/improvements. Updated at 26-08, took some days to update the website due to internet issues.
 

@@ -7,7 +7,7 @@
     "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds/8379",
     "rdp": "No",
-    "notes": "<li>You can dirty flash if coming from the previous build</li><li>Play integrity passing by default. Gapps included</li>Known issues: Screen off fod, AOD while not charging device doesn't really work, dt2w</li><li>you need to download a gallery app for depth wallpaper to work. not having this will result in a crash</li>",
+    "notes": "<li><strong>IMPORTANT: Check <a href='/blog/news'>The news - 30-08-2024 for more!!</a></strong></li><li>You can dirty flash if coming from the previous build</li><li>Play integrity passing by default. Gapps included</li>Known issues: Screen off fod, AOD while not charging device doesn't really work, dt2w</li><li>you need to download a gallery app for depth wallpaper to work. not having this will result in a crash</li>",
     "banner": "/static/img/banner_projectblaze.jpg",
     "downloads": {
         "editions": {
