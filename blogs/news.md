@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 04-09-2024 - NEW ANDROID 10 ROM: crDroid.
+Yes, you read it right. Android 10. But, with android 11 firmware. Means, you can flash it, even if you upgraded your phone to android 11. Unfortunately, I do not know details about this ROM, or how this works (android 10, but android 11 firmware), so go ahead and ask on the support group for the ROM. You can find the support group by clicking [here](/roms/crDroid_10#notes). Or, click [here](/roms/crDroid_10) to view the ROM page.
+
 ## 30-08-2024 - Important notice about new Project Blaze update.
 From the maintainer of Project Blaze for laurel_sprout:
 "some problem with source i'm not really aware of, in the latest blaze update, causes systemui to infinitely crash and it's fixable only by formatting data. please take backups if you want to still use it, but i strongly suggest you to downgrade or use another rom until fixed."
