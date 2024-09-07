@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 07-09-2024 - QPR3 Pixel Magic update.
+Magicxavi has released a new update for Pixel Magic, with a lot of new things. Check it out [here](/roms/PixelMagic_14)
+
 ## 04-09-2024 - NEW ANDROID 10 ROM: crDroid.
 Yes, you read it right. Android 10. But, with android 11 firmware. Means, you can flash it, even if you upgraded your phone to android 11. Unfortunately, I do not know details about this ROM, or how this works (android 10, but android 11 firmware), so go ahead and ask on the support group for the ROM. You can find the support group by clicking [here](/roms/crDroid_10#notes). Or, click [here](/roms/crDroid_10) to view the ROM page.
 
