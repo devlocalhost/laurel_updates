@@ -1,0 +1,18 @@
+{
+    "name": "Android Open Source Project (AOSP)",
+    "version": "15",
+    "maintainer": "PowerX-NOT",
+    "date_release": "08/09/2024",
+    "changelog": "<li>Initial build.</li>",
+    "status": null,
+    "support": "https://t.me/EvoX_Mi_A3",
+    "rdp": "Yes",
+    "notes": "<li>Recovery build.</li><li>Check the group for installation guide.</li>",
+    "banner": "/static/img/banner_aosp.png",
+    "downloads": {
+        "editions": {
+            "Gapps": "https://github.com/PowerX-NOT/Build-dumps/releases/download/A15_initial_build/aosp_laurel_sprout-signed-ota_update.zip"
+        }
+    },
+    "archived": false
+}

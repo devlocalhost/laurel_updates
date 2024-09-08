@@ -16,7 +16,13 @@ endblock %} {% block head %} {{ super() }}
 </div>
 
 <h1 class="colored" onclick="toggleStylesheet()">
-    {% block filename %}{{ data["name"] }} ({{ data["status"] }}){% endblock %}
+    {% block filename %}
+    {% if data["status"] %}
+    {{ data["name"] }} ({{ data["status"] }})
+    {% else %}
+    {{ data["name"] }}
+    {% endif %}
+    {% endblock %}
 </h1>
 
 {% if data["banner"] %}

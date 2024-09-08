@@ -1,7 +1,9 @@
 # News - Updates, releases, and more.
 
-## 08-09-2024 - New Pixel Magic update.
-~~The update was removed due to microphone issues. Unfortunately, I do not have more details, but once an update is released, I will update the website.~~ A new fix has been released and the update is [available to download](/roms/PixelMagic_14#downloads)
+## 08-09-2024 - New ANDROID 15 ROM, and Pixel Magic update.
+~~The update was removed due to microphone issues. Unfortunately, I do not have more details, but once an update is released, I will update the website.~~ A new fix has been released and the update is [available to download](/roms/PixelMagic_14#downloads).
+
+PowerX-NOT has released AOSP WITH ANDROID 15!! Check it out [HERE.](/roms/AOSP_15)
 
 ## 07-09-2024 - QPR3 Pixel Magic update.
 Magicxavi has released a new update for Pixel Magic, with a lot of new things. Check it out [here](/roms/PixelMagic_14)

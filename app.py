@@ -35,7 +35,7 @@ utc_time = datetime.datetime.now(datetime.UTC).strftime("%A %B %-d, %I:%M:%S %p"
 start_time = datetime.datetime.now()  # um... ^^^ ??
 platform_details = f"{platform.uname()[1]} ({platform.uname()[2]})"
 nl = "\n"
-android_versions = ["roms/10", "roms/14", "roms/13", "roms/12", "roms/11"]
+android_versions = ["roms/10", "roms/11", "roms/12", "roms/13", "roms/14", "roms/15"]
 
 
 def get_uptime():
@@ -101,6 +101,7 @@ class Statistics:
         self.visitors = 0
         self.deployed = f"{utc_time} (UTC)"
         self.rom_statistics = {
+            "crDroid_10": {"views": 0},
             "LineageOS_11": {"views": 0},
             "PixelExperience_11": {"views": 0},
             "AospExtended_12": {"views": 0},
@@ -119,7 +120,7 @@ class Statistics:
             "DerpFest_14": {"views": 0},
             "crDroid_14": {"views": 0},
             "TheParasiteProject_14": {"views": 0},
-            "crDroid_10": {"views": 0},
+            "AOSP_15": {"views": 0},
             # "": {"views": 0},
         }
 
