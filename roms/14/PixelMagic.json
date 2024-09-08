@@ -2,8 +2,8 @@
     "name": "PixelMagic",
     "version": "14",
     "maintainer": "Magicxavi",
-    "date_release": "07/09/2024",
-    "changelog": "<li>Initial QPR3</li><li>Fixed crash when jack 3.5 was inserted</li><li>Tuned haptics</li><li>fixed MagicEraser</li><li>added \"per-app\" volume control</li><li>added Cloning apps feature</li><li>added feature to set different ringtones for both sim card's</li><li>Fixed issue when flashing rdp builds didn't work after qpr1 a14</li>",
+    "date_release": "20/06/2024",
+    "changelog": "<li>QPR2 build</li><li>Signed with private key</li><li>Passing play integrity \"out of the box\"</li>",
     "status": "Official",
     "support": "https://t.me/syberia_laurel_sprout",
     "rdp": "Yes",
@@ -11,7 +11,7 @@
     "banner": "/static/img/banner_pixelmagic_14.jpg",
     "downloads": {
         "editions": {
-            "Gapps": "https://drive.google.com/file/d/1pwu-GWwbplbJswDjBM2Zk1Pfq0XE52S_/view?usp=sharing"
+            "Gapps": "https://drive.google.com/file/d/1LdQ3412qbqzLbD4O5MuCl8DOKp-zfkMN/view"
         }
     },
     "archived": false

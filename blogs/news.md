@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 08-09-2024 - New Pixel Magic update reverted.
+The update was removed due to microphone issues. Unfortunately, I do not have more details, but once an update is released, I will update the website.
+
 ## 07-09-2024 - QPR3 Pixel Magic update.
 Magicxavi has released a new update for Pixel Magic, with a lot of new things. Check it out [here](/roms/PixelMagic_14)
 
