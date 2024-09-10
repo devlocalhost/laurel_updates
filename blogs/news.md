@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 10-09-2024 - PixelMagic Android 15 released.
+Magicxavi has updated PixelMagic to Android 15. This is the second Android 15 ROM. Check it out [here.](/roms/PixelMagic_15)
+
 ## 08-09-2024 - New ANDROID 15 ROM, and Pixel Magic update.
 ~~The update was removed due to microphone issues. Unfortunately, I do not have more details, but once an update is released, I will update the website.~~ A new fix has been released and the update is [available to download](/roms/PixelMagic_14#downloads).
 
