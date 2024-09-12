@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 12-09-2024 - [IMPORTANT] A form for laurel_sprout.
+For more, click [here](/blog/poll).
+
 ## 10-09-2024 - PixelMagic Android 15 released.
 Magicxavi has updated PixelMagic to Android 15. This is the second Android 15 ROM. Check it out [here.](/roms/PixelMagic_15)
 
