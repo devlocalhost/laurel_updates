@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 16-09-2024 - PixelMagic 15 gets an update.
+For more details, click [here](/roms/PixelMagic_15#changelog).
+
 ## 12-09-2024 - [IMPORTANT] A form for laurel_sprout.
 For more, click [here](/blog/poll).
 
