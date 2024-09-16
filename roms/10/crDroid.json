@@ -7,7 +7,7 @@
     "status": "Unofficial",
     "support": "https://t.me/syberia_laurel_sprout",
     "rdp": "No",
-    "notes": "<li>Magicxavi also maintains <a href='/roms/RisingOS_14'>RisingOS</a>, <a href='/roms/PixelMagic_14'>PixelMagic 14</a> and <a href='/roms/PixelMagic_15'>PixelMagic 15</a>.<li>Android 10, <strong>with android 11 firmware.</strong></li><li>Thanks to all my contributors :)</li><li>Bugs: After first boot need to reboot phone, otherwise after locking device display wont turn on, until reboot, Portrait and night mode in miui camera not working, Maybe more</li>",
+    "notes": "<li>Magicxavi also maintains <a href='/roms/RisingOS_14'>RisingOS</a>, <a href='/roms/PixelMagic_14'>PixelMagic 14</a>, <a href='/roms/PixelMagic_15'>PixelMagic 15</a> and <a href='/roms/YAAP_15'>YAAP</a>.<li>Android 10, <strong>with android 11 firmware.</strong></li><li>Thanks to all my contributors :)</li><li>Bugs: After first boot need to reboot phone, otherwise after locking device display wont turn on, until reboot, Portrait and night mode in miui camera not working, Maybe more</li>",
     "banner": "/static/img/banner_crdroid_magicxavi.jpg",
     "downloads": {
         "editions": {
