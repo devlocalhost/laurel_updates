@@ -1,0 +1,18 @@
+{
+    "name": "YAAP (Yet Another AOSP Project)",
+    "version": "HOMEMADE",
+    "maintainer": "Magicxavi",
+    "date_release": "16/09/2024",
+    "changelog": "<li>Initial build</li>",
+    "status": "Unofficial",
+    "support": "https://t.me/syberia_laurel_sprout",
+    "rdp": "Yes",
+    "notes": "<li>Magicxavi also maintains <a href='/roms/RisingOS_14'>RisingOS</a>, <a href='/roms/crDroid_10'>crDroid (10)</a> and <a href='/roms/PixelMagic_14'>PixelMagic 14</a>.<li>Bugs: Portrait and night mode in miui camera not working, Fingerprint, Maybe more</li><li>Use the latest boot.img from notes.</li><li>Thanks to all my contributors :)</li>",
+    "banner": "/static/img/banner_yaap.jpg",
+    "downloads": {
+        "editions": {
+            "Vanilla": "https://bit.ly/4gtVLbm"
+        }
+    },
+    "archived": false
+}
