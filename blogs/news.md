@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 18-09-2024 - September patch Project Blaze.
+This update was released a few days ago (Sept 9), but seems like i missed it. Anyway, enjoy it by clicking [here](/roms/ProjectBlaze_14).
+
 ## 16-09-2024 - PixelMagic 15 gets an update, and another Android 15 ROM is released.
 For more details about the PixelMagic update, click [here](/roms/PixelMagic_15#changelog).
 
