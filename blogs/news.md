@@ -1,5 +1,10 @@
 # News - Updates, releases, and more.
 
+## 25-09-2024 - [IMPORTANT] Form ending tomorrow, New Android 14 ROM available.
+The form which was made public in Sept 12 will NOT accept any responses soon. If you haven't voted yet, click [here](/blog/poll).
+
+A new ROM by a new member has been released! Project Matrixx. Check it out [here](/roms/ProjectMatrixx_14).
+
 ## 18-09-2024 - September patch Project Blaze.
 Click [here](/roms/ProjectBlaze_14#changelog) for more details.
 

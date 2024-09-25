@@ -116,6 +116,7 @@ class Statistics:
             "PixelMagic_14": {"views": 0},
             "TequilaOS_14": {"views": 0},
             "ProjectBlaze_14": {"views": 0},
+            "ProjectMatrixx_14": {"views": 0},
             "RisingOS_14": {"views": 0},
             "DerpFest_14": {"views": 0},
             "crDroid_14": {"views": 0},
