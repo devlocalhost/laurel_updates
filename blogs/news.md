@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 27-09-2024 - [IMPORTANT] FORM RESULTS ARE OUT.
+Many thanks to everyone who participated/answered the form. Check out the results, by clicking [here](/blog/poll).
+
 ## 25-09-2024 - [IMPORTANT] Form ending tomorrow, New Android 14 ROM available.
 The form which was made public in Sept 12 will NOT accept any responses soon. If you haven't voted yet, click [here](/blog/poll).
 
