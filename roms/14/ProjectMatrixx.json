@@ -1,22 +1,18 @@
 {
     "name": "Project Matrixx",
-    "version": "10.7.3",
+    "version": "10.8.1",
     "maintainer": "TiTAN1UM",
-    "date_release": "25/09/2024",
+    "date_release": "29/09/2024",
     "changelog": "<li>Initial build.</li><li>For source (ROM) changelog, click <a href='https://www.projectmatrixx.org/changelog'>here</a>.</li>",
     "status": "Unofficial",
     "support": "https://t.me/ti_roms_laurel_sprout",
     "rdp": "No",
-    "notes": "<li>Vanilla build. You must flash gapps.</li><li>How to install? Read the instructions <a href='https://telegra.ph/Non-RDP-rom-installation-instructions-09-25'>here</a></li></li><li>Build checksum (MD5): <code>ee3ef702bbafb9ffe128ea950124dda1</code></li><li>Bugs: Portrait mode in MICamera</li>",
+    "notes": "<li>Gapps and Vanilla builds available. For Gapps, check the <code>#gapps</code> note in group.</li><li>How to install? Read the instructions <a href='https://telegra.ph/Non-RDP-rom-installation-instructions-09-25'>here</a></li><li>Bugs: FOD, AOD</li>",
     "banner": "/static/img/banner_projectmatrixx.jpg",
     "downloads": {
         "editions": {
-            "ROM (Vanilla)": "https://mega.nz/file/ksZHjSDL#a1UiLK7dB3ht2AblXUoI-EDLoTLWF2JV2t7Eyj0ZxA0",
-            "Buzzheavier Mirror": "https://buzzheavier.com/f/GYTcQx_pAAA",
-            "Pixeldrain Mirror": "https://pixeldrain.com/u/nNoD6LVV",
-            "boot.img": "https://mega.nz/file/xsZgXZhI#OUm5Qmxcf055cBv9VRLyTp46NR4L7ehJs6K9_UI5Pzc",
-            "NikGapps": "https://sourceforge.net/projects/nikgapps/files/Releases/Android-14/13-Aug-2024/NikGapps-basic-arm64-14-20240813-signed.zip/download",
-            "BitGapps": "https://github.com/BiTGApps/BiTGApps-Release/releases/download/v4.0/BiTGApps-arm64-14.0.0-v4.0-OMNI.zip"
+            "Gapps build": "https://mega.nz/file/NsxF1CKZ#C2HRZl2p0WfGUyMC8r9SFxThAur53WlH9ZSePdFJXOo",
+            "Vanilla build": "https://pixeldrain.com/u/xD7Bh1fN"
         }
     },
     "archived": false

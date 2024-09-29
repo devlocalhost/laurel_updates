@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 29-09-2024 - Project Matrixx v10.8.1.
+There are now 2 different builds: Gapps, and Vanilla. Check it out [here](/roms/ProjectMatrixx_14#downloads).
+
 ## 27-09-2024 - [IMPORTANT] FORM RESULTS ARE OUT.
 Many thanks to everyone who participated/answered the form. Check out the results, by clicking [here](/blog/poll).
 
