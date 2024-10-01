@@ -1,17 +1,18 @@
 {
     "name": "crDroid",
-    "version": "10.7",
-    "maintainer": "J7ohn",
-    "date_release": "14/08/2024",
-    "changelog": "<li><a href='https://crdroid.net/blog/2024-08-11-crDroid-10.7-is-now-ready'>crdroid blog</a></li>",
-    "status": "Unofficial",
-    "support": "https://t.me/crdroid_laurel",
-    "rdp": "Yes",
-    "notes": "<li>With Gapps</li><li>Passing Play Integrity by default</li><li>If your display it's not original u should use #60hz (in /notes)</li><li>If u r facing freezes, please disable shake to clear recents in \"launcher settings -> recents\"</li>",
+    "version": "10.8",
+    "maintainer": "RainZ (Rahul Talukdar)",
+    "date_release": "30/09/2024",
+    "changelog": "<li>Initial Release</li>",
+    "status": "Official",
+    "support": "https://t.me/crdroid_mi_a3",
+    "rdp": "No",
+    "notes": "<li>Vanilla build. Check the download sections for gapps package (PACKAGE! NOT ROM BUILD!)</li><li>MD5: <code>7d509d6ba6a887c8e4ca97063b890963</code>, SHA256: <code>8480c9161b36ae3f6b016cb60e1d69578f687441a44cfd5c97b41578e1ea4a2d</code></li>",
     "banner": "/static/img/banner_crdroid.jpg",
     "downloads": {
         "editions": {
-            "Gapps": "https://github.com/cookire/builds/releases/download/v2/crDroid_10_7.zip"
+            "Vanilla": "https://sourceforge.net/projects/crdroid/files/laurel_sprout/10.x/crDroidAndroid-14.0-20240930-laurel_sprout-v10.8.zip/download",
+            "crDroid NikGapps": "https://sourceforge.net/projects/nikgapps/files/Elite-Releases/crdroid-official/Android-14"
         }
     },
     "archived": false

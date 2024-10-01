@@ -1,5 +1,10 @@
 # News - Updates, releases, and more.
 
+## 01-10-2024 - Official crDroid for laurel_sprout.
+RainZ (Rahul Talukdar) released crDroid for laurel_sprout, officially. Check it out [here](/roms/crDroid_14).
+
+The old, previous crDroid build by J7ohn is still available on the website, but under a different name: [crDroid_U](/roms/crDroid_U_14) (U for unofficial).
+
 ## 27-09-2024 - [IMPORTANT] FORM RESULTS ARE OUT.
 Many thanks to everyone who participated/answered the form. Check out the results, by clicking [here](/blog/poll).
 

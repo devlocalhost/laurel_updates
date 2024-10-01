@@ -1,0 +1,18 @@
+{
+    "name": "crDroid_U",
+    "version": "10.7",
+    "maintainer": "J7ohn",
+    "date_release": "14/08/2024",
+    "changelog": "<li><a href='https://crdroid.net/blog/2024-08-11-crDroid-10.7-is-now-ready'>crdroid blog</a></li>",
+    "status": "Unofficial",
+    "support": "https://t.me/crdroid_laurel",
+    "rdp": "Yes",
+    "notes": "<li>With Gapps</li><li>Passing Play Integrity by default</li><li>If your display it's not original u should use #60hz (in /notes)</li><li>If u r facing freezes, please disable shake to clear recents in \"launcher settings -> recents\"</li>",
+    "banner": "/static/img/banner_crdroid.jpg",
+    "downloads": {
+        "editions": {
+            "Gapps": "https://github.com/cookire/builds/releases/download/v2/crDroid_10_7.zip"
+        }
+    },
+    "archived": false
+}

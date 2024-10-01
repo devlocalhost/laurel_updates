@@ -120,6 +120,7 @@ class Statistics:
             "RisingOS_14": {"views": 0},
             "DerpFest_14": {"views": 0},
             "crDroid_14": {"views": 0},
+            "crDroid_U_14": {"views": 0},
             "TheParasiteProject_14": {"views": 0},
             "AOSP_15": {"views": 0},
             "PixelMagic_15": {"views": 0},
