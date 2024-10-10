@@ -1,0 +1,18 @@
+{
+    "name": "DerpFest",
+    "version": "15",
+    "maintainer": "PowerX-NOT",
+    "date_release": "10/10/2024",
+    "changelog": "<li>Initial A15</li><li>Signed with private keys</li><li>Play Integrity is passed by default</li><li>Added Dolby Atmos</li><li>kernelsu: Update to v1.0.1</li><li>UDPFS working</li><li>MIUI camera module not supported</li>",
+    "status": "Unofficial",
+    "support": "https://t.me/EvoX_Mi_A3",
+    "rdp": "Yes",
+    "notes": "<li>Recovery build.</li><li>Check the group for installation guide. Clean flash mandatory.</li>",
+    "banner": "/static/img/banner_derpfest_15.jpg",
+    "downloads": {
+        "editions": {
+            "Gapps": "https://github.com/PowerX-NOT/Build-dumps/releases/download/DerpFest-20241010/derp_laurel_sprout-signed-ota_update.zip"
+        }
+    },
+    "archived": false
+}

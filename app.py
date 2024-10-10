@@ -123,6 +123,7 @@ class Statistics:
             "crDroid_U_14": {"views": 0},
             "TheParasiteProject_14": {"views": 0},
             "AOSP_15": {"views": 0},
+            "DerpFest_15": {"views": 0},
             "PixelMagic_15": {"views": 0},
             "YAAP_15": {"views": 0},
             # "": {"views": 0},
