@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 10-10-2024 - DerpFest Android 15 released.
+PowerX-NOT released DerpFest with Android 15. Check it out [here](/roms/DerpFest_15). Also, the initial [AOSP 15](/roms/AOSP_15) build has been archived.
+
 ## 01-10-2024 - Official crDroid for laurel_sprout.
 RainZ (Rahul Talukdar) released crDroid for laurel_sprout, officially. Check it out [here](/roms/crDroid_14).
 
