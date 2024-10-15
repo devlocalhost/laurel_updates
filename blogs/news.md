@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 15-10-2024 - LineageOS 22 released.
+Skyblueborb has released Android 15 version of LineageOS for laurel. Click [here](/roms/LineageOS_15) for more details.
+
 ## 10-10-2024 - DerpFest Android 15 released.
 PowerX-NOT released DerpFest with Android 15. Check it out [here](/roms/DerpFest_15). Also, the initial [AOSP 15](/roms/AOSP_15) build has been archived.
 
