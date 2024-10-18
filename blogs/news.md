@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 18-10-2024 - New Android 15 ROM: Project Pixelage.
+bakka has released a new Android 15 ROM, Project Pixelage. Check it out by clicking [here](/roms/ProjectPixelage_15).
+
 ## 15-10-2024 - LineageOS 22 released.
 Skyblueborb has released Android 15 version of LineageOS for laurel. Click [here](/roms/LineageOS_15) for more details.
 
