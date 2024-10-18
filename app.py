@@ -126,6 +126,7 @@ class Statistics:
             "DerpFest_15": {"views": 0},
             "LineageOS_15": {"views": 0},
             "PixelMagic_15": {"views": 0},
+            "ProjectPixelage_15": {"views": 0},
             "YAAP_15": {"views": 0},
             # "": {"views": 0},
         }

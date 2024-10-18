@@ -1,0 +1,19 @@
+{
+    "name": "ProjectPixelage",
+    "version": "15",
+    "maintainer": "bakkaq",
+    "date_release": "17/10/2024",
+    "changelog": null,
+    "status": "Unofficial",
+    "support": "https://t.me/bakkaqbuilds",
+    "rdp": "No",
+    "notes": "<li>FOD (fingerprint on display) dead.</li><li>Clean flash mandatory</li><li>Play integrity should pass by default</li><li>Non RDP</li><li>With Gapps</li><li>Circle search working</li>",
+    "banner": "/static/img/banner_projectpixelage.jpg",
+    "downloads": {
+        "editions": {
+            "MEGA": "https://mega.nz/file/bzwAWA7J#Zrnu4U8LmIv18aQwoN9lTFfme0H6jzimw5pJEIoLohc",
+            "Google Drive": "https://drive.google.com/file/d/1q7X2Y34DzvigNPLfSi8P6LgLWHAeMLdn/view?usp=sharing"
+        }
+    },
+    "archived": false
+}
