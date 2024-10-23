@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 23-10-2024 - RainZ drops crDroid, archived both crDroid builds.
+RainZ drops support for crDroid: "[android_vendor_crDroidOTA](https://github.com/crdroidandroid/android_vendor_crDroidOTA/pull/667). Goodbyes are always hard, especially when it comes to something we've poured our time and passion into. Today, we say farewell to the Mi A3 within the crDroid family, as the motherboard has reached the end of its journey. It’s painful to let go, knowing how much it meant to us and the community, but sometimes even the best things have to find their rest. Yet, in this farewell, there’s also joy. Joy in remembering all the milestones, the shared moments of excitement with each new build, and the sheer love for making it the best we could. As we part ways, let’s hold onto the fact that the Mi A3 leaves behind a legacy, and its spirit lives on in everything else we build.". Both unofficial and official crDroid builds have been archived now.
+
 ## 18-10-2024 - New Android 15 ROM: Project Pixelage.
 bakka has released a new Android 15 ROM, Project Pixelage. Check it out by clicking [here](/roms/ProjectPixelage_15).
 
