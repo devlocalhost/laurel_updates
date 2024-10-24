@@ -17,4 +17,4 @@ My current setup is the first one. Let's move on now. If you are using magisk, y
 4. Install [PlayIntegrityFix module](https://github.com/chiteroman/PlayIntegrityFix/releases/latest). **NOTE**: If your rom is signed with test keys (ask your ROM maintainer or check with with `su` and `unzip -l /system/etc/security/otacerts.zip` in Termux. If you see `testkey.x509.pem`, rom is signed with test keys) open `/data/adb/modules/playintegrityfix/pif.json` and change spoofSignature to true. ([source](https://t.me/A3Official/502180))
 
 Following these steps should help you pass `MEETS_BASIC_INTEGRITY` and `MEETS_DEVICE_INTEGRITY`.
-![image showing basic and device integrity with green checks.](/static/img/pi-result.jpg)
+![image showing basic and device integrity with green checks.](/static/img/pi-result.png)
