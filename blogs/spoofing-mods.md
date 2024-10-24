@@ -30,7 +30,6 @@ With the spoofing methods and mods i am using, i currently can achieve this:
 2. Momo app (adding to denylist makes app crash on launch): ![momo app](/static/img/momo.png)
 3. NativeDetector app: ![nativedetector app](/static/img/nd.png)
 4. Ruru app: ![ruru app](/static/img/ruru.png)
-. ![]()
 
 ## Denylist & lsposed
 1. Denylist apps: ![denylist apps](/static/img/denylist.png)
