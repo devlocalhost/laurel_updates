@@ -5,7 +5,7 @@ platform_tools are essential drivers used to communicate with your phone, includ
 ## Getting platform_tools
 
 If you are using windows 10 or 11, you can skip steps 1, 2 and 3 by doing this:
-1. Open a terminal windows
+1. Open cmd (windows key + r, type `cmd`, then enter)
 2. Execute this command: `winget install Google.PlatformTools`
 
 If you are using linux, you can skip steps 1, 2 and 3 by using your package manager
