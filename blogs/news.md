@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 27-10-2024 - Updated ProjectPixelage to version 2.1.
+ProjectPixelage has been updated to 2.1, with some fixes. Check it out [here](/roms/ProjectPixelage_15).
+
 ## 24-10-2024 - Updated Play Integrity blog.
 Play Integrity blog has been updated, and the old tutorials were removed. Check it out [here](/blog/playintegrity). Also, a new blog post where i show [my spoofing methods](/blog/spoofing-mods) has been added.
 
