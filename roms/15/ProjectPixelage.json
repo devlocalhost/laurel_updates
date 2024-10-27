@@ -1,18 +1,18 @@
 {
     "name": "ProjectPixelage",
-    "version": "15",
+    "version": "2.1",
     "maintainer": "bakkaq",
-    "date_release": "17/10/2024",
-    "changelog": null,
+    "date_release": "25/10/2024",
+    "changelog": "<li><a href='https://github.com/ProjectPixelage/pixelage_changelog?tab=readme-ov-file#source-changelog'>Source changelog</a></li><li>Fixed FOD</li><li>Face unlock added</li><li>Fixed headphones jack randomly crash system</li>",
     "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds",
     "rdp": "No",
-    "notes": "<li>FOD (fingerprint on display) dead.</li><li>Clean flash mandatory</li><li>Play integrity should pass by default</li><li>Non RDP</li><li>With Gapps</li><li>Circle search working</li>",
+    "notes": "<li>Play integrity should pass by default</li><li>With Gapps</li><li>Circle search working</li>",
     "banner": "/static/img/banner_projectpixelage.jpg",
     "downloads": {
         "editions": {
-            "MEGA": "https://mega.nz/file/bzwAWA7J#Zrnu4U8LmIv18aQwoN9lTFfme0H6jzimw5pJEIoLohc",
-            "Google Drive": "https://drive.google.com/file/d/1q7X2Y34DzvigNPLfSi8P6LgLWHAeMLdn/view?usp=sharing"
+            "MEGA": "https://mega.nz/file/Di4TTQSQ#yEv0T5dUqaBBbppSd-d8m4dQJjBm8Y8dqxMNZBoHBZQ",
+            "Google Drive": "https://drive.google.com/file/d/1yDkyZKzUqQBu6tE6G9S1Uv9gaUGCcfTl/view?usp=sharing"
         }
     },
     "archived": false
