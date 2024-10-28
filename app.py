@@ -18,6 +18,7 @@ import subprocess
 
 from flask import (
     Flask,
+    request,
     render_template,
     make_response,
 )
@@ -59,10 +60,13 @@ def get_uptime():
     return str(", ".join(components)).strip()
 
 
-def send_message(func, message):
+def send_message(func, message, chat_id=1547269295, message_thread_id=None):
     print(f"{func} - Sending message to dev...")
 
-    data = {"chat_id": 1547269295, "text": message, "parse_mode": "HTML"}
+    data = {"chat_id": chat_id, "text": message, "parse_mode": "HTML"}
+
+    if message_thread_id:
+        data["message_thread_id"] = message_thread_id
 
     try:
         req = requests.post(
@@ -71,7 +75,7 @@ def send_message(func, message):
             timeout=10,
         )
 
-        print(f"{func} - Status: {req.status_code}")
+        print(f"{func} - Status: {req.status_code}\n{req.text}")
 
     except Exception as exc:
         print(f"{func} - ERR: {type(exc).__name__}")
@@ -81,6 +85,8 @@ def starting():
     send_message(
         "[Starting]",
         f"Hello world\nRunning on <code>{platform_details}</code>\nCommit: <code>{commit}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit}</code>)\n{utc_time} (UTC)",
+        -1002418052790,
+        2
     )
 
 
@@ -88,8 +94,9 @@ def going_down():
     send_message(
         "[Going down]",
         f"GOODBYECRUELWORLD - <code>{platform_details}</code>\nWas up for: <code>{get_uptime()}</code>\nCommit: <code>{commit}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit}</code>)\n{utc_time} (UTC)",
+        -1002418052790,
+        2
     )
-    # send_message("[Going down]", f"GOODBYECRUELWORLD - <code>{platform_details}</code>\nWas up for: {get_uptime()}")
 
 
 class Statistics:
@@ -232,6 +239,17 @@ def get_blog(article_name):
         data = mistune.html(file.read())
 
     return render_template("blog_template.html", data=data, title=title)
+
+
+@app.route("/reviews", methods=["POST"])
+def build_reviews():
+    build_name = request.form.get("build_endpoint").split("/")[2]
+    review_text = request.form.get("review_text")
+    message = f"NEW REVIEW!!\n\nBuild: {build_name}\nReview: <code>{review_text}</code>"
+
+    send_message("[REVIEW]", message, -1002418052790, 4)
+
+    return render_template("reviews.html", review_text=review_text, build_name=build_name)
 
 
 @app.route("/roms")
