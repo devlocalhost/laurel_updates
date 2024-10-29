@@ -1,5 +1,10 @@
 # News - Updates, releases, and more.
 
+## 29-19-2024 - [IMPORTANT, MUST CHECK]: Review system.
+A review system has been added! This means, you can post reviews under ROMs and Kernels. Reviews have to be manually approved by the dev (me), so this may take some time. PLEASE do NOT abuse this, and PLEASE be honest while reviewing.
+
+You can review a ROM/Kernel by clicking on the review tab ([example](/roms/LineageOS_15#reviews)).
+
 ## 27-10-2024 - Updated ProjectPixelage to version 2.1.
 ProjectPixelage has been updated to 2.1, with some fixes. Check it out [here](/roms/ProjectPixelage_15).
 
