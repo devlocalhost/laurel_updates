@@ -257,7 +257,7 @@ def build_reviews():
 
     send_message("[REVIEW]", message, -1002418052790, 4)
 
-    return render_template("reviews.html", build_review=build_review, build_name=build_name)
+    return render_template("reviews.html", build_review=build_review, build_name=build_name, build_version=build_version, build_release_date=build_release_date, build_rating=build_rating)
 
 
 @app.route("/roms")
