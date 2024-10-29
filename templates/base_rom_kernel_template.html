@@ -63,9 +63,11 @@ endblock %} {% block head %} {{ super() }}
     <p>Have you used/tried {{ data["name"] }}? If yes, let users know how your experience was. Minimum and maximum allowed characters in total are 200 and 1500, so, throw in as much detail as you want and be honest, but PLEASE DO NOT ABUSE!! Reviews have to be approven manually by a person (the developer) for it to appear. Reviews are 100% anonymous.</p>
 
     <form action="{{ url_for('build_reviews') }}" method="POST">
-        <label for="review_text">Your review:</label>
+        <label for="build_review">Your review:</label>
         <input type="hidden" name="build_endpoint" value="{{ request.path }}">
-        <textarea name="review_text" rows="15" minlength="200" maxlength="1500" required></textarea>
+        <input type="hidden" name="build_release_date" value="{{ data['date_release'] }}">
+        <input type="hidden" name="build_version" value="{{ data['version'] }}">
+        <textarea name="build_review" rows="15" minlength="200" maxlength="1500" required></textarea>
 
         <input type="submit" value="Submit">
     </form>

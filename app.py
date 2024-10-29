@@ -244,12 +244,15 @@ def get_blog(article_name):
 @app.route("/reviews", methods=["POST"])
 def build_reviews():
     build_name = request.form.get("build_endpoint").split("/")[2]
-    review_text = request.form.get("review_text")
-    message = f"NEW REVIEW!!\n\nBuild: {build_name}\nReview: <code>{review_text}</code>"
+    build_review = request.form.get("build_review")
+    build_version = request.form.get("build_version")
+    build_release_date = request.form.get("build_release_date")
+
+    message = f"NEW REVIEW!!\n\nBuild: {build_name}\nBuild version & release date: {build_version} / {build_release_date}\nReview: <code>{build_review}</code>\nTo approve: <code>./review_system.py put \"{build_name}\" \"{build_version}\" \"{build_release_date}\" \"{build_review}\"</code>"
 
     send_message("[REVIEW]", message, -1002418052790, 4)
 
-    return render_template("reviews.html", review_text=review_text, build_name=build_name)
+    return render_template("reviews.html", build_review=build_review, build_name=build_name)
 
 
 @app.route("/roms")
