@@ -3,6 +3,7 @@
 import os
 import sys
 import pprint
+import datetime
 
 import dns.resolver
 
@@ -20,10 +21,13 @@ db = client["laurel_updates"]
 collection = db["reviews"]
 
 def get(build_name):
-    return collection.find_one({"build_name": build_name}, {"_id": 0})
+    data = [entry.get(build_name) for entry in collection.find()]
+    return data
 
 def put(data):
-    return collection.insert_one(data)
+    p_data = {f"{data['build_name']}": data}
+
+    return collection.insert_one(p_data)
 
 if __name__ == "__main__":
     if len(sys.argv) == 1:
@@ -39,7 +43,9 @@ if __name__ == "__main__":
             "build_name": sys.argv[2],
             "build_version": sys.argv[3],
             "build_release_date": sys.argv[4],
-            "build_review": sys.argv[5],
+            "build_rating": sys.argv[5],
+            "build_review": sys.argv[6],
+            "build_review_date": datetime.datetime.utcnow().strftime("%A %B %d %Y, %I:%M:%S %p (UTC+00:00)"),
         }
 
         pprint.pprint(data)
