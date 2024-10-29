@@ -49,8 +49,13 @@ endblock %} {% block head %} {{ super() }}
 
     <h3>Reviews for {{ data["name"] }}:</h3>
 
-    <p><b>Rating:</b> 4/5<br><b>Review:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non dolor tortor. Aliquam et ipsum a risus maximus efficitur. Vestibulum quis feugiat leo. Etiam porta tortor molestie erat bibendum, vel hendrerit nisl varius. Nulla mollis, nulla a dignissim mollis, urna libero sagittis orci, sed tincidunt dolor enim ac velit. Mauris blandit lobortis magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris posuere hendrerit tellus, sed scelerisque dolor faucibus ac. Sed ac malesuada tortor, ac aliquam quam. Donec luctus, nisl commodo malesuada malesuada, felis eros feugiat felis, ut placerat nunc nulla sit amet velit. Maecenas turpis velit, feugiat eget ullamcorper sit amet, blandit vel elit. Proin sed tempor risus. Aenean dui urna, lobortis non diam eget, hendrerit semper turpis. Sed sagittis semper erat. Sed lobortis nibh at sapien tempus faucibus. Donec tellus ipsum, posuere sed diam vel, ornare elementum mauris. Etiam mollis, dui quis luctus blandit, lacus lectus consectetur lorem, vitae tempus arcu orci ut ipsum. Fusce hendrerit quam non augue luctus, sit amet ultricies mi scelerisque. Maecenas commodo efficitur commodo. Suspendisse in nibh eu leo rutrum auctor sed eget justo. Aenean pulvinar malesuada vestibulum. Phasellus tincidunt, orci nec varius rutrum, purus nisi elementum nunc, eu tempor velit dolor sit amet dolor. Integer luctus massa purus, nec commodo nunc lobortis eget. Curabitur gravida lorem ac mi varius facilisis non ac massa. Integer nullam.</p>
+    {% if reviews %}
+    {% for review in reviews %}
     <p><b>Rating:</b> {RATING}<br><b>Review:</b> {REVIEW}</p>
+    {% endfor %}
+    {% else %}
+    <p>There are currently no reviews for {{ data["name"] }}. Want to leave a review? Check the section below.</p>
+    {% endif %}
 
     <hr>
 
