@@ -21,7 +21,9 @@ db = client["laurel_updates"]
 collection = db["reviews"]
 
 def get(build_name):
-    data = [entry.get(build_name) for entry in collection.find()]
+    data = [entry.get(build_name) for entry in collection.find() if entry.get(build_name)]
+    data = data if data else None
+
     return data
 
 def put(data):
