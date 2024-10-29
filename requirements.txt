@@ -3,3 +3,4 @@ gunicorn
 mistune
 requests
 dnspython
+pymongo
