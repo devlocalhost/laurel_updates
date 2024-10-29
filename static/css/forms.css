@@ -1,0 +1,40 @@
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: var(--ul-ol-background-color);
+    border-radius: 15px;
+    box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+textarea {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #000;
+    color: #c9d1d9;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+}
+
+input[type="submit"] {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}

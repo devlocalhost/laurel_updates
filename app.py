@@ -15,12 +15,17 @@ import mistune
 import platform
 import requests
 import subprocess
+import review_system
 
 from flask import (
     Flask,
+    request,
     render_template,
     make_response,
 )
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(" -- laurel_updates -- ")
 
@@ -59,10 +64,13 @@ def get_uptime():
     return str(", ".join(components)).strip()
 
 
-def send_message(func, message):
+def send_message(func, message, chat_id=1547269295, message_thread_id=None):
     print(f"{func} - Sending message to dev...")
 
-    data = {"chat_id": 1547269295, "text": message, "parse_mode": "HTML"}
+    data = {"chat_id": chat_id, "text": message, "parse_mode": "HTML"}
+
+    if message_thread_id:
+        data["message_thread_id"] = message_thread_id
 
     try:
         req = requests.post(
@@ -71,7 +79,7 @@ def send_message(func, message):
             timeout=10,
         )
 
-        print(f"{func} - Status: {req.status_code}")
+        print(f"{func} - Status: {req.status_code}\n{req.text}")
 
     except Exception as exc:
         print(f"{func} - ERR: {type(exc).__name__}")
@@ -81,6 +89,8 @@ def starting():
     send_message(
         "[Starting]",
         f"Hello world\nRunning on <code>{platform_details}</code>\nCommit: <code>{commit}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit}</code>)\n{utc_time} (UTC)",
+        -1002418052790,
+        2
     )
 
 
@@ -88,8 +98,9 @@ def going_down():
     send_message(
         "[Going down]",
         f"GOODBYECRUELWORLD - <code>{platform_details}</code>\nWas up for: <code>{get_uptime()}</code>\nCommit: <code>{commit}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit}</code>)\n{utc_time} (UTC)",
+        -1002418052790,
+        2
     )
-    # send_message("[Going down]", f"GOODBYECRUELWORLD - <code>{platform_details}</code>\nWas up for: {get_uptime()}")
 
 
 class Statistics:
@@ -234,6 +245,21 @@ def get_blog(article_name):
     return render_template("blog_template.html", data=data, title=title)
 
 
+@app.route("/reviews", methods=["POST"])
+def build_reviews():
+    build_name = request.form.get("build_endpoint").split("/")[2]
+    build_review = request.form.get("build_review")
+    build_version = request.form.get("build_version")
+    build_release_date = request.form.get("build_release_date")
+    build_rating = request.form.get("build_rating")
+
+    message = f"NEW REVIEW!!\n\nBuild: {build_name}\nBuild version & release date: {build_version} / {build_release_date}\nRating: {build_rating}\nReview: <code>{build_review}</code>\nTo approve: <code>./review_system.py put \"{build_name}\" \"{build_version}\" \"{build_release_date}\" \"{build_rating}\" \"{build_review}\"</code>"
+
+    send_message("[REVIEW]", message, -1002418052790, 4)
+
+    return render_template("reviews.html", build_review=build_review, build_name=build_name, build_version=build_version, build_release_date=build_release_date, build_rating=build_rating)
+
+
 @app.route("/roms")
 def roms():
     """roms"""
@@ -282,8 +308,9 @@ def roms_name(rom_name, version):
             data = json.load(json_file)
 
         statistics.rom_update(f"{rom_name}_{version}")
+        reviews = review_system.get(f"{rom_name}_{version}")
 
-        return render_template("rom_template.html", data=data)
+        return render_template("rom_template.html", data=data, reviews=reviews)
 
     return render_template("404.html")
 
