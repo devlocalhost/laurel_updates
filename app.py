@@ -15,6 +15,7 @@ import mistune
 import platform
 import requests
 import subprocess
+import review_system
 
 from flask import (
     Flask,
@@ -22,6 +23,9 @@ from flask import (
     render_template,
     make_response,
 )
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(" -- laurel_updates -- ")
 
@@ -303,8 +307,9 @@ def roms_name(rom_name, version):
             data = json.load(json_file)
 
         statistics.rom_update(f"{rom_name}_{version}")
+        reviews = review_system.get(f"{rom_name}_{version}")
 
-        return render_template("rom_template.html", data=data)
+        return render_template("rom_template.html", data=data, reviews=reviews)
 
     return render_template("404.html")
 

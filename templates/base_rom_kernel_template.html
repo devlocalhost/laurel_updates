@@ -49,9 +49,11 @@ endblock %} {% block head %} {{ super() }}
 
     <h3>Reviews for {{ data["name"] }}:</h3>
 
+    <code>{{ reviews }}</code>
+
     {% if reviews %}
     {% for review in reviews %}
-    <p><b>Rating:</b> {RATING}<br><b>Review:</b> {REVIEW}</p>
+    <p><b>Rating:</b> {{ review['build_rating'] }}<br><b>Review:</b> {{ review['build_review'] }}</p>
     {% endfor %}
     {% else %}
     <p>There are currently no reviews for {{ data["name"] }}. Want to leave a review? Check the section below.</p>

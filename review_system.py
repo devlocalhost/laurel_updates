@@ -19,32 +19,36 @@ client = MongoClient(os.getenv("DBURL"))
 db = client["laurel_updates"]
 collection = db["reviews"]
 
-if len(sys.argv) == 1:
-    sys.exit("  usage: ./review_system ARG1 ARG2         ARG3\nexample: ./review_system put  LineageOS_15 TEXTTEXT\n         ./review_system get  LineageOS_15")
+def get(build_name):
+    return collection.find_one({"build_name": build_name}, {"_id": 0})
 
-# print(sys.argv[1:])
+def put(data):
+    return collection.insert_one(data)
 
-if sys.argv[1].lower() == "get":
-    response = collection.find_one({"build_name": sys.argv[2]}, {"_id": 0})
+if __name__ == "__main__":
+    if len(sys.argv) == 1:
+        sys.exit("  usage: ./review_system ARG1 ARG2         ARG3\nexample: ./review_system put  LineageOS_15 TEXTTEXT\n         ./review_system get  LineageOS_15")
 
-    print(f"database: {response}")
+    if sys.argv[1].lower() == "get":
+        response = get(sys.argv[2])
 
-if sys.argv[1].lower() == "put":
-    data = {
-        "build_name": sys.argv[2],
-        "build_version": sys.argv[3],
-        "build_release_date": sys.argv[4],
-        "build_review": sys.argv[5],
-    }
-
-    # name version rel date review
-    pprint.pprint(data)
-
-    confirm = input("approve?\n -> ")
-
-    if confirm in ("", "y"):
-        response = collection.insert_one(data)
         print(f"database: {response}")
 
-    else:
-        sys.exit(f"got {confirm}, denying")
+    if sys.argv[1].lower() == "put":
+        data = {
+            "build_name": sys.argv[2],
+            "build_version": sys.argv[3],
+            "build_release_date": sys.argv[4],
+            "build_review": sys.argv[5],
+        }
+
+        pprint.pprint(data)
+
+        confirm = input("approve?\n -> ")
+
+        if confirm in ("", "y"):
+            response = put(data)
+            print(f"database: {response}")
+
+        else:
+            sys.exit(f"got {confirm}, denying")
