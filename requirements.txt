@@ -4,3 +4,4 @@ mistune
 requests
 dnspython
 pymongo
+python-dotenv
