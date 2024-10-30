@@ -2,8 +2,8 @@
     "name": "ProjectPixelage",
     "version": "2.1",
     "maintainer": "bakkaq",
-    "date_release": "25/10/2024",
-    "changelog": "<li><a href='https://github.com/ProjectPixelage/pixelage_changelog?tab=readme-ov-file#source-changelog'>Source changelog</a></li><li>Fixed FOD</li><li>Face unlock added</li><li>Fixed headphones jack randomly crash system</li>",
+    "date_release": "30/10/2024",
+    "changelog": "<li>Fixed AOD flickering</li><li>Fixed unresponsive touch on AOD</li><li>Fixed low volume mic on VoIP calls (give feedback please)</li><li>Some minor tweaks</li>",
     "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds",
     "rdp": "No",
@@ -11,8 +11,8 @@
     "banner": "/static/img/banner_projectpixelage.jpg",
     "downloads": {
         "editions": {
-            "MEGA": "https://mega.nz/file/Di4TTQSQ#yEv0T5dUqaBBbppSd-d8m4dQJjBm8Y8dqxMNZBoHBZQ",
-            "Google Drive": "https://drive.google.com/file/d/1yDkyZKzUqQBu6tE6G9S1Uv9gaUGCcfTl/view?usp=sharing"
+            "MEGA": "https://mega.nz/file/qzRWTAxR#5tfipRkH9dvDcCNSKE5g55YpYDHPT2YhrYzKDpff4B8",
+            "Google Drive": "https://drive.google.com/file/d/1zhdHjW3t3RCKK00RrfygKpvJD_9totEF/view?usp=sharing"
         }
     },
     "archived": false
