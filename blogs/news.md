@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 01-11-2024 - PowerX-NOT Updates DerpFest 15: October 2024 Release Now Available!.
+PowerX-NOT has just rolled out the latest update for DerpFest 15, packed with new features, improvements, and fixes. Check it out [here](/roms/DerpFest_15).
+
 ## 30-10-2024 - New ProjectPixelage update.
 This update fixes a few issues/bugs that were found. For more, check the [changelog](/roms/ProjectPixelage_15#changelog).
 
