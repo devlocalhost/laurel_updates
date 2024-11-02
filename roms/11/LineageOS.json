@@ -2,7 +2,7 @@
     "name": "LineageOS",
     "version": "18.1",
     "maintainer": "Skyblueborb",
-    "date_release": "17/05/2023",
+    "date_release": "17/05/2024",
     "changelog": "<li>Updated to May ASB.</li><li>Updated NoName kernel to 4.14.344.</li><li>Updated system emojis.</li><li>Improved system smoothness.</li><li>Fixed microphone issue for some users.</li><li>Added the ability to show the WiFi standard.</li><li>Added the ability to always show the Bluetooth icon when enabled.</li><li>Added face unlock.</li>",
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
