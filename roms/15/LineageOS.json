@@ -2,16 +2,16 @@
     "name": "LineageOS",
     "version": "22",
     "maintainer": "Skyblueborb",
-    "date_release": "15/10/2024",
-    "changelog": "<li>Initial Android 15 build.</li><li>September ASB.</li><li>New device tree.</li><li>Vanilla only, you need to flash gapps.</li><li>SELinux status: Enforcing.</li><li>Encryption works.</li><li>FOD works.</li><li>NoName V9 (4.14.344) included</li>",
+    "date_release": "03/11/2024",
+    "changelog": "<li>Updated to October ASB.</li><li>Synced with latest LineageOS source.</li><li>Fixed loudspeaker during calls.</li><li>Fixed AoD.</li><li>Fixed a few init script errors.</li><li>Enabled OTA for subsequent builds.</li><li>Improved FOD dimming.</li>",
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
-    "notes": "<li>The source code for LineageOS 22 is still a work in progress, and there may be unresolved issues.</li><li><u>Clean flash is mandatory.</u></li><li>Skyblueborb is also maintaining <a href='/roms/LineageOS_11'>18.1</a> and <a href='/roms/LineageOS_14'>21</a>.</li>",
+    "notes": "<li>The source code for LineageOS 22 is still a work in progress, and there may be unresolved issues.</li><li>Skyblueborb is also maintaining <a href='/roms/LineageOS_11'>18.1</a> and <a href='/roms/LineageOS_14'>21</a>.</li>",
     "banner": "/static/img/banner_los22.jpg",
     "downloads": {
         "editions": {
-            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-22.0-20241015-UNOFFICIAL-laurel_sprout.zip"
+            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-22.0-20241103-UNOFFICIAL-laurel_sprout.zip"
         }
     },
     "archived": false

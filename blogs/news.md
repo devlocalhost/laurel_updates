@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 03-11-2024 - LineageOS 22 October update released!
+Skyblueborb has rolled out the latest update for LineageOS 22, packed with fixes and improvements. Check it out [here](/roms/LineageOS_15).
+
 ## 01-11-2024 - PowerX-NOT Updates DerpFest 15: October 2024 Release Now Available!.
 PowerX-NOT has just rolled out the latest update for DerpFest 15, packed with new features, improvements, and fixes. Check it out [here](/roms/DerpFest_15).
 
