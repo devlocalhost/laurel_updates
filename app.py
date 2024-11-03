@@ -252,8 +252,9 @@ def build_reviews():
     build_version = request.form.get("build_version")
     build_release_date = request.form.get("build_release_date")
     build_rating = request.form.get("build_rating")
+    build_review_date = datetime.datetime.now(datetime.UTC).strftime("%A %B %d %Y, %I:%M:%S %p (UTC+00:00)")
 
-    message = f"NEW REVIEW!!\n\nBuild: {build_name}\nBuild version & release date: {build_version} / {build_release_date}\nRating: {build_rating}\nReview: <code>{build_review}</code>\nTo approve: <code>./review_system.py put \"{build_name}\" \"{build_version}\" \"{build_release_date}\" \"{build_rating}\" \"{build_review}\"</code>"
+    message = f"NEW REVIEW!!\n\nBuild: {build_name}\nBuild version & release date: {build_version} / {build_release_date}\nRating: {build_rating}\nReview: <code>{build_review}</code>\nTo approve: <code>./review_system.py put \"{build_name}\" \"{build_version}\" \"{build_release_date}\" \"{build_rating}\" \"{build_review}\" \"{build_review_date}\"</code>"
 
     send_message("[REVIEW]", message, -1002418052790, 4)
 

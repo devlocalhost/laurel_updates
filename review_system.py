@@ -47,7 +47,7 @@ if __name__ == "__main__":
             "build_release_date": sys.argv[4],
             "build_rating": sys.argv[5],
             "build_review": sys.argv[6],
-            "build_review_date": datetime.datetime.utcnow().strftime("%A %B %d %Y, %I:%M:%S %p (UTC+00:00)"),
+            "build_review_date": sys.argv[7],
         }
 
         pprint.pprint(data)
