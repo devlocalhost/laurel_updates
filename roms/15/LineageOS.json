@@ -2,16 +2,16 @@
     "name": "LineageOS",
     "version": "22",
     "maintainer": "Skyblueborb",
-    "date_release": "03/11/2024",
-    "changelog": "<li>Updated to October ASB.</li><li>Synced with latest LineageOS source.</li><li>Fixed loudspeaker during calls.</li><li>Fixed AoD.</li><li>Fixed a few init script errors.</li><li>Enabled OTA for subsequent builds.</li><li>Improved FOD dimming.</li>",
+    "date_release": "08/11/2024",
+    "changelog": "<li>Updated to November ASB.</li><li>Synced with latest LineageOS source.</li><li>Fixed a rare soft reboot when inserting headphones.</li><li>Added face unlock.</li><li>Added Google Photos Spoof.</li><li>Added three finger swipe screenshot.</li>",
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
-    "notes": "<li>The source code for LineageOS 22 is still a work in progress, and there may be unresolved issues.</li><li>Skyblueborb is also maintaining <a href='/roms/LineageOS_11'>18.1</a> and <a href='/roms/LineageOS_14'>21</a>.</li>",
+    "notes": "<li>Skyblueborb is also maintaining <a href='/roms/LineageOS_11'>18.1</a> and <a href='/roms/LineageOS_14'>21</a>.</li>",
     "banner": "/static/img/banner_los22.jpg",
     "downloads": {
         "editions": {
-            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-22.0-20241103-UNOFFICIAL-laurel_sprout.zip"
+            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-22.0-20241108-UNOFFICIAL-laurel_sprout.zip"
         }
     },
     "archived": false

@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 08-11-2024 - LineageOS 22 November update released!
+LineageOS 22 has just been updated with the November security patch! This release also introduces new features, including Face Unlock and the three-finger swipe screenshot gesture. Check it out [here](/roms/LineageOS_15).
+
 ## 03-11-2024 - LineageOS 22 October update released!
 Skyblueborb has rolled out the latest update for LineageOS 22, packed with fixes and improvements. Check it out [here](/roms/LineageOS_15).
 
