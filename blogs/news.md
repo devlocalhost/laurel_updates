@@ -1,12 +1,15 @@
 # News - Updates, releases, and more.
 
+## PowerX-NOT releases Paranoid Android, Version "Vauxite".
+Paranoid Android is back, by PowerX-NOT! Check it out [here](/roms/ParanoidAndroid_15). Keep in mind, this is a initial build.
+
 ## 08-11-2024 - LineageOS 22 November update released!
 LineageOS 22 has just been updated with the November security patch! This release also introduces new features, including Face Unlock and the three-finger swipe screenshot gesture. Check it out [here](/roms/LineageOS_15).
 
 ## 03-11-2024 - LineageOS 22 October update released!
 Skyblueborb has rolled out the latest update for LineageOS 22, packed with fixes and improvements. Check it out [here](/roms/LineageOS_15).
 
-## 01-11-2024 - PowerX-NOT Updates DerpFest 15: October 2024 Release Now Available!.
+## 01-11-2024 - PowerX-NOT Updates DerpFest 15: October 2024 Release Now Available!
 PowerX-NOT has just rolled out the latest update for DerpFest 15, packed with new features, improvements, and fixes. Check it out [here](/roms/DerpFest_15).
 
 ## 30-10-2024 - New ProjectPixelage update.
