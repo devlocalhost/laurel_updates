@@ -1,18 +1,20 @@
 {
-    "name": "ProjectPixelage",
-    "version": "2.1",
+    "name": "Project Pixelage",
+    "version": "2.2",
     "maintainer": "bakkaq",
-    "date_release": "30/10/2024",
-    "changelog": "<li>Fixed AOD flickering</li><li>Fixed unresponsive touch on AOD</li><li>Fixed low volume mic on VoIP calls (give feedback please)</li><li>Some minor tweaks</li>",
+    "date_release": "12/11/2024",
+    "changelog": "<li>Switched to kernel FOD dimming</li><li><a href='https://github.com/ProjectPixelage/pixelage_changelog?tab=readme-ov-file#source-changelog'>Source changelog</a></li>",
     "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds",
     "rdp": "No",
-    "notes": "<li>Play integrity should pass by default</li><li>With Gapps</li><li>Circle search working</li>",
+    "notes": "<li>Play integrity should pass by default</li><li>With Gapps</li><li>When finger up on fod, screen flickers a little (consider it solved for next build thanks to @Skyblueborb)</li>",
     "banner": "/static/img/banner_projectpixelage.jpg",
     "downloads": {
         "editions": {
-            "MEGA": "https://mega.nz/file/qzRWTAxR#5tfipRkH9dvDcCNSKE5g55YpYDHPT2YhrYzKDpff4B8",
-            "Google Drive": "https://drive.google.com/file/d/1zhdHjW3t3RCKK00RrfygKpvJD_9totEF/view?usp=sharing"
+            "ROM | MEGA": "https://mega.nz/file/qr4RVCBY#X8Gskg2uDf40kXPnT2mr3S4ogy2euD9r0snz-P1TVVo",
+            "ROM | Google Drive": "https://drive.google.com/file/d/1vfZWZSoCvrc9ktqeqtbCLm05YOcPqnFM/view?usp=sharing",
+            "boot.img | MEGA": "https://mega.nz/file/bmwVyYDD#sFLad1MagzcnR8Yp7F-wrSxf5oHPii55-1gHxaz_5mM",
+            "boot.img | Google Drive": "https://drive.google.com/file/d/1qvMq-IG1DbwPnEqiVHm9fbQB-4GDGQJk/view?usp=sharing"
         }
     },
     "archived": false

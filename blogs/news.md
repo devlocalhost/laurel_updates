@@ -1,6 +1,9 @@
 # News - Updates, releases, and more.
 
-## PowerX-NOT releases Paranoid Android, Version "Vauxite".
+## 13-11-2024 - bakka updates Project Pixelage to 2.2.
+For more, go [here](/roms/ProjectPixelage_15).
+
+## 12-11-2024 - PowerX-NOT releases Paranoid Android, Version "Vauxite".
 Paranoid Android is back, by PowerX-NOT! Check it out [here](/roms/ParanoidAndroid_15). Keep in mind, this is a initial build.
 
 ## 08-11-2024 - LineageOS 22 November update released!
