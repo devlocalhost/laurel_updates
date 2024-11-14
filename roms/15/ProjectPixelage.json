@@ -4,7 +4,7 @@
     "maintainer": "bakkaq",
     "date_release": "12/11/2024",
     "changelog": "<li>Switched to kernel FOD dimming</li><li><a href='https://github.com/ProjectPixelage/pixelage_changelog?tab=readme-ov-file#source-changelog'>Source changelog</a></li>",
-    "status": "Unofficial",
+    "status": "Official",
     "support": "https://t.me/bakkaqbuilds",
     "rdp": "No",
     "notes": "<li>Play integrity should pass by default</li><li>With Gapps</li><li>When finger up on fod, screen flickers a little (consider it solved for next build thanks to @Skyblueborb)</li>",
