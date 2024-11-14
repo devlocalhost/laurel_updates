@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 14-11-2024 - Yet another LineageOS 22 update released!
+LineageOS 22 has just been updated. This release brings an upstreamed kernel and fixes double tap to wake among other minor changes. Check it out [here](/roms/LineageOS_15).
+
 ## 13-11-2024 - bakka updates Project Pixelage to 2.2.
 For more, go [here](/roms/ProjectPixelage_15).
 

@@ -2,8 +2,8 @@
     "name": "LineageOS",
     "version": "22",
     "maintainer": "Skyblueborb",
-    "date_release": "08/11/2024",
-    "changelog": "<li>Updated to November ASB.</li><li>Synced with latest LineageOS source.</li><li>Fixed a rare soft reboot when inserting headphones.</li><li>Added face unlock.</li><li>Added Google Photos Spoof.</li><li>Added three finger swipe screenshot.</li>",
+    "date_release": "14/11/2024",
+    "changelog": "<li>Synced latest LineageOS source.</li><li>Updated NoName kernel to 4.14.355.</li><li>Fixed double tap to wake.</li><li>Other minor changes.</li>",
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
@@ -11,7 +11,7 @@
     "banner": "/static/img/banner_los22.jpg",
     "downloads": {
         "editions": {
-            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-22.0-20241108-UNOFFICIAL-laurel_sprout.zip"
+            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-22.0-20241114-UNOFFICIAL-laurel_sprout.zip"
         }
     },
     "archived": false
