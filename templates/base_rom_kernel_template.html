@@ -60,7 +60,7 @@ endblock %} {% block head %} {{ super() }}
     <hr>
 
     <h3>Posting a review</h3>
-    <p>Have you used/tried {{ data["name"] }}? If yes, let users know how your experience was. Minimum and maximum allowed characters in total are 200 and 1500, so, throw in as much detail as you want and be honest, but PLEASE DO NOT ABUSE!! Reviews have to be approven manually by a person (the developer) for it to appear. Reviews are 100% anonymous.</p>
+    <p>Have you used/tried {{ data["name"] }}? If yes, let users know how your experience was. There is no limit on how many characters you can type, so throw in as much detail as you want and be honest, but PLEASE DO NOT ABUSE! I will NOT approve pointless, or useless reviews. Reviews have to be approven manually by a person (the developer) for it to appear, and are 100% anonymous.</p>
 
     <form action="{{ url_for('build_reviews') }}" method="POST">
         <label>Rate {{ data["name"] }} (1: lowest, 5: highest)</label>
@@ -81,7 +81,7 @@ endblock %} {% block head %} {{ super() }}
         <input type="hidden" name="build_endpoint" value="{{ request.path }}">
         <input type="hidden" name="build_release_date" value="{{ data['date_release'] }}">
         <input type="hidden" name="build_version" value="{{ data['version'] }}">
-        <textarea name="build_review" rows="15" minlength="200" maxlength="1500" required></textarea>
+        <textarea name="build_review" rows="15" required></textarea>
 
         <input type="submit" value="Submit">
     </form>
