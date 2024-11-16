@@ -1,9 +1,9 @@
 {
     "name": "PixelMagic",
-    "version": "ALPHAGENE",
+    "version": "ALPHAGENE r5",
     "maintainer": "Magicxavi",
-    "date_release": "15/09/2024",
-    "changelog": "<li>Fixed GCAM</li><li>Enabled new google statusbar icons</li><li>Enabled new notifications flag</li><li>Added feature \"Force LTE CA\"</li><li>Fixed one memory leak</li><li>Added DT2S statusbar gesture</li><li>Added VPN tethering feature</li><li>Added separate Wifi/Mobile data QS tiles</li><li>Added some amount of other QS tiles and gestures</li><li>Other UI improvements</li>",
+    "date_release": "16/11/2024",
+    "changelog": "<li>Rebase on new source</li><li>Most features from previous build added</li><li>UDFPS is fixed automatically with new source, but also added \"screen off udfps\"</li><li>Added \"Ambient gestures\"</li><li>Implemented \"Dual tone\" QS theme</li><li>New settings style by google</li>",
     "status": "Official",
     "support": "https://t.me/syberia_laurel_sprout",
     "rdp": "Yes",
@@ -11,7 +11,7 @@
     "banner": "/static/img/banner_pixelmagic_15.jpg",
     "downloads": {
         "editions": {
-            "Gapps": "https://bit.ly/3XHf8X4"
+            "Gapps": "https://bit.ly/4hU7Kj9"
         }
     },
     "archived": false

@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 16-11-2024 - Magicxavi updates PixelMagic.
+This update fixes a few issues, and adds some new features. For more details, check the [changelog](/roms/PixelMagic_15).
+
 ## 14-11-2024 - Yet another LineageOS 22 update released!
 LineageOS 22 has just been updated. This release brings an upstreamed kernel and fixes double tap to wake among other minor changes. Check it out [here](/roms/LineageOS_15).
 
