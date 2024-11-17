@@ -1,5 +1,8 @@
 # News - Updates, releases, and more.
 
+## 17-11-2024 - New Paranoid Android update!
+In this update,tackled bugs and adds some new features. For more insights, visit... [changelog](/roms/ParanoidAndroid_15#changelog).
+
 ## 16-11-2024 - Magicxavi updates PixelMagic.
 This update fixes a few issues, and adds some new features. For more details, check the [changelog](/roms/PixelMagic_15).
 

@@ -2,16 +2,16 @@
     "name": "Paranoid Android",
     "version": "Vauxite",
     "maintainer": "PowerX-NOT",
-    "date_release": "12/11/2024",
-    "changelog": "<li>Initial Build</li><li>Signed with private keys</li><li>Play Integrity passes by using ZygiskNext & PIF</li><li>kernelsu: v1.0.1</li><li>MIUI camera module not supported</li><li>Everything has been working fine so far in my testing</li>",
+    "date_release": "17/11/2024",
+    "changelog": "<li>Fixed AOD flicker</li><li>Added Screen off FOD</li><li>Google Unlimited Photos</li><li>Play Integrity passes by using ZygiskNext & PIF</li><li>kernelsu: v1.0.1</li><li>MIUI camera module not supported</li>",
     "status": "Unofficial",
     "support": "https://t.me/EvoX_Mi_A3",
     "rdp": "Yes",
-    "notes": "<li><strong>I'll switch to SomethingOS once their source is ready</strong></li><li>Check the group for installation guide.</li>",
+    "notes": "<li><strong>I'll switch to SomethingOS once their source is ready</strong></li><li>Check the group for installation guide.</li><li>A dirty flash is okay if you're coming from the previous build.</li>",
     "banner": "/static/img/banner_paranoidandroid_15.jpg",
     "downloads": {
         "editions": {
-            "Gapps": "https://github.com/PowerX-NOT/Build-dumps/releases/download/aospa_initial_build/aospa_laurel_sprout-signed-ota_update.zip"
+            "Gapps": "https://github.com/PowerX-NOT/Build-dumps/releases/download/aospa-vauxite-20241117/aospa-vauxite-unofficial-laurel_sprout-20241117.zip"
         }
     },
     "archived": false
