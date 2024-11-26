@@ -5,6 +5,7 @@ laurel_updates
 A website where ROMs and kernels developed for this device are posted here.
 """
 
+import re
 import os
 import json
 import atexit
@@ -172,6 +173,17 @@ class Statistics:
         )
 
 
+class CustomRenderer(mistune.HTMLRenderer):
+    def heading(self, text, level):
+        header_id = re.sub(r"\s+", "-", text.lower())
+        return f'<h{level}>{text}</h{level}><div id="{header_id}"></div>'
+
+
+def custom_header_plugin(md):
+    md.renderer = CustomRenderer()
+
+
+markdown_parser = mistune.create_markdown(plugins=[custom_header_plugin])
 statistics = Statistics()
 
 
@@ -245,7 +257,7 @@ def get_blog(article_name):
 
     with open(article_file, encoding="utf-8") as file:
         title = file.readline().removeprefix("# ").removesuffix(nl)
-        data = mistune.html(file.read())
+        data = markdown_parser(file.read())
 
     return render_template("blog_template.html", data=data, title=title)
 
