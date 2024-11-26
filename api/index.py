@@ -15,17 +15,12 @@ import mistune
 import platform
 import requests
 import subprocess
-import review_system
 
 from flask import (
     Flask,
-    request,
     render_template,
     make_response,
 )
-from dotenv import load_dotenv
-
-load_dotenv()
 
 app = Flask(" -- laurel_updates -- ")
 
@@ -33,9 +28,18 @@ if os.getenv("LAUREL_MODE"):
     print("[DEBUG] Templates will auto reload")
     app.config["TEMPLATES_AUTO_RELOAD"] = True
 
-commit = subprocess.check_output(
-    'git log -1 --pretty=format:"%h"', shell=True, text=True
-)
+try:
+    commit = subprocess.check_output(
+        'git log -1 --pretty=format:"%h"', shell=True, text=True
+    )
+
+except:
+    try:
+        commit = os.environ["VERCEL_GIT_COMMIT_SHA"]
+
+    except:
+        commit = "Unknown"
+
 utc_time = datetime.datetime.now(datetime.UTC).strftime("%A %B %-d, %I:%M:%S %p")
 start_time = datetime.datetime.now()  # um... ^^^ ??
 platform_details = f"{platform.uname()[1]} ({platform.uname()[2]})"
@@ -246,22 +250,6 @@ def get_blog(article_name):
     return render_template("blog_template.html", data=data, title=title)
 
 
-@app.route("/reviews", methods=["POST"])
-def build_reviews():
-    build_name = request.form.get("build_endpoint").split("/")[2]
-    build_review = request.form.get("build_review")
-    build_version = request.form.get("build_version")
-    build_release_date = request.form.get("build_release_date")
-    build_rating = request.form.get("build_rating")
-    build_review_date = datetime.datetime.now(datetime.UTC).strftime("%A %B %d %Y, %I:%M:%S %p (UTC+00:00)")
-
-    message = f"NEW REVIEW!!\n\nBuild: {build_name}\nBuild version & release date: {build_version} / {build_release_date}\nRating: {build_rating}\nReview: <code>{build_review}</code>\nTo approve: <code>./review_system.py put \"{build_name}\" \"{build_version}\" \"{build_release_date}\" \"{build_rating}\" \"{build_review}\" \"{build_review_date}\"</code>"
-
-    send_message("[REVIEW]", message, -1002418052790, 4)
-
-    return render_template("reviews.html", build_review=build_review, build_name=build_name, build_version=build_version, build_release_date=build_release_date, build_rating=build_rating)
-
-
 @app.route("/roms")
 def roms():
     """roms"""
@@ -310,9 +298,8 @@ def roms_name(rom_name, version):
             data = json.load(json_file)
 
         statistics.rom_update(f"{rom_name}_{version}")
-        reviews = review_system.get(f"{rom_name}_{version}")
 
-        return render_template("rom_template.html", data=data, reviews=reviews)
+        return render_template("rom_template.html", data=data)
 
     return render_template("404.html")
 

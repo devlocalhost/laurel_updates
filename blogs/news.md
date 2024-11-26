@@ -1,5 +1,26 @@
 # News - Updates, releases, and more.
 
+## 26-11-2024 [IMPORTANT, MUST READ] MAJOR ISSUES WITH HOSTING. Reviews feature temporarily removed.
+
+**PLEASE READ TILL THE END!! IT IS VERY VERY URGENT AND IMPORTANT!!**
+
+### Suspension, downtime. Why?
+laurel_updates was suspended by the hosting provider (Render) "due to a high volume of server-initiated traffic, such as accessing an external database". The reason for the suspension was because of the reviews feature I added a few weeks ago.
+
+### Okay, what now? Whats next?
+This feature is now fully reverted. Users cannot post or see previews anymore. I don't know if I'm going to add this feature back. This is the second major downgrade, and I'm sure the website will lose once again traffic/users. Remember the downtime last year? That downtime caused a big drop on visits/traffic. I do not want to cause another major/big downtime.
+There are 2 options now: 1: Purchase a paid server/VPS and a domain (more reliable), and 2: find other free hosts (unreliable).
+For now, I will use vercel as the main provider, and koyeb as the secondary/alternative one when main provider is down.
+
+### An update to the URL/link
+You may have seen this URL/link: [https://devlocalhost.github.io/lu](https://devlocalhost.github.io/lu). This is the link I send to any user that asks for laurel_updates. That link will ALWAYS redirect to the CURRENT WORKING version of laurel_updates. I encourage EVERYONE to use THAT LINK INSTEAD of the link you get redirected to (for example, [https://laurel-updates.onrender.com/](https://laurel-updates.onrender.com/) or [https://laurel-updates-dev64.koyeb.app/](https://laurel-updates-dev64.koyeb.app/)). Here is another cool feature: adding anything after "https://devlocalhost.github.io/" will redirect you to laurel_updates. For example, this link: [https://devlocalhost.github.io/roms](https://devlocalhost.github.io/roms) will redirect you to the ROMs page. This link: [https://devlocalhost.github.io/roms/LineageOS_22](https://devlocalhost.github.io/LineageOS_22) will redirect you to a ROM (LineageOS 22).
+
+### Telegram channel
+I created a [telegram channel](https://t.me/laurel_updates) where I post updates about the website. It's basically this page, but the headlines. I ALSO recommend you join this channel, so you are up to date if there is any issue going on with the website.
+
+### One more thing
+If you face any issues with laurel_updates (slow loading times, errors, unable to access, and more) PLEASE let me know by contacting me via telegram: @dev6400 (username), or by email: `contact64.qualify966@passinbox.com`
+
 ## 17-11-2024 - New Paranoid Android update!
 In this update,tackled bugs and adds some new features. For more insights, visit... [changelog](/roms/ParanoidAndroid_15#changelog).
 
