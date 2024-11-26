@@ -30,6 +30,7 @@ body {
     max-width: 40em;
     font: 1.2em/1.62 sans-serif;
     padding: 0 0.92em 3.24em;
+    overflow-wrap: break-word;
 }
 
 #progress-bar-container {
