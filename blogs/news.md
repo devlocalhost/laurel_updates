@@ -18,6 +18,9 @@ You may have seen this URL/link: [https://devlocalhost.github.io/lu](https://dev
 ### Telegram channel
 I created a [telegram channel](https://t.me/laurel_updates) where I post updates about the website. It's basically this page, but the headlines. I ALSO recommend you join this channel, so you are up to date if there is any issue going on with the website.
 
+### One more thing
+If you face any issues with laurel_updates (slow loading times, errors, unable to access, and more) PLEASE let me know by contacting me via telegram: @dev6400 (username), or by email: `contact64.qualify966@passinbox.com`
+
 ## 17-11-2024 - New Paranoid Android update!
 In this update,tackled bugs and adds some new features. For more insights, visit... [changelog](/roms/ParanoidAndroid_15#changelog).
 
