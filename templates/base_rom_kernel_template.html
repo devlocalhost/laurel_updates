@@ -1,7 +1,6 @@
 {% extends "base.html" %} {% block title %}laurel_updates - {{ data["name"] }}{%
 endblock %} {% block head %} {{ super() }}
 <link rel="stylesheet" href="/static/css/tabs.css">
-<link rel="stylesheet" href="/static/css/forms.css">
 {% endblock %} {% block content %}
 <div class="navigation-top">
     <a href="{% block routeback %}{% endblock %}"
@@ -40,51 +39,6 @@ endblock %} {% block head %} {{ super() }}
     <a href="#downloads" class="no-fade-animation">Downloads</a>
     <a href="#changelog" class="no-fade-animation">Changelog</a>
     <a href="#notes" class="no-fade-animation">Notes</a>
-    <a href="#reviews" class="no-fade-animation">Reviews</a>
-</div>
-
-<div id="reviews" class="cont">
-    <h2 class="colored">Reviews</h2>
-    <p>Reviews are anonymous to prevent abuse. Reviews are also written by real people. They are not generated or AI generated.</p>
-
-    <h3>Reviews for {{ data["name"] }}:</h3>
-
-    {% if reviews %}
-    {% for review in reviews %}
-    <p><b>Review written at:</b> {{ review['build_review_date'] }}.<br><b>For build</b>: Version {{ review['build_version'] }}, released in {{ review['build_release_date'] }}.<br><b>Rating:</b> {{ review['build_rating'] }}.<br><b>Review:</b> {{ review['build_review'] }}</p>
-    {% endfor %}
-    {% else %}
-    <p>There are currently no reviews for {{ data["name"] }}. Want to leave a review? Check the section below.</p>
-    {% endif %}
-
-    <hr>
-
-    <h3>Posting a review</h3>
-    <p>Have you used/tried {{ data["name"] }}? If yes, let users know how your experience was. There is no limit on how many characters you can type, so throw in as much detail as you want and be honest, but PLEASE DO NOT ABUSE! I will NOT approve pointless, or useless reviews. Reviews have to be approven manually by a person (the developer) for it to appear, and are 100% anonymous.</p>
-
-    <form action="{{ url_for('build_reviews') }}" method="POST">
-        <label>Rate {{ data["name"] }} (1: lowest, 5: highest)</label>
-        <div style="display: flex; gap: 10px;">
-            <input type="radio" id="num1" name="build_rating" value="1">
-            <label for="num1">1</label>
-            <input type="radio" id="num2" name="build_rating" value="2">
-            <label for="num2">2</label>
-            <input type="radio" id="num3" name="build_rating" value="3">
-            <label for="num3">3</label>
-            <input type="radio" id="num4" name="build_rating" value="4" required>
-            <label for="num4">4</label>
-            <input type="radio" id="num5" name="build_rating" value="5">
-            <label for="num5">5</label>
-        </div>
-
-        <label for="build_review">Your review:</label>
-        <input type="hidden" name="build_endpoint" value="{{ request.path }}">
-        <input type="hidden" name="build_release_date" value="{{ data['date_release'] }}">
-        <input type="hidden" name="build_version" value="{{ data['version'] }}">
-        <textarea name="build_review" rows="15" required></textarea>
-
-        <input type="submit" value="Submit">
-    </form>
 </div>
 
 <div id="changelog" class="cont">
