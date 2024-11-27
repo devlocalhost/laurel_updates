@@ -203,7 +203,7 @@ def list_json_files(directory):
 def verify():
     """used to verify the domain for discord"""
 
-    return "dh=52e109de13712934d281d22df1856b44290f732c"
+    return "dh=8f0a33d72181fd1eb73a66321a42e5855556c7a1"
 
 
 @app.route("/")
