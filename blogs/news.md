@@ -1,6 +1,6 @@
 # News - Updates, releases, and more.
 
-## 26-11-2024 [IMPORTANT, MUST READ] MAJOR ISSUES WITH HOSTING. Reviews feature temporarily removed.
+## 26-11-2024 - [IMPORTANT, MUST READ] MAJOR ISSUES WITH HOSTING. Reviews feature temporarily removed.
 
 **PLEASE READ TILL THE END!! IT IS VERY VERY URGENT AND IMPORTANT!!**
 
