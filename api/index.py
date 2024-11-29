@@ -211,10 +211,21 @@ def home():
     """home page"""
 
     statistics.update()
+    pattern = r'\b(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-(\d{4})\b'
+    headline = "News."
 
-    header = open("blogs/news.md").readlines()[2].replace("## ", "")
+    with open("blogs/news.md") as lines:
+        lines = lines.readlines()
+        headline_num = 1
 
-    return render_template("index.html", header=header)
+        for line_number, line in enumerate(lines):
+            if not line.lstrip().startswith('-') and re.search(pattern, line):
+                headline_num = line_number
+                break
+
+        headline = lines[headline_num].replace("## ", "")
+
+    return render_template("index.html", headline=headline)
 
 
 @app.route("/stats")

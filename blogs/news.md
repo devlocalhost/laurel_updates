@@ -1,5 +1,74 @@
 # News - Updates, releases, and more.
 
+## Posts
+- [26-11-2024 - [IMPORTANT, MUST READ] MAJOR ISSUES WITH HOSTING. Reviews feature temporarily removed.](/blog/news#26-11-2024---[important,-must-read]-major-issues-with-hosting.-reviews-feature-temporarily-removed.)
+- [17-11-2024 - New Paranoid Android update!](/blog/news#17-11-2024---new-paranoid-android-update!)
+- [16-11-2024 - Magicxavi updates PixelMagic.](/blog/news#16-11-2024---magicxavi-updates-pixelmagic.)
+- [14-11-2024 - Yet another LineageOS 22 update released!](/blog/news#14-11-2024---yet-another-lineageos-22-update-released!)
+- [13-11-2024 - bakka updates Project Pixelage to 2.2.](/blog/news#13-11-2024---bakka-updates-project-pixelage-to-2.2.)
+- [12-11-2024 - PowerX-NOT releases Paranoid Android, Version "Vauxite".](/blog/news#12-11-2024---powerx-not-releases-paranoid-android,-version-"vauxite".)
+- [08-11-2024 - LineageOS 22 November update released!](/blog/news#08-11-2024---lineageos-22-november-update-released!)
+- [03-11-2024 - LineageOS 22 October update released!](/blog/news#03-11-2024---lineageos-22-october-update-released!)
+- [01-11-2024 - PowerX-NOT Updates DerpFest 15: October 2024 Release Now Available!](/blog/news#01-11-2024---powerx-not-updates-derpfest-15:-october-2024-release-now-available!)
+- [30-10-2024 - New ProjectPixelage update.](/blog/news#30-10-2024---new-projectpixelage-update.)
+- [29-10-2024 - [IMPORTANT]: Review system.](/blog/news#29-10-2024---[important]:-review-system.)
+- [27-10-2024 - Updated ProjectPixelage to version 2.1.](/blog/news#27-10-2024---updated-projectpixelage-to-version-2.1.)
+- [24-10-2024 - Updated Play Integrity blog.](/blog/news#24-10-2024---updated-play-integrity-blog.)
+- [23-10-2024 - RainZ drops crDroid, archived both crDroid builds.](/blog/news#23-10-2024---rainz-drops-crdroid,-archived-both-crdroid-builds.)
+- [18-10-2024 - New Android 15 ROM: Project Pixelage.](/blog/news#18-10-2024---new-android-15-rom:-project-pixelage.)
+- [15-10-2024 - LineageOS 22 released.](/blog/news#15-10-2024---lineageos-22-released.)
+- [10-10-2024 - DerpFest Android 15 released.](/blog/news#10-10-2024---derpfest-android-15-released.)
+- [01-10-2024 - Official crDroid for laurel_sprout.](/blog/news#01-10-2024---official-crdroid-for-laurel_sprout.)
+- [29-09-2024 - Project Matrixx v10.8.1.](/blog/news#29-09-2024---project-matrixx-v10.8.1.)
+- [27-09-2024 - [IMPORTANT] FORM RESULTS ARE OUT.](/blog/news#27-09-2024---[important]-form-results-are-out.)
+- [25-09-2024 - [IMPORTANT] Form ending tomorrow, New Android 14 ROM available.](/blog/news#25-09-2024---[important]-form-ending-tomorrow,-new-android-14-rom-available.)
+- [18-09-2024 - September patch Project Blaze.](/blog/news#18-09-2024---september-patch-project-blaze.)
+- [16-09-2024 - PixelMagic 15 gets an update, and another Android 15 ROM is released.](/blog/news#16-09-2024---pixelmagic-15-gets-an-update,-and-another-android-15-rom-is-released.)
+- [12-09-2024 - [IMPORTANT] A form for laurel_sprout.](/blog/news#12-09-2024---[important]-a-form-for-laurel_sprout.)
+- [10-09-2024 - PixelMagic Android 15 released.](/blog/news#10-09-2024---pixelmagic-android-15-released.)
+- [08-09-2024 - New ANDROID 15 ROM, and Pixel Magic update.](/blog/news#08-09-2024---new-android-15-rom,-and-pixel-magic-update.)
+- [07-09-2024 - QPR3 Pixel Magic update.](/blog/news#07-09-2024---qpr3-pixel-magic-update.)
+- [04-09-2024 - NEW ANDROID 10 ROM: crDroid.](/blog/news#04-09-2024---new-android-10-rom:-crdroid.)
+- [30-08-2024 - Important notice about new Project Blaze update.](/blog/news#30-08-2024---important-notice-about-new-project-blaze-update.)
+- [29-08-2024 - [IMPORTANT] New ProjectBlaze update, and another notice.](/blog/news#29-08-2024---[important]-new-projectblaze-update,-and-another-notice.)
+- [22-08-2024 - [IMPORTANT] New crDroid update, and a notice to devs.](/blog/news#22-08-2024---[important]-new-crdroid-update,-and-a-notice-to-devs.)
+- [19-08-2024 - Minor ProjectBlaze patch.](/blog/news#19-08-2024---minor-projectblaze-patch.)
+- [23-07-2024 - ANOTHER New ROM: The Parasite Project, DerpFest discontinued.](/blog/news#23-07-2024---another-new-rom:-the-parasite-project,-derpfest-discontinued.)
+- [15-07-2024 - New ROM: crDroid.](/blog/news#15-07-2024---new-rom:-crdroid.)
+- [14-07-2024 - New ProjectBlaze Update.](/blog/news#14-07-2024---new-projectblaze-update.)
+- [06-07-2024 - New ROM: DerpFest.](/blog/news#06-07-2024---new-rom:-derpfest.)
+- [04-07-2024 - EvolutionX dropped and archived.](/blog/news#04-07-2024---evolutionx-dropped-and-archived.)
+- [20-06-2024 - [FIX] New PixelMagic update.](/blog/news#20-06-2024---[fix]-new-pixelmagic-update.)
+- [10-06-2024 - EvolutionX gets a hotfix update.](/blog/news#10-06-2024---evolutionx-gets-a-hotfix-update.)
+- [03-06-2024 - A few ROM's have been archived.](/blog/news#03-06-2024---a-few-rom's-have-been-archived.)
+- [25-05-2024 - Minor improvements to the website.](/blog/news#25-05-2024---minor-improvements-to-the-website.)
+- [24-05-2024 - Fixed a major bug with the website.](/blog/news#24-05-2024---fixed-a-major-bug-with-the-website.)
+- [23-05-2024 - Another PixelMagic update.](/blog/news#23-05-2024---another-pixelmagic-update.)
+- [22-05-2024 - QPR2 update for PixelMagic.](/blog/news#22-05-2024---qpr2-update-for-pixelmagic.)
+- [18-05-2024 - New Project Blaze update.](/blog/news#18-05-2024---new-project-blaze-update.)
+- [17-05-2024 - May Security Patch for LineageOS 18.1.](/blog/news#17-05-2024---may-security-patch-for-lineageos-18.1.)
+- [12-05-2024 - May security patch update for EvolutionX.](/blog/news#12-05-2024---may-security-patch-update-for-evolutionx.)
+- [08-05-2024 - [FIX] Add RisingOS, remove PixelOS and SyberiaOS by Magicxavi.](/blog/news#08-05-2024---[fix]-add-risingos,-remove-pixelos-and-syberiaos-by-magicxavi.)
+- [07-05-2024 - New PixelMagic update.](/blog/news#07-05-2024---new-pixelmagic-update.)
+- [28-04-2024 - New EvolutionX and PixelMagic versions.](/blog/news#28-04-2024---new-evolutionx-and-pixelmagic-versions.)
+- [22-04-2024 - tequilaOS is now EOL, Project Blaze gets an update.](/blog/news#22-04-2024---tequilaos-is-now-eol,-project-blaze-gets-an-update.)
+- [15-04-2024 - New ROM: Project Blaze.](/blog/news#15-04-2024---new-rom:-project-blaze.)
+- [11-04-2024 - LineageOS 21 receives April ASB.](/blog/news#11-04-2024---lineageos-21-receives-april-asb.)
+- [10-04-2024 - April Security Patch for LineageOS 18.1.](/blog/news#10-04-2024---april-security-patch-for-lineageos-18.1.)
+- [08-04-2023 - EvolutionX receives a new update, version 8.5.](/blog/news#08-04-2023---evolutionx-receives-a-new-update,-version-8.5.)
+- [24-03-2024 - Android 14 QPR2 update, LineageOS 21.](/blog/news#24-03-2024---android-14-qpr2-update,-lineageos-21.)
+- [04-03-2024 - New ROM available by bakkaq: TequilaOS.](/blog/news#04-03-2024---new-rom-available-by-bakkaq:-tequilaos.)
+- [01-03-2024 - Google fucks up PlayIntegrity, again.](/blog/news#01-03-2024---google-fucks-up-playintegrity,-again.)
+- [26-02-2024 - New PixelMagic update, and a notice.](/blog/news#26-02-2024---new-pixelmagic-update,-and-a-notice.)
+- [23-02-2024 - LineageOS 18.1 gets an update, 20 gets discontinued.](/blog/news#23-02-2024---lineageos-18.1-gets-an-update,-20-gets-discontinued.)
+- [21-02-2024 - New Pixel Experience Android 13 release, AICP dropped.](/blog/news#21-02-2024---new-pixel-experience-android-13-release,-aicp-dropped.)
+- [20-02-2024 - New minor PixelOS update, A Hotfix available for EvolutionX.](/blog/news#20-02-2024---new-minor-pixelos-update,-a-hotfix-available-for-evolutionx.)
+- [17-02-2024 - New PixelOS update.](/blog/news#17-02-2024---new-pixelos-update.)
+- [16-02-2024 - Minor LineageOS 21 update.](/blog/news#16-02-2024---minor-lineageos-21-update.)
+- [07-02-2024 - LineageOS 21 gets a new update.](/blog/news#07-02-2024---lineageos-21-gets-a-new-update.)
+- [06-02-2024 - zafeey ends development for Mi A3, New EvolutionX update.](/blog/news#06-02-2024---zafeey-ends-development-for-mi-a3,-new-evolutionx-update.)
+- [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
+
 ## 26-11-2024 - [IMPORTANT, MUST READ] MAJOR ISSUES WITH HOSTING. Reviews feature temporarily removed.
 
 **PLEASE READ TILL THE END!! IT IS VERY VERY URGENT AND IMPORTANT!!**
@@ -191,7 +260,7 @@ For more details, check [the changelog.](/roms/PixelMagic_14#changelog)
 ## 18-05-2024 - New Project Blaze update.
 A new update for Project Blaze has been released, which fixes a few issues. For mode details, check [changelog.](/roms/ProjectBlaze_14#changelog)
 
-## 17-05-2024 - May ASB (security patch) for LineageOS 18.1.
+## 17-05-2024 - May Security Patch for LineageOS 18.1.
 LineageOS [18.1](/roms/LineageOS_11) gets the May security patch update and new
 features like face unlock.
 
@@ -224,7 +293,7 @@ A [new ROM](/roms/ProjectBlaze_14) is available for our device, Project Blaze. I
 ## 11-04-2024 - LineageOS 21 receives April ASB.
 This update was planned to be released at the same time as LineageOS 18.1, but it was delayed due to some issues, which are solved.
 
-## 10-04-2024 - April ASB (security patch) for LineageOS 18.1.
+## 10-04-2024 - April Security Patch for LineageOS 18.1.
 LineageOS [18.1](/roms/LineageOS_11) gets the April security patch update, and other minor changes.
 
 ## 08-04-2023 - EvolutionX receives a new update, version 8.5.
