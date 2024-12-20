@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [20-12-2024 - crDroid gets revived by leoxvis.](/blog/news#20-12-2024---crdroid-gets-revived-by-leoxvis.)
 - [06-12-2024 - A new LineageOS 22 update released!](/blog/news#06-12-2024---a-new-lineageos-22-update-released!)
 - [26-11-2024 - [IMPORTANT, MUST READ] MAJOR ISSUES WITH HOSTING. Reviews feature temporarily removed.](/blog/news#26-11-2024---[important,-must-read]-major-issues-with-hosting.-reviews-feature-temporarily-removed.)
 - [17-11-2024 - New Paranoid Android update!](/blog/news#17-11-2024---new-paranoid-android-update!)
@@ -69,6 +70,11 @@
 - [07-02-2024 - LineageOS 21 gets a new update.](/blog/news#07-02-2024---lineageos-21-gets-a-new-update.)
 - [06-02-2024 - zafeey ends development for Mi A3, New EvolutionX update.](/blog/news#06-02-2024---zafeey-ends-development-for-mi-a3,-new-evolutionx-update.)
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
+
+---
+
+## 20-12-2024 - crDroid gets revived by leoxvis.
+crDroid 11 gets OFFICIALLY revived by leoxvis! This release (11) is based on Android version 15. Check it out by clicking [here](/roms/crDroid_15).
 
 ## 06-12-2024 - A new LineageOS 22 update released!
 A new LineageOS 22 update has just dropped. This release adds screen off FOD as well as fixes other issues regarding fingerprint reading. Check it out [here](/roms/LineageOS_15).
