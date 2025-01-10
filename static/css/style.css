@@ -113,7 +113,7 @@ img {
     justify-content: space-evenly;
     align-items: center;
     position: fixed;
-    bottom: 25px;
+    bottom: 0.92em;
     left: 0;
     right: 0;
     transition: bottom var(--animation-speed);
