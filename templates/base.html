@@ -17,65 +17,8 @@
             disabled
         />
         {% endblock %}
-
-        <style>
-            #fader {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: 999999;
-                pointer-events: none;
-                background: var(--background-color);
-                animation-duration: 300ms;
-                animation-timing-function: ease-in-out;
-            }
-
-            @keyframes fade-out {
-                from {
-                    opacity: 1;
-                }
-
-                to {
-                    opacity: 0;
-                }
-            }
-
-            @keyframes fade-in {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
-
-            #fader.fade-out {
-                opacity: 0;
-                animation-name: fade-out;
-            }
-
-            #fader.fade-in {
-                opacity: 1;
-                animation-name: fade-in;
-            }
-        </style>
     </head>
     <body>
-        <svg id="fader" class="fader"></svg>
-
-        <script>
-            fadeInPage();
-
-            function fadeInPage() {
-                if (!window.AnimationEvent) { return; }
-                var fader = document.getElementById('fader');
-                fader.classList.add('fade-out');
-            }
-
-        </script>
-
         <div id="progress-bar-container">
             <div id="progress-bar"></div>
         </div>
@@ -97,53 +40,9 @@
         <script src="/static/js/snowstorm.js"></script>
 
         <script>
-            function fadeInPage() {
-                if (!window.AnimationEvent) { return; }
-                var fader = document.getElementById('fader');
-                fader.classList.add('fade-out');
-            }
-
-            document.addEventListener('DOMContentLoaded', function() {
-                if (!window.AnimationEvent) { return; }
-                var anchors = document.getElementsByTagName('a');
-
-                for (var idx=0; idx<anchors.length; idx+=1) {
-                    if (anchors[idx].hostname !== window.location.hostname ||
-                        anchors[idx].pathname === window.location.pathname) {
-                        continue;
-                    }
-
-                    anchors[idx].addEventListener('click', function(event) {
-                        var fader = document.getElementById('fader'),
-                            anchor = event.currentTarget;
-
-                        var listener = function() {
-                            window.location = anchor.href;
-                            fader.removeEventListener('animationend', listener);
-                        };
-                        fader.addEventListener('animationend', listener);
-
-                        event.preventDefault();
-
-                        fader.classList.add('fade-in');
-                    });
-                }
-            });
-
-            window.addEventListener('pageshow', function (event) {
-                if (!event.persisted) {
-                    return;
-                }
-
-                var fader = document.getElementById('fader');
-                fader.classList.remove('fade-in');
-            });
-        </script>
-
-        <script>
             window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
         </script>
-        
+
         <!-- Cloudflare Web Analytics -->
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c4ec3fe5ae184be084114d0e4219d407"}'></script>
         <!-- End Cloudflare Web Analytics -->
