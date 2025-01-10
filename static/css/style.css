@@ -5,7 +5,7 @@
     --text-color: #deddda;
     --animation-speed: 0.25s;
     --ul-ol-background-color: #3d3846;
-    --navbar-background-color: #3d3846;
+    --navbar-background-color: #4b4556;
     --img-border-color: var(--accent-color);
     --hr-color: #6d647d;
     --lists-background: #4b4556;
@@ -125,7 +125,8 @@ img {
 }
 
 .navbar a.nav-active {
-    background-color: var(--navbar-a-active);
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .navbar a:hover {
