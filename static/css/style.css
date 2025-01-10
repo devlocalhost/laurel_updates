@@ -7,8 +7,6 @@
     --ul-ol-background-color: #3d3846;
     --navbar-background-color: #3d3846;
     --img-border-color: var(--accent-color);
-    --box-border-color: #111;
-    --box-border-size: 10px;
     --hr-color: #6d647d;
     --lists-background: #4b4556;
     --navbar-a-active: #575064;
@@ -75,7 +73,6 @@ p {
     padding-bottom: 11px;
     padding-right: 11px;
     border-radius: 15px;
-    box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
 }
 
 p {
@@ -93,7 +90,6 @@ ol p,
 ul p,
 li ul {
     background: var(--lists-background);
-    box-shadow: 0 0 5px var(--box-border-color);
 }
 
 img {
@@ -102,7 +98,6 @@ img {
     width: 97%;
     border: 5px solid var(--img-border-color);
     border-radius: 15px;
-    box-shadow: 0 0 var(--box-border-size) var(--img-border-color);
 }
 
 .navbar {
@@ -117,7 +112,6 @@ img {
     left: 0;
     right: 0;
     transition: bottom var(--animation-speed);
-    box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
 }
 
 .navbar a {
@@ -133,7 +127,6 @@ img {
 
 .navbar a.nav-active {
     background-color: var(--navbar-a-active);
-    box-shadow: 0 0 4px var(--box-border-color);
 }
 
 .navbar a:hover {
@@ -151,10 +144,6 @@ code {
     word-break: break-all;
     word-wrap: break-word;
     white-space: pre-wrap;
-}
-
-code:hover {
-    box-shadow: 0 0 14px var(--code-hover);
 }
 
 .navigation-top {
