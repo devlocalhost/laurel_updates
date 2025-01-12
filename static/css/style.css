@@ -1,7 +1,7 @@
 :root {
     --accent-color: #4a90d9;
     --links-color: #99c1f1;
-    --background-color: #000;
+    --background-color: #0a0a0a;
     --text-color: #e5e5e5;
     --ul-ol-background-color: #191919;
     --img-border-color: #292929;
@@ -9,7 +9,7 @@
     --lists-background: #292929;
     --navbar-a-active: #575064;
     --navbar-a-hover: #6d647d;
-    --navbar-background-color: #000;
+    --navbar-background-color: var(--background-color);
     --back-btn-color: var(--links-color);
     --code-background: #000;
     --code-hover: #99c1f1;
