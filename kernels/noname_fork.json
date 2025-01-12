@@ -1,0 +1,16 @@
+{
+    "name": "NoName Fork",
+    "route_name": "noname_fork",
+    "version": "4.14.355",
+    "maintainer": "TheSillyOk",
+    "date_release": "12/01/2025",
+    "changelog": "<li>Fixed SU</li><li>Updated KSU Next to 12264</li><li>Added A15 QPR1 support</li>",
+    "support": "https://t.me/ok_kernel",
+    "notes": "<li>For Non RDP ROMs (LOS, Pixelage, CrDroid, More [?])</li><li>Supports A15 QPR1 ROMS</li><li><a href=\"https://github.com/sidex15/ksu_module_susfs/releases/\">SUSFS 1.5.3 Module</a>, <a href=\"https://github.com/rifsxd/KernelSU-Next/releases\">KSU Next 12264 Manager</a></li><li>Based on Skyblueborb NoName fork</li>",
+    "downloads": {
+        "editions": {
+            "Telegram": "https://t.me/ok_kernel/8",
+            "Pixeldrain": "https://pixeldrain.com/u/qpFFebtw"
+        }
+    }
+}
