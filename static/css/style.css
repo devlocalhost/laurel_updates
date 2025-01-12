@@ -92,9 +92,9 @@ img {
     bottom: 0.92em;
     left: 0;
     right: 0;
-    transition: bottom var(--animation-speed);
     outline-color: #252525;
     outline-width: 4px;
+    outline-offset: -4px;
     outline-style: solid;
 }
 
