@@ -15,10 +15,6 @@
     --code-hover: #99c1f1;
 }
 
-h1, h2, h3, h4, h5 {
-    color: #e1e1e1;
-}
-
 body {
     color: var(--text-color);
     background-color: var(--background-color);
@@ -29,8 +25,11 @@ body {
     overflow-wrap: break-word;
 }
 
-h1,
-h2 {
+h1, h2, h3, h4, h5 {
+    color: #e1e1e1;
+}
+
+h1, h2 {
     line-height: 1.2;
 }
 
@@ -46,13 +45,10 @@ hr {
     background-color: var(--hr-color);
 }
 
-ul,
-ol,
-p {
+ul, ol, p {
     background: var(--ul-ol-background-color);
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-right: 11px;
+    padding: 10px 10px 10px 20px;
+    list-style-position: inside;
     border-radius: 15px;
 }
 
@@ -62,14 +58,9 @@ p {
 
 ul {
     list-style-type: disc;
-    /* the default, "circle" is uglier than me. */
 }
 
-ol ol,
-ol ul,
-ol p,
-ul p,
-li ul {
+ol ol, ol ul, ol p, ul p, li ul {
     background: var(--lists-background);
 }
 
@@ -88,25 +79,15 @@ img {
     border-radius: 15px;
     justify-content: space-evenly;
     align-items: center;
-    position: fixed;
-    bottom: 0.92em;
-    left: 0;
-    right: 0;
-    outline-color: #252525;
-    outline-width: 4px;
-    outline-offset: -4px;
-    outline-style: solid;
+    outline: 4px solid #252525;
 }
 
 .navbar a {
     font-family: monospace;
     text-decoration: none;
     padding: 15px;
-    width: inherit;
-    height: inherit;
     text-align: center;
     border-radius: 15px;
-    /* padding-bottom: 15px; */
 }
 
 .navbar a.nav-active {
@@ -120,13 +101,11 @@ img {
 
 code {
     background-color: var(--code-background);
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 0 8px;
     border-radius: 5px;
     font-weight: bold;
     display: inline-block;
-    word-break: break-all;
-    word-wrap: break-word;
+    word-break: break-word;
     white-space: pre-wrap;
 }
 
