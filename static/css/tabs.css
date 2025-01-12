@@ -8,7 +8,10 @@
     left: 0;
     right: 0;
     transition: bottom var(--animation-speed);
-    box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
+    outline-color: #252525;
+    outline-width: 4px;
+    outline-style: solid;
+    outline-offset: -4px;
 }
 
 .tabs a {
@@ -28,8 +31,8 @@
 /* } */
 
 .tabs a:hover {
-    background-color: var(--navbar-a-hover);
-    transition: background-color 0.5s;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .cont {
