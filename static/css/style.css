@@ -85,6 +85,8 @@ img {
     outline-offset: -4px;
     position: fixed;
     bottom: 15px;
+    left: 0;
+    right: 0;
 }
 
 .navbar a {
