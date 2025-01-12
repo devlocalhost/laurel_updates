@@ -10,7 +10,6 @@
     --navbar-a-active: #575064;
     --navbar-a-hover: #6d647d;
     --navbar-background-color: #000;
-    --progress-bar-color: #2bb877;
     --back-btn-color: var(--links-color);
     --code-background: #000;
     --code-hover: #99c1f1;
@@ -28,21 +27,6 @@ body {
     font: 1.2em/1.62 monospace;
     padding: 0 0.92em 3.24em;
     overflow-wrap: break-word;
-}
-
-#progress-bar-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-}
-
-#progress-bar {
-    height: 100%;
-    width: 0;
-    background-color: var(--progress-bar-color);
-    transition: width 0.15s;
 }
 
 h1,
