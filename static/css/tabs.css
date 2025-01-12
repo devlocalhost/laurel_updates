@@ -7,7 +7,7 @@
     align-items: center;
     left: 0;
     right: 0;
-    outline-color: #252525;
+    outline-color: var(--outline-color);
     outline-width: 4px;
     outline-style: solid;
     outline-offset: -4px;

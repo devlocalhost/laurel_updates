@@ -1,18 +1,19 @@
 :root {
     --accent-color: #4a90d9;
     --links-color: #99c1f1;
-    --background-color: #0a0a0a;
+    --background-color: #191919;
     --text-color: #e5e5e5;
-    --ul-ol-background-color: #191919;
-    --img-border-color: #292929;
+    --ul-ol-background-color: #252525;
+    --img-border-color: #343434;
     --hr-color: #434343;
-    --lists-background: #292929;
+    --lists-background: #343434;
     --navbar-a-active: #575064;
     --navbar-a-hover: #6d647d;
     --navbar-background-color: var(--background-color);
     --back-btn-color: var(--links-color);
     --code-background: #000;
     --code-hover: #99c1f1;
+    --outline-color: #343434;
 }
 
 body {
@@ -68,8 +69,8 @@ img {
     display: block;
     margin: 0 auto;
     width: 97%;
-    border: 4px solid var(--img-border-color);
     border-radius: 15px;
+    border: 4px solid var(--img-border-color);
 }
 
 .navbar {
@@ -79,7 +80,7 @@ img {
     border-radius: 15px;
     justify-content: space-evenly;
     align-items: center;
-    outline-color: #252525;
+    outline-color: var(--outline-color);
     outline-width: 4px;
     outline-style: solid;
     outline-offset: -4px;
