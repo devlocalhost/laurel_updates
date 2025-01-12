@@ -36,8 +36,7 @@ h2 {
 
 a {
     cursor: pointer;
-    color: var(--links-color);
-    text-decoration: none;
+    color: var(--text-color);
 }
 
 hr {
