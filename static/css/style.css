@@ -114,8 +114,19 @@ code {
     justify-content: space-between;
 }
 
-.navigation-top h4 {
+.navigation-top span {
     margin: 0;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+.navigation-top span a {
+    text-decoration: none;
+}
+
+.navigation-top span::first-letter {
+    color: var(--accent-color);
 }
 
 .backbtn:hover {
