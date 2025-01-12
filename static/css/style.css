@@ -79,13 +79,20 @@ img {
     border-radius: 15px;
     justify-content: space-evenly;
     align-items: center;
-    outline: 4px solid #252525;
+    outline-color: #252525;
+    outline-width: 4px;
+    outline-style: solid;
+    outline-offset: -4px;
+    position: fixed;
+    bottom: 15px;
 }
 
 .navbar a {
     font-family: monospace;
     text-decoration: none;
     padding: 15px;
+    width: 100%;
+    height: inherit;
     text-align: center;
     border-radius: 15px;
 }
