@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [13-01-2025 - Minor update for NoName Fork.](/blog/news#13-01-2025---minor-update-for-noname-fork.)
 - [12-01-2025 - LineageOS 22.1 released with major changes, New NoName Fork released.](/blog/news#12-01-2025---lineageos-22.1-released-with-major-changes,-new-noname-fork-released.)
 - [20-12-2024 - crDroid gets revived by leoxvis.](/blog/news#20-12-2024---crdroid-gets-revived-by-leoxvis.)
 - [06-12-2024 - A new LineageOS 22 update released!](/blog/news#06-12-2024---a-new-lineageos-22-update-released!)
@@ -73,6 +74,9 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 13-01-2025 - Minor update for NoName Fork.
+A new update for [NoName Fork kernel](/kernels/noname_fork) has been released. For details, check [changelog.](/kernels/noname_fork#changelog)
 
 ## 12-01-2025 - LineageOS 22.1 released with major changes, New NoName Fork released.
 The first update of 2025 and the first Android 15 QPR1 custom rom for laurel. Includes major under the hood changes and other smaller bugfixes. Check it out [here](/roms/LineageOS_15).
