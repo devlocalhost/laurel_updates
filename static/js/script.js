@@ -26,22 +26,3 @@ function toggleStylesheet() {
 }
 
 // "debug" stylesheet
-
-// progress bar
-
-document.addEventListener("DOMContentLoaded", function () {
-    const progressBar = document.getElementById("progress-bar");
-
-    function updateProgressBar() {
-        const totalHeight = document.body.scrollHeight - window.innerHeight;
-        const progress = (window.scrollY / totalHeight) * 100;
-        progressBar.style.width = `${progress}%`;
-    }
-
-    updateProgressBar();
-
-    window.addEventListener("scroll", updateProgressBar);
-    window.addEventListener("resize", updateProgressBar);
-});
-
-// progress bar
