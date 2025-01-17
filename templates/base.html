@@ -32,7 +32,28 @@
         </div>
         {% endblock %}
 
-        <script src="/static/js/script.js"></script>
+        <script defer>
+            // "debug" stylesheet
+
+            let isDebugStylesheetVisible = false;
+            let clickCount = 0;
+
+            function toggleStylesheet() {
+                clickCount = clickCount + 1;
+                navigator.vibrate(10);
+
+                if (clickCount === 3) {
+                    isDebugStylesheetVisible = !isDebugStylesheetVisible;
+
+                    const debugStylesheet = document.getElementById("debug-stylesheet");
+                    navigator.vibrate(14);
+
+                    debugStylesheet.disabled = !isDebugStylesheetVisible;
+
+                    clickCount = 0;
+                }
+            }
+        </script>
 
         <!-- Cloudflare Web Analytics -->
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c4ec3fe5ae184be084114d0e4219d407"}'></script>
