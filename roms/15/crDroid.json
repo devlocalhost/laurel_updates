@@ -3,7 +3,7 @@
     "version": "11",
     "maintainer": "leoxvis",
     "date_release": "20/12/2024",
-    "changelog": "<li>Initial release.</li>",
+    "changelog": "<li>Rebased Trees.</li><li>Disabled 4k@60fps (not supported by our device).</li><li>Fixed lockscreen charging info.</li><li>Other minor tweaks.</li>",
     "status": "Official",
     "support": "https://t.me/crdroid_mi_a3",
     "rdp": "No",
@@ -11,7 +11,7 @@
     "banner": "/static/img/banner_crdroid.jpg",
     "downloads": {
         "editions": {
-            "Vanilla": "https://github.com/vishwajithkv/device_xiaomi_laurel_sprout/releases/download/stable/crDroidAndroid-15.0-20241219-laurel_sprout-v11.0.zip"
+            "Vanilla": "https://sourceforge.net/projects/crdroid/files/laurel_sprout/11.x/crDroidAndroid-15.0-20250121-laurel_sprout-v11.1.zip/download"
         }
     },
     "archived": false

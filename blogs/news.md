@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [21-01-2025 - New crDroid update.](/blog/news#21-01-2025---new-crdroid-update.)
 - [18-01-2025 - New updafe for NoName fork kernel.](/blog/news#18-01-2025---new-updafe-for-noname-fork-kernel.)
 - [13-01-2025 - Minor update for NoName Fork.](/blog/news#13-01-2025---minor-update-for-noname-fork.)
 - [12-01-2025 - LineageOS 22.1 released with major changes, New NoName Fork released.](/blog/news#12-01-2025---lineageos-22.1-released-with-major-changes,-new-noname-fork-released.)
@@ -75,6 +76,9 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 21-01-2025 - New crDroid update.
+This new update brings/fixes (?) Circle to Search. More things included too. Check the changelog [here](/roms/crDroid_15#changelog).
 
 ## 18-01-2025 - New updafe for NoName fork kernel.
 This update includes a patch to hide a few detections, and updated kernelSU next version. Check out the changelog [here](/kernels/noname_fork#changelog).
