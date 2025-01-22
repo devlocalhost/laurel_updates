@@ -1,0 +1,21 @@
+{
+    "name": "PixelOS",
+    "version": "15",
+    "maintainer": "bakkaq",
+    "date_release": "21/01/2025",
+    "changelog": null,
+    "status": "Official",
+    "support": "https://t.me/bakkaqbuilds",
+    "rdp": "No",
+    "notes": "<li>Play integrity should pass by default</li><li>With Gapps</li><li>With extra stuff added by me (double tap to doze, screen off fod (thanks to @skyblueborb) and some minor)</li><li>Installation instructions: <a href=\"https://telegra.ph/Project-Blaze-installation-instructions-04-15\">telegra.ph</a></li>",
+    "banner": "/static/img/banner_pixelos_15.jpg",
+    "downloads": {
+        "editions": {
+            "ROM | MEGA": "https://mega.nz/file/unRAgT4b#Mu-ZsmwHUYgLAgQjQZiWQo59KRSMWB9AeSyjeAhOWkE",
+            "ROM | Google Drive": "https://drive.google.com/file/d/1YDKVJxCcIuJ8wHB0wZDYx-TtoBq4xaTL/view?usp=sharing",
+            "boot.img | MEGA": "https://mega.nz/file/DmYSSALA#jWM7bWnuohpDH4MZXxpnvTbP48-ySkCCamK0eF3jTts",
+            "boot.img | Google Drive": "https://drive.google.com/file/d/1hOWHhFJCPs6yjYp8811_vSSi-zbglMpK/view?usp=sharing"
+        }
+    },
+    "archived": false
+}
