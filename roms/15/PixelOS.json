@@ -2,8 +2,8 @@
     "name": "PixelOS",
     "version": "15",
     "maintainer": "bakkaq",
-    "date_release": "21/01/2025",
-    "changelog": null,
+    "date_release": "22/01/2025",
+    "changelog": "<li>fixed minor issue in screen off fod toggle</li><li>added parts (lift to wake, and others)</li><li>added BtHelper for airpods support in settings</li><li>something I don't remember</li>",
     "status": "Official",
     "support": "https://t.me/bakkaqbuilds",
     "rdp": "No",
@@ -11,8 +11,8 @@
     "banner": "/static/img/banner_pixelos_15.jpg",
     "downloads": {
         "editions": {
-            "ROM | MEGA": "https://mega.nz/file/unRAgT4b#Mu-ZsmwHUYgLAgQjQZiWQo59KRSMWB9AeSyjeAhOWkE",
-            "ROM | Google Drive": "https://drive.google.com/file/d/1YDKVJxCcIuJ8wHB0wZDYx-TtoBq4xaTL/view?usp=sharing",
+            "ROM | MEGA": "https://mega.nz/file/TygF0TzS#p6oJ-len2xeWOQrpkkOQ4tzlDrOryU_oPwkAoFemCNM",
+            "ROM | Google Drive": "https://drive.google.com/file/d/1zjZKJpCOd2Awe1EXhtToK3Yfd90qWYpU/view?usp=sharing",
             "boot.img | MEGA": "https://mega.nz/file/DmYSSALA#jWM7bWnuohpDH4MZXxpnvTbP48-ySkCCamK0eF3jTts",
             "boot.img | Google Drive": "https://drive.google.com/file/d/1hOWHhFJCPs6yjYp8811_vSSi-zbglMpK/view?usp=sharing"
         }
