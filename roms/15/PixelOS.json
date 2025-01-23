@@ -4,7 +4,7 @@
     "maintainer": "bakkaq",
     "date_release": "22/01/2025",
     "changelog": "<li>fixed minor issue in screen off fod toggle</li><li>added parts (lift to wake, and others)</li><li>added BtHelper for airpods support in settings</li><li>something I don't remember</li>",
-    "status": "Official",
+    "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds",
     "rdp": "No",
     "notes": "<li>Play integrity should pass by default</li><li>With Gapps</li><li>With extra stuff added by me (double tap to doze, screen off fod (thanks to @skyblueborb) and some minor)</li><li>Installation instructions: <a href=\"https://telegra.ph/Project-Blaze-installation-instructions-04-15\">telegra.ph</a></li>",
