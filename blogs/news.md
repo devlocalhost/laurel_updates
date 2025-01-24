@@ -1,6 +1,10 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [21-01-2025 - New crDroid and Pixelage update, bakka brings PixelOS.](/blog/news#21-01-2025---new-crdroid-and-pixelage-update,-bakka-brings-pixelos.)
+- [18-01-2025 - New updafe for NoName fork kernel.](/blog/news#18-01-2025---new-updafe-for-noname-fork-kernel.)
+- [13-01-2025 - Minor update for NoName Fork.](/blog/news#13-01-2025---minor-update-for-noname-fork.)
+- [12-01-2025 - LineageOS 22.1 released with major changes, New NoName Fork released.](/blog/news#12-01-2025---lineageos-22.1-released-with-major-changes,-new-noname-fork-released.)
 - [20-12-2024 - crDroid gets revived by leoxvis.](/blog/news#20-12-2024---crdroid-gets-revived-by-leoxvis.)
 - [06-12-2024 - A new LineageOS 22 update released!](/blog/news#06-12-2024---a-new-lineageos-22-update-released!)
 - [26-11-2024 - [IMPORTANT, MUST READ] MAJOR ISSUES WITH HOSTING. Reviews feature temporarily removed.](/blog/news#26-11-2024---[important,-must-read]-major-issues-with-hosting.-reviews-feature-temporarily-removed.)
@@ -72,6 +76,25 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 21-01-2025 - New crDroid and Pixelage update, bakka brings PixelOS.
+This new crDroid update brings/fixes (?) Circle to Search. More things included too. Check the changelog [here](/roms/crDroid_15#changelog).
+
+For [Pixelage](/roms/ProjectPixelage_15)... "Since I've decided to discontinue Pixelage, I’ve built PixelOS. I’m about to release a build where everything works perfectly, including FOD (Fingerprint on Display). For anyone thinking about flashing Pixelage (now EOL), it might be worth waiting a few hours and switching to PixelOS instead. It offers a similar experience but with full functionality.
+i'm sorry. :c" - bakka
+
+The PixelOS build bakka promised is now here. Enjoy it by clicking [here](/roms/PixelOS_15).
+
+## 18-01-2025 - New updafe for NoName fork kernel.
+This update includes a patch to hide a few detections, and updated kernelSU next version. Check out the changelog [here](/kernels/noname_fork#changelog).
+
+## 13-01-2025 - Minor update for NoName Fork.
+A new update for [NoName Fork kernel](/kernels/noname_fork) has been released. For details, check [changelog.](/kernels/noname_fork#changelog)
+
+## 12-01-2025 - LineageOS 22.1 released with major changes, New NoName Fork released.
+The first update of 2025 and the first Android 15 QPR1 custom rom for laurel. Includes major under the hood changes and other smaller bugfixes. Check it out [here](/roms/LineageOS_15).
+
+TheSillyOk on Telegram released a forked version of Magicxavi's [NoName kernel](/kernels/noname), with KSU Next and SUSFS support. You can check it out [here](/kernels/noname_fork)
 
 ## 20-12-2024 - crDroid gets revived by leoxvis.
 crDroid 11 gets OFFICIALLY revived by leoxvis! This release (11) is based on Android version 15. Check it out by clicking [here](/roms/crDroid_15).

@@ -1,9 +1,9 @@
 {
     "name": "LineageOS",
-    "version": "22",
+    "version": "22.1",
     "maintainer": "Skyblueborb",
-    "date_release": "06/12/2024",
-    "changelog": "<li>Synced latest LineageOS source.</li><li>Implemented screen off FOD.</li><li>Fixed fingerprint in popups and during enrolling.</li><li>Fixed updater in settings.</li><li>Other minor changes.</li>",
+    "date_release": "12/01/2025",
+    "changelog": "<li>Android 15 QPR1.</li><li>Updated to January ASB.</li><li>Implemented LiveDisplay color calibration and picture adjustment.</li><li>Fixed WPA3 SAE connections.</li><li>Fixed long swipe gesture freezes.</li><li>Other massive under the hood changes.</li>",
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
@@ -11,7 +11,7 @@
     "banner": "/static/img/banner_los22.jpg",
     "downloads": {
         "editions": {
-            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-22.0-20241206-UNOFFICIAL-laurel_sprout.zip"
+            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-22.1-20250112-UNOFFICIAL-laurel_sprout.zip"
         }
     },
     "archived": false

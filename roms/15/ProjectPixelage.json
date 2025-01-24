@@ -1,20 +1,20 @@
 {
     "name": "Project Pixelage",
-    "version": "2.2",
+    "version": "2.4",
     "maintainer": "bakkaq",
-    "date_release": "12/11/2024",
-    "changelog": "<li>Switched to kernel FOD dimming</li><li><a href='https://github.com/ProjectPixelage/pixelage_changelog?tab=readme-ov-file#source-changelog'>Source changelog</a></li>",
-    "status": "Official",
+    "date_release": "21/01/2025",
+    "changelog": "<li>Switched to @skyblueborb trees</li><li><a href='https://github.com/ProjectPixelage/pixelage_changelog?tab=readme-ov-file#source-changelog'>Source changelog</a></li>",
+    "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds",
     "rdp": "No",
-    "notes": "<li>Play integrity should pass by default</li><li>With Gapps</li><li>When finger up on fod, screen flickers a little (consider it solved for next build thanks to @Skyblueborb)</li>",
+    "notes": "<li>Play integrity should pass by default</li><li>With Gapps</li><li>EOL for now. I'm really sorry to drop Pixelage, it really is a good rom, but due to problems in source, FOD is dead and i'm sick of trying to fix it.</li>",
     "banner": "/static/img/banner_projectpixelage.jpg",
     "downloads": {
         "editions": {
-            "ROM | MEGA": "https://mega.nz/file/qr4RVCBY#X8Gskg2uDf40kXPnT2mr3S4ogy2euD9r0snz-P1TVVo",
-            "ROM | Google Drive": "https://drive.google.com/file/d/1vfZWZSoCvrc9ktqeqtbCLm05YOcPqnFM/view?usp=sharing",
-            "boot.img | MEGA": "https://mega.nz/file/bmwVyYDD#sFLad1MagzcnR8Yp7F-wrSxf5oHPii55-1gHxaz_5mM",
-            "boot.img | Google Drive": "https://drive.google.com/file/d/1qvMq-IG1DbwPnEqiVHm9fbQB-4GDGQJk/view?usp=sharing"
+            "ROM | MEGA": "https://mega.nz/file/jr5TlLKQ#FbZbzTqYpySiu1K_E563JxhqsBbRipIaN-s3gqOKJ-w",
+            "ROM | Google Drive": "https://drive.google.com/file/d/1Rff4vUwy0ilqUjz7zqqw9SQYnbpvwKga/view?usp=sharing",
+            "boot.img | MEGA": "https://mega.nz/file/Li53zaAJ#1054LC3Y7XXy9R2U9WYXg4jF1btkfXALxx-9CZoWL84",
+            "boot.img | Google Drive": "https://drive.google.com/file/d/1MX5jqBspwNLfqsHaU-UwgQ9gDpQx6Dqm/view?usp=sharing"
         }
     },
     "archived": false

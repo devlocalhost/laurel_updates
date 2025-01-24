@@ -74,8 +74,11 @@
             }
         </script>
 
-        <!-- Cloudflare Web Analytics -->
-        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c4ec3fe5ae184be084114d0e4219d407"}'></script>
-        <!-- End Cloudflare Web Analytics -->
+        <!-- vercel analytics - privacy friendly! -->
+        <script>
+            window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+        </script>
+        <script defer src="/_vercel/insights/script.js"></script>
+        <!-- vercel analytics - privacy friendly! -->
     </body>
 </html>
