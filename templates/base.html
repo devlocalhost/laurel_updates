@@ -16,6 +16,25 @@
             id="debug-stylesheet"
             disabled
         />
+        <link
+            rel="stylesheet"
+            href="/static/css/tabs.css"
+        />
+
+        <style type="text/css">
+            .tabs a.nav-active {
+                text-decoration: underline;
+                font-weight: bold;
+            }
+
+            #navbar {
+                display: flex;
+                bottom: 15px;
+                position: fixed;
+                left: 0.92em;
+                right: 0.92em;
+            }
+        </style>
         {% endblock %}
     </head>
     <body>
@@ -24,7 +43,7 @@
         </div>
 
         {% block navbar %}
-        <div class="navbar">
+        <div class="tabs" id="navbar">
             <a href="/" {% if request.endpoint and "home" in request.endpoint %}class="nav-active"{% endif %}>Home</a>
             <a href="/roms" {% if request.endpoint and "roms" in request.endpoint %}class="nav-active"{% endif %}>ROMs</a>
             <a href="/kernels" {% if request.endpoint and "kernels" in request.endpoint %}class="nav-active"{% endif %}>Kernels</a>

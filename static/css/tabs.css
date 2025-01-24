@@ -5,8 +5,6 @@
     border-radius: 15px;
     justify-content: space-evenly;
     align-items: center;
-    left: 0;
-    right: 0;
     outline-color: var(--outline-color);
     outline-width: 4px;
     outline-style: solid;
