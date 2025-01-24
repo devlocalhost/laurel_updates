@@ -40,4 +40,5 @@
 
 .cont:target {
     display: block;
+    padding-top: 1px;
 }
