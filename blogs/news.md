@@ -79,7 +79,7 @@
 ---
 
 ## 27-01-2025 - PowerX-NOT brings EvolutionX back.
-PowerX-NOT has released EvolutionX, version 10.2, which is Android 15. Check it out [here.](/roms/EvolutuionX_15)
+PowerX-NOT has released EvolutionX, version 10.2, which is Android 15. Check it out [here.](/roms/EvolutionX_15)
 
 ## 21-01-2025 - New crDroid and Pixelage update, bakka brings PixelOS.
 This new crDroid update brings/fixes (?) Circle to Search. More things included too. Check the changelog [here](/roms/crDroid_15#changelog).
