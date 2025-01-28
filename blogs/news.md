@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [27-01-2025 - PowerX-NOT brings EvolutionX back.](/blog/news#27-01-2025---powerx-not-brings-evolutionx-back.)
 - [21-01-2025 - New crDroid and Pixelage update, bakka brings PixelOS.](/blog/news#21-01-2025---new-crdroid-and-pixelage-update,-bakka-brings-pixelos.)
 - [18-01-2025 - New updafe for NoName fork kernel.](/blog/news#18-01-2025---new-updafe-for-noname-fork-kernel.)
 - [13-01-2025 - Minor update for NoName Fork.](/blog/news#13-01-2025---minor-update-for-noname-fork.)
@@ -76,6 +77,9 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 27-01-2025 - PowerX-NOT brings EvolutionX back.
+PowerX-NOT has released EvolutionX, version 10.2, which is Android 15. Check it out [here.](/roms/EvolutionX_15)
 
 ## 21-01-2025 - New crDroid and Pixelage update, bakka brings PixelOS.
 This new crDroid update brings/fixes (?) Circle to Search. More things included too. Check the changelog [here](/roms/crDroid_15#changelog).

@@ -141,6 +141,7 @@ class Statistics:
             "AOSP_15": {"views": 0},
             "crDroid_15": {"views": 0},
             "DerpFest_15": {"views": 0},
+            "EvolutionX_15": {"views": 0},
             "LineageOS_15": {"views": 0},
             "ParanoidAndroid_15": {"views": 0},
             "PixelMagic_15": {"views": 0},

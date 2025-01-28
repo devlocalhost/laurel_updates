@@ -1,0 +1,18 @@
+{
+    "name": "EvolutionX",
+    "version": "10.2",
+    "maintainer": "PowerX-NOT",
+    "date_release": "27/01/2025",
+    "changelog": "<li>Merged the latest January source</li><li>Added Dolby Atmos</li><li>Switched to KernelSU Next v1.0.4 (with SuSFS)</li><li>MIUI camera module not supported</li>",
+    "status": "Unofficial",
+    "support": "https://t.me/EvoX_Mi_A3",
+    "rdp": "Yes",
+    "notes": "<li>Screen recording crashes with HEVC encoding, so disable it</li><li>UDFPS is broken in Private Space</li><li>Clean Flash is Mandatory.</li>",
+    "banner": "/static/img/banner_evox_14.jpg",
+    "downloads": {
+        "editions": {
+            "Gapps": "https://github.com/PowerX-NOT/Build-dumps/releases/download/Evolution_X-v10.2/evolution-10.2_laurel_sprout-signed-ota_update.zip"
+        }
+    },
+    "archived": false
+}
