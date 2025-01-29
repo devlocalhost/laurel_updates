@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [29-01-2025 - Major laurel_updates update.](/blog/news#29-01-2025---major-laurel_updates-update.)
 - [27-01-2025 - PowerX-NOT brings EvolutionX back.](/blog/news#27-01-2025---powerx-not-brings-evolutionx-back.)
 - [21-01-2025 - New crDroid and Pixelage update, bakka brings PixelOS.](/blog/news#21-01-2025---new-crdroid-and-pixelage-update,-bakka-brings-pixelos.)
 - [18-01-2025 - New updafe for NoName fork kernel.](/blog/news#18-01-2025---new-updafe-for-noname-fork-kernel.)
@@ -77,6 +78,17 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 29-01-2025 - Major laurel_updates update.
+Hello to everyone. The website got a major UI change, which I really like, and I'd like to hear your feedback too! You can let me know, by filling this [Google form](https://forms.gle/GZzYKWXFhFo36ktc6). But before voting, please use the website for a few mins, get familiar with the new UI, and then vote. Thank you.
+
+Now let's say what's new/different (which is kind of obvious, but there are some under the hood changes):
+ - UI has been rewritten. The website has better colors now (in my opinion), elements (like lists, and text too) look better.
+ - Replaced "Go back" button with "Share". I don't really think anyone was using the "Go back" button anyway, and to be honest, I'm not sure if users will use this new button too, which is actually very important they use this button, instead of copying the link from the address bar of their browsers. When the user uses this button instead, the link that will be copied will look something like this: "https://devlocalhost.github.io/XXYYZZ". Anything after that last slash in the URL, redirects to the working link of laurel_updates.
+ - Kind of debloated/fixed the CSS, most of the JavaScript code removed. I'm not sure if people know, but I am JavaScript-phobic. I hate it. So I decided to remove it. While some functionality was removed, like copying text from code tags, scroll to top, and progress bar, this does not impact user UX that much (I hope).
+ - Added privacy friendly analytics. Please don't "boo" yet. The analytics are privacy friendly. Only the following things are collected: which pages (roms, kernels, blogs) you access, your device type (desktop, mobile), OS, and country. Nothing else is logged or collected. Why am I collecting all this you might ask? For statistics! Everything month, starting from February, I will post analytics about laurel_updates, like most viewed ROMs, kernels, etc.
+
+I hope you all enjoy this rewrite, and if not, I'd be glad to hear your feedback, which you can give by going to the google form I linked above. Thank you for using laurel_updates.
 
 ## 27-01-2025 - PowerX-NOT brings EvolutionX back.
 PowerX-NOT has released EvolutionX, version 10.2, which is Android 15. Check it out [here.](/roms/EvolutionX_15)
