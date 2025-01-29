@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="/static/css/tabs.css">
 <style type="text/css">
     .adrod::first-letter {
-        color: #d3869b;
+        color: #379576;
     }
 
     .red::first-letter {
@@ -12,55 +12,50 @@
 </style>
 {% endblock %}{% block content %}
 <div class="navigation-top">
-    <a href="/"><h4>← laurel_updates</h4></a>
-    <h4
-        class="backbtn"
-        style="color: var(--back-btn-color)"
-        onclick="history.back()"
-    >
-        Go back →
-    </h4>
+    <span><a href="/">← laurel_updates</a></span>
+    <span class="backbtn" onclick="navigator.clipboard.writeText(`https://devlocalhost.github.io${window.location.pathname}`)">↑ erahS</span>
 </div>
 
 <h1 class="colored" onclick="toggleStylesheet()">ROMs</h1>
 
-<h2>Android Versions</h2>
-<p>
-    Recommended versions are
-    Android <a href="#11">11</a>, <a href="#14">14</a> and <a href="#15">15</a>, because only these versions get updates.
-    Most users are probably using Android <a href="#14">14</a> or <a href="#15">15</a>.
-    Android <a href="#10">10</a> (*) and 9 are not included because no one is (probably) interested, plus most
-    laurel users are (again, probably) using "android 11 firmware", which enables anti-rollback,
-    preventing flashing anything lower than android 11 (will result in a "hard
-    brick").
-</p>
+<p>This page contains ROMs from Android 10 (excluding <a href="/roms/crDroid_10">crDroid 6.27</a>, which is based on Android 11 firmware.), and up to the current latest Android version, which is 15. Android 9 is not included, since most users are using, or have updated to Stock ROM Android 11 version, which triggers rollback projection. Means, you cannot install an older Android version than 11. If you do, your phone will get bricked.</p>
 
-<p>
-    *Excluding <a href="/roms/crDroid_10">crDroid 6.27</a>, which is based on Android 11 firmware.
-</p>
+<p><strong>Warning</strong>: you CANNOT install ANY of these ROMs IF you are using MIUI, or have converted your phone to MIUI/CC9e (or whatever the hell it is called, I don't know). To flash one of these ROMs, you MUST flash stock ROM, preferably (?) the fastboot version. You can check the guide <a href="REPLACEME">here</a>.</p>
 
-<h2 class="colored">Versions</h2>
-<p>ROM's under this sections are "actively" maintained or just maintained. Recommended version is 14, unless you want more stability, performance or battery life, then go ahead with 11. (HIGHLY depends on the ROM and/or ROM maintainer!!)</p>
+<h2>Pick a category</h2>
+<p>Below, you will find two categories: <b>Active</b> and <b>Archived</b>. Pick one, and you will find more details about the category.</p>
+
 <div class="tabs">
-    <a href="#15" class="no-fade-animation">15</a>
-    <a href="#14" class="no-fade-animation">14</a>
-    <a href="#11" class="no-fade-animation">11</a>
-    <a href="#10" class="no-fade-animation">10</a>
+    <a href="#active-roms">Active ROMs</a>
+    <a href="#archived-roms">Archived ROMs</a>
 </div>
 
-<h2 class="red" id="archive">Archived ROM's</h2>
-<p>ROM's under this sections are not maintained at all, but they're still available to download. I do not recommend you to use any of the ROM's below. "Then why are you including them? Why don't you get rid of them?" Well, i think its a good idea to have an archive, so yeah...</p>
+<div id="active-roms" class="cont">
+<h2 class="colored">Active ROMs</h2>
+<p>ROMs under this category are actively, or just regularly maintained. A ROM will be under this category as long as the maintainer keeps supporting it. If they discontinue it, it will be moved to the Archived category (unless the download links are down. In this case, the ROM is removed from the website completely.)</p>
 <div class="tabs">
-    <a href="#15a" class="no-fade-animation">15</a>
-    <a href="#14a" class="no-fade-animation">14</a>
-    <a href="#13a" class="no-fade-animation">13</a>
-    <a href="#12a" class="no-fade-animation">12</a>
-    <a href="#11a" class="no-fade-animation">11</a>
+    <a href="#15">15</a>
+    <a href="#14">14</a>
+    <a href="#11">11</a>
+    <a href="#10">10</a>
+</div>
+</div>
+
+<div id="archived-roms" class="cont">
+<h2 class="red" id="archive">Archived ROMs</h2>
+<p>ROMs under this category are not recommended, but they're included anyway, in case someone still wants to give them a try.</p>
+<div class="tabs">
+    <a href="#15a">15</a>
+    <a href="#14a">14</a>
+    <a href="#13a">13</a>
+    <a href="#12a">12</a>
+    <a href="#11a">11</a>
+</div>
 </div>
 
 {% for version, roms in roms_data.items() %}
 <div id="{{ version }}" class="cont">
-    <h2 class="adrod">Android {{ version }}</h2>
+    <h2 class="adrod">Active Android {{ version }} ROMs</h2>
     <ul>
         {% for rom in roms %}
             {% if not rom['archived'] %}
@@ -70,12 +65,15 @@
             {% endif %}
         {% endfor %}
     </ul>
+    <div class="tabs">
+        <a href="#active-roms">← Back</a>
+    </div>
 </div>
 {% endfor %}
 
 {% for version, roms in roms_data.items() %}
 <div id="{{ version }}a" class="cont">
-    <h2 class="red">Android {{ version }}</h2>
+    <h2 class="red">Archived Android {{ version }} ROMs</h2>
     <ul>
         {% for rom in roms %}
             {% if rom['archived'] %}
@@ -85,6 +83,9 @@
             {% endif %}
         {% endfor %}
     </ul>
+    <div class="tabs">
+        <a href="#archived-roms">← Back</a>
+    </div>
 </div>
 {% endfor %}
 
@@ -96,7 +97,7 @@
     <p>
         It all depends on your needs. Do you want customization? Then pick
         EvolutionX, for example. Do you want something lightweight, something
-        minimal? Pick LineageOS (I'm currently using LineageOS 21, by the way.)
+        minimal? Pick LineageOS (I'm currently using LineageOS 22.1, by the way.)
     </p>
 
     <li>How do i flash XYZ ROM?</li>

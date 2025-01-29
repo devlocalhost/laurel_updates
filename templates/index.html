@@ -1,69 +1,22 @@
 {% extends "base.html" %} {% block title %}laurel_updates - home{% endblock %}
 {% block head %} {{ super() }}
 <style type="text/css">
-    .green::first-letter {
-        color: #2bb877;
-    }
-
     .news::first-letter {
-        color: #d3869b;
+        color: #fdcc4b;
     }
 </style>
 {% endblock %} {% block content %}
 <h1 class="colored" onclick="toggleStylesheet()">laurel_updates</h1>
 
-<h2>What is this?</h2>
-<p>
-    A web<a href="/stats">s</a>ite with <a href="/roms">ROMs</a>,
-    <a href="/kernels">Kernels</a> and <a href="/blog">Guides</a>, for
-    laurel_sprout device. Data is updated almost instantly by me.
-    If you find an issue or mistake, please
-    report. Created by
-    <a href="https://t.me/dev6400" target="_blank">dev6400</a>.
-    Contact the dev for suggestions or adding data.
-</p>
-<h1 class="news">News</h1>
-<p>
-    {{ headline }}Read about it
-    <a href="/blog/news">here</a>.
-</p>
+<p>Your go-to hub for laurel_<a href="/stats">s</a>prout <a href="/roms">ROMs</a>, <a href="/kernels">kernels</a>, and <a href="/blog">guides</a>. Fast updates, minimal design, <a href="https://github.com/devlocalhost/laurel_updates">open-source</a>, and everything you need to keep your device running smoothly, feeling modern, and like new.</p>
 
-<h1 class="colored">Navigate to...</h1>
-<ul>
-    <li>
-        <a href="/roms">ROMs</a>
-    </li>
-    <li>
-        <a href="/kernels">Kernels</a>
-    </li>
-    <li>
-        <a href="/blog">Blog</a>
-    </li>
-</ul>
+<h1 class="news">Updates</h1>
+<p><a href="{{ headline_link }}">{{ headline }}</a></p>
 
-<hr>
+<h1 class="colored">Contact the dev</h1>
+<p>Have a question, found a bug, or want to contribute a new ROM, kernel, or blog post? Need help with something else? Reach out to the developer anytime via <a href="https://t.me/dev6400">Telegram</a> or email: <a href="mailto:contact64.qualify966@passinbox.com">ProtonMail</a>, <a href="mailto:dev64@p0ntus.com">p0ntus.com mail</a></p>
 
-<h2 class="green">Navigating the website</h2>
-<p>
-    Double clicking the edges, or the blank bottom area will bring you to the
-    top of the website.
-</p>
-<p>
-    Triple clicking any h1 header will toggle the "debug stylesheet", which
-    basically highlights every element. This will also give a feedback
-    (vibration). To turn it off, simply triple click any h1 header.
-</p>
-<p>
-    Clicking text wrapped on a dark background
-    <code>like this</code>
-    , will copy text to your clipboard (feedback [vibration] is also available
-    here too).
-</p>
-<p>
-    Use the navigation bar at the bottom to navigate the website quickly. You
-    can also use the top links (the arrows) to navigate around. Note: the back
-    button uses your browser history to go back. (For the nerds:
-    <code>history.back()</code>)
-</p>
+<h1>Enjoying laurel_updates?</h1>
+<p>If you find this website helpful and want to support its continued development and fast updates, consider donating on <a href="https://ko-fi.com/dev64">Ko-fi</a>. Every contribution is appreciated!</p>
 
 {% endblock %}

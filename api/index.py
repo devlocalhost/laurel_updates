@@ -220,6 +220,7 @@ def home():
     with open("blogs/news.md") as lines:
         lines = lines.readlines()
         headline_num = 1
+        headline_link = lines[3].split("](")[1].strip().strip(")")
 
         for line_number, line in enumerate(lines):
             if not line.lstrip().startswith('-') and re.search(pattern, line):
@@ -228,7 +229,7 @@ def home():
 
         headline = lines[headline_num].replace("## ", "")
 
-    return render_template("index.html", headline=headline)
+    return render_template("index.html", headline=headline, headline_link=headline_link)
 
 
 @app.route("/stats")

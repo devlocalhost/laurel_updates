@@ -1,26 +1,19 @@
 :root {
     --accent-color: #4a90d9;
     --links-color: #99c1f1;
-    --background-color: #241f31;
-    --text-color: #deddda;
-    --animation-speed: 0.25s;
-    --ul-ol-background-color: #3d3846;
-    --navbar-background-color: #3d3846;
-    --img-border-color: var(--accent-color);
-    --box-border-color: #111;
-    --box-border-size: 10px;
-    --hr-color: #6d647d;
-    --lists-background: #4b4556;
+    --background-color: #191919;
+    --text-color: #e5e5e5;
+    --ul-ol-background-color: #252525;
+    --img-border-color: #343434;
+    --hr-color: #434343;
+    --lists-background: #343434;
     --navbar-a-active: #575064;
     --navbar-a-hover: #6d647d;
-    --progress-bar-color: #2bb877;
+    --navbar-background-color: var(--background-color);
     --back-btn-color: var(--links-color);
     --code-background: #000;
     --code-hover: #99c1f1;
-}
-
-html {
-    scroll-behavior: smooth;
+    --outline-color: #343434;
 }
 
 body {
@@ -28,36 +21,22 @@ body {
     background-color: var(--background-color);
     margin: 1em auto;
     max-width: 40em;
-    font: 1.2em/1.62 sans-serif;
-    padding: 0 0.92em 3.24em;
+    font: 1.2em/1.62 monospace;
+    padding: 0 0.92em 3.64em;
     overflow-wrap: break-word;
 }
 
-#progress-bar-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
+h1, h2, h3, h4, h5 {
+    color: #e1e1e1;
 }
 
-#progress-bar {
-    height: 100%;
-    width: 0;
-    background-color: var(--progress-bar-color);
-    box-shadow: 0 0 8px var(--progress-bar-color);
-    transition: width 0.15s;
-}
-
-h1,
-h2 {
+h1, h2 {
     line-height: 1.2;
 }
 
 a {
     cursor: pointer;
-    color: var(--links-color);
-    text-decoration: none;
+    color: var(--text-color);
 }
 
 hr {
@@ -67,15 +46,11 @@ hr {
     background-color: var(--hr-color);
 }
 
-ul,
-ol,
-p {
+ul, ol, p {
     background: var(--ul-ol-background-color);
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-right: 11px;
+    padding: 10px 10px 10px 20px;
+    list-style-position: inside;
     border-radius: 15px;
-    box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
 }
 
 p {
@@ -84,77 +59,28 @@ p {
 
 ul {
     list-style-type: disc;
-    /* the default, "circle" is uglier than me. */
 }
 
-ol ol,
-ol ul,
-ol p,
-ul p,
-li ul {
+ol ol, ol ul, ol p, ul p, li ul {
     background: var(--lists-background);
-    box-shadow: 0 0 5px var(--box-border-color);
 }
 
 img {
     display: block;
     margin: 0 auto;
     width: 97%;
-    border: 5px solid var(--img-border-color);
     border-radius: 15px;
-    box-shadow: 0 0 var(--box-border-size) var(--img-border-color);
-}
-
-.navbar {
-    display: flex;
-    margin: 0 auto;
-    background-color: var(--navbar-background-color);
-    border-radius: 15px;
-    justify-content: space-evenly;
-    align-items: center;
-    position: fixed;
-    bottom: 25px;
-    left: 0;
-    right: 0;
-    transition: bottom var(--animation-speed);
-    box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
-}
-
-.navbar a {
-    font-family: monospace;
-    text-decoration: none;
-    padding: 15px;
-    width: inherit;
-    height: inherit;
-    text-align: center;
-    border-radius: 15px;
-    /* padding-bottom: 15px; */
-}
-
-.navbar a.nav-active {
-    background-color: var(--navbar-a-active);
-    box-shadow: 0 0 4px var(--box-border-color);
-}
-
-.navbar a:hover {
-    background-color: var(--navbar-a-hover);
-    transition: background-color 0.5s;
+    border: 4px solid var(--img-border-color);
 }
 
 code {
     background-color: var(--code-background);
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 0 8px;
     border-radius: 5px;
     font-weight: bold;
     display: inline-block;
-    word-break: break-all;
-    word-wrap: break-word;
+    word-break: break-word;
     white-space: pre-wrap;
-}
-
-code:hover {
-    box-shadow: 0 0 14px var(--code-hover);
 }
 
 .navigation-top {
@@ -162,12 +88,32 @@ code:hover {
     justify-content: space-between;
 }
 
-.navigation-top h4 {
+.navigation-top span {
     margin: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+.navigation-top span a {
+    text-decoration: none;
+}
+
+.navigation-top span::first-letter {
+    color: var(--accent-color);
 }
 
 .backbtn:hover {
     cursor: pointer;
+}
+
+.backbtn {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.backbtn::first-letter {
+    color: var(--accent-color);
 }
 
 .colored::first-letter {

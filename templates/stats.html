@@ -1,14 +1,8 @@
 {% extends "base.html" %} {% block title %}laurel_updates - statistics{%
 endblock %} {% block head %} {{ super() }} {% endblock %} {% block content %}
 <div class="navigation-top">
-    <a href="/"><h4>← laurel_updates</h4></a>
-    <h4
-        class="backbtn"
-        style="color: var(--back-btn-color)"
-        onclick="history.back()"
-    >
-        Go back →
-    </h4>
+    <span><a href="{% block routeback %}{% endblock %}">{% block routename %}← laurel_updates{% endblock %}</a></span>
+    <span class="backbtn" onclick="navigator.clipboard.writeText(`https://devlocalhost.github.io${window.location.pathname}`)">↑ erahS</span>
 </div>
 <h1 class="colored" onclick="toggleStylesheet()">Statistics</h1>
 <ul>

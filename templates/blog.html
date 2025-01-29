@@ -1,23 +1,12 @@
 {% extends "base.html" %} {% block title %}laurel_updates - blog{% endblock %}
 {% block content %}
 <div class="navigation-top">
-    <a href="/"><h4>← laurel_updates</h4></a>
-    <h4
-        class="backbtn"
-        style="color: var(--back-btn-color)"
-        onclick="history.back()"
-    >
-        Go back →
-    </h4>
+    <span><a href="/">← laurel_updates</a></span>
+    <span class="backbtn" onclick="navigator.clipboard.writeText(`https://devlocalhost.github.io${window.location.pathname}`)">↑ erahS</span>
 </div>
 <h1 class="colored" onclick="toggleStylesheet()">Blog</h1>
 
-<p>
-    This page contains guides for laurel_sprout, like installing magisk,
-    platform_tools, and more (some can be used on other devices aswell i guess).
-    Want to add something? Contact the
-    <a href="https://t.me/dev6400" target="_blank">dev</a>.
-</p>
+<p>Here, you will find random/useful posts. Like, installing magisk (some people don't know how to install it, yes...), installing platform-tools, PlayIntegrityFix and more. Want to create, or modify a post? Contact the dev via <a href="https://t.me/dev6400">Telegram</a> or email: <a href="mailto:contact64.qualify966@passinbox.com">ProtonMail</a>, <a href="mailto:dev64@p0ntus.com">p0ntus.com mail</a>.</p>
 
 <h2 class="colored">Articles</h2>
 <ul>
