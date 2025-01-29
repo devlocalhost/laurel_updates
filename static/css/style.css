@@ -107,6 +107,15 @@ code {
     cursor: pointer;
 }
 
+.backbtn {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.backbtn::first-letter {
+    color: var(--accent-color);
+}
+
 .colored::first-letter {
     color: var(--accent-color);
 }
