@@ -1,7 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
-- [02-02-2025 - Hotfix update available for EvolutionX.](/blog/news#02-02-2025---hotfix-update-available-for-evolutionx.)
+- [02-02-2025 - Hotfix update available for EvolutionX, New NoName Fork update.](/blog/news#02-02-2025---hotfix-update-available-for-evolutionx,-new-noname-fork-update.)
 - [29-01-2025 - Major laurel_updates update.](/blog/news#29-01-2025---major-laurel_updates-update.)
 - [27-01-2025 - PowerX-NOT brings EvolutionX back.](/blog/news#27-01-2025---powerx-not-brings-evolutionx-back.)
 - [21-01-2025 - New crDroid and Pixelage update, bakka brings PixelOS.](/blog/news#21-01-2025---new-crdroid-and-pixelage-update,-bakka-brings-pixelos.)
@@ -80,8 +80,10 @@
 
 ---
 
-## 02-02-2025 - Hotfix update available for EvolutionX.
+## 02-02-2025 - Hotfix update available for EvolutionX, New NoName Fork update.
 PowerX-NOT released a hotfix update, which fixes a few issues. For more details, click [here](/roms/EvolutionX_15#changelog).
+
+NoName Fork also received an update. Check the [changelog](/kernels/noname_fork#changelog) for more details.
 
 ## 29-01-2025 - Major laurel_updates update.
 Hello to everyone. The website got a major UI change, which I really like, and I'd like to hear your feedback too! You can let me know, by filling this [Google form](https://forms.gle/GZzYKWXFhFo36ktc6). But before voting, please use the website for a few mins, get familiar with the new UI, and then vote. Thank you.
