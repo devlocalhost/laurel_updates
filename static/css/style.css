@@ -38,6 +38,9 @@ a {
     cursor: pointer;
     color: var(--text-color);
 }
+a:hover {
+    font-weight: 900;
+}
 
 hr {
     border: none;
