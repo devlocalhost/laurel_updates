@@ -3,14 +3,14 @@
     "route_name": "noname_fork",
     "version": "4.14.355",
     "maintainer": "TheSillyOk",
-    "date_release": "18/01/2025",
-    "changelog": "<li>Added <a href=\"https://github.com/TheWildJames/kernel_patches/blob/main/69_hide_stuff.patch\">maphide for lineage detections</a></li><li>Updated KSU Next to 12312</li>",
+    "date_release": "02/02/2025",
+    "changelog": "<li>Updated SUSFS to 1.5.4</li><li>Updated KSU Next to 12348</li>",
     "support": "https://t.me/ok_kernel",
-    "notes": "<li>For Non RDP ROMs (LOS, Pixelage, CrDroid, More [?])</li><li>Supports A15 QPR1 ROMS</li><li><a href=\"https://github.com/sidex15/ksu_module_susfs/releases/\">SUSFS 1.5.3 Module</a>, <a href=\"https://github.com/rifsxd/KernelSU-Next/releases\">KSU Next 12264 Manager</a></li><li>Based on Skyblueborb NoName fork</li>",
+    "notes": "<li>For Non RDP ROMs (LOS, Pixelage, CrDroid, More [?])</li><li>Supports A15 QPR1 ROMS</li><li><a href=\"https://github.com/sidex15/ksu_module_susfs/releases/\">SUSFS 1.5.4 Module</a>, <a href=\"https://github.com/rifsxd/KernelSU-Next/releases\">KSU Next Manager</a></li><li><a href='https://github.com/TheWildJames/kernel_patches/blob/main/69_hide_stuff.patch'>Maphide Lineage detections</a></li><li>Based on <a href='https://github.com/Mi-A3-laurel-sprout/kernel_xiaomi_XD/commit/37c108d61bfd85d07199397dade220af3bc1862e'>this kernel</a></li>",
     "downloads": {
         "editions": {
-            "Telegram": "https://t.me/ok_kernel/12",
-            "Pixeldrain": "https://pixeldrain.com/u/8nSU5oAc"
+            "Telegram": "https://t.me/ok_kernel/16",
+            "Pixeldrain": "https://pixeldrain.com/u/3vNXBrfV"
         }
     }
 }
