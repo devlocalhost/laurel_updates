@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [09-02-2025 - Added a new blog post, and renamed a old post.](/blog/news#09-02-2025---added-a-new-blog-post,-and-renamed-a-old-post.)
 - [02-02-2025 - Hotfix update available for EvolutionX, New NoName Fork update.](/blog/news#02-02-2025---hotfix-update-available-for-evolutionx,-new-noname-fork-update.)
 - [29-01-2025 - Major laurel_updates update.](/blog/news#29-01-2025---major-laurel_updates-update.)
 - [27-01-2025 - PowerX-NOT brings EvolutionX back.](/blog/news#27-01-2025---powerx-not-brings-evolutionx-back.)
@@ -79,6 +80,9 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 09-02-2025 - Added a new blog post, and renamed a old post.
+A new post has been added! It is a guide to [flash stock ROM](/blog/flash-stock-rom). The other post that has been renamed is "stock-rom". It has been renamed to [stock-rom-links](/blog/stock-rom-links) now.
 
 ## 02-02-2025 - Hotfix update available for EvolutionX, New NoName Fork update.
 PowerX-NOT released a hotfix update, which fixes a few issues. For more details, click [here](/roms/EvolutionX_15#changelog).
