@@ -72,6 +72,8 @@ ul {
 }
 
 ol ol, ol ul, ol p, ul p, li ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
     background: var(--lists-background);
 }
 
