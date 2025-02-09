@@ -1,12 +1,12 @@
 # News - Updates, releases, and more.
 
 ## Posts
-- [09-02-2025 - Added a new blog post, and renamed a old post.](/blog/news#09-02-2025---added-a-new-blog-post,-and-renamed-a-old-post.)
+- [09-02-2025 - Added a new blog post, and renamed a old post.](/blog/news#09-02-2025---magicxavi-updates-pixelmagic,-new-blog-post,-renamed-an-old-post.)
 - [02-02-2025 - Hotfix update available for EvolutionX, New NoName Fork update.](/blog/news#02-02-2025---hotfix-update-available-for-evolutionx,-new-noname-fork-update.)
 - [29-01-2025 - Major laurel_updates update.](/blog/news#29-01-2025---major-laurel_updates-update.)
 - [27-01-2025 - PowerX-NOT brings EvolutionX back.](/blog/news#27-01-2025---powerx-not-brings-evolutionx-back.)
 - [21-01-2025 - New crDroid and Pixelage update, bakka brings PixelOS.](/blog/news#21-01-2025---new-crdroid-and-pixelage-update,-bakka-brings-pixelos.)
-- [18-01-2025 - New updafe for NoName fork kernel.](/blog/news#18-01-2025---new-updafe-for-noname-fork-kernel.)
+- [18-01-2025 - New update for NoName fork kernel.](/blog/news#18-01-2025---new-updafe-for-noname-fork-kernel.)
 - [13-01-2025 - Minor update for NoName Fork.](/blog/news#13-01-2025---minor-update-for-noname-fork.)
 - [12-01-2025 - LineageOS 22.1 released with major changes, New NoName Fork released.](/blog/news#12-01-2025---lineageos-22.1-released-with-major-changes,-new-noname-fork-released.)
 - [20-12-2024 - crDroid gets revived by leoxvis.](/blog/news#20-12-2024---crdroid-gets-revived-by-leoxvis.)
@@ -81,7 +81,9 @@
 
 ---
 
-## 09-02-2025 - Added a new blog post, and renamed a old post.
+## 09-02-2025 - MagicXavi updates PixelMagic, New blog post, renamed an old post.
+MagicXavi makes a comeback! He released a new version of PixelMagic, which seems to be a big update. For more details, check the [changelog](/roms/PixelMagic_15#changelog).
+
 A new post has been added! It is a guide to [flash stock ROM](/blog/flash-stock-rom). The other post that has been renamed is "stock-rom". It has been renamed to [stock-rom-links](/blog/stock-rom-links) now.
 
 ## 02-02-2025 - Hotfix update available for EvolutionX, New NoName Fork update.
@@ -111,7 +113,7 @@ i'm sorry. :c" - bakka
 
 The PixelOS build bakka promised is now here. Enjoy it by clicking [here](/roms/PixelOS_15).
 
-## 18-01-2025 - New updafe for NoName fork kernel.
+## 18-01-2025 - New update for NoName fork kernel.
 This update includes a patch to hide a few detections, and updated kernelSU next version. Check out the changelog [here](/kernels/noname_fork#changelog).
 
 ## 13-01-2025 - Minor update for NoName Fork.
