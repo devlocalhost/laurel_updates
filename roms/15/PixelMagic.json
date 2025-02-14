@@ -2,8 +2,8 @@
     "name": "PixelMagic",
     "version": "ALPHAGENE r10",
     "maintainer": "Magicxavi",
-    "date_release": "09/02/2025",
-    "changelog": "<li>Launcher3 with most customizations is back</li><li>added LMO Freeform windows</li><li>added UDFPS animations</li><li>added \"Less boring notifications\"</li><li>added GameSpace</li><li>added Buttons and Gestures customizations</li><li>implemented multiple audio sources audio playback</li><li>reworked \"Recents\" look to more simple and clean look</li><li>reworked Ambient gestures</li><li>added Launcher widgets</li><li>A lot of other changes i can't fit in the one rom post</li>",
+    "date_release": "14/02/2025",
+    "changelog": "<li>fixed \"Edge long swipe gesture\"</li><li> fixed Blur effects</li><li> added \"Annoying notifications\" switch</li>",
     "status": "Official",
     "support": "https://t.me/syberia_laurel_sprout",
     "rdp": "Yes",
@@ -11,7 +11,7 @@
     "banner": "/static/img/banner_pixelmagic_15.jpg",
     "downloads": {
         "editions": {
-            "Gapps": "https://bit.ly/3WR3N5S"
+            "Gapps": "https://bit.ly/3EF9MEY"
         }
     },
     "archived": false
