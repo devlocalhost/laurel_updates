@@ -1,9 +1,28 @@
-{% extends "base.html" %} {% block title %}laurel_updates - blog: {{ title }}{%
-endblock %} {% block content %}
+{% extends "base.html" %}
+{% block title %}laurel_updates - blog: {{ title }}{% endblock %}
+
+{% block head %}
+{{ super() }}
+<style type="text/css">
+    .fileinfo {
+        text-align: center;
+        color: #b3b3b3;
+        font-style: italic;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
 <div class="navigation-top">
     <span><a href="/blog">← Blogs</a></span>
     <span class="backbtn" onclick="navigator.clipboard.writeText(`https://devlocalhost.github.io${window.location.pathname}`)">↑ erahS</span>
 </div>
 <h1 class="colored" onclick="toggleStylesheet()">{{ title }}</h1>
 
-{{ data | safe }} {% endblock %}
+{{ data | safe }}
+
+<hr>
+
+<p class="fileinfo">Created: {{ created_at }}<br>Last modified: {{ modified_at }}</p>
+
+{% endblock %}
