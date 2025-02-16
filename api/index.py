@@ -273,10 +273,8 @@ def get_blog(article_name):
     with open(article_file, encoding="utf-8") as file:
         title = file.readline().removeprefix("# ").removesuffix(nl)
         data = markdown_parser(file.read())
-        created_at = datetime.datetime.fromtimestamp(int(subprocess.check_output(f"git log -1 --format=%ad --date unix {article_file}", shell=True, text=True))).strftime("%d %B %Y, %I:%M %p") # subprocess.check_output(f"git log --follow --format=%ad --date unix {article_file} | tail -1", shell=True, text=True)
-        modified_at = datetime.datetime.fromtimestamp(int(subprocess.check_output(f"git log -1 --format=%ad --date unix {article_file}", shell=True, text=True))).strftime("%d %B %Y, %I:%M %p") # subprocess.check_output(f"git log -1 --format=%ad --date unix {article_file}", shell=True, text=True)
 
-    return render_template("blog_template.html", data=data, title=title, created_at=created_at, modified_at=modified_at)
+    return render_template("blog_template.html", data=data, title=title)
 
 
 @app.route("/roms")
