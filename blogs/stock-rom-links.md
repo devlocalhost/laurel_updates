@@ -10,4 +10,4 @@ The opposite of the global version, for units bought in Europe. Download: [pixel
 ### How do I know which version I have?
 The easiest way to tell is by looking at the back of your phone: ![image showing the bacl of the device](/static/img/dev-ice.jpg)
 
-The "Model" part is what we need. If the last two letters are "SH" (like in the picture above), means you have the EEA unit. If you see "SI", you have the global unit. If you do not see any of these logos (especially the "CE"and the trash bin logo), you have the global version.
+The "Model" part is what we need. If the last two letters are "SH" (like in the picture above), means you have the EEA unit. If you see "SI", you have the global unit. If you do not see any of these logos (especially the "CE" and the trash bin logo), you have the global version.
