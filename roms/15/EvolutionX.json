@@ -1,9 +1,9 @@
 {
     "name": "EvolutionX",
-    "version": "10.2-HotFix",
+    "version": "10.3",
     "maintainer": "PowerX-NOT",
-    "date_release": "02/02/2025",
-    "changelog": "<li>Fixed high brightness issue at low level</li><li>Fixed media codecs to resolve YouTube lag, enable smooth 60fps video playback, and screen recording with HEVC encoding.</li><li>MIUI camera module not supported</li>",
+    "date_release": "16/02/2025",
+    "changelog": "<li>Merged the latest Feb source</li><li>Fixed ksu-next (crashing issue)</li><li>MIUI camera module not supported</li>",
     "status": "Unofficial",
     "support": "https://t.me/EvoX_Mi_A3",
     "rdp": "Yes",
@@ -11,7 +11,7 @@
     "banner": "/static/img/banner_evox_14.jpg",
     "downloads": {
         "editions": {
-            "Gapps": "https://github.com/PowerX-NOT/Build-dumps/releases/download/Evolution_X-v10.2-HotFix/Evolution_X-v10.2-HotFix_laurel_sprout-signed-ota_update.zip"
+            "Gapps": "https://github.com/PowerX-NOT/Build-dumps/releases/download/Evolution_X-v10.3/Evolution_X-v10.3_laurel_sprout-signed-ota_update.zip"
         }
     },
     "archived": false

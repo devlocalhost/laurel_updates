@@ -1,6 +1,8 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [16-02-2025 - New EvolutionX update.](/blog/news#16-02-2025---new-evolutionx-update.)
+- [14-02-2025 - Minor update released for PixelMagic.](/blog/news#14-02-2025---minor-update-released-for-pixelmagic.)
 - [09-02-2025 - Added a new blog post, and renamed a old post.](/blog/news#09-02-2025---magicxavi-updates-pixelmagic,-new-blog-post,-renamed-an-old-post.)
 - [02-02-2025 - Hotfix update available for EvolutionX, New NoName Fork update.](/blog/news#02-02-2025---hotfix-update-available-for-evolutionx,-new-noname-fork-update.)
 - [29-01-2025 - Major laurel_updates update.](/blog/news#29-01-2025---major-laurel_updates-update.)
@@ -80,6 +82,12 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 16-02-2025 - New EvolutionX update.
+PowerX-NOT updates EvolutionX from 10.2 to 10.3. Check it out [here](/roms/EvolutionX_15).
+
+## 14-02-2025 - Minor update released for PixelMagic.
+MagicXavi has released a fix update for PixelMagic. For more details, click [here](/roms/PixelMagic_15#changelog)
 
 ## 09-02-2025 - MagicXavi updates PixelMagic, New blog post, renamed an old post.
 MagicXavi makes a comeback! He released a new version of PixelMagic, which seems to be a big update. For more details, check the [changelog](/roms/PixelMagic_15#changelog).
