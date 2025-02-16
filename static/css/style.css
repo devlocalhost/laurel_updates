@@ -90,6 +90,7 @@ code {
     padding: 0 8px;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 1.2em;
     display: inline-block;
     word-break: break-word;
     white-space: pre-wrap;
