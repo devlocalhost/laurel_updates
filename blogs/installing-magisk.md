@@ -21,7 +21,7 @@ After meeting these requirements, you can proceed with the installation.
 
 ## The SD Card way
 
-1. Rename the Magisk APK file by replacing ".apk" with ".zip," as only zip files can be sideloaded.
+1. Rename the Magisk APK file by replacing ".apk" with ".zip", as only zip files can be sideloaded.
 2. Move the renamed file to your SD Card.
 3. Reboot your phone into recovery.
 4. Click "install update" or "apply update" then choose "apply from SD card" and select the Magisk zip file. If you see "signature verification failed warning", select "Yes"
