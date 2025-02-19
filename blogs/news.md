@@ -85,7 +85,7 @@
 ---
 
 ## 19-02-2025 - Another, and last update for EvolutionX.
-One more, and last update for EvolutionX, yes. This update fixes the camera issue/bug. PowerX-NOT also decided to [drop](https://t.me/EvoX_Mi_A3/66113) EvolutionX support.
+One more, and last [update](/roms/EvolutionX_15) for EvolutionX, yes. This update fixes the camera issue/bug. PowerX-NOT also decided to [drop](https://t.me/EvoX_Mi_A3/66113) EvolutionX support.
 
 ## 16-02-2025 - New EvolutionX update.
 PowerX-NOT updates EvolutionX from 10.2 to 10.3. Check it out [here](/roms/EvolutionX_15).
