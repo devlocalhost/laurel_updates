@@ -1,6 +1,6 @@
 {
     "name": "crDroid",
-    "version": "11",
+    "version": "11.1",
     "maintainer": "leoxvis",
     "date_release": "20/12/2024",
     "changelog": "<li>Rebased Trees.</li><li>Disabled 4k@60fps (not supported by our device).</li><li>Fixed lockscreen charging info.</li><li>Other minor tweaks.</li>",
