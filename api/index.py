@@ -139,6 +139,7 @@ class Statistics:
             "crDroid_U_14": {"views": 0},
             "TheParasiteProject_14": {"views": 0},
             "AOSP_15": {"views": 0},
+            "AxionOS_15": {"views": 0},
             "crDroid_15": {"views": 0},
             "DerpFest_15": {"views": 0},
             "EvolutionX_15": {"views": 0},

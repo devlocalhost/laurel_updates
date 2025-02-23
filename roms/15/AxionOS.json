@@ -1,0 +1,18 @@
+{
+    "name": "AxionOS",
+    "version": "1.1",
+    "maintainer": "PowerX-NOT",
+    "date_release": "24/02/2025",
+    "changelog": "<li>Ships with the latest February source</li><li>Initial build</li><li>KSU-Next supported</li><li>Dolby Atmos supported</li>",
+    "status": "Unofficial",
+    "support": "https://t.me/EvoX_Mi_A3",
+    "rdp": "Yes",
+    "notes": "<li>MIUI camera module not supported</li><li>LCD users flash <a href='https://t.me/EvoX_Mi_A3/64157'>66hz_to_60hz</a></li>",
+    "banner": "/static/img/banner_axion.jpg",
+    "downloads": {
+        "editions": {
+            "Gapps": "https://github.com/PowerX-NOT/Build-dumps/releases/download/AxionAOSP-v1.1/AxionAOSP-v1.1_laurel_sprout-signed-ota_update.zip"
+        }
+    },
+    "archived": false
+}

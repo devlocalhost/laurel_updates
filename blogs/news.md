@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [23-02-2025 - New ROM: AxionOS.](/blog/news#23-02-2025---new-rom:-axionos,-evolutionx-archived.)
 - [19-02-2025 - Another, and last update for EvolutionX.](/blog/news#19-02-2025---another,-and-last-update-for-evolutionx.)
 - [16-02-2025 - New EvolutionX update.](/blog/news#16-02-2025---new-evolutionx-update.)
 - [14-02-2025 - Minor update released for PixelMagic.](/blog/news#14-02-2025---minor-update-released-for-pixelmagic.)
@@ -83,6 +84,9 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 23-02-2025 - New ROM: AxionOS, EvolutionX archived.
+EvolutionX got [dropped](#19-02-2025---another,-and-last-update-for-evolutionx.) by PowerX-NOT, but he is still here, and this time, with AxionOS. Check it out [here]()!
 
 ## 19-02-2025 - Another, and last update for EvolutionX.
 One more, and last [update](/roms/EvolutionX_15) for EvolutionX, yes. This update fixes the camera issue/bug. PowerX-NOT also decided to [drop](https://t.me/EvoX_Mi_A3/66113) EvolutionX support.
