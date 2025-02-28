@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [28-02-2025 - New major update for PixelMagic.](/blog/news#28-02-2025---new-major-update-for-pixelmagic.)
 - [23-02-2025 - New ROM: AxionOS.](/blog/news#23-02-2025---new-rom:-axionos,-evolutionx-archived.)
 - [19-02-2025 - Another, and last update for EvolutionX.](/blog/news#19-02-2025---another,-and-last-update-for-evolutionx.)
 - [16-02-2025 - New EvolutionX update.](/blog/news#16-02-2025---new-evolutionx-update.)
@@ -84,6 +85,9 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 28-02-2025 - New major update for PixelMagic.
+MagicXavi drops a new update for [PixelMagic](/roms/PixelMagic_15), with a lot [of changes](/roms/PixelMagic_15#changelog). Please, also check [notes](/roms/PixelMagic_15#notes).
 
 ## 23-02-2025 - New ROM: AxionOS, EvolutionX archived.
 EvolutionX got [dropped](#19-02-2025---another,-and-last-update-for-evolutionx.) by PowerX-NOT, but he is still here, and this time, with AxionOS. Check it out [here]()!
