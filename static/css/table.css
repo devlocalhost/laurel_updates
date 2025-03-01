@@ -1,0 +1,36 @@
+table {
+    width: 100%;
+}
+
+table thead td {
+    background-color: #323232;
+    text-align: center;
+}
+
+.first-td-left {
+    border-top-left-radius: 10px;
+}
+
+.first-td-right {
+    border-top-right-radius: 10px;
+}
+
+.last-td-left {
+    border-bottom-left-radius: 10px;
+}
+
+.last-td-right {
+    border-bottom-right-radius: 10px;
+}
+ 
+table td, table th {
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #323232;
+}
+
+table tr:nth-child(odd) {
+    background-color: var(--ul-ol-background-color);
+}
