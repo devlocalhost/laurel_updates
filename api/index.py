@@ -29,9 +29,9 @@ if os.getenv("LAUREL_MODE"):
     print("[DEBUG] Templates will auto reload")
     app.config["TEMPLATES_AUTO_RELOAD"] = True
 
-commit = subprocess.check_output(
+commit = os.environ.get('VERCEL_GIT_COMMIT_SHA') or subprocess.check_output(
     'git log -1 --pretty=format:"%h"', shell=True, text=True
-) or os.environ.get('VERCEL_GIT_COMMIT_SHA')
+) or "Unknown"
 
 utc_time = datetime.datetime.now(datetime.UTC).strftime("%A %B %-d, %I:%M:%S %p")
 start_time = datetime.datetime.now()  # um... ^^^ ??
