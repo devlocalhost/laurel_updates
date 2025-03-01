@@ -237,9 +237,10 @@ def home():
 def stats():
     """stats"""
 
-    statistics.update()
+    countries_json = json.load(open("static/statistics/countries.json"))
+    pages_json = json.load(open("static/statistics/pages.json"))
 
-    return render_template("stats.html", data=statistics.get_data())
+    return render_template("stats.html", data=[countries_json, pages_json])
 
 
 @app.route("/blog")
