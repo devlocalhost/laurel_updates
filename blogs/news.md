@@ -88,7 +88,7 @@
 ---
 
 ## 01-03-2025 - Statistics are back and better this time.
-Statistics are (kind of) back! I basically improved them, becaase before they were broken as hell. They werent accurate, or unique. 
+Statistics are (kind of) back! I basically improved them, because before they were kind of broken, innacurate, and were not unique. They could be easily manipulated. 
 
 How am i gathering these statistics? I am using [vercel analytics](https://vercel.com/docs/analytics), which is a privacy friendly feature. Statistics are manually updated by me, for now, monthly. So, see you next month, i guess...
 
