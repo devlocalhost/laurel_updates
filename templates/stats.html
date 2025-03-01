@@ -23,7 +23,7 @@
 <hr>
 
 <h2>Analytics</h2>
-<p>Statistics fetched from vercel analytics (privacy friendly!). Includes all pages that users visited since February 1 - February 28.</p>
+<p>Statistics fetched from vercel analytics (privacy friendly!). Statistics include Views (Page Views), Visitors (unique) for routes (whichh pages) and countries.<br>Data is from: <b>February 1 till February 28</b>. For now, data will be manually updated by me.</p>
 
 <div style="overflow-x: auto; max-width: 100%;">
     <h3>Routes</h3>
@@ -40,16 +40,16 @@
             {% for stats_data in data[1]["statistics"][:-1] %}
             <tr>
                 <td><a href="{{ stats_data['page'] }}">{{ stats_data['page'] }}</a></td>
-                <td>{{ stats_data['visitors']['total'] }}</td>
-                <td>{{ stats_data['visitors']['unique'] }}</td>
+                <td class="td-num">{{ stats_data['visitors']['total'] }}</td>
+                <td class="td-num">{{ stats_data['visitors']['unique'] }}</td>
             </tr>
             {% endfor %}
 
             {% set last_entry = data[1]["statistics"][-1] %}
             <tr>
                 <td class="last-td-left"><a href="{{ last_entry['page'] }}">{{ last_entry['page'] }}</a></td>
-                <td>{{ last_entry['visitors']['total'] }}</td>
-                <td class="last-td-right">{{ last_entry['visitors']['unique'] }}</td> 
+                <td class="td-num">{{ last_entry['visitors']['total'] }}</td>
+                <td class="last-td-right td-num">{{ last_entry['visitors']['unique'] }}</td> 
             </tr>
         </tbody>
     </table>
@@ -68,16 +68,16 @@
             {% for stats_data in data[0]["statistics"][:-1] %}
             <tr>
                 <td>{{ stats_data['country'] }}</td>
-                <td>{{ stats_data['visitors']['total'] }}</td>
-                <td>{{ stats_data['visitors']['unique'] }}</td>
+                <td class="td-num">{{ stats_data['visitors']['total'] }}</td>
+                <td class="td-num">{{ stats_data['visitors']['unique'] }}</td>
             </tr>
             {% endfor %}
 
             {% set last_entry = data[0]["statistics"][-1] %}
             <tr>
                 <td class="last-td-left">{{ last_entry['country'] }}</td>
-                <td>{{ last_entry['visitors']['total'] }}</td>
-                <td class="last-td-right">{{ last_entry['visitors']['unique'] }}</td> 
+                <td class="td-num">{{ last_entry['visitors']['total'] }}</td>
+                <td class="last-td-right td-num">{{ last_entry['visitors']['unique'] }}</td> 
             </tr>
         </tbody>
     </table>
