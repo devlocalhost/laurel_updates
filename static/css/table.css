@@ -7,6 +7,18 @@ table thead td {
     text-align: center;
 }
 
+table td, table th {
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #323232;
+}
+
+table tr:nth-child(odd) {
+    background-color: var(--ul-ol-background-color);
+}
+
 .first-td-left {
     border-top-left-radius: 10px;
 }
@@ -22,15 +34,7 @@ table thead td {
 .last-td-right {
     border-bottom-right-radius: 10px;
 }
- 
-table td, table th {
-    padding: 8px;
-}
 
-table tr:nth-child(even) {
-    background-color: #323232;
-}
-
-table tr:nth-child(odd) {
-    background-color: var(--ul-ol-background-color);
+.td-num {
+    text-align: center;
 }
