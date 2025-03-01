@@ -40,27 +40,6 @@ nl = "\n"
 android_versions = ["roms/10", "roms/11", "roms/12", "roms/13", "roms/14", "roms/15"]
 
 
-def get_uptime():
-    current_time = datetime.datetime.now()
-    uptime_duration = current_time - start_time
-
-    components = []
-    days, seconds = uptime_duration.days, uptime_duration.seconds
-    hours, remainder = divmod(seconds, 3600)
-    minutes, seconds = divmod(remainder, 60)
-
-    if days > 0:
-        components.append(f"{days} days")
-    if hours > 0:
-        components.append(f"{hours} hours")
-    if minutes > 0:
-        components.append(f"{minutes} minutes")
-    if seconds > 0:
-        components.append(f"{seconds} seconds")
-
-    return str(", ".join(components)).strip()
-
-
 def send_message(func, message, chat_id=1547269295, message_thread_id=None):
     print(f"{func} - Sending message to dev...")
 
@@ -100,75 +79,6 @@ def going_down():
     )
 
 
-class Statistics:
-    """stats"""
-
-    def __init__(self):
-        """init"""
-
-        self.visitors = 0
-        self.deployed = f"{utc_time} (UTC)"
-        self.rom_statistics = {
-            "crDroid_10": {"views": 0},
-            "LineageOS_11": {"views": 0},
-            "PixelExperience_11": {"views": 0},
-            "AospExtended_12": {"views": 0},
-            "PixelOS_12": {"views": 0},
-            "LineageOS_13": {"views": 0},
-            "PixelExperience_13": {"views": 0},
-            "PixelExperiencePlus_13": {"views": 0},
-            "PixelOS_13": {"views": 0},
-            "SparkOS_13": {"views": 0},
-            "EvolutionX_14": {"views": 0},
-            "LineageOS_14": {"views": 0},
-            "PixelMagic_14": {"views": 0},
-            "TequilaOS_14": {"views": 0},
-            "ProjectBlaze_14": {"views": 0},
-            "ProjectMatrixx_14": {"views": 0},
-            "RisingOS_14": {"views": 0},
-            "DerpFest_14": {"views": 0},
-            "crDroid_14": {"views": 0},
-            "crDroid_U_14": {"views": 0},
-            "TheParasiteProject_14": {"views": 0},
-            "AOSP_15": {"views": 0},
-            "AxionOS_15": {"views": 0},
-            "crDroid_15": {"views": 0},
-            "DerpFest_15": {"views": 0},
-            "EvolutionX_15": {"views": 0},
-            "LineageOS_15": {"views": 0},
-            "ParanoidAndroid_15": {"views": 0},
-            "PixelMagic_15": {"views": 0},
-            "PixelOS_15": {"views": 0},
-            "ProjectPixelage_15": {"views": 0},
-            "YAAP_15": {"views": 0},
-            # "": {"views": 0},
-        }
-
-    def update(self):
-        """update data"""
-
-        self.visitors += 1
-
-    def rom_update(self, name):
-        self.rom_statistics[name]["views"] += 1
-
-    def get_data(self):
-        """get data"""
-
-        return json.loads(
-            json.dumps(
-                {
-                    "visitors": self.visitors,
-                    "deployed_time": self.deployed,
-                    "platform": platform_details,
-                    "uptime": get_uptime(),
-                    "commit": commit,
-                    "rom_hits": self.rom_statistics,
-                }
-            )
-        )
-
-
 class CustomRenderer(mistune.HTMLRenderer):
     def heading(self, text, level):
         header_id = re.sub(r"\s+", "-", text.lower())
@@ -180,7 +90,6 @@ def custom_header_plugin(md):
 
 
 markdown_parser = mistune.create_markdown(plugins=[custom_header_plugin])
-statistics = Statistics()
 
 
 def list_json_files(directory):
@@ -206,7 +115,6 @@ def verify():
 def home():
     """home page"""
 
-    statistics.update()
     pattern = r'\b(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-(\d{4})\b'
     headline = "News."
 
@@ -240,7 +148,6 @@ def stats():
 def blogs():
     """blogs"""
 
-    statistics.update()
     articles = {}
 
     for file in os.listdir("blogs"):
@@ -258,7 +165,6 @@ def blogs():
 def get_blog(article_name):
     """help articles"""
 
-    statistics.update()
     article_file = os.path.join("blogs", article_name + ".md")
 
     if not os.path.exists(article_file):
@@ -275,7 +181,6 @@ def get_blog(article_name):
 def roms():
     """roms"""
 
-    statistics.update()
     roms_data = {}
 
     for version in android_versions:
@@ -311,14 +216,11 @@ def roms():
 def roms_name(rom_name, version):
     """rom name route"""
 
-    statistics.update()
     json_path = os.path.join("roms", str(version), rom_name + ".json")
 
     if os.path.exists(json_path):
         with open(json_path, "r", encoding="utf-8") as json_file:
             data = json.load(json_file)
-
-        statistics.rom_update(f"{rom_name}_{version}")
 
         return render_template("rom_template.html", data=data)
 
@@ -329,7 +231,6 @@ def roms_name(rom_name, version):
 def kernels():
     """kernels"""
 
-    statistics.update()
     data = {}
     data["kernels"] = []
 
@@ -345,7 +246,6 @@ def kernels():
 def kernels_name(kernel_name):
     """kernels"""
 
-    statistics.update()
     kernel_file = os.path.join("kernels", kernel_name + ".json")
 
     if not os.path.exists(kernel_file):
@@ -360,8 +260,6 @@ def kernels_name(kernel_name):
 @app.errorhandler(404)
 def page_not_found(e):
     """404 page"""
-
-    statistics.update()
 
     return render_template("404.html")
 
