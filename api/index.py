@@ -64,7 +64,7 @@ def send_message(func, message, chat_id=1547269295, message_thread_id=None):
 def starting():
     send_message(
         "[Starting]",
-        f"Hello world\nRunning on <code>{platform_details}</code>\nCommit: <code>{commit}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit}</code>)\n{utc_time} (UTC)",
+        f"Hello world\nRunning on <code>{platform_details}</code>\nCommit: <code>{commit}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit}</code>)",
         -1002418052790,
         2
     )
@@ -73,7 +73,7 @@ def starting():
 def going_down():
     send_message(
         "[Going down]",
-        f"GOODBYECRUELWORLD - <code>{platform_details}</code>\nWas up for: <code>{get_uptime()}</code>\nCommit: <code>{commit}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit}</code>)\n{utc_time} (UTC)",
+        f"GOODBYECRUELWORLD - <code>{platform_details}</code>\nCommit: <code>{commit}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit}</code>)",
         -1002418052790,
         2
     )
