@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [01-03-2025 - Statistics are back and better this time.](/blog/news#01-03-2025---statistics-are-back-and-better-this-time.)
 - [28-02-2025 - New major update for PixelMagic.](/blog/news#28-02-2025---new-major-update-for-pixelmagic.)
 - [23-02-2025 - New ROM: AxionOS.](/blog/news#23-02-2025---new-rom:-axionos,-evolutionx-archived.)
 - [19-02-2025 - Another, and last update for EvolutionX.](/blog/news#19-02-2025---another,-and-last-update-for-evolutionx.)
@@ -85,6 +86,11 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 01-03-2025 - Statistics are back and better this time.
+Statistics are (kind of) back! I basically improved them, becaase before they were broken as hell. They werent accurate, or unique. 
+
+How am i gathering these statistics? I am using [vercel analytics](https://vercel.com/docs/analytics), which is a privacy friendly feature. Statistics are manually updated by me, for now, monthly. So, see you next month, i guess...
 
 ## 28-02-2025 - New major update for PixelMagic.
 MagicXavi drops a new update for [PixelMagic](/roms/PixelMagic_15), with a lot [of changes](/roms/PixelMagic_15#changelog). Please, also check [notes](/roms/PixelMagic_15#notes).
