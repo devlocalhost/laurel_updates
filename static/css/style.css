@@ -7,9 +7,9 @@
     --img-border-color: #343434;
     --hr-color: #434343;
     --lists-background: #343434;
-    --navbar-a-active: #575064;
-    --navbar-a-hover: #6d647d;
-    --navbar-background-color: var(--background-color);
+    /* --navbar-a-active: #575064; */
+    /* --navbar-a-hover: #6d647d; */
+    --navbar-background-color: #212121;
     --back-btn-color: var(--links-color);
     --code-background: #000;
     --code-hover: #99c1f1;
@@ -82,6 +82,12 @@ a:hover {
     font-weight: bold;
 }
 
+a {
+    display: inline-block; /* Allows it to break like normal text */
+    word-break: break-word; /* Ensures breaking long URLs */
+    overflow-wrap: anywhere; /* Forces break if needed */
+}
+
 hr {
     border: none;
     height: 4px;
@@ -140,12 +146,11 @@ code {
     font-size: 1.2em;
 }
 
-
 .navigation-top span a {
     text-decoration: none;
 }
 
-.navigation-top span::first-letter {
+.navigation-top a::first-letter {
     color: var(--accent-color);
 }
 
@@ -164,16 +169,4 @@ code {
 
 .colored::first-letter {
     color: var(--accent-color);
-}
-
-@media (max-width: 767px) {
-    .navbar {
-        width: 92%;
-    }
-}
-
-@media (min-width: 768px) {
-    .navbar {
-        width: 50%;
-    }
 }
