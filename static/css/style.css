@@ -7,9 +7,9 @@
     --img-border-color: #343434;
     --hr-color: #434343;
     --lists-background: #343434;
-    --navbar-a-active: #575064;
-    --navbar-a-hover: #6d647d;
-    --navbar-background-color: var(--background-color);
+    /* --navbar-a-active: #575064; */
+    /* --navbar-a-hover: #6d647d; */
+    --navbar-background-color: #212121;
     --back-btn-color: var(--links-color);
     --code-background: #000;
     --code-hover: #99c1f1;
@@ -45,8 +45,32 @@ h1, h2, h3, h4, h5 {
     color: #e1e1e1;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1.15em;
+}
+
+h6 {
+    font-size: 1.10em;
 }
 
 a {
@@ -56,6 +80,12 @@ a {
 
 a:hover {
     font-weight: bold;
+}
+
+a {
+    display: inline-block; /* Allows it to break like normal text */
+    word-break: break-word; /* Ensures breaking long URLs */
+    overflow-wrap: anywhere; /* Forces break if needed */
 }
 
 hr {
@@ -116,12 +146,11 @@ code {
     font-size: 1.2em;
 }
 
-
 .navigation-top span a {
     text-decoration: none;
 }
 
-.navigation-top span::first-letter {
+.navigation-top a::first-letter {
     color: var(--accent-color);
 }
 
@@ -140,16 +169,4 @@ code {
 
 .colored::first-letter {
     color: var(--accent-color);
-}
-
-@media (max-width: 767px) {
-    .navbar {
-        width: 92%;
-    }
-}
-
-@media (min-width: 768px) {
-    .navbar {
-        width: 50%;
-    }
 }

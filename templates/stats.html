@@ -1,33 +1,87 @@
-{% extends "base.html" %} {% block title %}laurel_updates - statistics{%
-endblock %} {% block head %} {{ super() }} {% endblock %} {% block content %}
+{% extends "base.html" %}
+{% block title %}laurel_updates - statistics{%endblock %}
+
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="/static/css/table.css" />
+{% endblock %}
+
+{% block content %}
 <div class="navigation-top">
-    <span><a href="{% block routeback %}{% endblock %}">{% block routename %}← laurel_updates{% endblock %}</a></span>
+    <span><a href="/">{% block routename %}← laurel_updates{% endblock %}</a></span>
     <span class="backbtn" onclick="navigator.clipboard.writeText(`https://devlocalhost.github.io${window.location.pathname}`)">↑ erahS</span>
 </div>
 <h1 class="colored" onclick="toggleStylesheet()">Statistics</h1>
+
+<h2>Debugging</h2>
 <ul>
-    <li>
-        Uptime: <code>{{ data["uptime"] }}</code> (or check <a href="https://stats.uptimerobot.com/dUSCpWpOIM" target="_blank">Uptime Robot status page</a>)
-    </li>
-    <li>
-        Deploy time:
-        <code>{{ data["deployed_time"] }}</code>
-    </li>
-    <li>Visitors (not unique, since deploy time): {{ data["visitors"] }}</li>
-    <li>
-        Platform:
-        <code>{{ data["platform"] }}</code>
-    </li>
-    <li>
-        Commit: <code>{{ data["commit"] }}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{{ data["commit"] }}</code>)
-    </li>
+    <li>Commit: <code>{{ data[2] }}</code></li>
+    <li>Platform: <code>{{ data[3] }}</code></li>
+    <li>Region: {{ data[4] }}</li>
 </ul>
 
-<h1 class="colored">ROMs hits</h1>
-<p>Hit = visit. Visits are not unique.</p>
-<ul>
-    {% for rom, info in data['rom_hits'].items() %}
-    <li><a href="/roms/{{ rom }}">{{ rom }}</a>: {{ info.views }} hits</li>
-    {% endfor %}
-</ul>
+<hr>
+
+<h2>Analytics</h2>
+<p>Statistics fetched from vercel analytics (privacy friendly!). Statistics include Views (Page Views), Visitors (unique) for routes (whichh pages) and countries.<br>Data is from: <b>February 1 till February 28</b>. For now, data will be manually updated by me.</p>
+
+<!-- <div style="overflow-x: auto; max-width: 100%;"> -->
+<div>
+    <h3>Routes</h3>
+    <table>
+        <thead>
+            <tr>
+                <td class="first-td-left">Page</td>
+                <td>Views</td>
+                <td class="first-td-right">Visitors</td>
+            </tr>
+        </thead>
+        
+        <tbody>
+            {% for stats_data in data[1]["statistics"][:-1] %}
+            <tr>
+                <td><a href="{{ stats_data['page'] }}">{{ stats_data['page'] }}</a></td>
+                <td class="td-num">{{ stats_data['visitors']['total'] }}</td>
+                <td class="td-num">{{ stats_data['visitors']['unique'] }}</td>
+            </tr>
+            {% endfor %}
+
+            {% set last_entry = data[1]["statistics"][-1] %}
+            <tr>
+                <td class="last-td-left"><a href="{{ last_entry['page'] }}">{{ last_entry['page'] }}</a></td>
+                <td class="td-num">{{ last_entry['visitors']['total'] }}</td>
+                <td class="last-td-right td-num">{{ last_entry['visitors']['unique'] }}</td> 
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Visitors</h3>
+    <table>
+        <thead>
+            <tr>
+                <td class="first-td-left">Country</td>
+                <td>Views</td>
+                <td class="first-td-right">Visitors</td>
+            </tr>
+        </thead>
+    
+        <tbody>
+            {% for stats_data in data[0]["statistics"][:-1] %}
+            <tr>
+                <td>{{ stats_data['country'] }}</td>
+                <td class="td-num">{{ stats_data['visitors']['total'] }}</td>
+                <td class="td-num">{{ stats_data['visitors']['unique'] }}</td>
+            </tr>
+            {% endfor %}
+
+            {% set last_entry = data[0]["statistics"][-1] %}
+            <tr>
+                <td class="last-td-left">{{ last_entry['country'] }}</td>
+                <td class="td-num">{{ last_entry['visitors']['total'] }}</td>
+                <td class="last-td-right td-num">{{ last_entry['visitors']['unique'] }}</td> 
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 {% endblock %}

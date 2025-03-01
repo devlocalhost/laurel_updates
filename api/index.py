@@ -29,17 +29,9 @@ if os.getenv("LAUREL_MODE"):
     print("[DEBUG] Templates will auto reload")
     app.config["TEMPLATES_AUTO_RELOAD"] = True
 
-try:
-    commit = subprocess.check_output(
-        'git log -1 --pretty=format:"%h"', shell=True, text=True
-    )
-
-except:
-    try:
-        commit = os.environ["VERCEL_GIT_COMMIT_SHA"]
-
-    except:
-        commit = "Unknown"
+commit = os.environ.get('VERCEL_GIT_COMMIT_SHA') or subprocess.check_output(
+    'git log -1 --pretty=format:"%h"', shell=True, text=True
+) or "Unknown"
 
 utc_time = datetime.datetime.now(datetime.UTC).strftime("%A %B %-d, %I:%M:%S %p")
 start_time = datetime.datetime.now()  # um... ^^^ ??
@@ -237,9 +229,10 @@ def home():
 def stats():
     """stats"""
 
-    statistics.update()
+    countries_json = json.load(open("static/statistics/countries.json"))
+    pages_json = json.load(open("static/statistics/pages.json"))
 
-    return render_template("stats.html", data=statistics.get_data())
+    return render_template("stats.html", data=[countries_json, pages_json, commit, platform_details, os.environ.get('NOW_REGION')])
 
 
 @app.route("/blog")

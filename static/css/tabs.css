@@ -31,3 +31,15 @@
     display: block;
     padding-top: 1px;
 }
+
+@media (max-width: 767px) {
+    .navbar {
+        width: 92%;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        width: 50%;
+    }
+}
