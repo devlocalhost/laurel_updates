@@ -2,19 +2,19 @@
     "name": "PixelOS",
     "version": "15",
     "maintainer": "bakkaq",
-    "date_release": "22/01/2025",
-    "changelog": "<li>fixed minor issue in screen off fod toggle</li><li>added parts (lift to wake, and others)</li><li>added BtHelper for airpods support in settings</li><li>something I don't remember</li>",
+    "date_release": "02/03/2025",
+    "changelog": "<li>source changelogs (i don't know where they are)</li><li>added gamespace</li><li>fixed some minor bugs</li><li>due to some problems with Magisk, ROM now comes with KSU-Next + SUSfs by default. (in case you prefer to not have root, you can use the #rootless_noname note on the group to get non-root kernel. note that flashing magisk on that kernel <u>will cause bootloop</u>.)</li><li>something I don't remember</li>",
     "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds",
     "rdp": "No",
-    "notes": "<li>Play integrity should pass by default</li><li>With Gapps</li><li>With extra stuff added by me (double tap to doze, screen off fod (thanks to @skyblueborb) and some minor)</li><li>Installation instructions: <a href=\"https://telegra.ph/Project-Blaze-installation-instructions-04-15\">telegra.ph</a></li>",
+    "notes": "<li>due to some problems with Magisk, ROM now comes with KSU-Next + SUSfs by default. (in case you prefer to not have root, you can use the #rootless_noname note on the group to get non-root kernel. note that flashing magisk on that kernel <u>will cause bootloop</u>.)</li><li>Known issues: low mic volume, torch strength doesn't work (yet) [???]</li><li>With Gapps</li><li>KSU-Next + SUSfs</li><li>Installation instructions: <a href=\"https://telegra.ph/Project-Blaze-installation-instructions-04-15\">telegra.ph</a></li>",
     "banner": "/static/img/banner_pixelos_15.jpg",
     "downloads": {
         "editions": {
-            "ROM | MEGA": "https://mega.nz/file/TygF0TzS#p6oJ-len2xeWOQrpkkOQ4tzlDrOryU_oPwkAoFemCNM",
-            "ROM | Google Drive": "https://drive.google.com/file/d/1zjZKJpCOd2Awe1EXhtToK3Yfd90qWYpU/view?usp=sharing",
-            "boot.img | MEGA": "https://mega.nz/file/DmYSSALA#jWM7bWnuohpDH4MZXxpnvTbP48-ySkCCamK0eF3jTts",
-            "boot.img | Google Drive": "https://drive.google.com/file/d/1hOWHhFJCPs6yjYp8811_vSSi-zbglMpK/view?usp=sharing"
+            "ROM | MEGA": "https://mega.nz/file/mqxHCSwL#i_Nomd-vcPQesujUF8TVutfSbTu8M1gibNaDY-09FNI",
+            "ROM | Google Drive": "https://drive.google.com/file/d/1OjMyBixX5YK0U7FhufsZ2WSrZfEidgMj/view?usp=sharing",
+            "boot.img | MEGA": "https://mega.nz/file/Cq4TATSQ#OrqBHvnmZQUtoi4aX3G9VEyUP5OKoyjNv9yJYXvrqNE",
+            "boot.img | Google Drive": "https://drive.google.com/file/d/1_UJfwonaBuIdWJOrE1Tmvi12YxRVyLhJ/view?usp=sharing"
         }
     },
     "archived": false

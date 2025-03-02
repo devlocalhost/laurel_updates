@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [03-03-2025 - New PixelOS update.](/blog/news#03-03-2025---new-pixelos-update.)
 - [01-03-2025 - Statistics are back and better this time.](/blog/news#01-03-2025---statistics-are-back-and-better-this-time.)
 - [28-02-2025 - New major update for PixelMagic.](/blog/news#28-02-2025---new-major-update-for-pixelmagic.)
 - [23-02-2025 - New ROM: AxionOS.](/blog/news#23-02-2025---new-rom:-axionos,-evolutionx-archived.)
@@ -86,6 +87,9 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 03-03-2025 - New PixelOS update.
+bakka has updated [PixelOS](/roms/PixelOS_15), but before flashing, please check [notes](/roms/PixelOS_15#notes) and [changelogs](/roms/PixelOS_15#changelog).
 
 ## 01-03-2025 - Statistics are back and better this time.
 [Statistics](/stats) are (kind of) back! I basically improved them, because before they were kind of broken, innacurate, and were not unique. They could be easily manipulated. 
