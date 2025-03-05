@@ -83,9 +83,7 @@ a:hover {
 }
 
 a {
-    display: inline-block; /* Allows it to break like normal text */
-    word-break: break-word; /* Ensures breaking long URLs */
-    overflow-wrap: anywhere; /* Forces break if needed */
+    word-break: break-word;
 }
 
 hr {
