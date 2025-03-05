@@ -148,7 +148,7 @@ code {
     text-decoration: none;
 }
 
-.navigation-top a::first-letter {
+.navigation-top span::first-letter {
     color: var(--accent-color);
 }
 
