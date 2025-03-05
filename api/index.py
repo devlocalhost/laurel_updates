@@ -29,9 +29,17 @@ if os.getenv("LAUREL_MODE"):
     print("[DEBUG] Templates will auto reload")
     app.config["TEMPLATES_AUTO_RELOAD"] = True
 
-commit = os.environ.get('VERCEL_GIT_COMMIT_SHA') or subprocess.check_output(
-    'git log -1 --pretty=format:"%h"', shell=True, text=True
-) or "Unknown"
+commit_hash = os.environ.get('VERCEL_GIT_COMMIT_SHA')
+commit_message = None
+
+if commit_hash == None:
+    commit_hash = subprocess.check_output(
+        'git log -1 --pretty=format:"%h"', shell=True, text=True
+    )
+
+    commit_message = subprocess.check_output(
+        f'git log -1 --pretty=format:%s {commit_hash}', shell=True, text=True
+    )
 
 utc_time = datetime.datetime.now(datetime.UTC).strftime("%A %B %-d, %I:%M:%S %p")
 start_time = datetime.datetime.now()  # um... ^^^ ??
@@ -64,7 +72,7 @@ def send_message(func, message, chat_id=1547269295, message_thread_id=None):
 def starting():
     send_message(
         "[Starting]",
-        f"Hello world\nRunning on <code>{platform_details}</code>\nCommit: <code>{commit}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit}</code>)",
+        f"Hello world\nRunning on <code>{platform_details}</code>\nCommit: <code>{commit_hash}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit_hash}</code>)",
         -1002418052790,
         2
     )
@@ -73,7 +81,7 @@ def starting():
 def going_down():
     send_message(
         "[Going down]",
-        f"GOODBYECRUELWORLD - <code>{platform_details}</code>\nCommit: <code>{commit}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit}</code>)",
+        f"GOODBYECRUELWORLD - <code>{platform_details}</code>\nCommit: <code>{commit_hash}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit_hash}</code>)",
         -1002418052790,
         2
     )
@@ -140,7 +148,7 @@ def stats():
     countries_json = json.load(open("static/statistics/countries.json"))
     pages_json = json.load(open("static/statistics/pages.json"))
 
-    return render_template("stats.html", data=[countries_json, pages_json, commit, platform_details, os.environ.get('NOW_REGION')])
+    return render_template("stats.html", data=[countries_json, pages_json, commit_hash, commit_message, platform_details, os.environ.get('NOW_REGION')])
 
 
 @app.route("/blog")

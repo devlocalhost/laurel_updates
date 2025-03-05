@@ -15,9 +15,13 @@
 
 <h2>Debugging</h2>
 <ul>
+    {% if commit_message == None %}
     <li>Commit: <code>{{ data[2] }}</code></li>
-    <li>Platform: <code>{{ data[3] }}</code></li>
-    <li>Region: {{ data[4] }}</li>
+    {% else %}
+    <li>Commit: <code>{{ data[2] }}</code> <a href="https://github.com/devlocalhost/laurel_updates/commit/{{ data[2] }}">{{ data[3] }}</a></li>
+    {% endif %}
+    <li>Platform: <code>{{ data[4] }}</code></li>
+    <li>Region: {{ data[5] }}</li>
 </ul>
 
 <hr>
@@ -36,7 +40,7 @@
                 <td class="first-td-right">Visitors</td>
             </tr>
         </thead>
-        
+
         <tbody>
             {% for stats_data in data[1]["statistics"][:-1] %}
             <tr>
@@ -50,7 +54,7 @@
             <tr>
                 <td class="last-td-left"><a href="{{ last_entry['page'] }}">{{ last_entry['page'] }}</a></td>
                 <td class="td-num">{{ last_entry['visitors']['total'] }}</td>
-                <td class="last-td-right td-num">{{ last_entry['visitors']['unique'] }}</td> 
+                <td class="last-td-right td-num">{{ last_entry['visitors']['unique'] }}</td>
             </tr>
         </tbody>
     </table>
@@ -64,7 +68,7 @@
                 <td class="first-td-right">Visitors</td>
             </tr>
         </thead>
-    
+
         <tbody>
             {% for stats_data in data[0]["statistics"][:-1] %}
             <tr>
@@ -78,7 +82,7 @@
             <tr>
                 <td class="last-td-left">{{ last_entry['country'] }}</td>
                 <td class="td-num">{{ last_entry['visitors']['total'] }}</td>
-                <td class="last-td-right td-num">{{ last_entry['visitors']['unique'] }}</td> 
+                <td class="last-td-right td-num">{{ last_entry['visitors']['unique'] }}</td>
             </tr>
         </tbody>
     </table>
