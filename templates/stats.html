@@ -15,7 +15,7 @@
 
 <h2>Debugging</h2>
 <ul>
-    {% if commit_message == None %}
+    {% if data[3] == None %}
     <li>Commit: <code>{{ data[2] }}</code></li>
     {% else %}
     <li>Commit: <code>{{ data[2] }}</code> <a href="https://github.com/devlocalhost/laurel_updates/commit/{{ data[2] }}">{{ data[3] }}</a></li>
