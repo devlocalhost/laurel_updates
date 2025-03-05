@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [05-03-2025 - Another PixelOS update.](/blog/news#05-03-2025---another-pixelos-update.)
 - [03-03-2025 - New PixelOS update.](/blog/news#03-03-2025---new-pixelos-update.)
 - [01-03-2025 - Statistics are back and better this time.](/blog/news#01-03-2025---statistics-are-back-and-better-this-time.)
 - [28-02-2025 - New major update for PixelMagic.](/blog/news#28-02-2025---new-major-update-for-pixelmagic.)
@@ -88,11 +89,14 @@
 
 ---
 
+## 05-03-2025 - Another PixelOS update.
+This update fixes hotspot and possibly issues with the microphone volume. Check it out [here](/roms/PixelOS_15).
+
 ## 03-03-2025 - New PixelOS update.
 bakka has updated [PixelOS](/roms/PixelOS_15), but before flashing, please check [notes](/roms/PixelOS_15#notes) and [changelogs](/roms/PixelOS_15#changelog).
 
 ## 01-03-2025 - Statistics are back and better this time.
-[Statistics](/stats) are (kind of) back! I basically improved them, because before they were kind of broken, innacurate, and were not unique. They could be easily manipulated. 
+[Statistics](/stats) are (kind of) back! I basically improved them, because before they were kind of broken, innacurate, and were not unique. They could be easily manipulated.
 
 How am i gathering these statistics? I am using [vercel analytics](https://vercel.com/docs/analytics), which is a privacy friendly feature. Statistics are manually updated by me, for now, monthly. So, see you next month, i guess...
 
