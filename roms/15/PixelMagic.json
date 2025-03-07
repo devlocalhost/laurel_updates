@@ -2,8 +2,8 @@
     "name": "PixelMagic",
     "version": "ALPHAGENE r10",
     "maintainer": "Magicxavi",
-    "date_release": "28/02/2025",
-    "changelog": "<li>added \"Dual tone\" QS style.</li><li> Brightness slider is moved to notification area.</li><li> Wallpaper and Notification area's images switched to WEBP format.</li><li> Disabled PlayServices OTA check.</li><li> switched to black top and transparent background on AOD to ensure there is only pure black tint.</li><li> added possibility to downgrade apps.</li><li> added \"dismiss Screenshot UI by single tap outside of area\".</li><li> Default USB option moved to system settings.</li><li> added recents opacity customization.</li><li> added Sidebar.</li><li> fixed a lot of Launcher and Settings visual issues.</li><li> added Updater.</li><li> updated Aperture lens config</li>",
+    "date_release": "07/03/2025",
+    "changelog": "<li>fixed kernel/techpack merge issue</li><li>fixed UDFPS icon tint on light theme</li><li>added \"Shake gestures\"</li><li>added \"QS pull down with one finger\"</li><li>added new \"Circle to search\" implementation</li><li>added \"Hide QS on secure lockscreen\"</li><li>improved UDFPS dimming credits to @PowerX_NOT</li><li>Settings: sorted some preferences and added missing description</li><li>Launcher3: default recents opacity is set to 0</li><li>Launcher3: improved restart logic</li><li>Magic: updated some icons</li>",
     "status": "Official",
     "support": "https://t.me/syberia_laurel_sprout",
     "rdp": "Yes",
@@ -11,7 +11,7 @@
     "banner": "/static/img/banner_pixelmagic_15.jpg",
     "downloads": {
         "editions": {
-            "Gapps": "https://bit.ly/3QElItd"
+            "Gapps": "https://bit.ly/4hj590K"
         }
     },
     "archived": false

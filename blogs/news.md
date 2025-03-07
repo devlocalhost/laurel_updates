@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [07-03-2025 - PixelMagic gets bug fixes and more.](/blog/news#07-03-2025---pixelmagic-gets-bug-fixes-and-more.)
 - [05-03-2025 - Another PixelOS update.](/blog/news#05-03-2025---another-pixelos-update.)
 - [03-03-2025 - New PixelOS update.](/blog/news#03-03-2025---new-pixelos-update.)
 - [01-03-2025 - Statistics are back and better this time.](/blog/news#01-03-2025---statistics-are-back-and-better-this-time.)
@@ -88,6 +89,9 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 07-03-2025 - PixelMagic gets bug fixes and more.
+A new update is available, which fixes a few bugs, and adds a few features. For more, check the [changelog](/roms/PixelMagic_15).
 
 ## 05-03-2025 - Another PixelOS update.
 This update fixes hotspot and possibly issues with the microphone volume. Check it out [here](/roms/PixelOS_15).
