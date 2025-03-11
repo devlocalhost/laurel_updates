@@ -93,7 +93,7 @@ hr {
     background-color: var(--hr-color);
 }
 
-ul, ol, p {
+ul, ol, p, .navigation-top {
     background: var(--ul-ol-background-color);
     padding: 10px 10px 10px 20px;
     list-style-position: inside;
@@ -136,6 +136,8 @@ code {
 .navigation-top {
     display: flex;
     justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .navigation-top span {
