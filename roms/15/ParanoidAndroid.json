@@ -7,7 +7,7 @@
     "status": "Unofficial",
     "support": "https://t.me/EvoX_Mi_A3",
     "rdp": "Yes",
-    "notes": "<li><strong>I'll switch to SomethingOS once their source is ready</strong></li><li>Check the group for installation guide.</li><li>A dirty flash is okay if you're coming from the previous build.</li>",
+    "notes": "<li>PowerX-NOT is currently maintaining <a href='/roms/AxionOS_15'>AxionOS 1.1</a>. You should switch and/or use that ROM instead.</li><li><strong>I'll switch to SomethingOS once their source is ready</strong></li><li>Check the group for installation guide.</li><li>A dirty flash is okay if you're coming from the previous build.</li>",
     "banner": "/static/img/banner_paranoidandroid_15.jpg",
     "downloads": {
         "editions": {

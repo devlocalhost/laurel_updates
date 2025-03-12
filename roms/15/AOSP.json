@@ -7,7 +7,7 @@
     "status": null,
     "support": "https://t.me/EvoX_Mi_A3",
     "rdp": "Yes",
-    "notes": "<li>Signed with private keys</li><li>Play Integrity passes by using <a href='https://github.com/Dr-TSNG/ZygiskNext/releases/tag/v1.1.0'>ZygiskNext</a> & <a href='https://github.com/chiteroman/PlayIntegrityFix/releases/tag/v17.4'>PIF</a></li><li>MIUI camera module not supported</li><li>Everything has been working fine so far in my testing, except for: UDFPS. Expect bugs.</li><li>Recovery build.</li><li>Check the group for installation guide.</li>",
+    "notes": "<li>PowerX-NOT is currently maintaining <a href='/roms/AxionOS_15'>AxionOS 1.1</a>. You should switch and/or use that ROM instead.</li><li>Signed with private keys</li><li>Play Integrity passes by using <a href='https://github.com/Dr-TSNG/ZygiskNext/releases/tag/v1.1.0'>ZygiskNext</a> & <a href='https://github.com/chiteroman/PlayIntegrityFix/releases/tag/v17.4'>PIF</a></li><li>MIUI camera module not supported</li><li>Everything has been working fine so far in my testing, except for: UDFPS. Expect bugs.</li><li>Recovery build.</li><li>Check the group for installation guide.</li>",
     "banner": "/static/img/banner_aosp.png",
     "downloads": {
         "editions": {
