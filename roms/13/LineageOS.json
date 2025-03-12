@@ -7,7 +7,7 @@
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
-    "notes": "<li>Note: LineageOS 20 IS DISCONTINUED!!</li><li>Skyblueborb is also maintaining <a href='/roms/LineageOS_11'>LineageOS 18.1</a> and <a href='/roms/LineageOS_14'>LineageOS 21</a>.</li>",
+    "notes": "<li>Skyblueborb is currently maintaining <a href='/roms/LineageOS_11'>LineageOS 18.1</a> and <a href='/roms/LineageOS_15'>LineageOS 22.1</a>. You should switch and/or use that ROM instead.</li><li>Note: LineageOS 20 IS DISCONTINUED!!</li>",
     "banner": "/static/img/banner_los20.jpg",
     "downloads": {
         "editions": {

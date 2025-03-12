@@ -7,7 +7,7 @@
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
-    "notes": "<li>This update breaks compatibility with previous custom kernels, including 912 and older NoName versions. Attempting to flash these kernels will lead to a bootloop. This issue stems from our kernel being deprecated by Google in QPR2, requiring backports from newer kernel versions to boot.</li><li>Due to the enormous update the following features are removed (I will try to add them back in the future):<ul><li>QS data usage</li><li>Lockscreen clock customization</li><li>3 finger swipe screenshot</li></ul><li>Skyblueborb is also maintaining <a href='/roms/LineageOS_11'>18.1</a> and <a href='/roms/LineageOS_15'>22</a>.</li>",
+    "notes": "<li>Skyblueborb is currently maintaining <a href='/roms/LineageOS_11'>LineageOS 18.1</a> and <a href='/roms/LineageOS_15'>LineageOS 22.1</a>. You should switch and/or use that ROM instead.</li><li>This update breaks compatibility with previous custom kernels, including 912 and older NoName versions. Attempting to flash these kernels will lead to a bootloop. This issue stems from our kernel being deprecated by Google in QPR2, requiring backports from newer kernel versions to boot.</li><li>Due to the enormous update the following features are removed (I will try to add them back in the future):<ul><li>QS data usage</li><li>Lockscreen clock customization</li><li>3 finger swipe screenshot</li></ul>",
     "banner": "/static/img/banner_los21.jpg",
     "downloads": {
         "editions": {
