@@ -7,7 +7,7 @@
     "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds",
     "rdp": "No",
-    "notes": "<li>tequilaOS is now EOL. Read <a href=\"/blog/news\">The news - 22-04-2024</a> for more.</li><li>play integrity not passing.</li><li>it has been a fucking nightmare to make a14 boot, so please enjoy</li><li>Flashing another kernel will probably break fod</li><li>root access is currently enabled by default, due to testing resons. it will be removed from next build. BE AWARE</li>",
+    "notes": "<li>bakkaq is currently maintaining <a href='/roms/PixelOS_15'>PixelOS 15</a>. You should switch and/or use that ROM instead.</li><li>tequilaOS is now EOL. Read <a href=\"/blog/news\">The news - 22-04-2024</a> for more.</li><li>play integrity not passing.</li><li>it has been a fucking nightmare to make a14 boot, so please enjoy</li><li>Flashing another kernel will probably break fod</li><li>root access is currently enabled by default, due to testing resons. it will be removed from next build. BE AWARE</li>",
     "banner": "/static/img/banner_tequila.jpg",
     "downloads": {
         "editions": {

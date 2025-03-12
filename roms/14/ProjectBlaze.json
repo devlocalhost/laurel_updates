@@ -7,7 +7,7 @@
     "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds/8379",
     "rdp": "No",
-    "notes": "<li>Clean flash recommended</li><li>Play integrity strong should pass by default</li><li>you need to download a gallery app for depth wallpaper to work. not having this will result in a crash</li><li>\"eol\": this will be the last A14 update, the next one will be A15 :)</li>",
+    "notes": "<li>bakkaq is currently maintaining <a href='/roms/PixelOS_15'>PixelOS 15</a>. You should switch and/or use that ROM instead.</li><li>Clean flash recommended</li><li>Play integrity strong should pass by default</li><li>you need to download a gallery app for depth wallpaper to work. not having this will result in a crash</li><li>\"eol\": this will be the last A14 update, the next one will be A15 :)</li>",
     "banner": "/static/img/banner_projectblaze.jpg",
     "downloads": {
         "editions": {

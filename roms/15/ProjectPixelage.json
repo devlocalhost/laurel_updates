@@ -7,7 +7,7 @@
     "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds",
     "rdp": "No",
-    "notes": "<li>Play integrity should pass by default</li><li>With Gapps</li><li>EOL for now. I'm really sorry to drop Pixelage, it really is a good rom, but due to problems in source, FOD is dead and i'm sick of trying to fix it.</li>",
+    "notes": "<li>bakkaq is currently maintaining <a href='/roms/PixelOS_15'>PixelOS 15</a>. You should switch and/or use that ROM instead.</li><li>Play integrity should pass by default</li><li>With Gapps</li><li>EOL for now. I'm really sorry to drop Pixelage, it really is a good rom, but due to problems in source, FOD is dead and i'm sick of trying to fix it.</li>",
     "banner": "/static/img/banner_projectpixelage.jpg",
     "downloads": {
         "editions": {
