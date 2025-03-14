@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [14-03-2025 - Official EvolutionX for laurel, plus archival of some ROMs.](/blog/news#14-03-2025---official-evolutionx-for-laurel,-plus-archival-of-some-roms.)
 - [07-03-2025 - PixelMagic gets bug fixes and more.](/blog/news#07-03-2025---pixelmagic-gets-bug-fixes-and-more.)
 - [05-03-2025 - Another PixelOS update.](/blog/news#05-03-2025---another-pixelos-update.)
 - [03-03-2025 - New PixelOS update.](/blog/news#03-03-2025---new-pixelos-update.)
@@ -89,6 +90,38 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 14-03-2025 - Official EvolutionX for laurel, plus archival of some ROMs.
+Yes. Official EvolutionX for laurel_sprout, thats right. By Onelots, a new (?) member of the community! Check it out [here](/roms/EvolutionX_15)!
+
+NOTE: PowerX-NOT version of EvolutionX has been archived, and the link has changed! It's [EvolutionX_U_15](/roms/EvolutionX_U_15) now.
+
+Also, some old, unmaintained ROMs have been archived. Heres the complete list of archived ROMs:
+- [Pixel Experience 13](/roms/PixelExperience_13)
+- [Pixel Experience Plus 13](/roms/PixelExperiencePlus_13)
+- [SparkOS 13.11](/roms/SparkOS_13)
+- [LineageOS 20](/roms/LineageOS_13)
+- [PixelOS 13](/roms/PixelOS_13)
+- [AOSP 15](/roms/AOSP_15)
+- [DerpFest 15](/roms/DerpFest_15)
+- [Project Pixelage 2.4](/roms/ProjectPixelage_15)
+- [Paranoid Android Vauxite](/roms/ParanoidAndroid_15)
+- [EvolutionX Unofficial 10.3](/roms/EvolutionX_U_15)
+- [AospExtended Twelve with Gapps](/roms/AospExtended_12)
+- [PixelOS 12L](/roms/PixelOS_12)
+- [DerpFest 14](/roms/DerpFest_14)
+- [RisingOS 2.2](/roms/RisingOS_14)
+- [ProjectBlaze 3.8](/roms/ProjectBlaze_14)
+- [PixelMagic 14](/roms/PixelMagic_14)
+- [crDroid Unofficial 10.7](/roms/crDroid_U_14)
+- [crDroid 10.8](/roms/crDroid_14)
+- [TequilaOS Uno](/roms/TequilaOS_14)
+- [LineageOS 21.1](/roms/LineageOS_14)
+- [ProjectMatrixx 10.8.1](/roms/ProjectMatrixx_14)
+- [EvolutionX 9.0](/roms/EvolutionX_14)
+- [TheParasiteProject 14](/roms/TheParasiteProject_14)
+- [crDroid 6.27](/roms/crDroid_10)
+- [Pixel Experience 11](/roms/PixelExperience_11)
 
 ## 07-03-2025 - PixelMagic gets bug fixes and more.
 A new update is available, which fixes a few bugs, and adds a few features. For more, check the [changelog](/roms/PixelMagic_15).

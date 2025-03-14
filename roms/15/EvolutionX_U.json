@@ -1,0 +1,18 @@
+{
+    "name": "EvolutionX",
+    "version": "10.3",
+    "maintainer": "PowerX-NOT",
+    "date_release": "19/02/2025",
+    "changelog": "<li>Fixed video recording</li><li>Fixed audio codec</li>",
+    "status": "Unofficial",
+    "support": "https://t.me/EvoX_Mi_A3",
+    "rdp": "Yes",
+    "notes": "<li>PowerX-NOT is currently maintaining <a href='/roms/AxionOS_15'>AxionOS 1.1</a>. You should switch and/or use that ROM instead.</li><li>MIUI camera module not supported</li><li>You can perform a dirty flash if you are coming from the previous build</li><li>UDFPS is broken in Private Space</li><li>LCD users flash #66hz_to_60hz, Get it from the support group.</li>",
+    "banner": "/static/img/banner_evox_14.jpg",
+    "downloads": {
+        "editions": {
+            "Gapps": "https://github.com/PowerX-NOT/Build-dumps/releases/download/Evolution_X-v10.3/Evolution_X-v10.3_laurel_sprout-signed-ota_update.zip"
+        }
+    },
+    "archived": true
+}

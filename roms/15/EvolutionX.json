@@ -1,18 +1,18 @@
 {
     "name": "EvolutionX",
     "version": "10.3",
-    "maintainer": "PowerX-NOT",
-    "date_release": "19/02/2025",
-    "changelog": "<li>Fixed video recording</li><li>Fixed audio codec</li>",
-    "status": "Unofficial",
-    "support": "https://t.me/EvoX_Mi_A3",
-    "rdp": "Yes",
-    "notes": "<li>PowerX-NOT is currently maintaining <a href='/roms/AxionOS_15'>AxionOS 1.1</a>. You should switch and/or use that ROM instead.</li><li>MIUI camera module not supported</li><li>You can perform a dirty flash if you are coming from the previous build</li><li>UDFPS is broken in Private Space</li><li>LCD users flash #66hz_to_60hz, Get it from the support group.</li>",
-    "banner": "/static/img/banner_evox_14.jpg",
+    "maintainer": "Onelots",
+    "date_release": "13/03/2025",
+    "changelog": "<li>This is the initial release for Laurel sprout, based on A15 QPR1 with February security patches.</li>",
+    "status": "Official",
+    "support": "https://xdaforums.com/t/rom-15-0-0_r20-official-evolution-x-10-3-03-13-2022.4724989/",
+    "rdp": "No",
+    "notes": "<li><strong>THIS IS NOT PowerX-NOT'S VERSION!!</strong> This build is made by a different person, and is not the same as PowerX-NOT version. For that specific version, go <a href='/roms/EvolutionX_U_15'>here</a> instead</li><li>Please note that we don't support rooting officially.</li><li>Due to my huge amount of devices, if you need to contact me, I'll be slow to answer in XDA or on telegram. The best will be to join my <a href='https://discord.onelots.fr'>discord server</a> to stay up-to-date</li><li>For more details, check the <a href='https://xdaforums.com/t/rom-15-0-0_r20-official-evolution-x-10-3-03-13-2022.4724989/'>XDA thread</a> or <a href='https://evolution-x.org/downloads/laurel_sprout'>EvolutionX website</a>.</li>",
+    "banner": "/static/img/banner_evox_15.png",
     "downloads": {
         "editions": {
-            "Gapps": "https://github.com/PowerX-NOT/Build-dumps/releases/download/Evolution_X-v10.3/Evolution_X-v10.3_laurel_sprout-signed-ota_update.zip"
+            "Gapps": "https://sourceforge.net/projects/evolution-x/files/laurel_sprout/15/EvolutionX-15.0-20250313-laurel_sprout-10.3-Official.zip/download"
         }
     },
-    "archived": true
+    "archived": false
 }
