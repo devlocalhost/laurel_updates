@@ -116,7 +116,7 @@ Also, some old, unmaintained ROMs have been archived. Heres the complete list of
 - [crDroid Unofficial 10.7](/roms/crDroid_U_14)
 - [crDroid 10.8](/roms/crDroid_14)
 - [TequilaOS Uno](/roms/TequilaOS_14)
-- [LineageOS 21.1](/roms/LineageOS_14)
+- [LineageOS 21](/roms/LineageOS_14)
 - [ProjectMatrixx 10.8.1](/roms/ProjectMatrixx_14)
 - [EvolutionX 9.0](/roms/EvolutionX_14)
 - [TheParasiteProject 14](/roms/TheParasiteProject_14)
