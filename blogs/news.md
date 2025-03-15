@@ -1,7 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
-- [14-03-2025 - Official EvolutionX for laurel, plus archival of some ROMs.](/blog/news#14-03-2025---official-evolutionx-for-laurel,-plus-archival-of-some-roms.)
+- [14-03-2025 - Official EvolutionX for laurel, New update for NoName Fork, and archived some ROMs.](/blog/news#14-03-2025---official-evolutionx-for-laurel,-new-update-for-noname-fork,-and-archived-some-roms.)
 - [07-03-2025 - PixelMagic gets bug fixes and more.](/blog/news#07-03-2025---pixelmagic-gets-bug-fixes-and-more.)
 - [05-03-2025 - Another PixelOS update.](/blog/news#05-03-2025---another-pixelos-update.)
 - [03-03-2025 - New PixelOS update.](/blog/news#03-03-2025---new-pixelos-update.)
@@ -91,12 +91,12 @@
 
 ---
 
-## 14-03-2025 - Official EvolutionX for laurel, plus archival of some ROMs.
-Yes. Official EvolutionX for laurel_sprout, thats right. By Onelots, a new (?) member of the community! Check it out [here](/roms/EvolutionX_15)!
+## 14-03-2025 - Official EvolutionX for laurel, New update for NoName Fork, and archived some ROMs.
+Yes. Official EvolutionX for laurel_sprout, thats right. By Onelots, a new (?) member of the community. Check it out [here](/roms/EvolutionX_15)! PowerX-NOT version of EvolutionX has been archived, and the link has changed! It's [EvolutionX_U_15](/roms/EvolutionX_U_15) now.
 
-NOTE: PowerX-NOT version of EvolutionX has been archived, and the link has changed! It's [EvolutionX_U_15](/roms/EvolutionX_U_15) now.
+TheSillyOk released a new update for [NoName Fork](/kernels/noname_fork).
 
-Also, some old, unmaintained ROMs have been archived. Heres the complete list of archived ROMs:
+And, some old, unmaintained ROMs have been archived. Here's the complete list of archived ROMs:
 - [Pixel Experience 13](/roms/PixelExperience_13)
 - [Pixel Experience Plus 13](/roms/PixelExperiencePlus_13)
 - [SparkOS 13.11](/roms/SparkOS_13)

@@ -3,14 +3,13 @@
     "route_name": "noname_fork",
     "version": "4.14.355",
     "maintainer": "TheSillyOk",
-    "date_release": "02/02/2025",
-    "changelog": "<li>Updated SUSFS to 1.5.4</li><li>Updated KSU Next to 12348</li>",
+    "date_release": "14/03/2025",
+    "changelog": "<li>Mic fix from bakka's kernel on NoName 18.1 & 22.1 kernels</li>",
     "support": "https://t.me/ok_kernel",
-    "notes": "<li>For Non RDP ROMs (LOS, Pixelage, CrDroid, More [?])</li><li>Supports A15 QPR1 ROMS</li><li><a href=\"https://github.com/sidex15/ksu_module_susfs/releases/\">SUSFS 1.5.4 Module</a>, <a href=\"https://github.com/rifsxd/KernelSU-Next/releases\">KSU Next Manager</a></li><li><a href='https://github.com/TheWildJames/kernel_patches/blob/main/69_hide_stuff.patch'>Maphide Lineage detections</a></li><li>Based on <a href='https://github.com/Mi-A3-laurel-sprout/kernel_xiaomi_XD/commit/37c108d61bfd85d07199397dade220af3bc1862e'>this kernel</a></li>",
+    "notes": "<li><a href=\"https://github.com/sidex15/ksu_module_susfs/releases/\">SUSFS 1.5.5 module</a>, <a href=\"https://t.me/ksunext_group/24847\">KSU Next 12430 Manager</a></li><li>Filename meanings:<br>&emsp;- \"VIC\": For Android 15 RDP ROMs made by Magicxavi and PowerX-NOT.<br>&emsp;- \"LOS 22.1\": For Android 15 Non RDP ROMs.<br>&emsp;- \"LOS 18.1\": For Android 11 up to Android 14 QPR1 (excluding QPR2/QPR3) Non RDP ROMs.<br>&emsp;- \"KSUNext\": Kernel has KernelSU Next built-in.<br>&emsp;- \"SUSFS\": Kernel also includes SUSFS.<br>&emsp;- \"NoName\": Based on NoName kernel<br>&emsp;- \"SM8150\": Based on the new kernel by Skyblueborb</li>",
     "downloads": {
         "editions": {
-            "Telegram": "https://t.me/ok_kernel/16",
-            "Pixeldrain": "https://pixeldrain.com/u/3vNXBrfV"
+            "nightly.link": "https://nightly.link/TheSillyOk/kernel_laurel_sprout_workflows/workflows/actions/master"
         }
     }
 }
