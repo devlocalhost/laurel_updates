@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [17-03-2025 - New LineageOS 18.1 update.](/blog/news#17-03-2025---new-lineageos-18.1-update.)
 - [14-03-2025 - Official EvolutionX for laurel, New update for NoName Fork, and archived some ROMs.](/blog/news#14-03-2025---official-evolutionx-for-laurel,-new-update-for-noname-fork,-and-archived-some-roms.)
 - [07-03-2025 - PixelMagic gets bug fixes and more.](/blog/news#07-03-2025---pixelmagic-gets-bug-fixes-and-more.)
 - [05-03-2025 - Another PixelOS update.](/blog/news#05-03-2025---another-pixelos-update.)
@@ -90,6 +91,9 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 17-03-2025 - New LineageOS 18.1 update.
+That's right. LineageOS 18.1, the only Android 11 ROM, is still alive. What's new? Check out by clicking [here](/roms/LineageOS_11).
 
 ## 14-03-2025 - Official EvolutionX for laurel, New update for NoName Fork, and archived some ROMs.
 Yes. Official EvolutionX for laurel_sprout, thats right. By Onelots, a new (?) member of the community. Check it out [here](/roms/EvolutionX_15)! PowerX-NOT version of EvolutionX has been archived, and the link has changed! It's [EvolutionX_U_15](/roms/EvolutionX_U_15) now.
