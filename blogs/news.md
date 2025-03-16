@@ -93,7 +93,7 @@
 ---
 
 ## 17-03-2025 - New LineageOS 18.1 update.
-That's right. LineageOS 18.1, the only Android 11 ROM, is still alive. What's new? Check out by clicking [here](/roms/LineageOS_11).
+That's right. LineageOS 18.1, the only Android 11 ROM, is still alive. What's new? Check out by clicking [here](/roms/LineageOS_11#changelog).
 
 ## 14-03-2025 - Official EvolutionX for laurel, New update for NoName Fork, and archived some ROMs.
 Yes. Official EvolutionX for laurel_sprout, thats right. By Onelots, a new (?) member of the community. Check it out [here](/roms/EvolutionX_15)! PowerX-NOT version of EvolutionX has been archived, and the link has changed! It's [EvolutionX_U_15](/roms/EvolutionX_U_15) now.

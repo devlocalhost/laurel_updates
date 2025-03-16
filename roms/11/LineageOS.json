@@ -2,7 +2,7 @@
     "name": "LineageOS",
     "version": "18.1",
     "maintainer": "Skyblueborb",
-    "date_release": "17/05/2024",
+    "date_release": "16/03/2024",
     "changelog": "<li>Updated to March ASB.</li><li>Updated NoName kernel to 4.14.355.</li><li>Improved system smoothness.</li><li>Fixed MicroG.</li><li>Fixed a rare soft reboot when inserting headphones.</li><li>Fixed microphone volume once and for all.</li>",
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
