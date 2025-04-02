@@ -96,6 +96,8 @@
 ## 02-04-2025 - Migrating from vercel to hetzner, expect downtimes.
 I am migrating the website from vercel to a hetzner server I bought. Downtime is expected, but it shouldn't be that long. I'll keep y'all updated.
 
+Update: Migration was successful! Expert a more detailed update and more details soon.
+
 ## 17-03-2025 - New LineageOS 18.1 update.
 That's right. LineageOS 18.1, the only Android 11 ROM, is still alive. What's new? Check out by clicking [here](/roms/LineageOS_11#changelog).
 
