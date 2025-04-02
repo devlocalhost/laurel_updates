@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [02-04-2025 - Migrating from vercel to hetzner, expect downtimes.](/blog/news#02-04-2025---migrating-from-vercel-to-hetzner,-expect-downtimes.)
 - [17-03-2025 - New LineageOS 18.1 update.](/blog/news#17-03-2025---new-lineageos-18.1-update.)
 - [14-03-2025 - Official EvolutionX for laurel, New update for NoName Fork, and archived some ROMs.](/blog/news#14-03-2025---official-evolutionx-for-laurel,-new-update-for-noname-fork,-and-archived-some-roms.)
 - [07-03-2025 - PixelMagic gets bug fixes and more.](/blog/news#07-03-2025---pixelmagic-gets-bug-fixes-and-more.)
@@ -91,6 +92,9 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 02-04-2025 - Migrating from vercel to hetzner, expect downtimes.
+I am migrating the website from vercel to a hetzner server I bought. Downtime is expected, but it shouldn't be that long. I'll keep y'all updated.
 
 ## 17-03-2025 - New LineageOS 18.1 update.
 That's right. LineageOS 18.1, the only Android 11 ROM, is still alive. What's new? Check out by clicking [here](/roms/LineageOS_11#changelog).
