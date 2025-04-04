@@ -123,7 +123,7 @@ def list_json_files(directory):
 # TEMPORARY ROUTE -- CHECK TODO
 @app.route("/autod", methods=["POST"])
 def autod():
-    return manage.deploy()
+    return manage.deploy(app_secret_token)
 
 @app.route("/")
 def home():
