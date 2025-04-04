@@ -26,13 +26,17 @@ from flask import (
     make_response,
 )
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 app = Flask(" -- laurel_updates -- ")
 
 app.wsgi_app = ProxyFix(
     app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1
 )
 
-if os.getenv("LAUREL_MODE"):
+if os.environ.get("LAUREL_MODE"):
     print("[DEBUG] Templates will auto reload")
     app.config["TEMPLATES_AUTO_RELOAD"] = True
 
