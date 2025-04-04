@@ -135,7 +135,7 @@ def list_json_files(directory):
 
 
 # TEMPORARY ROUTE -- CHECK TODO
-@app.route("/autod")
+@app.route("/autod", methods=["POST"])
 def autod():
     signature = request.headers.get("X-Hub-Signature-256")
     payload = request.get_data()
