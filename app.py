@@ -65,16 +65,16 @@ class CustomRenderer(mistune.HTMLRenderer):
 
 def verify_signature(secret_token, signature_header, payload_body):
     if not signature_header:
-        return 403
+        return False
         
     hash_object = hmac.new(secret_token.encode('utf-8'), msg=payload_body, digestmod=hashlib.sha256)
     expected_signature = "sha256=" + hash_object.hexdigest()
     
     if hmac.compare_digest(expected_signature, signature_header):
-        return 200
+        return True
 
     else:
-        return 403
+        return False
 
 
 def send_message(func, message, chat_id=1547269295, message_thread_id=None):
