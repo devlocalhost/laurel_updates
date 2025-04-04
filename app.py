@@ -8,7 +8,9 @@ A website where ROMs and kernels developed for this device are posted here.
 import re
 import os
 import json
+import hmac
 import atexit
+import hashlib
 import datetime
 import subprocess
 
@@ -34,6 +36,7 @@ if os.getenv("LAUREL_MODE"):
     print("[DEBUG] Templates will auto reload")
     app.config["TEMPLATES_AUTO_RELOAD"] = True
 
+app_secret_token = os.environ.get("APP_SECRET_TOKEN")
 commit_hash = os.environ.get('VERCEL_GIT_COMMIT_SHA')
 commit_message = None
 
@@ -51,6 +54,20 @@ start_time = datetime.datetime.now()  # um... ^^^ ??
 platform_details = f"{platform.uname()[1]} ({platform.uname()[2]})"
 nl = "\n"
 android_versions = ["roms/10", "roms/11", "roms/12", "roms/13", "roms/14", "roms/15"]
+
+
+def verify_signature(secret_token, signature_header, payload_body):
+    if not signature_header:
+        return 403
+        
+    hash_object = hmac.new(secret_token.encode('utf-8'), msg=payload_body, digestmod=hashlib.sha256)
+    expected_signature = "sha256=" + hash_object.hexdigest()
+    
+    if hmac.compare_digest(expected_signature, signature_header):
+        return 200
+
+    else:
+        return 403
 
 
 def send_message(func, message, chat_id=1547269295, message_thread_id=None):
@@ -123,6 +140,20 @@ def verify():
 
     return "dh=8f0a33d72181fd1eb73a66321a42e5855556c7a1"
 
+
+# TEMPORARY ROUTE -- CHECK TODO
+@app.route("/autod")
+def autod():
+    signature = request.headers.get("X-Hub-Signature-256")
+    payload = request.get_data()
+
+    if signature or verify_signature(app_secret_token, signature, payload):
+        subprocess.run("auto-deploy.sh")
+        
+        return 200
+
+    else:
+        return 403
 
 @app.route("/")
 def home():
