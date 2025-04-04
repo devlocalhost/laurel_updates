@@ -142,7 +142,7 @@ def autod():
     payload = request.get_data()
 
     if signature or verify_signature(app_secret_token, signature, payload):
-        subprocess.run("auto-deploy.sh")
+        subprocess.run(os.path.abspath("auto-deploy.sh"))
         
         return 200
 
