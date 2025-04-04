@@ -158,7 +158,7 @@ def stats():
     countries_json = json.load(open("static/statistics/countries.json"))
     pages_json = json.load(open("static/statistics/pages.json"))
 
-    return render_template("stats.html", data=[countries_json, pages_json, commit_hash, commit_message, platform_details, os.environ.get('NOW_REGION')])
+    return render_template("stats.html", data=[countries_json, pages_json, commit_hash, commit_message, platform_details, utc_time])
 
 
 @app.route("/blog")
