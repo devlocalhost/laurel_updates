@@ -8,9 +8,8 @@ A website where ROMs and kernels developed for this device are posted here.
 import re
 import os
 import json
-import hmac
 import atexit
-import hashlib
+import manage
 import datetime
 import subprocess
 
@@ -61,20 +60,6 @@ class CustomRenderer(mistune.HTMLRenderer):
     def heading(self, text, level):
         header_id = re.sub(r"\s+", "-", text.lower())
         return f'<h{level}>{text}</h{level}><div id="{header_id}"></div>'
-
-
-def verify_signature(secret_token, signature_header, payload_body):
-    if not signature_header:
-        return False
-        
-    hash_object = hmac.new(secret_token.encode('utf-8'), msg=payload_body, digestmod=hashlib.sha256)
-    expected_signature = "sha256=" + hash_object.hexdigest()
-    
-    if hmac.compare_digest(expected_signature, signature_header):
-        return True
-
-    else:
-        return False
 
 
 def send_message(func, message, chat_id=1547269295, message_thread_id=None):
@@ -138,16 +123,7 @@ def list_json_files(directory):
 # TEMPORARY ROUTE -- CHECK TODO
 @app.route("/autod", methods=["POST"])
 def autod():
-    signature = request.headers.get("X-Hub-Signature-256")
-    payload = request.get_data()
-
-    if signature or verify_signature(app_secret_token, signature, payload):
-        subprocess.run(os.path.abspath("auto-deploy.sh"))
-        
-        return 200
-
-    else:
-        return 403
+    return manage.deploy()
 
 @app.route("/")
 def home():
