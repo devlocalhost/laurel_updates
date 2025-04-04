@@ -134,13 +134,6 @@ def list_json_files(directory):
     return json_files
 
 
-@app.route("/.well-known/discord")
-def verify():
-    """used to verify the domain for discord"""
-
-    return "dh=8f0a33d72181fd1eb73a66321a42e5855556c7a1"
-
-
 # TEMPORARY ROUTE -- CHECK TODO
 @app.route("/autod")
 def autod():
