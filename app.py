@@ -26,10 +26,6 @@ from flask import (
     make_response,
 )
 
-from dotenv import load_dotenv
-
-load_dotenv()
-
 app = Flask(" -- laurel_updates -- ")
 
 app.wsgi_app = ProxyFix(
@@ -40,7 +36,6 @@ if os.environ.get("LAUREL_MODE"):
     print("[DEBUG] Templates will auto reload")
     app.config["TEMPLATES_AUTO_RELOAD"] = True
 
-app_secret_token = os.environ.get("APP_SECRET_TOKEN")
 commit_hash = os.environ.get('VERCEL_GIT_COMMIT_SHA')
 commit_message = None
 
@@ -122,12 +117,7 @@ def list_json_files(directory):
             json_files.append(filename)
 
     return json_files
-
-
-# TEMPORARY ROUTE -- CHECK TODO
-@app.route("/autod", methods=["POST"])
-def autod():
-    return manage.deploy(app_secret_token)
+    
 
 @app.route("/")
 def home():
