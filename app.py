@@ -56,6 +56,12 @@ nl = "\n"
 android_versions = ["roms/10", "roms/11", "roms/12", "roms/13", "roms/14", "roms/15"]
 
 
+class CustomRenderer(mistune.HTMLRenderer):
+    def heading(self, text, level):
+        header_id = re.sub(r"\s+", "-", text.lower())
+        return f'<h{level}>{text}</h{level}><div id="{header_id}"></div>'
+
+
 def verify_signature(secret_token, signature_header, payload_body):
     if not signature_header:
         return 403
@@ -107,12 +113,6 @@ def going_down():
         -1002418052790,
         2
     )
-
-
-class CustomRenderer(mistune.HTMLRenderer):
-    def heading(self, text, level):
-        header_id = re.sub(r"\s+", "-", text.lower())
-        return f'<h{level}>{text}</h{level}><div id="{header_id}"></div>'
 
 
 def custom_header_plugin(md):
