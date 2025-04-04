@@ -1,7 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
-- [02-04-2025 - Migrating from vercel to hetzner, expect downtimes.](/blog/news#02-04-2025---migrating-from-vercel-to-hetzner,-expect-downtimes.)
+- [02-04-2025 - [UPDATE] Migrated from vercel to hetzner.](/blog/news#02-04-2025---[update]-migrated-from-vercel-to-hetzner.)
 - [17-03-2025 - New LineageOS 18.1 update.](/blog/news#17-03-2025---new-lineageos-18.1-update.)
 - [14-03-2025 - Official EvolutionX for laurel, New update for NoName Fork, and archived some ROMs.](/blog/news#14-03-2025---official-evolutionx-for-laurel,-new-update-for-noname-fork,-and-archived-some-roms.)
 - [07-03-2025 - PixelMagic gets bug fixes and more.](/blog/news#07-03-2025---pixelmagic-gets-bug-fixes-and-more.)
@@ -93,10 +93,14 @@
 
 ---
 
-## 02-04-2025 - Migrating from vercel to hetzner, expect downtimes.
+## 02-04-2025 - [UPDATE] Migrated from vercel to hetzner.
 I am migrating the website from vercel to a hetzner server I bought. Downtime is expected, but it shouldn't be that long. I'll keep y'all updated.
 
 Update: Migration was successful! Expert a more detailed update and more details soon.
+
+Update 2: As i said above, the website now runs on my hetzner server, instead of vercel. What does this mean? The website should be faster. Faster loading times, less waiting. Basically small minor improvements for you, users/visitors, but a major/big thing for me, because this allows me to add features which will be useful for me, and maybe you. Features like uptime, last modified date for blogs, and more.
+
+Also, not sure if you have noticed, but the domain of the website has changed again! It is now under [dev64.xyz](https://dev64.xyz/). The domain was cheap, but that does not mean you can use [https://laurel-updates.dev64.xyz](https://laurel-updates.dev64.xyz) instead of [https://devlocalhost.github.io/lu](https://devlocalhost.github.io/lu). Please continue using that URL. It makes sure you are always redirected to the working, up-to-date URL for laurel_updates.
 
 ## 17-03-2025 - New LineageOS 18.1 update.
 That's right. LineageOS 18.1, the only Android 11 ROM, is still alive. What's new? Check out by clicking [here](/roms/LineageOS_11#changelog).
