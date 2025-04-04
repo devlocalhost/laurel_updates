@@ -17,6 +17,7 @@ import platform
 import requests
 import subprocess
 
+from werkzeug.middleware.proxy_fix import ProxyFix
 from flask import (
     Flask,
     render_template,
@@ -24,6 +25,10 @@ from flask import (
 )
 
 app = Flask(" -- laurel_updates -- ")
+
+app.wsgi_app = ProxyFix(
+    app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1
+)
 
 if os.getenv("LAUREL_MODE"):
     print("[DEBUG] Templates will auto reload")
