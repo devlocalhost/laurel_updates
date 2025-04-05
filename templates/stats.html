@@ -15,13 +15,9 @@
 
 <h2>Debugging</h2>
 <ul>
-    {% if data[3] == None %}
-    <li>Commit: <code>{{ data[2] }}</code></li>
-    {% else %}
-    <li>Commit: <code>{{ data[2] }}</code> <a href="https://github.com/devlocalhost/laurel_updates/commit/{{ data[2] }}">{{ data[3] }}</a></li>
-    {% endif %}
-    <li>Platform: <code>{{ data[4] }}</code></li>
-    <li>Start time (UTC): <code>{{ data[5] }}</code></li>
+    <li>Commit: <code>{{ data[0] }}</code> <a href="https://github.com/devlocalhost/laurel_updates/commit/{{ data[0] }}">{{ data[1] }}</a></li>
+    <li>Platform: <code>{{ data[2] }}</code></li>
+    <li>Start time (UTC): <code>{{ data[3] }}</code></li>
 </ul>
 
 {% endblock %}
