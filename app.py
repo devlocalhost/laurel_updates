@@ -8,7 +8,9 @@ A website where ROMs and kernels developed for this device are posted here.
 import re
 import os
 import json
+import hmac
 import atexit
+import hashlib
 import datetime
 import subprocess
 
