@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}laurel_updates - statistics{%endblock %}
+{% block title %}laurel_updates - status{%endblock %}
 
 {% block head %}
 {{ super() }}
@@ -11,7 +11,7 @@
     <span><a href="/">{% block routename %}← laurel_updates{% endblock %}</a></span>
     <span class="backbtn" onclick="navigator.clipboard.writeText(`https://devlocalhost.github.io${window.location.pathname}`)">↑ erahS</span>
 </div>
-<h1 class="colored" onclick="toggleStylesheet()">Statistics</h1>
+<h1 class="colored" onclick="toggleStylesheet()">Status</h1>
 
 <h2>Debugging</h2>
 <ul>

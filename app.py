@@ -174,11 +174,11 @@ def home():
     return render_template("index.html", headline=headline, headline_link=headline_link)
 
 
-@app.route("/stats")
-def stats():
-    """stats"""
+@app.route("/s")
+def status():
+    """status"""
 
-    return render_template("stats.html", data=[commit_hash, commit_message, platform_details, utc_time])
+    return render_template("status.html", data=[commit_hash, commit_message, platform_details, utc_time])
 
 
 @app.route("/blog")
