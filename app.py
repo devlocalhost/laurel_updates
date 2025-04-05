@@ -31,6 +31,8 @@ app.wsgi_app = ProxyFix(
     app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1
 )
 
+APP_SECRET_TOKEN = os.environ["APP_SECRET_TOKEN"]
+
 if os.environ.get("LAUREL_MODE"):
     print("[DEBUG] Templates will auto reload")
     app.config["TEMPLATES_AUTO_RELOAD"] = True
@@ -116,6 +118,32 @@ def list_json_files(directory):
             json_files.append(filename)
 
     return json_files
+
+
+def verify_signature(secret_token, signature_header, payload_body):
+    if not signature_header:
+        return False
+
+    expected = (
+        "sha256="
+        + hmac.new(secret_token.encode(), payload_body, hashlib.sha256).hexdigest()
+    )
+
+    return hmac.compare_digest(expected, signature_header)
+
+
+@app.route("/autod", methods=["POST"])
+def autod():
+    signature = request.headers.get("X-Hub-Signature-256")
+    payload = request.get_data()
+
+    if verify_signature(APP_SECRET_TOKEN, signature, payload):
+        subprocess.Popen([os.path.abspath("auto-deploy.sh")])
+
+        return "", 200
+
+    else:
+        return "", 403
     
 
 @app.route("/")
