@@ -30,6 +30,11 @@
     font-style: italic;
 }
 
+html {
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
+}
+
 body {
     color: var(--text-color);
     background-color: var(--background-color);
