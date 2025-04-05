@@ -25,6 +25,10 @@ from flask import (
     make_response,
 )
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 app = Flask(" -- laurel_updates -- ")
 
 app.wsgi_app = ProxyFix(
