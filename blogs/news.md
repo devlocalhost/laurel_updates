@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [06-04-2025 - New kernel: Snowflake, crDroid maintainer drops support, old maintainer might come back.](/blog/news#06-04-2025---new-kernel:-snowflake,-crdroid-maintainer-drops-support,-old-maintainer-might-come-back.)
 - [02-04-2025 - [UPDATE] Migrated from vercel to hetzner.](/blog/news#02-04-2025---[update]-migrated-from-vercel-to-hetzner.)
 - [17-03-2025 - New LineageOS 18.1 update.](/blog/news#17-03-2025---new-lineageos-18.1-update.)
 - [14-03-2025 - Official EvolutionX for laurel, New update for NoName Fork, and archived some ROMs.](/blog/news#14-03-2025---official-evolutionx-for-laurel,-new-update-for-noname-fork,-and-archived-some-roms.)
@@ -92,6 +93,11 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 06-04-2025 - New kernel: Snowflake, crDroid maintainer drops support, old maintainer might come back.
+There's a new kernel available for laurel: [Snowflake](/kernels/snowflake), maintained by RainZ, previous maintainer of crDroid, who might make a comeback, as the "current" maintainer decided to drop support: 
+
+"I got many things to learn as is. Actively compiling is becoming hard and harder with life. I want to learn some actual programming and get a job and by then I'll probably redo it"
 
 ## 02-04-2025 - [UPDATE] Migrated from vercel to hetzner.
 I am migrating the website from vercel to a hetzner server I bought. Downtime is expected, but it shouldn't be that long. I'll keep y'all updated.
