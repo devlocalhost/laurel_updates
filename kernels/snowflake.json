@@ -1,0 +1,16 @@
+{
+    "name": "Snowflake",
+    "route_name": "snowflake",
+    "version": "4.14.356 (Tempest)",
+    "maintainer": "RainZ",
+    "date_release": "06/04/2025",
+    "changelog": "<li>Initial build</li>",
+    "support": "https://t.me/rainz_hangout",
+    "notes": "<li>No kernelSU built-in.</li><li>Report bugs with logs and provide feedback in the support group, it's much appreciated</li><li>Before reporting, please make sure you aren't using any custom mods</li>",
+    "downloads": {
+        "editions": {
+            "Telegram": "https://t.me/rainz_hangout/123",
+            "Pixeldrain": "https://pixeldrain.com/u/baXmDUvh"
+        }
+    }
+}
