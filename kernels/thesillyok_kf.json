@@ -1,0 +1,15 @@
+{
+    "name": "TheSillyOk kernel forks",
+    "route_name": "thesillyok_kf",
+    "version": "4.14.355, 4.14.356",
+    "maintainer": "TheSillyOk",
+    "date_release": "06/04/2025",
+    "changelog": "<li>Add <a href='/kernels/snowflake'>Snowflake kernel</a></li><li>Update KSUN to 12490</li><li>Use thinLTO in the building process</li>",
+    "support": "https://t.me/ok_kernel",
+    "notes": "<li><a href=\"https://github.com/sidex15/ksu_module_susfs/releases/\">SUSFS 1.5.5 module</a>, <a href=\"https://t.me/ksunext_group/24847\">KSU Next 12490 Manager</a></li><li>Filename meanings:<br>&emsp;- \"VIC\": For Android 15 RDP ROMs made by Magicxavi and PowerX-NOT.<br>&emsp;- \"LOS 22.1\": For Android 15 Non RDP ROMs.<br>&emsp;- \"LOS 18.1\": For Android 11 up to Android 14 QPR1 (excluding QPR2/QPR3) Non RDP ROMs.<br>&emsp;- \"KSUNext\": Kernel has KernelSU Next built-in.<br>&emsp;- \"SUSFS\": Kernel also includes SUSFS.<br>&emsp;- \"NoName\": Based on NoName kernel<br>&emsp;- \"SM8150\": Based on the new kernel by Skyblueborb.<br>&emsp;- \"Snowflake\": RainZ's kernel</li>",
+    "downloads": {
+        "editions": {
+            "nightly.link": "https://nightly.link/TheSillyOk/kernel_laurel_sprout_workflows/actions/runs/14296597301"
+        }
+    }
+}
