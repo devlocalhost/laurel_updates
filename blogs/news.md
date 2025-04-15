@@ -100,7 +100,7 @@
 DEGRADED WEBSITE STATUS. Expect a lot of (or few, minor) downtimes. I made a oopsie woopsie fuckery and everything is shitting itself, from nginx, to service management and other bullshit, and as you can see, i have been trying to fix this issue for hours but i am having skill issues. That is why i said "expect a lot of downtimes".
 
 
-But het, good news! PowerX-NOT brings version 1.3 BETA here! For more details, check the changelog by clicking [here](/roms/AxionOS_15#changelog).
+But hey, good news! PowerX-NOT brings version 1.3 BETA here! For more details, check the changelog by clicking [here](/roms/AxionOS_15#changelog).
 
 ## 07-04-2025 - TheSillyOk updates his kernel forks.
 He also adds Snowflake to his list, which was released yesterday, with kernelSU support! Check it out [here.](/kernels/thesillyok_kf).
