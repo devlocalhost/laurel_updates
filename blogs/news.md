@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [15-04-2025 - New AxionOS update.](/blog/news#15-04-2025---new-axionos-update.)
 - [07-04-2025 - TheSillyOk updates his kernel forks.](/blog/news#07-04-2025---thesillyok-updates-his-kernel-forks.)
 - [06-04-2025 - New kernel: Snowflake, crDroid maintainer drops support, old maintainer might come back.](/blog/news#06-04-2025---new-kernel:-snowflake,-crdroid-maintainer-drops-support,-old-maintainer-might-come-back.)
 - [02-04-2025 - [UPDATE] Migrated from vercel to hetzner.](/blog/news#02-04-2025---[update]-migrated-from-vercel-to-hetzner.)
@@ -95,13 +96,16 @@
 
 ---
 
+## 15-04-2025 - New AxionOS update.
+PowerX-NOT brings version 1.3 BETA here! For more details, check the changelog by clicking [here](/roms/AxionOS_15#changelog).
+
 ## 07-04-2025 - TheSillyOk updates his kernel forks.
 He also adds Snowflake to his list, which was released yesterday, with kernelSU support! Check it out [here.](/kernels/thesillyok_kf).
 
 NOTE: His "kernel" before was called NoName Fork. I decided to rename it to TheSillyOk kernel forks instead, since in the downloads, there are many kernels listed which are not his own. They are just forks, with minor improvements.
 
 ## 06-04-2025 - New kernel: Snowflake, crDroid maintainer drops support, old maintainer might come back.
-There's a new kernel available for laurel: [Snowflake](/kernels/snowflake), maintained by RainZ, previous maintainer of crDroid, who might make a comeback, as the "current" maintainer decided to drop support: 
+There's a new kernel available for laurel: [Snowflake](/kernels/snowflake), maintained by RainZ, previous maintainer of crDroid, who might make a comeback, as the "current" maintainer decided to drop support:
 
 "I got many things to learn as is. Actively compiling is becoming hard and harder with life. I want to learn some actual programming and get a job and by then I'll probably redo it"
 
