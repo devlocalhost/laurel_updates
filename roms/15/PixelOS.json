@@ -2,19 +2,19 @@
     "name": "PixelOS",
     "version": "15",
     "maintainer": "bakkaq",
-    "date_release": "04/03/2025",
-    "changelog": "<li>fixed hotspot/li><li>\"\"\"fixed\"\"\" low mic volume</li>",
+    "date_release": "16/04/2025",
+    "changelog": "<li>April patch (idk why in settings shows March, but it's April)</li><li>fixed torch strength (it flickers while switching between strengths.)</li><li>fixed grayed out usb settings</li><li>fixed lockscreen clock height</li><li>source sides changes i don't really know about (pixelos didn't release a changelog)</li>",
     "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds",
     "rdp": "No",
-    "notes": "<li>due to some problems with Magisk, ROM now comes with KSU-Next + SUSfs by default. (in case you prefer to not have root, you can use the #rootless_noname note on the group to get non-root kernel. note that flashing magisk on that kernel <u>will cause bootloop</u>.)</li><li>Known issues: torch strength doesn't work (yet)</li><li>With Gapps</li><li>KSU-Next + SUSfs</li><li>Installation instructions: <a href=\"https://telegra.ph/Project-Blaze-installation-instructions-04-15\">telegra.ph</a></li>",
+    "notes": "<li>Screen Off FOD, With Gapps, KSU-Next + SUSfs</li><li>Installation instructions: <a href=\"https://telegra.ph/Project-Blaze-installation-instructions-04-15\">telegra.ph</a></li>",
     "banner": "/static/img/banner_pixelos_15.jpg",
     "downloads": {
         "editions": {
-            "ROM | MEGA": "https://mega.nz/file/CiAB3DZK#W6KA-0XgsyBSq_8BLLHJ6EP6nSCvxxQlbjRZbL0zknA",
-            "ROM | Google Drive": "https://drive.google.com/file/d/1R_zzh4sIUyj1rTaNuwcprej_-0sePAXC/view?usp=sharing",
-            "boot.img | MEGA": "https://mega.nz/file/uqpyyZ6Y#MU7kp-oaxBJDiZrhjFD1_jWOFEcVh_KzctnPGJtoyWE",
-            "boot.img | Google Drive": "https://drive.google.com/file/d/1En1gDKzxuNDFM-_GS6GbYyC9j-dyI9V9/view?usp=sharing"
+            "ROM | MEGA": "https://mega.nz/file/71RGiTqL#s2f9OhXnrQSHawT0xfywn1j7so7k2drAToGhNmaTBJg",
+            "ROM | Google Drive": "https://drive.google.com/file/d/1x26C4juyHABhgFw9NnpqDtbJgJjpQtP4/view?usp=sharing",
+            "boot.img | MEGA": "https://mega.nz/file/7gwAmbjD#NTqKEnx0Kx7nJPvvS0NXEXQ69DlMPSHcEwOnDGZJIp0",
+            "boot.img | Google Drive": "https://drive.google.com/file/d/1p1_pSbHcH9AbLKHtZfqXwGNnfh_JvT6O/view?usp=sharing"
         }
     },
     "archived": false

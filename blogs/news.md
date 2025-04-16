@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [16-04-2025 - New PixelOS update, website status gets better.](/blog/news#16-04-2025---new-pixelos-update,-website-status-gets-better.)
 - [15-04-2025 - [IMPORTANT] Degraded website status, New AxionOS update.](/blog/news#15-04-2025---[important]-degraded-website-status,-new-axionos-update.)
 - [07-04-2025 - TheSillyOk updates his kernel forks.](/blog/news#07-04-2025---thesillyok-updates-his-kernel-forks.)
 - [06-04-2025 - New kernel: Snowflake, crDroid maintainer drops support, old maintainer might come back.](/blog/news#06-04-2025---new-kernel:-snowflake,-crdroid-maintainer-drops-support,-old-maintainer-might-come-back.)
@@ -95,6 +96,11 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 16-04-2025 - New PixelOS update, website status gets better.
+bakka releases a new update for PixelOS, bringing a very interesting feature: flashlight brightness control, and April Security Patch. For more details, click [here](/roms/PixelOS_15).
+
+More news: I finally managed to find a solution for the downtimes and other fuckeries! Finally! And im doing all this at work, lol. I fixed the scripts and services, but i havent applied them yet to this website (did you know i have more websites? Check my main website [here](https://dev64.xyz)). I will apply the fixes soon.
 
 ## 15-04-2025 - [IMPORTANT] Degraded website status, New AxionOS update.
 DEGRADED WEBSITE STATUS. Expect a lot of (or few, minor) downtimes. I made a oopsie woopsie fuckery and everything is shitting itself, from nginx, to service management and other bullshit, and as you can see, i have been trying to fix this issue for hours but i am having skill issues. That is why i said "expect a lot of downtimes".
