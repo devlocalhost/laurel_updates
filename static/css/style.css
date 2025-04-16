@@ -31,8 +31,8 @@
 }
 
 html {
-    overflow: hidden;
-    scrollbar-gutter: stable both-edges;
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
 }
 
 body {
