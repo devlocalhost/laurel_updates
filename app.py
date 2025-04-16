@@ -144,7 +144,7 @@ def autod():
     payload = request.get_data()
 
     if verify_signature(APP_SECRET_TOKEN, signature, payload):
-        subprocess.Popen([os.path.abspath("auto-deploy.sh")])
+        subprocess.Popen([os.path.abspath("re-deploy.sh")])
 
         return "", 200
 
