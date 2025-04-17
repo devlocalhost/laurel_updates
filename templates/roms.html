@@ -1,16 +1,11 @@
 {% extends "base.html" %} {% block title %}laurel_updates - roms{% endblock %}
 {% block head %} {{ super() }}
 <link rel="stylesheet" href="/static/css/tabs.css">
-<style type="text/css">
-    .adrod::first-letter {
-        color: #379576;
-    }
-
-    .red::first-letter {
-        color: #ed4245;
-    }
+<link rel="stylesheet" href="/static/css/modals.css">
+<style>
 </style>
-{% endblock %}{% block content %}
+{% endblock %}
+{% block content %}
 <div class="navigation-top">
     <span><a href="/">← laurel_updates</a></span>
     <span class="backbtn" onclick="navigator.clipboard.writeText(`https://devlocalhost.github.io${window.location.pathname}`)">↑ erahS</span>
@@ -23,67 +18,72 @@
 <p><strong>Warning</strong>: you CANNOT install ANY of these ROMs IF you are using MIUI, or have converted your phone to MIUI/CC9e (or whatever the hell it is called, I don't know). To flash one of these ROMs, you MUST flash stock ROM, preferably (?) the fastboot version. You can check the guide <a href="REPLACEME">here</a>.</p>
 
 <h2>Pick a category</h2>
-<p>Below, you will find two categories: <b>Active</b> and <b>Archived</b>. Pick one, and you will find more details about the category.</p>
-
-<div class="tabs">
-    <a href="#active-roms">Active ROMs</a>
-    <a href="#archived-roms">Archived ROMs</a>
+<div class="modal-triggers">
+    <label for="modal-active" class="modal-button">Active</label>
+    <label for="modal-archived" class="modal-button">Archived</label>
 </div>
 
-<div id="active-roms" class="cont">
-<h2 class="colored">Active ROMs</h2>
-<p>ROMs under this category are actively, or just regularly maintained. A ROM will be under this category as long as the maintainer keeps supporting it. If they discontinue it, it will be moved to the Archived category (unless the download links are down. In this case, the ROM is removed from the website completely.)</p>
-<div class="tabs">
-    <a href="#15">15</a>
-    <a href="#11">11</a>
-</div>
+<input type="checkbox" id="modal-active" class="modal-toggle">
+<div class="modal modal-active">
+    <div class="modal-content">
+        <h2 class="colored">Active ROMs</h2>
+        <p>ROMs under this category are actively, or just regularly maintained. A ROM will be under this category as long as the maintainer keeps supporting it. If they discontinue it, it will be moved to the Archived category (unless the download links are down. In this case, the ROM is removed from the website completely.)</p>
+        <div class="modal-triggers">
+            <label for="modal-15" class="modal-button">15</label>
+            <label for="modal-11" class="modal-button">11</label>
+        </div>
+        <label for="modal-active" class="modal-button">Close</label>
+    </div>
 </div>
 
-<div id="archived-roms" class="cont">
-<h2 class="red" id="archive">Archived ROMs</h2>
-<p>ROMs under this category are not recommended, but they're included anyway, in case someone still wants to give them a try.</p>
-<div class="tabs">
-    <a href="#15a">15</a>
-    <a href="#14a">14</a>
-    <a href="#13a">13</a>
-    <a href="#12a">12</a>
-    <a href="#11a">11</a>
-    <a href="#10a">10</a>
-</div>
+<input type="checkbox" id="modal-archived" class="modal-toggle">
+<div class="modal modal-archived">
+    <div class="modal-content">
+        <h2 class="red">Archived ROMs</h2>
+        <p>ROMs under this category are not recommended, but they're included anyway, in case someone still wants to give them a try.</p>
+        <div class="modal-triggers">
+            {% for version, roms in roms_data.items() %}
+            <label for="modal-{{ version }}a" class="modal-button">{{ version }}</label>
+            {% endfor %}
+        </div>
+        <label for="modal-archived" class="modal-button">Close</label>
+    </div>
 </div>
 
 {% for version, roms in roms_data.items() %}
-<div id="{{ version }}" class="cont">
-    <h2 class="adrod">Active Android {{ version }} ROMs</h2>
-    <ul>
-        {% for rom in roms %}
-            {% if not rom['archived'] %}
-            <li>
-                <a href="roms/{{ rom['route_name'] }}">{{ rom["name"] }}</a>
-            </li>
-            {% endif %}
-        {% endfor %}
-    </ul>
-    <div class="tabs">
-        <a href="#active-roms">← Back</a>
+<input type="checkbox" id="modal-{{ version }}" class="modal-toggle">
+<div class="modal modal-{{ version }}">
+    <div class="modal-content">
+        <h2 class="adrod">Active Android {{ version }} ROMs</h2>
+        <ul>
+            {% for rom in roms %}
+                {% if not rom['archived'] %}
+                <li>
+                    <a href="roms/{{ rom['route_name'] }}">{{ rom["name"] }}</a>
+                </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <label for="modal-{{ version }}" class="modal-button">Back</label>
     </div>
 </div>
 {% endfor %}
 
 {% for version, roms in roms_data.items() %}
-<div id="{{ version }}a" class="cont">
-    <h2 class="red">Archived Android {{ version }} ROMs</h2>
-    <ul>
-        {% for rom in roms %}
-            {% if rom['archived'] %}
-            <li>
-                <a href="roms/{{ rom['route_name'] }}">{{ rom["name"] }}</a>
-            </li>
-            {% endif %}
-        {% endfor %}
-    </ul>
-    <div class="tabs">
-        <a href="#archived-roms">← Back</a>
+<input type="checkbox" id="modal-{{ version }}a" class="modal-toggle">
+<div class="modal modal-{{ version }}a">
+    <div class="modal-content">
+        <h2 class="red">Archived Android {{ version }} ROMs</h2>
+        <ul>
+            {% for rom in roms %}
+                {% if rom['archived'] %}
+                <li>
+                    <a href="roms/{{ rom['route_name'] }}">{{ rom["name"] }}</a>
+                </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <label for="modal-{{ version }}a" class="modal-button">Back</label>
     </div>
 </div>
 {% endfor %}
@@ -112,11 +112,21 @@
         any other criteria), it doesn't exist. If there was one true best
         ROM/Kernel, do you think there would be other ROMs or Kernels? There's
         only subjectively best and that's different for everyone. Everyone has
-        different usage patterns &amp; preferences, so when asking for the best,
+        different usage patterns & preferences, so when asking for the best,
         you get the best for them, not the best for you. The only way you'll
         find the best one for you is by trying them yourself. They're all free,
         anyway. BEST IS SUBJECTIVE.
     </p>
 </ul>
 
+<style>
+{% for version in roms_data.keys() %}
+#modal-{{ version }}:checked ~ .modal-{{ version }} { display: flex; }
+#modal-{{ version }}a:checked ~ .modal-{{ version }}a { display: flex; }
+{% endfor %}
+#modal-active:checked ~ .modal-active,
+#modal-archived:checked ~ .modal-archived { display: flex; }
+</style>
+
 {% endblock %}
+
