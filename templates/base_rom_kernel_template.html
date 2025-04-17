@@ -1,6 +1,7 @@
 {% extends "base.html" %} {% block title %}laurel_updates - {{ data["name"] }}{%
 endblock %} {% block head %} {{ super() }}
 <link rel="stylesheet" href="/static/css/tabs.css">
+<link rel="stylesheet" href="/static/css/modals.css">
 {% endblock %} {% block content %}
 <div class="navigation-top">
     <span><a href="{% block routeback %}{% endblock %}">{% block routename %}← laurel_updates{% endblock %}</a></span>
@@ -27,52 +28,72 @@ endblock %} {% block head %} {{ super() }}
     <li>Version: {{ data["version"] }}</li>
 </ul>
 
-<div class="tabs">
-    <a href="#downloads" class="no-fade-animation">Downloads</a>
-    <a href="#changelog" class="no-fade-animation">Changelog</a>
-    <a href="#notes" class="no-fade-animation">Notes</a>
+<hr>
+
+<h1>Details</h1>
+<p>Click one of the buttons below to view download links, changelog, or notes.</p>
+
+<div class="modal-triggers">
+    <!-- Trigger -->
+    <label for="modal-1" class="modal-button">Downloads</label>
+    <label for="modal-2" class="modal-button">Changelog</label>
+    <label for="modal-3" class="modal-button">Notes</label>
 </div>
 
-<div id="changelog" class="cont">
-    <h2 class="colored">Changelog</h2>
 
-    {% block changelog %}
-    <ul>
-        {% if data["changelog"] %} {{ data["changelog"] | safe }} {% else %}
-        <li>Empty.</li>
-        {% endif %}
-    </ul>
-    {% endblock %}
+<input type="checkbox" id="modal-1" class="modal-toggle">
+<div class="modal modal-1">
+    <div class="modal-content">
+        <h2 class="colored">Downloads</h2>
+        <ul>
+            {% for edition, link in data["downloads"]["editions"].items() %} {% if
+            link %}
+            <li><a href="{{ link }}">{{ edition }}</a></li>
+            {% endif %} {% endfor %}
+        </ul>
+        <label for="modal-1" class="modal-button">Close</label>
+    </div>
 </div>
 
-<div id="notes" class="cont">
-    <h2 class="colored">Notes</h2>
-    <ul>
-        {% if data["notes"] %} {{ data["notes"] | safe }}
-        {% endif %}
 
-        {% block rdp %}
-        <li>
-            RDP? {{ data["rdp"] }} (check
-            <a href="/help/what-is-rdp">what is rdp</a> for more)
-        </li>
+<input type="checkbox" id="modal-2" class="modal-toggle">
+<div class="modal modal-2">
+    <div class="modal-content">
+        <h2 class="colored">Changelog</h2>
+        {% block changelog %}
+        <ul>
+            {% if data["changelog"] %} {{ data["changelog"] | safe }} {% else %}
+            <li>Empty.</li>
+            {% endif %}
+        </ul>
         {% endblock %}
-
-        <li>
-            Make sure you read the instructions in the
-            <a href="{{ data['support'] }}">Support forum</a> before flashing!!!
-        </li>
-    </ul>
+        <label for="modal-2" class="modal-button">Close</label>
+    </div>
 </div>
 
-<div id="downloads" class="cont">
-    <h2 class="colored">Downloads</h2>
-    <ul>
-        {% for edition, link in data["downloads"]["editions"].items() %} {% if
-        link %}
-        <li><a href="{{ link }}">{{ edition }}</a></li>
-        {% endif %} {% endfor %}
-    </ul>
+
+<input type="checkbox" id="modal-3" class="modal-toggle">
+<div class="modal modal-3">
+    <div class="modal-content">
+        <h2 class="colored">Notes</h2>
+        <ul>
+            {% if data["notes"] %} {{ data["notes"] | safe }}
+            {% endif %}
+
+            {% block rdp %}
+            <li>
+                RDP? {{ data["rdp"] }} (check
+                <a href="/help/what-is-rdp">what is rdp</a> for more)
+            </li>
+            {% endblock %}
+
+            <li>
+                Make sure you read the instructions in the
+                <a href="{{ data['support'] }}">Support forum</a> before flashing!!!
+            </li>
+        </ul>
+        <label for="modal-3" class="modal-button">Close</label>
+    </div>
 </div>
 
 <br>
