@@ -23,15 +23,6 @@
     font-weight: bold;
 }
 
-#navbar {
-    bottom: 15px;
-    position: fixed;
-    max-width: inherit;
-    left: 0.92em;
-    right: 0.92em;
-    margin: 0 auto;
-}
-
 /* .tabs a.nav-active { */
 /*     background-color: var(--navbar-a-active); */
 /*     box-shadow: 0 0 4px var(--box-border-color); */
