@@ -17,6 +17,12 @@
     justify-content: space-between;
 }
 
+.modal-triggers.stacked {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .modal-content {
     background-color: var(--lists-background);
     border-radius: 15px;
@@ -35,10 +41,10 @@
 .modal-button {
     background-color: var(--ul-ol-background-color);
     color: white;
-    padding: 10px;
+    padding: 10px 0 10px 0;
     border-radius: 10px;
     cursor: pointer;
-    width: 25%;
+    width: 100%;
     text-align: center;
     display: block;
     display: inline-block;

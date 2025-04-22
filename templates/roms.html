@@ -41,7 +41,7 @@
     <div class="modal-content">
         <h2 class="red">Archived ROMs</h2>
         <p>ROMs under this category are not recommended, but they're included anyway, in case someone still wants to give them a try.</p>
-        <div class="modal-triggers">
+        <div class="modal-triggers{% if roms_data|length > 3 %} stacked{% endif %}">
             {% for version, roms in roms_data.items() %}
             <label for="modal-{{ version }}a" class="modal-button">{{ version }}</label>
             {% endfor %}
