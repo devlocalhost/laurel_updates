@@ -14,6 +14,8 @@ import hashlib
 import datetime
 import subprocess
 
+from collections import defaultdict
+
 import mistune
 import platform
 import requests
@@ -33,9 +35,7 @@ load_dotenv()
 
 app = Flask(" -- laurel_updates -- ")
 
-app.wsgi_app = ProxyFix(
-    app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1
-)
+app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1)
 
 APP_SECRET_TOKEN = os.environ["APP_SECRET_TOKEN"]
 
@@ -43,7 +43,7 @@ if os.environ.get("LAUREL_MODE"):
     print("[DEBUG] Templates will auto reload")
     app.config["TEMPLATES_AUTO_RELOAD"] = True
 
-commit_hash = os.environ.get('VERCEL_GIT_COMMIT_SHA')
+commit_hash = os.environ.get("VERCEL_GIT_COMMIT_SHA")
 commit_message = None
 
 if commit_hash == None:
@@ -52,7 +52,7 @@ if commit_hash == None:
     )
 
     commit_message = subprocess.check_output(
-        f'git log -1 --pretty=format:%s {commit_hash}', shell=True, text=True
+        f"git log -1 --pretty=format:%s {commit_hash}", shell=True, text=True
     )
 
 utc_time = datetime.datetime.now(datetime.UTC).strftime("%A %B %-d, %I:%M:%S %p")
@@ -94,7 +94,7 @@ def starting():
         "[Starting]",
         f"Hello world\nRunning on <code>{platform_details}</code>\nCommit: <code>{commit_hash}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit_hash}</code>)",
         -1002418052790,
-        2
+        2,
     )
 
 
@@ -103,7 +103,7 @@ def going_down():
         "[Going down]",
         f"GOODBYECRUELWORLD - <code>{platform_details}</code>\nCommit: <code>{commit_hash}</code> (<code>https://github.com/devlocalhost/laurel_updates/commit/{commit_hash}</code>)",
         -1002418052790,
-        2
+        2,
     )
 
 
@@ -150,13 +150,13 @@ def autod():
 
     else:
         return "", 403
-    
+
 
 @app.route("/")
 def home():
     """home page"""
 
-    pattern = r'\b(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-(\d{4})\b'
+    pattern = r"\b(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-(\d{4})\b"
     headline = "News."
 
     with open("blogs/news.md") as lines:
@@ -165,7 +165,7 @@ def home():
         headline_link = lines[3].split("](")[1].strip().strip(")")
 
         for line_number, line in enumerate(lines):
-            if not line.lstrip().startswith('-') and re.search(pattern, line):
+            if not line.lstrip().startswith("-") and re.search(pattern, line):
                 headline_num = line_number
                 break
 
@@ -178,7 +178,32 @@ def home():
 def status():
     """status"""
 
-    return render_template("status.html", data=[commit_hash, commit_message, platform_details, utc_time])
+    simpleanalytics_resp = requests.get(
+        f"https://simpleanalytics.com/laurel-updates.dev64.xyz.json?version=5&info=false&fields=pageviews,visitors,pages&pages=/blog*,/roms*,/*"
+    ).json()
+
+    simpleanalytics_data = defaultdict(list)
+    simpleanalytics_data["other"].append({"start": datetime.datetime.fromisoformat(simpleanalytics_resp["start"]).strftime("%A %B %-d, %I:%M:%S %p"), "end": datetime.datetime.fromisoformat(simpleanalytics_resp["end"]).strftime("%A %B %-d, %I:%M:%S %p"), "visitors": simpleanalytics_resp["visitors"], "pageviews": simpleanalytics_resp["pageviews"]})
+
+    for entry in simpleanalytics_resp["pages"]:
+        path = entry["value"]
+
+        if path.startswith("/blog"):
+            simpleanalytics_data["/blog"].append(entry)
+
+        elif path.startswith("/roms"):
+            simpleanalytics_data["/roms"].append(entry)
+
+    return render_template(
+        "status.html",
+        data=[
+            commit_hash,
+            commit_message,
+            platform_details,
+            utc_time,
+            simpleanalytics_data,
+        ],
+    )
 
 
 @app.route("/blog")

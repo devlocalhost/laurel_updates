@@ -20,4 +20,59 @@
     <li>Start time (UTC): <code>{{ data[3] }}</code></li>
 </ul>
 
+<h2>Statistics</h2>
+<p>Period: {{ data[4]["other"][0]["start"] }} till {{ data[4]["other"][0]["end"] }}. Between this period, laurel_updates had {{ data[4]["other"][0]["pageviews"] }} page views, and {{ data[4]["other"][0]["visitors"] }} unique visitors. Between this period also, these are the statistics for the pages <a href="/blog">/blog</a> and <a href="/roms">/roms</a>.</p>
+
+<table>
+    <thead>
+        <tr>
+            <td class="first-td-left">Page</td>
+            <td>Views</td>
+            <td class="first-td-right">Visitors</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td colspan="3">ROMs</td>
+        </tr>
+
+        {% for r_data in data[4]['/roms'][:-1] %}
+        <tr>
+            <td class="left-td td-num"><a href="{{ r_data['value'] }}">{{ r_data['value'] }}</a></td>
+            <td class="td-num">{{ r_data['pageviews'] }}</td>
+            <td class="td-num">{{ r_data['visitors'] }}</td>
+        </tr>
+        {% endfor %}
+
+        {% set r_last_entry = data[4]['/roms'][-1] %}
+        <tr>
+            <td class="left-td td-num">{{ r_last_entry['value'] }}</td>
+            <td class="td-num">{{ r_last_entry['pageviews'] }}</td>
+
+            <td class="td-num">{{ r_last_entry['visitors'] }}</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Blogs</td>
+        </tr>
+
+        {% for b_data in data[4]['/blog'][:-1] %}
+        <tr>
+            <td class="left-td td-num"><a href="{{ b_data['value'] }}">{{ b_data['value'] }}</a></td>
+            <td class="td-num">{{ b_data['pageviews'] }}</td>
+            <td class="td-num">{{ b_data['visitors'] }}</td>
+        </tr>
+        {% endfor %}
+
+        {% set b_last_entry = data[4]['/blog'][-1] %}
+        <tr>
+            <td class="left-td last-td-left td-num">{{ b_last_entry['value'] }}</td>
+            <td class="td-num">{{ b_last_entry['pageviews'] }}</td>
+
+            <td class="last-td-right td-num">{{ b_last_entry['visitors'] }}</td>
+        </tr>
+    </tbody>
+</table>
+
 {% endblock %}

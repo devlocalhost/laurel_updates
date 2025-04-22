@@ -19,6 +19,10 @@ table tr:nth-child(odd) {
     background-color: var(--ul-ol-background-color);
 }
 
+table tbody td.left-td {
+    text-align: left;
+}
+
 .first-td-left {
     border-top-left-radius: 10px;
 }
@@ -35,6 +39,6 @@ table tr:nth-child(odd) {
     border-bottom-right-radius: 10px;
 }
 
-.td-num {
+table td {
     text-align: center;
 }
