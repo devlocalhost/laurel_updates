@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [23-04-2025 - Bug fix release for AxionOS.](/blog/news#23-04-2025---bug-fix-release-for-axionos.)
 - [16-04-2025 - New PixelOS update, website status gets better.](/blog/news#16-04-2025---new-pixelos-update,-website-status-gets-better.)
 - [15-04-2025 - [IMPORTANT] Degraded website status, New AxionOS update.](/blog/news#15-04-2025---[important]-degraded-website-status,-new-axionos-update.)
 - [07-04-2025 - TheSillyOk updates his kernel forks.](/blog/news#07-04-2025---thesillyok-updates-his-kernel-forks.)
@@ -96,6 +97,9 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 23-04-2025 - Bug fix release for AxionOS.
+PowerX-NOT releases a bug fix update for AxionOS, which fixes a bug with hotspot feature. Download the new update by clicking [here](/roms/AxionOS_15#downloads).
 
 ## 16-04-2025 - New PixelOS update, website status gets better.
 bakka releases a new update for PixelOS, bringing a very interesting feature: flashlight brightness control, and April Security Patch. For more details, click [here](/roms/PixelOS_15).
