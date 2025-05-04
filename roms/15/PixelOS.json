@@ -2,19 +2,20 @@
     "name": "PixelOS",
     "version": "15",
     "maintainer": "bakkaq",
-    "date_release": "16/04/2025",
-    "changelog": "<li>April patch (idk why in settings shows March, but it's April)</li><li>fixed torch strength (it flickers while switching between strengths.)</li><li>fixed grayed out usb settings</li><li>fixed lockscreen clock height</li><li>source sides changes i don't really know about (pixelos didn't release a changelog)</li>",
+    "date_release": "04/05/2025",
+    "changelog": "<li>now it shows april patch lmao</li><li>added reading mode tile</li><li>added updater</li><li>added volume buttons to wake </li><li>merged latest sources (as always i don't know what pixelos changed)</li>",
     "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds",
     "rdp": "No",
-    "notes": "<li>Screen Off FOD, With Gapps, KSU-Next + SUSfs</li><li>Installation instructions: <a href=\"https://telegra.ph/Project-Blaze-installation-instructions-04-15\">telegra.ph</a></li>",
+    "notes": "<li>Non RDP</li><li>With Gapps</li><li>KSU-Next + SUSfs -> installing magisk will cause bootloop</li><li>Screen off FOD</li><li><strong>Be aware:</strong> an user reported hardware damage after using clear speaker feature. as me and other tester were unable to reproduce such damage, feature is still present, but to prevent any potential harm, <strong>use it only if needed.</strong></li><li>Installation instructions: <a href=\"https://telegra.ph/Project-Blaze-installation-instructions-04-15\">telegra.ph</a></li>",
     "banner": "/static/img/banner_pixelos_15.jpg",
     "downloads": {
         "editions": {
-            "ROM | MEGA": "https://mega.nz/file/71RGiTqL#s2f9OhXnrQSHawT0xfywn1j7so7k2drAToGhNmaTBJg",
-            "ROM | Google Drive": "https://drive.google.com/file/d/1x26C4juyHABhgFw9NnpqDtbJgJjpQtP4/view?usp=sharing",
-            "boot.img | MEGA": "https://mega.nz/file/7gwAmbjD#NTqKEnx0Kx7nJPvvS0NXEXQ69DlMPSHcEwOnDGZJIp0",
-            "boot.img | Google Drive": "https://drive.google.com/file/d/1p1_pSbHcH9AbLKHtZfqXwGNnfh_JvT6O/view?usp=sharing"
+            "ROM | MEGA": "https://mega.nz/file/GlJQxRBK#zS_IoS_Knx_Pcux2px4PgLLZNmjQxU7SFzWELmlWrfc",
+            "ROM | Google Drive": "https://drive.google.com/file/d/1mOV3NsM9_kdAEa9XUrWA0l6F3OyY0U8x/view?usp=sharing",
+            "ROM | GitHub": "https://github.com/aleeeee1/ROMs-releases/releases/download/03-05-2025/PixelOS_laurel_sprout-15.0-20250503-1558.zip",
+            "boot.img | MEGA": "https://mega.nz/file/2tZgXQYA#1LoAC8L2hVwIPP8HtgiAEHYUc4QGJyfYkwyM6vIZcXs",
+            "boot.img | Google Drive": "https://drive.google.com/file/d/1tjAb3ne7nQQb0J7wMtoTaFqUN9bBvUQk/view?usp=sharing"
         }
     },
     "archived": false
