@@ -1,9 +1,9 @@
 {
     "name": "PixelMagic",
-    "version": "ALPHAGENE r10",
+    "version": "ALPHAGENE r30",
     "maintainer": "Magicxavi",
-    "date_release": "07/03/2025",
-    "changelog": "<li>fixed kernel/techpack merge issue</li><li>fixed UDFPS icon tint on light theme</li><li>added \"Shake gestures\"</li><li>added \"QS pull down with one finger\"</li><li>added new \"Circle to search\" implementation</li><li>added \"Hide QS on secure lockscreen\"</li><li>improved UDFPS dimming credits to @PowerX_NOT</li><li>Settings: sorted some preferences and added missing description</li><li>Launcher3: default recents opacity is set to 0</li><li>Launcher3: improved restart logic</li><li>Magic: updated some icons</li>",
+    "date_release": "06/05/2025",
+    "changelog": "<li>QPR2 (r30) update</li><li>added \"LS Smart Space switch\"</li><li>added \"LS Custom weather condition\"</li><li>added \"Quick Tap\"</li><li>switching to new \"Circle to search\"</li><li>overall updated apps, themes, custom settings</li>",
     "status": "Official",
     "support": "https://t.me/syberia_laurel_sprout",
     "rdp": "Yes",
@@ -11,7 +11,7 @@
     "banner": "/static/img/banner_pixelmagic_15.jpg",
     "downloads": {
         "editions": {
-            "Gapps": "https://bit.ly/4hj590K"
+            "Gapps": "https://bit.ly/3Z6OzLh"
         }
     },
     "archived": false

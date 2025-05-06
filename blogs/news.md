@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [06-05-2025 - QPR2 Update for PixelMagic.](/blog/news#06-05-2025---qpr2-update-for-pixelmagic.)
 - [04-05-2025 - PixelOS gets updated.](/blog/news#04-05-2025---pixelos-gets-updated.)
 - [23-04-2025 - Bug fix release for AxionOS.](/blog/news#23-04-2025---bug-fix-release-for-axionos.)
 - [16-04-2025 - New PixelOS update, website status gets better.](/blog/news#16-04-2025---new-pixelos-update,-website-status-gets-better.)
@@ -98,6 +99,9 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 06-05-2025 - QPR2 Update for PixelMagic.
+Magicxavi released an update for PixelMagic, which brings QPR2 and a few features. For more, check [changelog](/roms/PixelMagic_15#changelog).
 
 ## 04-05-2025 - PixelOS gets updated.
 PixelOS gets updated and includes April patch, and a few more things. For more details, check the [changelog](/roms/PixelOS_15).
