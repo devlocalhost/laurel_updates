@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [08-05-2025 - New releases for TheSillyOk Kernels.](/blog/news#08-05-2025---new-releases-for-thesillyok-kernels.)
 - [06-05-2025 - QPR2 Update for PixelMagic.](/blog/news#06-05-2025---qpr2-update-for-pixelmagic.)
 - [04-05-2025 - PixelOS gets updated.](/blog/news#04-05-2025---pixelos-gets-updated.)
 - [23-04-2025 - Bug fix release for AxionOS.](/blog/news#23-04-2025---bug-fix-release-for-axionos.)
@@ -99,6 +100,9 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 08-05-2025 - New releases for TheSillyOk Kernels.
+TheSillyOk has updated his kernels, with some new KernelSU things... or whatever they're called. I'm not really into this kind of stuff, so just check the [changelog](/kernels/thesillyok_kf#changelog) and [notes](/kernels/thesillyok_kf#notes).
 
 ## 06-05-2025 - QPR2 Update for PixelMagic.
 Magicxavi released an update for PixelMagic, which brings QPR2 and a few features. For more, check [changelog](/roms/PixelMagic_15#changelog).
