@@ -1,17 +1,17 @@
 {
     "name": "EvolutionX",
-    "version": "10.3",
+    "version": "10.6",
     "maintainer": "Onelots",
-    "date_release": "13/03/2025",
-    "changelog": "<li>This is the initial release for Laurel sprout, based on A15 QPR1 with February security patches.</li>",
+    "date_release": "10/05/2025",
+    "changelog": "<li>Gapps included</li><li>Non-RDP build</li><li>Play Integrity passes out of the box.</li><li>Included Dolby</li><li>Fixed stutters</li><li>Fixed gcam</li><li>KernelSU-Next kernel available <a href=\"https://github.com/onelots/kernel_auto_builder/releases/tag/latest\">on my github</a></li>",
     "status": "Official",
-    "support": "https://xdaforums.com/t/rom-15-0-0_r20-official-evolution-x-10-3-03-13-2022.4724989/",
+    "support": "https://discord.onelots.fr/",
     "rdp": "No",
-    "notes": "<li><strong>THIS IS NOT PowerX-NOT'S VERSION!!</strong> This build is made by a different person, and is not the same as PowerX-NOT version. For that specific version, go <a href='/roms/EvolutionX_U_15'>here</a> instead</li><li>Please note that we don't support rooting officially.</li><li>Due to my huge amount of devices, if you need to contact me, I'll be slow to answer in XDA or on telegram. The best will be to join my <a href='https://discord.onelots.fr'>discord server</a> to stay up-to-date</li><li>For more details, check the <a href='https://xdaforums.com/t/rom-15-0-0_r20-official-evolution-x-10-3-03-13-2022.4724989/'>XDA thread</a> or <a href='https://evolution-x.org/downloads/laurel_sprout'>EvolutionX website</a>.</li>",
-    "banner": "/static/img/banner_evox_15.png",
+    "notes": "<li><strong>THIS IS NOT PowerX-NOT'S VERSION!!</strong> This build is made by a different person, and is not the same as PowerX-NOT version. For that specific version, go <a href='/roms/EvolutionX_U_15'>here</a> instead</li><li>For more details, check the <a href=\"https://evolution-x.org/downloads/laurel_sprout\">EvolutionX website</a>.</li>",
+    "banner": "/static/img/banner_evox_15.jpg",
     "downloads": {
         "editions": {
-            "Gapps": "https://sourceforge.net/projects/evolution-x/files/laurel_sprout/15/EvolutionX-15.0-20250313-laurel_sprout-10.3-Official.zip/download"
+            "Gapps": "https://sourceforge.net/projects/evolution-x/files/laurel_sprout/15/EvolutionX-15.0-20250510-laurel_sprout-10.6-Official.zip/download"
         }
     },
     "archived": false
