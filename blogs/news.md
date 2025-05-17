@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [17-05-2025 - bakka merges May patch for PixelOS.](/blog/news#17-05-2025---bakka-merges-may-patch-for-pixelos.)
 - [13-05-2025 - New major LineageOS 22.2 update.](/blog/news#13-05-2025---new-major-lineageos-22.2-update.)
 - [10-05-2025 - New EvolutionX update.](/blog/news#10-05-2025---new-evolutionx-update.)
 - [08-05-2025 - New releases for TheSillyOk Kernels.](/blog/news#08-05-2025---new-releases-for-thesillyok-kernels.)
@@ -102,6 +103,8 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+## 17-05-2025 - bakka merges May patch for PixelOS.
+And, fixes a few bugs that users were facing in the previous build. Get the new update by clicking [here](/roms/PixelOS_15).
 
 ## 13-05-2025 - New major LineageOS 22.2 update.
 Skyblueborb has released a major update for LineageOS 22.2, with many changes and new stuff! For more details, check the [changelog](/roms/LineageOS_15#changelog) and [notes](/roms/LineageOS_15#notes).
