@@ -2,7 +2,7 @@
     "name": "PixelOS",
     "version": "15",
     "maintainer": "bakkaq",
-    "date_release": "04/05/2025",
+    "date_release": "17/05/2025",
     "changelog": "<li>added applock</li><li>added smart pixels </li><li>added button to switch to other slot in recovery</li><li>slider to animation scales</li><li>fixed allow hotspot clients to use vpns</li><li>improved fod on popups (thanks to @Skyblueborb)</li><li>updated kernelsu and susfs </li><li>may patch merged</li>",
     "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds",
