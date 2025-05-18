@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [18-05-2025 - Bugfix update for PixelOS.](/blog/news#18-05-2025---bugfix-update-for-pixelos.)
 - [17-05-2025 - bakka merges May patch for PixelOS.](/blog/news#17-05-2025---bakka-merges-may-patch-for-pixelos.)
 - [13-05-2025 - New major LineageOS 22.2 update.](/blog/news#13-05-2025---new-major-lineageos-22.2-update.)
 - [10-05-2025 - New EvolutionX update.](/blog/news#10-05-2025---new-evolutionx-update.)
@@ -103,6 +104,10 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 18-05-2025 - Bugfix update for PixelOS.
+Fixed an issue with remount, and a few other things. Check the [changelogs](/roms/PixelOS_15#changelog) for more details.
+
 ## 17-05-2025 - bakka merges May patch for PixelOS.
 And, fixes a few bugs that users were facing in the previous build. Get the new update by clicking [here](/roms/PixelOS_15).
 

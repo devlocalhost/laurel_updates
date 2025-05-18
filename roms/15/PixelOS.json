@@ -2,20 +2,20 @@
     "name": "PixelOS",
     "version": "15",
     "maintainer": "bakkaq",
-    "date_release": "17/05/2025",
-    "changelog": "<li>added applock</li><li>added smart pixels </li><li>added button to switch to other slot in recovery</li><li>slider to animation scales</li><li>fixed allow hotspot clients to use vpns</li><li>improved fod on popups (thanks to @Skyblueborb)</li><li>updated kernelsu and susfs </li><li>may patch merged</li>",
+    "date_release": "18/05/2025",
+    "changelog": "<li>fixed remount (don't ask how because i don't know)</li><li>switch to jemalloc (thanks to @PowerX_NOT)</li><li>added MIUI Camera (night mode, portrait mode and maybe other things won't work)</li>",
     "status": "Unofficial",
     "support": "https://t.me/bakkaqbuilds",
     "rdp": "No",
-    "notes": "<li>Known issues: remount doesn't work</li><li>Non RDP</li><li>With Gapps</li><li>KSU-Next + SUSfs -> installing magisk will cause bootloop</li><li>Screen off FOD</li><li><strong>Be aware:</strong> an user reported hardware damage after using clear speaker feature. as me and other tester were unable to reproduce such damage, feature is still present, but to prevent any potential harm, <strong>use it only if needed.</strong></li><li>Installation instructions: <a href=\"https://telegra.ph/Project-Blaze-installation-instructions-04-15\">telegra.ph</a></li>",
+    "notes": "<li>Non RDP</li><li>With Gapps</li><li>KSU-Next + SUSfs -> installing magisk will cause bootloop</li><li>Screen off FOD</li><li><strong>Be aware:</strong> an user reported hardware damage after using clear speaker feature. as me and other tester were unable to reproduce such damage, feature is still present, but to prevent any potential harm, <strong>use it only if needed.</strong></li><li>Installation instructions: <a href=\"https://telegra.ph/Project-Blaze-installation-instructions-04-15\">telegra.ph</a></li>",
     "banner": "/static/img/banner_pixelos_15.jpg",
     "downloads": {
         "editions": {
-            "ROM | MEGA": "https://mega.nz/file/z05WwQRY#a2ONW3owGaqOec9Hc10TktQKan8lg7r0Tz9xhOWDFYc",
-            "ROM | Google Drive": "https://drive.google.com/file/d/17qq8SYjO900CUiwxMR3SFW6E64vCiMdG/view?usp=sharing",
-            "ROM | GitHub": "https://github.com/aleeeee1/ROMs-releases/releases/download/17-05-2025/PixelOS_laurel_sprout-15.0-20250516-0946.zip",
+            "ROM | MEGA": "https://mega.nz/file/CtxlWI4K#cgvXSYaTLKjEpeK97KkVDyDbrN72IgaZcg058gLCUnc",
+            "ROM | Google Drive": "https://drive.google.com/file/d/1zIOt8QknKbSBhGqyyL-U6N2U_akAsfWH/view?usp=sharing",
+            "ROM | GitHub": "https://github.com/aleeeee1/ROMs-releases/releases/download/05-18-2025/PixelOS_laurel_sprout-15.0-20250518-0347.zip",
             "boot.img | MEGA": "https://mega.nz/file/f1oTyDbY#hhFwAb3s9C5R-5WjoNVjJCuNjyXp16feHneEbGGa-bI",
-            "boot.img | Google Drive": "https://drive.google.com/file/d/1I0qAUaBwKrldQe2TLQbFSlV-xChBdClw/view?usp=sharing"
+            "boot.img | Google Drive": "https://drive.google.com/file/d/1Z3vGIqSlAZb4x4exCdANtBxBlJLOcoCk/view?usp=sharing"
         }
     },
     "archived": false
