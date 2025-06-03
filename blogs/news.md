@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [02-06-2025 - Minor update for TheSillyOk kernel forks.](/blog/news#02-06-2025---minor-update-for-thesillyok-kernel-forks.)
 - [18-05-2025 - Bugfix update for PixelOS.](/blog/news#18-05-2025---bugfix-update-for-pixelos.)
 - [17-05-2025 - bakka merges May patch for PixelOS.](/blog/news#17-05-2025---bakka-merges-may-patch-for-pixelos.)
 - [13-05-2025 - New major LineageOS 22.2 update.](/blog/news#13-05-2025---new-major-lineageos-22.2-update.)
@@ -104,6 +105,9 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 02-06-2025 - Minor update for TheSillyOk kernel forks.
+There is probably no need to update, but check it anyway by clicking [here](/kernels/thesillyok_kf).
 
 ## 18-05-2025 - Bugfix update for PixelOS.
 Fixed an issue with remount, and a few other things. Check the [changelogs](/roms/PixelOS_15#changelog) for more details.
