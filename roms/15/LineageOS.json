@@ -2,16 +2,16 @@
     "name": "LineageOS",
     "version": "22.2",
     "maintainer": "Skyblueborb",
-    "date_release": "12/05/2025",
-    "changelog": "<li>Android 15 QPR2.</li><li>Updated to May ASB.</li><li>New kernel based on LineageOS SM8150 common kernel.</li><li>Implemented UClamp and UFFD GC.</li><li>Implemented Lineage libperfmgr.</li><li>Replaced OMX with Codec2.</li><li>Updated audio hal to V7.</li><li>Updated thermal, vibrator and IR HALs.</li><li>Fixed microphone volume once and for all.</li><li>Fixed missing CNE app dependency.</li>",
-    "status": "Unofficial",
+    "date_release": "17/06/2025",
+    "changelog": "<li>Initial official release.</li><li>For more, in depth details, check the <a href=\"https://download.lineageos.org/devices/laurel_sprout/changes\">LineageOS website</a>.</li>",
+    "status": "Official",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
-    "notes": "<li>Firmware bundled.</li><li>Additional features no longer included.</li><li>This build is based on the new SM6125 common trees. This will be pretty close to the official release coming in the future.</li><li>Skyblueborb is also maintaining <a href='/roms/LineageOS_11'>LineageOS 18.1</a></li>",
+    "notes": "<li>Skyblueborb is also maintaining <a href='/roms/LineageOS_11'>LineageOS 18.1</a></li>",
     "banner": "/static/img/banner_los22.jpg",
     "downloads": {
         "editions": {
-            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-22.2-20250512-UNOFFICIAL-laurel_sprout.zip"
+            "Nightly": "https://download.lineageos.org/devices/laurel_sprout/builds"
         }
     },
     "archived": false
