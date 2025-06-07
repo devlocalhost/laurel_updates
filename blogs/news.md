@@ -1,7 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
-- [07-06-2025 - LineageOS becomes official for laurel_sprout!](/blog/news#07-06-2025---lineageos-becomes-official-for-laurel_sprout!)
+- [07-06-2025 - New AxionOS update, LineageOS becomes official for laurel_sprout!](/blog/news#07-06-2025---new-axionos-update,-lineageos-becomes-official-for-laurel_sprout!)
 - [02-06-2025 - Minor update for TheSillyOk kernel forks.](/blog/news#02-06-2025---minor-update-for-thesillyok-kernel-forks.)
 - [18-05-2025 - Bugfix update for PixelOS.](/blog/news#18-05-2025---bugfix-update-for-pixelos.)
 - [17-05-2025 - bakka merges May patch for PixelOS.](/blog/news#17-05-2025---bakka-merges-may-patch-for-pixelos.)
@@ -107,8 +107,8 @@
 
 ---
 
-## 07-06-2025 - LineageOS becomes official for laurel_sprout!
-Yup, you heard it. LineageOS becomes official for our device. The maintainer is still Skyblueborb. This means we will get faster, weekly updates. For more details, check the [page](/roms/LineageOS_15).
+## 07-06-2025 - New AxionOS update, LineageOS becomes official for laurel_sprout!
+The new AxionOS uppdate **requires** a clean flash. For more details, please check [changelog](/roms/AxionOS_15#changelog) and [notes](/roms/AxionOS_15#notes).                                                     And, LineageOS becomes official for our device. The maintainer is still Skyblueborb. This means we will get faster, bi-weekly updates. For more details, check it [here](/roms/LineageOS_15).
 
 ## 02-06-2025 - Minor update for TheSillyOk kernel forks.
 There is probably no need to update, but check it anyway by clicking [here](/kernels/thesillyok_kf).
