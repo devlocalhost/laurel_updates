@@ -110,7 +110,7 @@
 ## 07-06-2025 - New AxionOS update, LineageOS becomes official for laurel_sprout!
 The new AxionOS uppdate **requires** a clean flash. For more details, please check [changelog](/roms/AxionOS_15#changelog) and [notes](/roms/AxionOS_15#notes).
 
-And, LineageOS becomes official for our device. The maintainer is still Skyblueborb. This means we will get faster, bi-weekly updates. For more details, check it [here](/roms/LineageOS_15).
+And, LineageOS becomes official for our device. The maintainer is still Skyblueborb. This means we will get faster, weekly updates. For more details, check it [here](/roms/LineageOS_15).
 
 ## 02-06-2025 - Minor update for TheSillyOk kernel forks.
 There is probably no need to update, but check it anyway by clicking [here](/kernels/thesillyok_kf).
