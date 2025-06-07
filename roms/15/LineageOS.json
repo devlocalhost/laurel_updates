@@ -11,7 +11,7 @@
     "banner": "/static/img/banner_los22.jpg",
     "downloads": {
         "editions": {
-            "Nightly": "https://download.lineageos.org/devices/laurel_updates/builds"
+            "Nightly": "https://download.lineageos.org/devices/laurel_sprout/builds"
         }
     },
     "archived": false
