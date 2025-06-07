@@ -108,7 +108,7 @@
 ---
 
 ## 07-06-2025 - LineageOS becomes official for laurel_sprout!
-Yup, you heard it. LineageOS becomes official for our device. The maintainer is still Skyblueborb. This means we will get faster, bi-weekly updates. For more details, check the [page](/roms/LineageOS_15).
+Yup, you heard it. LineageOS becomes official for our device. The maintainer is still Skyblueborb. This means we will get faster, weekly updates (unless it fails to build. In this case, it'll be skipped). For more details, check the [page](/roms/LineageOS_15).
 
 ## 02-06-2025 - Minor update for TheSillyOk kernel forks.
 There is probably no need to update, but check it anyway by clicking [here](/kernels/thesillyok_kf).
