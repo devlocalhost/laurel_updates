@@ -30,6 +30,8 @@ from flask import (
 
 from dotenv import load_dotenv
 
+import status
+
 load_dotenv()
 
 app = Flask(" -- laurel_updates -- ")
@@ -150,6 +152,11 @@ def autod():
     return "", 403
 
 
+@app.route("/sj")
+def status_json():
+    return status.get_status("laurel_updates")
+
+
 @app.route("/")
 def home():
     """home page"""
@@ -173,7 +180,7 @@ def home():
 
 
 @app.route("/s")
-def status():
+def status_route():
     """status"""
 
     simpleanalytics_resp = requests.get(
