@@ -12,14 +12,13 @@ import hmac
 import atexit
 import hashlib
 import datetime
+import platform
 import subprocess
 
 from collections import defaultdict
 
 import mistune
-import platform
 import requests
-import subprocess
 
 from werkzeug.middleware.proxy_fix import ProxyFix
 from flask import (
@@ -46,7 +45,7 @@ if os.environ.get("LAUREL_MODE"):
 commit_hash = os.environ.get("VERCEL_GIT_COMMIT_SHA")
 commit_message = None
 
-if commit_hash == None:
+if commit_hash is None:
     commit_hash = subprocess.check_output(
         'git log -1 --pretty=format:"%h"', shell=True, text=True
     )
@@ -148,8 +147,7 @@ def autod():
 
         return "", 200
 
-    else:
-        return "", 403
+    return "", 403
 
 
 @app.route("/")
@@ -159,7 +157,7 @@ def home():
     pattern = r"\b(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-(\d{4})\b"
     headline = "News."
 
-    with open("blogs/news.md") as lines:
+    with open("blogs/news.md", encoding="utf-8") as lines:
         lines = lines.readlines()
         headline_num = 1
         headline_link = lines[3].split("](")[1].strip().strip(")")
@@ -179,11 +177,23 @@ def status():
     """status"""
 
     simpleanalytics_resp = requests.get(
-        f"https://simpleanalytics.com/laurel-updates.dev64.xyz.json?version=5&info=false&fields=pageviews,visitors,pages&pages=/blog*,/roms*,/*"
+        "https://simpleanalytics.com/laurel-updates.dev64.xyz.json?version=5&info=false&fields=pageviews,visitors,pages&pages=/blog*,/roms*,/*",
+        timeout=15,
     ).json()
 
     simpleanalytics_data = defaultdict(list)
-    simpleanalytics_data["other"].append({"start": datetime.datetime.fromisoformat(simpleanalytics_resp["start"]).strftime("%A %B %-d, %I:%M:%S %p"), "end": datetime.datetime.fromisoformat(simpleanalytics_resp["end"]).strftime("%A %B %-d, %I:%M:%S %p"), "visitors": simpleanalytics_resp["visitors"], "pageviews": simpleanalytics_resp["pageviews"]})
+    simpleanalytics_data["other"].append(
+        {
+            "start": datetime.datetime.fromisoformat(
+                simpleanalytics_resp["start"]
+            ).strftime("%A %B %-d, %I:%M:%S %p"),
+            "end": datetime.datetime.fromisoformat(
+                simpleanalytics_resp["end"]
+            ).strftime("%A %B %-d, %I:%M:%S %p"),
+            "visitors": simpleanalytics_resp["visitors"],
+            "pageviews": simpleanalytics_resp["pageviews"],
+        }
+    )
 
     for entry in simpleanalytics_resp["pages"]:
         path = entry["value"]
