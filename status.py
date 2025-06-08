@@ -76,6 +76,7 @@ def get_status(service_name):
             },
             "systemd_status": systemd_status,
             "website_mode": os.getenv("WEBSITE_MODE"),
+            "platform": PLATFORM,
         }
     }
 
