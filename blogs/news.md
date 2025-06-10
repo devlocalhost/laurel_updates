@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [10-06-2025 - New kernel in town.](/blog/news#10-06-2025---new-kernel-in-town.)
 - [07-06-2025 - New AxionOS update, LineageOS becomes official for laurel_sprout!](/blog/news#07-06-2025---new-axionos-update,-lineageos-becomes-official-for-laurel_sprout!)
 - [02-06-2025 - Minor update for TheSillyOk kernel forks.](/blog/news#02-06-2025---minor-update-for-thesillyok-kernel-forks.)
 - [18-05-2025 - Bugfix update for PixelOS.](/blog/news#18-05-2025---bugfix-update-for-pixelos.)
@@ -106,6 +107,9 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 10-06-2025 - New kernel in town.
+New kernel available, everybody! Supports most ROMs, has kernelSU Next variant, and more. Check it out here: [FloppyKernel](/kernels/floppykernel).
 
 ## 07-06-2025 - New AxionOS update, LineageOS becomes official for laurel_sprout!
 The new AxionOS uppdate **requires** a clean flash. For more details, please check [changelog](/roms/AxionOS_15#changelog) and [notes](/roms/AxionOS_15#notes).

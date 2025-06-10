@@ -1,0 +1,17 @@
+{
+    "name": "FloppyKernel",
+    "route_name": "floppykernel",
+    "version": "v1.0",
+    "maintainer": "Flopster101",
+    "date_release": "02/06/2025",
+    "changelog": "<li>Initial release.</li><li>Rebranded from Carakernel to FloppyKernel.</li><li>Now supports laurel_sprout (Mi A3).</li>",
+    "support": "https://t.me/FloppyTrinketMi_Chat",
+    "notes": "<li>Linux 4.14.361 (OpenELA + unofficial).</li><li>Based on LOS qcom_sm8150 kernel.</li><li>Wide ROM compatibility</a>, dynamic and legacy, A11-A15.</li><li>Built with AOSP Clang 20 + ThinLTO, O2, LLVM Polly.</li><li>KernelSU Next build available (v1.0.7 + susfs v1.5.5).</li><li>For more details, check these links: <a href=\"https://telegra.ph/FloppyKernel-Trinket-Compatibility-info-06-10\">Compatibility</a>, <a href=\"https://telegra.ph/Introduction-to-FloppyKernel-Trinket-v10-06-10\">Features/Introduction</a>.</li>",
+    "banner": "/static/img/banner_floppykernel.jpg",
+    "downloads": {
+        "editions": {
+            "KSUNext": "https://github.com/FlopKernel-Series/flop_ginkgo_kernel/releases/download/flop-v1.0/Floppy_v1.0-KSUNext-laurel_sprout-20250609-2255.zip",
+            "Vanilla": "https://github.com/FlopKernel-Series/flop_ginkgo_kernel/releases/download/flop-v1.0/Floppy_v1.0-Vanilla-laurel_sprout-20250609-2303.zip"
+        }
+    }
+}
