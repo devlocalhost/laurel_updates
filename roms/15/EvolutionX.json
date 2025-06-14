@@ -1,9 +1,9 @@
 {
     "name": "EvolutionX",
-    "version": "10.6",
+    "version": "10.7",
     "maintainer": "Onelots",
-    "date_release": "10/05/2025",
-    "changelog": "<li>Gapps included</li><li>Non-RDP build</li><li>Play Integrity passes out of the box.</li><li>Included Dolby</li><li>Fixed stutters</li><li>Fixed gcam</li><li>KernelSU-Next kernel available <a href=\"https://github.com/onelots/kernel_auto_builder/releases/tag/latest\">on my github</a></li>",
+    "date_release": "13/06/2025",
+    "changelog": "<h3>Device changes:</h2><li>Updated device trees to the latest Lineage changes</li><li>Updated IR configuration</li><li>Added some blur</li><h3>ROM changes:</h3><li>[Expressive Design] expand collapsing toolbar by default</li><li>[Expressive Design] fix ActionButtons click listener application</li><li>[Expressive Design] fix battery usage layout</li><li>Evolver: Add Expressive Design switch (force stop Settings app to apply changes)</li><li>Evolver: Add switch to spoof QSB</li><li>Evolver: adjustments for material expressive designAdd commentMore actions</li><li>Merge June 2025 security patches</li><li>ProcessList: catch exceptions when unfreezing starting process</li><li>Settings: Use M3 slider for discrete seekbarsAdd commentMore actions</li><li>SettingsLib: Animate the UsageProgressBarPreference</li><li>SettingsLib: Redesign seekbar according to M3 slider</li><li>SettingsLib: UsageProgressBarPreference: Fix multiple NPEs</li><li>SettingsLib: fix expressive design</li><li>display: allow changing HDR brightness intensity</li><li>version: Uprev to 10.7</li>",
     "status": "Official",
     "support": "https://discord.onelots.fr/",
     "rdp": "No",
@@ -11,7 +11,7 @@
     "banner": "/static/img/banner_evox_15.jpg",
     "downloads": {
         "editions": {
-            "Gapps": "https://sourceforge.net/projects/evolution-x/files/laurel_sprout/15/EvolutionX-15.0-20250510-laurel_sprout-10.6-Official.zip/download"
+            "Gapps": "https://sourceforge.net/projects/evolution-x/files/laurel_sprout/15/EvolutionX-15.0-20250612-laurel_sprout-10.7-Official.zip/download"
         }
     },
     "archived": false
