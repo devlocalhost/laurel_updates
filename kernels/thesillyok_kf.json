@@ -3,13 +3,13 @@
     "route_name": "thesillyok_kf",
     "version": "4.14.355, 4.14.356",
     "maintainer": "TheSillyOk",
-    "date_release": "02/06/2025",
-    "changelog": "<li>Not much, just newer KSU versions because it's a rebuild</li>",
+    "date_release": "23/06/2025",
+    "changelog": "<li>Newer KSU versions</li><li>Drop Official KSU</li><li>Drop NoName 22.1</li><li>Apply <a href=\"https://github.com/sidex15/android_kernel_lge_sm8150/commit/fcc59dc3310d3a1511d02dc3ac6d1e113517ece1\">ptrace_fix.patch</a> (fix zygisk detection)</li><li>Use syscall hooks for KSU</li>",
     "support": "https://t.me/ok_kernel",
-    "notes": "<li><a href=\"https://github.com/sidex15/ksu_module_susfs/releases/\">SUSFS module</a>, <a href=\"https://t.me/ksunext_ci\">KSU Next Manager</a>, <a href=\"https://github.com/tiann/KernelSU/releases/download/v1.0.1/KernelSU_v1.0.1_11928-release.apk\">RKSU Manager</a> [<a href=\"https://nightly.link/5ec1cff/KernelSU/workflows/build-manager/main\">Alternative</a>], <a href=\"https://github.com/tiann/KernelSU/releases/download/v1.0.1/KernelSU_v1.0.1_11928-release.apk\">KSU Manager (don't update)</a></li><li>Filename meanings:<br>&emsp;- \"VIC\": For Android 15 RDP ROMs made by Magicxavi and PowerX-NOT.<br>&emsp;- \"LOS 22.1\": For Android 15 Non RDP ROMs.<br>&emsp;- \"LOS 18.1\": For Android 11 up to Android 14 QPR1 (excluding QPR2/QPR3) Non RDP ROMs.<br>&emsp;- \"KSUNext\": Kernel has KernelSU Next built-in.<br>&emsp;- \"SUSFS\": Kernel also includes SUSFS.<br>&emsp;- \"NoName\": Based on NoName kernel<br>&emsp;- \"SM6125\": Based on the new kernel by Skyblueborb.<br>&emsp;- \"Snowflake\": RainZ's kernel</li>",
+    "notes": "<li><a href=\"https://github.com/sidex15/susfs4ksu-module/releases\">SUSFS module</a>, <a href=\"https://t.me/ksunext_ci\">KSU Next Manager</a>, <a href=\"https://github.com/rsuntk/KernelSU/releases\">RKSU Manager</a> <a href=\"https://nightly.link/5ec1cff/KernelSU/workflows/build-manager/main\">[Alternative]</a></li><li>Filename meanings:<br>&emsp;- \"VIC\": For Android 15 RDP ROMs made by Magicxavi and PowerX-NOT.<br>&emsp;- \"LOS 22.1\": For Android 15 Non RDP ROMs.<br>&emsp;- \"LOS 18.1\": For Android 11 up to Android 14 QPR1 (excluding QPR2/QPR3) Non RDP ROMs.<br>&emsp;- \"KSUNext\": Kernel has KernelSU Next built-in.<br>&emsp;- \"SUSFS\": Kernel also includes SUSFS.<br>&emsp;- \"NoName\": Based on NoName kernel<br>&emsp;- \"SM6125\": Based on the new kernel by Skyblueborb.<br>&emsp;- \"Snowflake\": RainZ's kernel</li>",
     "downloads": {
         "editions": {
-            "GitHub": "https://github.com/TheSillyOk/kernel_laurel_sprout_workflows/releases/tag/2025%2F06%2F02"
+            "GitHub": "https://github.com/TheSillyOk/kernel_laurel_sprout_workflows/releases/tag/2025/06/23-r1"
         }
     }
 }

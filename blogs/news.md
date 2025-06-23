@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [23-06-2025 - TheSillyOk updates their kernel.](/blog/news#23-06-2025---thesillyok-updates-their-kernel.)
 - [14-06-2025 - New EvolutionX update.](/blog/news#14-06-2025---new-evolutionx-update.)
 - [10-06-2025 - New kernel in town.](/blog/news#10-06-2025---new-kernel-in-town.)
 - [07-06-2025 - New AxionOS update, LineageOS becomes official for laurel_sprout!](/blog/news#07-06-2025---new-axionos-update,-lineageos-becomes-official-for-laurel_sprout!)
@@ -109,6 +110,9 @@
 
 ---
 
+## 23-06-2025 - TheSillyOk updates their kernel.
+Check the [changelog](/kernels/thesillyok_kf#changelog) for more details.
+
 ## 14-06-2025 - New EvolutionX update.
 And... You know where to [go](/roms/EvolutionX_15).
 
@@ -154,7 +158,6 @@ More news: I finally managed to find a solution for the downtimes and other fuck
 
 ## 15-04-2025 - [IMPORTANT] Degraded website status, New AxionOS update.
 DEGRADED WEBSITE STATUS. Expect a lot of (or few, minor) downtimes. I made a oopsie woopsie fuckery and everything is shitting itself, from nginx, to service management and other bullshit, and as you can see, i have been trying to fix this issue for hours but i am having skill issues. That is why i said "expect a lot of downtimes".
-
 
 But hey, good news! PowerX-NOT brings version 1.3 BETA here! For more details, check the changelog by clicking [here](/roms/AxionOS_15#changelog).
 
