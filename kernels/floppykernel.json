@@ -1,17 +1,71 @@
 {
     "name": "FloppyKernel",
     "route_name": "floppykernel",
-    "version": "v1.0",
+    "version": "v1.1",
     "maintainer": "Flopster101",
-    "date_release": "02/06/2025",
-    "changelog": "<li>Initial release.</li><li>Rebranded from Carakernel to FloppyKernel.</li><li>Now supports laurel_sprout (Mi A3).</li>",
+    "date_release": "24/06/2025",
+    "changelog": "<ul>
+  <li><strong>Performance:</strong>
+    <ul>
+      <li>Restored missing WALT functionality and sched_boost.</li>
+      <li>Improved compatibility with ROMs using older libperfmgr.</li>
+      <li>Schedutil down rate limit set to 2000.</li>
+      <li>Adrenoboost enabled and set to "Low" by default.</li>
+      <li>Added schedtune shim for ROMs without Uclamp support.</li>
+      <li>KGSL (GPU) driver optimizations.</li>
+      <li>Removed useless 'Simple GPU algorithm'.</li>
+      <li><code>msm_performance</code> can no longer alter max frequency.</li>
+      <li>Uclamp Assist enabled.</li>
+    </ul>
+  </li>
+  <li><strong>Memory:</strong>
+    <ul>
+      <li>ZRAM size set to 3 GB.</li>
+      <li>Always overcommit memory enabled.</li>
+      <li>Added Xiaomi's page migration heuristic.</li>
+    </ul>
+  </li>
+  <li><strong>Power:</strong>
+    <ul>
+      <li>Relaxed wakelock restrictions to fix issues.</li>
+      <li>Cleaned up unnecessary entries from Wakelock Blocker list.</li>
+      <li>QoS optimization patches applied.</li>
+      <li>Fixed broken charging throttling causing overheating.</li>
+      <li>Enabled queued wakeups (SoC lacks DynamIQ support).</li>
+      <li>Dropped unstable GPU undervolt.</li>
+    </ul>
+  </li>
+  <li><strong>Miscellaneous:</strong>
+    <ul>
+      <li>Kernel ticker rate set to 250 Hz.</li>
+      <li>Disabled forced USB fast charging by default (toggleable via FKM).</li>
+      <li>Updated KernelSU Next to v1.0.8 with susfs v1.5.7.</li>
+      <li>Upstreamed to Linux 4.14.364 (unofficial upstreams). See repo link above.</li>
+      <li>Backported susfs 'hide_sus_mnts_for_all_procs' prctl.</li>
+      <li>Rebased on updated LOS qcom_sm8150 base.</li>
+      <li>Added support for phone-to-phone USB tethering.</li>
+      <li>Fixed charging voltage reporting to healthd.</li>
+    </ul>
+  </li>
+  <li><strong>Device-specific:</strong>
+    <ul>
+      <li>Support for non-kernel dimming on A11 ROMs (laurel).</li>
+      <li>Fixed IR blaster on older laurel ROMs.</li>
+    </ul>
+  </li>
+</ul>",
     "support": "https://t.me/FloppyTrinketMi_Chat",
-    "notes": "<li>Linux 4.14.361 (OpenELA + unofficial).</li><li>Based on LOS qcom_sm8150 kernel.</li><li>Wide ROM compatibility</a>, dynamic and legacy, A11-A15.</li><li>Built with AOSP Clang 20 + ThinLTO, O2, LLVM Polly.</li><li>KernelSU Next build available (v1.0.7 + susfs v1.5.5).</li><li>For more details, check these links: <a href=\"https://telegra.ph/FloppyKernel-Trinket-Compatibility-info-06-10\">Compatibility</a>, <a href=\"https://telegra.ph/Introduction-to-FloppyKernel-Trinket-v10-06-10\">Features/Introduction</a>.</li>",
+    "notes": "<li>Linux 4.14.364 (OpenELA + unofficial).</li>
+<li>Based on LOS qcom_sm8150 kernel.</li>
+<li>Wide ROM compatibility: <strong>dynamic</strong> and <strong>legacy</strong>, <strong>A11-A16</strong>.</li>
+<li>Built with AOSP Clang 20 + ThinLTO, O2, LLVM Polly.</li>
+<li>KernelSU Next build available (v1.0.8 + susfs v1.5.7).</li>
+<li>Possible reboot issue when using susfs4ksu module.</li>",
     "banner": "/static/img/banner_floppykernel.jpg",
     "downloads": {
         "editions": {
-            "KSUNext": "https://github.com/FlopKernel-Series/flop_ginkgo_kernel/releases/download/flop-v1.0/Floppy_v1.0-KSUNext-laurel_sprout-20250609-2255.zip",
-            "Vanilla": "https://github.com/FlopKernel-Series/flop_ginkgo_kernel/releases/download/flop-v1.0/Floppy_v1.0-Vanilla-laurel_sprout-20250609-2303.zip"
+            "KSUNext": "https://github.com/FlopKernel-Series/flop_trinket-mi_kernel/releases/download/flop-v1.1/Floppy_v1.1-KSUNext-laurel_sprout-20250624-1456.zip",
+            "Vanilla": "https://github.com/FlopKernel-Series/flop_trinket-mi_kernel/releases/download/flop-v1.1/Floppy_v1.1-Vanilla-laurel_sprout-20250624-1503.zip"
         }
     }
 }
