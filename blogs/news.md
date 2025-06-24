@@ -1,6 +1,8 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [24-06-2025 - Flopster101 updates their kernel.](/blog/news#24-06-2025---flopster101-updates-their-kernel.)
+- [24-06-2025 - TheSillyOk updates their kernel.](/blog/news#24-06-2025---thesillyok-updates-their-kernel.)
 - [23-06-2025 - TheSillyOk updates their kernel.](/blog/news#23-06-2025---thesillyok-updates-their-kernel.)
 - [14-06-2025 - New EvolutionX update.](/blog/news#14-06-2025---new-evolutionx-update.)
 - [10-06-2025 - New kernel in town.](/blog/news#10-06-2025---new-kernel-in-town.)
