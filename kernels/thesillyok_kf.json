@@ -6,7 +6,7 @@
     "date_release": "24/06/2025",
     "changelog": "<li>Update KSUN SUSFS to 1.5.8</li><li>Build dtbo.img for sm6125 kernel</li><li>Add Ginkgo sm6125 kernel builds</li>",
     "support": "https://t.me/ok_kernel",
-    "notes": "<li>This kernel supports the following devices: Redmi Note 8 (ginkgo), Redmi Note 8T (willow), Xiaomi Mi A3 (laurel_sprout). \"ginkgo\" builds are for willow too.</li><li>Toolchain: AOSP Clang 20.0.0 r547379</li><li>Linux version: 4.14.364 (backports by OpenELA and <a href=\"https://gitea.cat65801.ru/cat65801/kernel-lts\">cat65801</a>)</li><li>Optimizations: -O2, LLVM Polly, tuned ThinLTO + LLVM inlining</li><li>Addons: KernelSU Next v1.0.8 + susfs v1.5.7 (unofficial)</li><li>Bugs: Possible reboot bug when using susfs module.</li>"
+    "notes": "<li>This kernel supports the following devices: Redmi Note 8 (ginkgo), Redmi Note 8T (willow), Xiaomi Mi A3 (laurel_sprout). \"ginkgo\" builds are for willow too.</li><li>Toolchain: AOSP Clang 20.0.0 r547379</li><li>Linux version: 4.14.364 (backports by OpenELA and <a href=\"https://gitea.cat65801.ru/cat65801/kernel-lts\">cat65801</a>)</li><li>Optimizations: -O2, LLVM Polly, tuned ThinLTO + LLVM inlining</li><li>Addons: KernelSU Next v1.0.8 + susfs v1.5.7 (unofficial)</li><li>Bugs: Possible reboot bug when using susfs module.</li>",
     "downloads": {
         "editions": {
             "GitHub": "https://github.com/TheSillyOk/kernel_laurel_sprout_workflows/releases/tag/2025/06/24-r1"
