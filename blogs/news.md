@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [25-06-2025 - Two kernel updates are available.](/blog/news#25-06-2025---two-kernel-updates-are-available.)
 - [23-06-2025 - TheSillyOk updates their kernel.](/blog/news#23-06-2025---thesillyok-updates-their-kernel.)
 - [14-06-2025 - New EvolutionX update.](/blog/news#14-06-2025---new-evolutionx-update.)
 - [10-06-2025 - New kernel in town.](/blog/news#10-06-2025---new-kernel-in-town.)
@@ -109,6 +110,9 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 25-06-2025 - Two kernel updates are available.
+Flopster101 and TheSillyOk update their kernels, which you can check by clicking [here](/kernels/floppykernel#changelog) and [here](/kernels/thesillyok_kf#changelog).
 
 ## 23-06-2025 - TheSillyOk updates their kernel.
 Check the [changelog](/kernels/thesillyok_kf#changelog) for more details.
