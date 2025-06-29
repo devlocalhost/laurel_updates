@@ -4,14 +4,14 @@
     "maintainer": "Skyblueborb",
     "date_release": "29/06/2025",
     "changelog": "<li>Initial 23.0 experimental release.</li>",
-    "status": "Experimental",
+    "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
     "notes": "<li>This release includes the unfinished Expressive MD3 redesign slated for Android 16 QPR1, expect UI inconsistencies.</li>",
-    "banner": "/static/img/banner_los23exp.jpg",
+    "banner": "/static/img/banner_los23.jpg",
     "downloads": {
         "editions": {
-            "Experimental": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-23.0-20250629-UNOFFICIAL-laurel_sprout.zip"
+            "Vanilla": "https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-23.0-20250629-UNOFFICIAL-laurel_sprout.zip"
         }
     },
     "archived": false
