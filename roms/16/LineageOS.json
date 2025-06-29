@@ -7,7 +7,7 @@
     "status": "Unofficial",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
-    "notes": "<li>This release includes the unfinished Expressive MD3 redesign slated for Android 16 QPR1, expect UI inconsistencies.</li>",
+    "notes": "<li>Skyblueborb is also maintaining <a href='/roms/LineageOS_11'>LineageOS 18.1</a>, and <a href='/roms/LineageOS_15'>LineageOS 22.2</a></li><li>This release includes the unfinished Expressive MD3 redesign slated for Android 16 QPR1, expect UI inconsistencies.</li>",
     "banner": "/static/img/banner_los23.jpg",
     "downloads": {
         "editions": {
