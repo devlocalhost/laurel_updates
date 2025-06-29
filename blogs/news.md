@@ -112,7 +112,7 @@
 
 ---
 ## 29-06-2025 - First Android 16 based experimental rom released.
-Initial experimental build of LineageOS 23.0 based on android 16 is out, which you can check by clicking [here](/roms/LineageOS_15).
+Initial experimental build of LineageOS 23.0 based on android 16 is out, which you can check by clicking [here](/roms/LineageOS_16).
 
 ## 25-06-2025 - Two kernel updates are available.
 Flopster101 and TheSillyOk update their kernels, which you can check by clicking [here](/kernels/floppykernel#changelog) and [here](/kernels/thesillyok_kf#changelog).
