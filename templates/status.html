@@ -47,7 +47,7 @@
 
         {% set r_last_entry = data[4]['/roms'][-1] %}
         <tr>
-            <td class="left-td td-num">{{ r_last_entry['value'] }}</td>
+            <td class="left-td td-num"><a href="{{ r_last_entry['value'] }}">{{ r_last_entry['value'] }}</a></td>
             <td class="td-num">{{ r_last_entry['pageviews'] }}</td>
 
             <td class="td-num">{{ r_last_entry['visitors'] }}</td>
@@ -67,7 +67,7 @@
 
         {% set b_last_entry = data[4]['/blog'][-1] %}
         <tr>
-            <td class="left-td last-td-left td-num">{{ b_last_entry['value'] }}</td>
+            <td class="left-td last-td-left td-num"><a href="{{ b_last_entry['value'] }}">{{ b_last_entry['value'] }}</a></td>
             <td class="td-num">{{ b_last_entry['pageviews'] }}</td>
 
             <td class="last-td-right td-num">{{ b_last_entry['visitors'] }}</td>
