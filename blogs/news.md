@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [14-07-2025 - Minor update for TheSillyOk kernel.](/blog/news#14-07-2025---minor-update-for-thesillyok-kernel.)
 - [29-06-2025 - Experimental LineageOS 23 build based on Android 16.](/blog/news#29-06-2025---experimental-lineageos-23-build-based-on-android-16.)
 - [25-06-2025 - Two kernel updates are available.](/blog/news#25-06-2025---two-kernel-updates-are-available.)
 - [23-06-2025 - TheSillyOk updates their kernel.](/blog/news#23-06-2025---thesillyok-updates-their-kernel.)
@@ -111,6 +112,10 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 14-07-2025 - Minor update for TheSillyOk kernel.
+Which you can check by clicking [here](/kernels/thesillyok_kf#changelog).
+
 ## 29-06-2025 - Experimental LineageOS 23 build based on Android 16.
 Initial experimental build of LineageOS 23.0 based on android 16 is out, which you can check by clicking [here](/roms/LineageOS_16).
 
