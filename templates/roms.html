@@ -22,39 +22,43 @@
 
 <p><strong>Warning</strong>: you CANNOT install ANY of these ROMs IF you are using MIUI, or have converted your phone to MIUI/CC9e (or whatever the hell it is called, I don't know). To flash one of these ROMs, you MUST flash stock ROM, preferably (?) the fastboot version. You can check the guide <a href="REPLACEME">here</a>.</p>
 
-<h2>Pick a category</h2>
-<p>Below, you will find two categories: <b>Active</b> and <b>Archived</b>. Pick one, and you will find more details about the category.</p>
+<dialog id="mainDiag" closedby="any">
+    <h2>Pick a category</h2>
+    <p>Below, you will find two categories: <b>Active</b> and <b>Archived</b>. Pick one, and you will find more details about the category.</p>
 
-<div class="tabs">
-    <a href="#active-roms">Active ROMs</a>
-    <a href="#archived-roms">Archived ROMs</a>
-</div>
+    <button onclick="active_roms_diag.showModal()">Active</button>
+    <button onclick="archived_roms_diag.showModal()">Archived</button>
+    <button onclick="mainDiag.close()">Close</button>
+</dialog>
+<button onclick="mainDiag.showModal()">Choose a ROM</button>
 
-<div id="active-roms" class="cont">
+<dialog id="active_roms_diag" closedby="any">
 <h2 class="colored">Active ROMs</h2>
 <p>ROMs under this category are actively, or just regularly maintained. A ROM will be under this category as long as the maintainer keeps supporting it. If they discontinue it, it will be moved to the Archived category (unless the download links are down. In this case, the ROM is removed from the website completely.)</p>
 <div class="tabs">
-    <a href="#16">16</a>
-    <a href="#15">15</a>
-    <a href="#11">11</a>
+    <button onclick="a16.showModal()">Android 16</button>
+    <button onclick="a15.showModal()">Android 15</button>
+    <button onclick="a11.showModal()">Android 11</button>
+    <button onclick="active_roms_diag.close()">Close</button>
 </div>
-</div>
+</dialog>
 
-<div id="archived-roms" class="cont">
+<dialog id="archived_roms_diag" closedby="any">
 <h2 class="red" id="archive">Archived ROMs</h2>
 <p>ROMs under this category are not recommended, but they're included anyway, in case someone still wants to give them a try.</p>
 <div class="tabs">
-    <a href="#15a">15</a>
-    <a href="#14a">14</a>
-    <a href="#13a">13</a>
-    <a href="#12a">12</a>
-    <a href="#11a">11</a>
-    <a href="#10a">10</a>
+    <button onclick="a15ar.showModal()">Android 15</button>
+    <button onclick="a14ar.showModal()">Android 14</button>
+    <button onclick="a13ar.showModal()">Android 13</button>
+    <button onclick="a12ar.showModal()">Android 12</button>
+    <button onclick="a11ar.showModal()">Android 11</button>
+    <button onclick="a10ar.showModal()">Android 10</button>
+    <button onclick="archived_roms_diag.close()">Close</button>
 </div>
-</div>
+</dialog>
 
 {% for version, roms in roms_data.items() %}
-<div id="{{ version }}" class="cont">
+<dialog id="a{{ version }}" closedby="any">
     <h2 class="adrod">Active Android {{ version }} ROMs</h2>
     <ul>
         {% for rom in roms %}
@@ -65,14 +69,12 @@
             {% endif %}
         {% endfor %}
     </ul>
-    <div class="tabs">
-        <a href="#active-roms">← Back</a>
-    </div>
-</div>
+    <button onclick="a{{ version }}.close()">Close</button>
+</dialog>
 {% endfor %}
 
 {% for version, roms in roms_data.items() %}
-<div id="{{ version }}a" class="cont">
+<dialog id="a{{ version }}ar" closedby="any">
     <h2 class="red">Archived Android {{ version }} ROMs</h2>
     <ul>
         {% for rom in roms %}
@@ -83,10 +85,8 @@
             {% endif %}
         {% endfor %}
     </ul>
-    <div class="tabs">
-        <a href="#archived-roms">← Back</a>
-    </div>
-</div>
+    <button onclick="a{{ version }}ar.close()">Close</button>
+</dialog>
 {% endfor %}
 
 <hr>
