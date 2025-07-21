@@ -35,7 +35,7 @@ html {
     margin-right: calc(-1 * (100vw - 100%));
 }
 
-body, dialog {
+body {
     color: var(--text-color);
     background-color: var(--background-color);
     margin: 1em auto;
@@ -76,6 +76,35 @@ h5 {
 
 h6 {
     font-size: 1.10em;
+}
+
+button {
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    font-family: 'JetBrains Mono';
+    border: 4px solid var(--outline-color);
+    border-radius: 15px;
+    background: var(--navbar-background-color);
+    color: var(--text-color);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+dialog {
+    border-radius: 15px;
+    border: 4px solid var(--outline-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    width: 40em;
+}
+
+.diagButtons {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    padding-top: 15px;
+    /* max-width: 40em; */
 }
 
 a {
