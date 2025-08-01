@@ -2,7 +2,7 @@
 Following the steps below should help you achieve all 3 verdicts (BASIC, DEVICE & STRONG). If you cannot achieve them, Google possibly broke or changed stuff again, you did not follow the steps, or... something else. This guide isn't guaranteed to work, or help everyone. If it works for you, congratulations. If not, I'm sorry.
 
 ## Requirements
-- [Magisk](https://github.com/topjohnwu/Magisk/releases) ([tutorial](/blog/installing-magisk). Other root solutions should work, but have been not tested.)
+- [Magisk](https://github.com/topjohnwu/Magisk/releases) ([tutorial](/blog/installing-magisk). Other root solutions should work, but have been not tested).
 - Zygisk implementation
 	1. [Zygisk Next](https://github.com/Dr-TSNG/ZygiskNext) (recommended)
 	2. [ReZygisk](https://github.com/PerformanC/ReZygisk) (open source)

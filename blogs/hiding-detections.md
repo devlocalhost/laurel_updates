@@ -6,7 +6,7 @@ We are going to achieve all this using some root modules. So, if your device is 
 
 First, **if you are using Magisk**, you should hide Magisk if you haven't so, by going to Settings, and clicking "Hide the Magisk app". Enter anything you want when asked, it does not matter (hopefully). Another important thing is, if you are using the default built-in Zygisk implementation of Magisk, you should disable it and use alternatives such as [Zygisk Next](https://github.com/Dr-TSNG/ZygiskNext) (recommended) or [ReZygisk](https://github.com/PerformanC/ReZygisk) (open source). Built-in Zygisk implementation is easy to detect.
 
-One thing that could also help is deleting the "/data/magisk" (magisk folder in data) folder. If it exists, you can delete it by running the **SAME EXACT** command: `su -c rm -r /data/magisk`
+One thing that could also help is deleting the magisk folder in /data (/data/magisk). If it exists, you can delete it by running the **SAME EXACT** command: `su -c rm -r /data/magisk`
 
 The following modules we are going to use are [NoHello](https://github.com/MhmRdd/NoHello/releases), and [Tricky Store](https://github.com/5ec1cff/TrickyStore). NoHello will help us to get rid of various detections, and Tricky Store should help us with the bootloader status. 
 
