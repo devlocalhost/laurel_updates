@@ -1,20 +1,28 @@
-# PlayIntegrityFix
+# Basic guide to achieve BASIC, DEVICE and STRONG integrity.
+Following the steps below should help you achieve all 3 verdicts (BASIC, DEVICE & STRONG). If you cannot achieve them, Google possibly broke or changed stuff again, you did not follow the steps, or... something else. This guide isn't guaranteed to work, or help everyone. If it works for you, congratulations. If not, I'm sorry.
 
-## Fixing Play Integrity
-According to the tutorial from [PlayIntegrityFix GitHub repo](https://github.com/chiteroman/PlayIntegrityFix?tab=readme-ov-file#tutorial), you need one of these:
+## Requirements
+- [Magisk](https://github.com/topjohnwu/Magisk/releases) ([tutorial](/blog/installing-magisk). Other root solutions should work, but have been not tested.)
+- Zygisk implementation
+	1. [Zygisk Next](https://github.com/Dr-TSNG/ZygiskNext) (recommended)
+	2. [ReZygisk](https://github.com/PerformanC/ReZygisk) (open source)
+- [PlayIntegrityFork (module)](https://github.com/osm0sis/PlayIntegrityFork), [Tricky Store (module)](https://github.com/5ec1cff/TrickyStore) and [Tricky Addon - Update Target List (module)](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/)
+- Optional: a WebUI manager if the rooting solution you have does not have such function. One recommended manager is [WebUI X Portable (app)](https://github.com/MMRLApp/WebUI-X-Portable/releases). Of course, you can use any.
 
-- [Magisk](https://github.com/topjohnwu/Magisk) with Zygisk enabled.
-- [KernelSU](https://github.com/tiann/KernelSU) with [ZygiskNext](https://github.com/Dr-TSNG/ZygiskNext) module installed.
-- [APatch](https://github.com/bmax121/APatch) with [ZygiskNext](https://github.com/Dr-TSNG/ZygiskNext) module installed.
+## Steps
+1. **Skip** if you are not using **Magisk**. If built-in Zygisk is enabled in your Magisk settings, disable it and reboot. Then, install one of the mentioned Zygisk implementations.
+2. Flash PlayIntegrityFork, Tricky Store, install the mentioned or any WebUI solution, and reboot your device again.
+3. Open your root manager, and go to your modules list. Click the "Action" button below the Tricky Store module, and a menu should appear. If for any reason, it does not appear, open the WebUI manager you installed, and click Tricky Store card.
+	1. Click the 3 line button, on the top right, and click "Select All". This will select all of your installed apps.
+	2. Click the 3 line button again, and this time, click "Deselect Unnecessary"
+	3. Now for the keybox, click the 3 line button again, then "Set Valid Keybox". If you have your own Keybox, click "Set Custom Keybox" instead, and choose your keybox xml file.
+	4. Lastly, 3 line button again, and click "Set Security Patch", then "Auto". This will spoof the security patch date.
+4. Last step: Go to your modules list again, and click the "Action" button for PlayIntegrityFork. It should auto-fetch a random fingerprint, and it should be done.
+5. Now, all that's left is to check the Play Integrity status. This can be done using 2 ways:
+	1. Using Play Store: go to Play Store settings, spam click Play Store version to enable developer mode, go to General > Developer options, and click Check Integrity.
+	2. Using an app: Download [Play Integrity API Checker](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck) by Nikolas Spiridakis.
 
----
+## Final words
+If you achieved all 3 verdicts, congratulations. Keep in mind that if, after some days, you can only achieve BASIC integrity, you should click the "Action" button on PlayIntegrityFork, and/or update your keybox from Tricky Store.
 
-My current setup is the first one. Let's move on now. If you are using magisk, you NEED to:
-
-1. Hide magisk app from settings. Go to magisk settings, click the "Hide the Magisk app", enter anything and click ok.
-2. Remove `magisk` directory from `/data`. If you have root, use an file explorer with root, and delete the magisk folder in /data (i use termux, so i ran `su -c rm -r /data/magisk`).
-3. Install [Zygisk-Assistant magisk module](https://github.com/snake-4/Zygisk-Assistant/releases/latest)
-4. Install [PlayIntegrityFix module](https://github.com/chiteroman/PlayIntegrityFix/releases/latest). **NOTE**: If your rom is signed with test keys (ask your ROM maintainer or check with `su` and `unzip -l /system/etc/security/otacerts.zip` in Termux. If you see `testkey.x509.pem`, rom is signed with test keys) open `/data/adb/modules/playintegrityfix/pif.json` and change spoofSignature to true. ([source](https://t.me/A3Official/502180))
-
-Following these steps should help you pass `MEETS_BASIC_INTEGRITY` and `MEETS_DEVICE_INTEGRITY`.
-![image showing basic and device integrity with green checks.](/static/img/pi-result.png)
+You can also check [this guide](/blog/hiding-detections) if you want to hide various detections like running magisk, ROM detections, etc.
