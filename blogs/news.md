@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [15-08-2025 - New [outdated by now] update for FloppyKernel, Plus explanation for the late update.](/blog/news#15-08-2025---new-update-for-floppykernel.)
 - [14-07-2025 - Minor update for TheSillyOk kernel.](/blog/news#14-07-2025---minor-update-for-thesillyok-kernel.)
 - [29-06-2025 - Experimental LineageOS 23 build based on Android 16.](/blog/news#29-06-2025---experimental-lineageos-23-build-based-on-android-16.)
 - [25-06-2025 - Two kernel updates are available.](/blog/news#25-06-2025---two-kernel-updates-are-available.)
@@ -112,6 +113,11 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 15-08-2025 - New [outdated by now] update for FloppyKernel, Plus explanation for the late update.
+I'm late, yes i know, i apologize for that. Most of you are probably aware of this, but... [here's the link](/kernels/floppykernel) in case you want to check it...
+
+Anyway, the reason i took so long to update the website, was lack of energy, and motivation. A loved one passed recently, plus internship, which drains me even more.
 
 ## 14-07-2025 - Minor update for TheSillyOk kernel.
 Which you can check by clicking [here](/kernels/thesillyok_kf#changelog).
