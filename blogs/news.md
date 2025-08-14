@@ -1,7 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
-- [15-08-2025 - New [outdated by now] update for FloppyKernel, Plus explanation for the late update.](/blog/news#15-08-2025---new-update-for-floppykernel.)
+- [15-08-2025 - New [outdated by now] update for FloppyKernel, Plus explanation for the late update.](/blog/news#15-08-2025---new-[outdated-by-now]-update-for-floppykernel,-plus-explanation-for-the-late-update.)
 - [14-07-2025 - Minor update for TheSillyOk kernel.](/blog/news#14-07-2025---minor-update-for-thesillyok-kernel.)
 - [29-06-2025 - Experimental LineageOS 23 build based on Android 16.](/blog/news#29-06-2025---experimental-lineageos-23-build-based-on-android-16.)
 - [25-06-2025 - Two kernel updates are available.](/blog/news#25-06-2025---two-kernel-updates-are-available.)
