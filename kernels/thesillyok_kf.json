@@ -3,13 +3,13 @@
     "route_name": "thesillyok_kf",
     "version": "4.14.355, 4.14.356",
     "maintainer": "TheSillyOk",
-    "date_release": "14/07/2025",
-    "changelog": "<li>Update KSUN & RKSU SUSFS to 1.5.9</li><li>SM6125 kernel includes latest changes</li><li>RKSU 12213 -> 12219</li><li>KSUN 12712 -> 12793</li>",
+    "date_release": "18/08/2025",
+    "changelog": "<li>Update SUSFS</li><li>AVC SELinux leak fix included (susfs)</li><li>Drop hide stuff patch</li><li>RKSU 12219 -> 12248</li><li>KSUN 12793 -> 12823</li>",
     "support": "https://t.me/ok_kernel",
     "notes": "<li><a href=\"https://github.com/sidex15/susfs4ksu-module/releases\">SUSFS Module</a>, KSU Next <a href=\"https://t.me/ksunext_ci\">Manager</a>, RKSU <a href=\"https://github.com/rsuntk/KernelSU/releases\">Manager</a> <a href=\"https://nightly.link/5ec1cff/KernelSU/workflows/build-manager/main\">[Alternative]</a></li><li>Filename meanings:<br>&emsp;- \"VIC\": For Android 15 RDP ROMs made by Magicxavi and PowerX-NOT.<br>&emsp;- \"LOS 22.1\": For Android 15 Non RDP ROMs.<br>&emsp;- \"LOS 18.1\": For Android 11 up to Android 14 QPR1 (excluding QPR2/QPR3) Non RDP ROMs.<br>&emsp;- \"KSUNext\": Kernel has KernelSU Next built-in.<br>&emsp;- \"SUSFS\": Kernel also includes SUSFS.<br>&emsp;- \"NoName\": Based on NoName kernel<br>&emsp;- \"SM6125\": Based on the new kernel by Skyblueborb.<br>&emsp;- \"Snowflake\": RainZ's kernel</li>",
     "downloads": {
         "editions": {
-            "GitHub": "https://github.com/TheSillyOk/kernel_laurel_sprout_workflows/releases/tag/2025/07/14-r1",
+            "GitHub": "https://github.com/TheSillyOk/kernel_laurel_sprout_workflows/releases/tag/2025/08/18-r1",
             "CI builds": "https://t.me/ok_kernel_ci"
         }
     }
