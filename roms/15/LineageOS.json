@@ -2,12 +2,12 @@
     "name": "LineageOS",
     "version": "22.2",
     "maintainer": "Skyblueborb",
-    "date_release": "07/06/2025",
-    "changelog": "<li>Initial official release.</li><li>For more, in depth details, check the <a href=\"https://download.lineageos.org/devices/laurel_sprout/changes\">LineageOS website</a>.</li>",
+    "date_release": "Rolling release",
+    "changelog": "<li><a href=\"https://download.lineageos.org/devices/laurel_sprout/changes\">LineageOS device changes website</a>.</li>",
     "status": "Official",
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
-    "notes": "<li>Skyblueborb is also maintaining <a href='/roms/LineageOS_11'>LineageOS 18.1</a></li>",
+    "notes": "<li>Rolling release. What does this mean? The ROM receives an update every few weeks, automatically built from LineageOS.</li><li>Skyblueborb is also maintaining <a href='/roms/LineageOS_11'>LineageOS 18.1</a></li>",
     "banner": "/static/img/banner_los22.jpg",
     "downloads": {
         "editions": {
