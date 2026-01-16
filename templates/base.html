@@ -35,10 +35,31 @@
                 right: 0.92em;
                 margin: 0 auto;
             }
+
+            .the-end {
+                text-align: center;
+                background-color: #fdcc4b;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 5px;
+            }
+
+            .the-end a {
+                color: #000;
+            }
+
+            .navigation-top {
+                margin-top: 15px;
+                border-radius: 5px;
+            }
         </style>
         {% endblock %}
     </head>
     <body>
+        <div class="the-end">
+            <span><a href="/blog/the-end">laurel_updates has been archived.</a></span>
+        </div>
+        
         <div class="content">
             {% block content %}{% endblock %}
         </div>

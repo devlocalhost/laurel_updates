@@ -40,7 +40,7 @@ app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1)
 
 APP_SECRET_TOKEN = os.environ["APP_SECRET_TOKEN"]
 
-if os.environ.get("LAUREL_MODE"):
+if os.environ.get("WEBSITE_MODE"):
     print("[DEBUG] Templates will auto reload")
     app.config["TEMPLATES_AUTO_RELOAD"] = True
 
