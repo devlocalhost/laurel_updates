@@ -8,7 +8,7 @@
     "support": "https://t.me/lineageos_laurel",
     "rdp": "No",
     "notes": "<li>Skyblueborb is also maintaining <a href='/roms/LineageOS_11'>LineageOS 18.1</a>, and <a href='/roms/LineageOS_15'>LineageOS 22.2</a></li>",
-    "banner": "/static/img/banner_los23.jpg",
+    "banner": "/static/img/banner_lineageos_23.webp",
     "downloads": {
         "editions": {
             "LineageOS website": "https://download.lineageos.org/devices/laurel_sprout/builds"
