@@ -1,0 +1,18 @@
+{
+    "name": "EvolutionX",
+    "version": "11.4.1",
+    "maintainer": "Onelots",
+    "date_release": "06/12/2025",
+    "changelog": "<li>Hello! Final update before QPR1, just to have a checkpoint. Nothing really got added nor removed, just source changes. And obviously November updates. Enjoy and #KeepEvolving! Onelots.</li>",
+    "status": "Official",
+    "support": "https://discord.onelots.fr/",
+    "rdp": "No",
+    "notes": "<li><strong>THIS IS NOT PowerX-NOT'S VERSION!!</strong> This build is made by a different person, and is not the same as PowerX-NOT version. For that specific version, go <a href='/roms/EvolutionX_U_15'>here</a> instead</li><li>For more details, check the <a href=\"https://evolution-x.org/downloads/laurel_sprout\">EvolutionX website</a>.</li>",
+    "banner": "/static/img/banner_evox_official.png",
+    "downloads": {
+        "editions": {
+            "EvolutionX website": "https://evolution-x.org/devices/laurel_sprout"
+        }
+    },
+    "archived": false
+}
