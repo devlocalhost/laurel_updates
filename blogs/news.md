@@ -1,6 +1,7 @@
 # News - Updates, releases, and more.
 
 ## Posts
+- [28-04-2026 - [NOTICE]: Scheduled website downtime.](/blog/news#28-04-2026---[notice]:-scheduled-website-downtime.)
 - [16-01-2026 - Last update for laurel_updates.](/blog/news#16-01-2026---last-update-for-laurel_updates.)
 - [18-08-2025 - Minor update for TheSillyOk kernel.](/blog/news#18-08-2025---minor-update-for-thesillyok-kernel.)
 - [15-08-2025 - New [outdated by now] update for FloppyKernel, Plus explanation for the late update.](/blog/news#15-08-2025---new-[outdated-by-now]-update-for-floppykernel,-plus-explanation-for-the-late-update.)
@@ -115,6 +116,9 @@
 - [03-02-2024 - LineageOS 21 Released, EvolutionX 13 Discontinued.](/blog/news#03-02-2024---lineageos-21-released,-evolutionx-13-discontinued.)
 
 ---
+
+## 28-04-2026 - NOTICE: Scheduled website downtime.
+NOTICE: I will be doing some maintenance to the website, some downtime might be expected or not. Do not worry if the website is inaccessible (unless it has been more than a day). Thats all.
 
 ## 16-01-2026 - Last update for laurel_updates.
 This is possibly the last update for laurel_updates. For more details, please check [The end](/blog/the-end) blog post.
