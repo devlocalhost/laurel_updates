@@ -117,7 +117,7 @@
 
 ---
 
-## 28-04-2026 - NOTICE: Scheduled website downtime.
+## 28-04-2026 - [NOTICE]: Scheduled website downtime.
 NOTICE: I will be doing some maintenance to the website, some downtime might be expected or not. Do not worry if the website is inaccessible (unless it has been more than a day). Thats all.
 
 ## 16-01-2026 - Last update for laurel_updates.
