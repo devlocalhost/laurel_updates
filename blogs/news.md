@@ -118,7 +118,7 @@
 ---
 
 ## 28-04-2026 - [NOTICE]: Scheduled website downtime.
-NOTICE: I will be doing maintenance to the website, at 29 April, which could last till 1 May. Some downtime might be expected or not. This "post" will be deleted after the maintenance is successful.
+NOTICE: I will be doing some maintenance to the website, some downtime might be expected or not. Do not worry if the website is inaccessible (unless it has been more than a day). Thats all.
 
 ## 16-01-2026 - Last update for laurel_updates.
 This is possibly the last update for laurel_updates. For more details, please check [The end](/blog/the-end) blog post.
