@@ -341,7 +341,12 @@ def kernels_name(kernel_name):
 def page_not_found(e):
     """404 page"""
 
-    return render_template("404.html")
+    return render_template("404.html"), 404
+
+
+@app.route("/robots.txt")
+def robots():
+    return "User-agent: *\nDisallow: /\n", 200, {"Content-Type": "text/plain"}
 
 
 atexit.register(going_down)
